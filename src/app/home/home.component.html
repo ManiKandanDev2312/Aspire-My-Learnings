@@ -1,0 +1,23 @@
+<div class="slideshow">
+    <img src="{{img}}" alt="image">
+    <div class="flex">
+     <div *ngFor="let rounds of url; let ind=index" class="round" (click)="changeImage(ind)"></div>
+    </div>
+  </div>
+
+  <div class="secondnav">
+    <h2>{{hotelCount}}&nbsp;&nbsp;restaurants</h2>
+    <nav class="nav">
+      <div><a [routerLink]="Relevance" routerLinkActive="activeLink"><li>Hotels</li></a></div>
+      <div><a [routerLink]="Delivery_Time" routerLinkActive="activeLink"><li>Delivery&nbsp;Time</li></a></div>
+      <div><a [routerLink]="rating" routerLinkActive="activeLink"><li>Rating</li></a></div>
+      <div><a [routerLink]="low_to_high" routerLinkActive="activeLink"><li>Cost:Low&nbsp;to&nbsp;High</li></a></div>
+      <div><a [routerLink]="high_to_low" routerLinkActive="activeLink"><li>Cost:High&nbsp;to&nbsp;Low</li></a></div>
+      <div><a [routerLink]="filter" routerLinkActive="activeLink"><li><i class="fa-sharp fa-solid fa-sort"></i>&nbsp;&nbsp;Filters</li></a></div>
+ </nav>
+  </div>
+<div class="contents">
+  <router-outlet></router-outlet>
+</div>
+
+

@@ -1,0 +1,188 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "customerDetails": [
+    {
+      "id": 1,
+      "username": "manikandan",
+      "phonenumber": 6379623737,
+      "password": "@Mani2001",
+      "confirmPassword": "@Mani2001"
+    },
+    {
+      "username": "mani",
+      "phonenumber": 6379623737,
+      "password": "@Mani2001",
+      "ConfirmPassword": "@Mani2001",
+      "id": 2
+    },
+    {
+      "username": "jeeva",
+      "phonenumber": 7904925991,
+      "password": "@Jeeva2001",
+      "ConfirmPassword": "@Jeeva2001",
+      "id": 3
+    }
+  ],
+  "hotelDetails": [
+    {
+      "id": 1,
+      "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
+      "hotelname": "Hotel Maa",
+      "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
+      "timeDel": "30",
+      "Costfortwo": "₹200",
+      "offer": "40% off | Use TRYNEW"
+    },
+    {
+      "id": 2,
+      "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+      "hotelname": "SS HYDERABAD BIRYANI",
+      "dishvariety": "Biryani, South Indian, Seafood",
+      "timeDel": "18",
+      "Costfortwo": "₹350",
+      "offer": "40% off | Use TRYNEW"
+    },
+    {
+      "id": 3,
+      "hotelimage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+      "hotelname": "Barbequeen Restaurant",
+      "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
+      "timeDel": "23",
+      "Costfortwo": "₹350",
+      "offer": "60% off | Use TRYNEW"
+    },
+    {
+      "id": 4,
+      "hotelimage": "./assets/hotelpage/HMR Hotel.webp",
+      "hotelname": "HMR Hotel",
+      "dishvariety": "Briyani, Indian, chinese, Seafood, Tandoori, Mexican",
+      "timeDel": "29",
+      "Costfortwo": "₹300",
+      "offer": "40% off | Use TRYNEW"
+    },
+    {
+      "id": 5,
+      "hotelimage": "./assets/hotelpage/Sree Annapoorna.webp",
+      "hotelname": "Sree Annapoorna",
+      "dishvariety": "Indian, South Indian, North Indian, Chinese, Desserts",
+      "timeDel": "27",
+      "Costfortwo": "₹200",
+      "offer": ""
+    },
+    {
+      "id": 6,
+      "hotelimage": "./assets/hotelpage/Browse N Joy.webp",
+      "hotelname": "Browse N Joy",
+      "dishvariety": "Snacks",
+      "timeDel": "32",
+      "Costfortwo": "₹200",
+      "offer": "20% off | Use TRYNEW"
+    },
+    {
+      "id": 7,
+      "hotelimage": "./assets/hotelpage/Chicking.webp",
+      "hotelname": "Chicking",
+      "dishvariety": "Indian",
+      "timeDel": "33",
+      "Costfortwo": "₹250",
+      "offer": "60% off | Use TRYNEW"
+    },
+    {
+      "id": 8,
+      "hotelimage": "./assets/hotelpage/Sree Annapoorna Sweets & Savouries.webp",
+      "hotelname": "Sree Annapoorna Sweets & Savouries",
+      "dishvariety": "Desserts",
+      "timeDel": "28",
+      "Costfortwo": "₹200",
+      "offer": ""
+    },
+    {
+      "id": 9,
+      "hotelimage": "./assets/hotelpage/Flakes Fried Chicken.webp",
+      "hotelname": "Flakes Fried Chicken",
+      "dishvariety": "Burgers, Desserts",
+      "timeDel": "31",
+      "Costfortwo": "₹350",
+      "offer": ""
+    },
+    {
+      "id": 10,
+      "hotelimage": "./assets/hotelpage/Kaanchan Kitchen's.webp",
+      "hotelname": "Kaanchan Kitchen's",
+      "dishvariety": "North Indian, Thaalis, Chaat, Desserts, Gujarati, South Indian",
+      "timeDel": "35",
+      "Costfortwo": "₹200",
+      "offer": "10% off | Use TRYNEW"
+    },
+    {
+      "id": 11,
+      "hotelimage": "./assets/hotelpage/Oven Story Pizza.jpeg",
+      "hotelname": "Oven Story Pizza",
+      "dishvariety": "Pizzas",
+      "timeDel": "29",
+      "Costfortwo": "₹400",
+      "offer": ""
+    },
+    {
+      "id": 12,
+      "hotelimage": "./assets/hotelpage/Geetha Canteen.webp",
+      "hotelname": "Geetha Canteen",
+      "dishvariety": "South Indian",
+      "timeDel": "23",
+      "Costfortwo": "₹200",
+      "offer": "40% off | Use TRYNEW"
+    },
+    {
+      "id": 13,
+      "hotelimage": "./assets/hotelpage/Shree Anandhaas.webp",
+      "hotelname": "Shree Anandhaas",
+      "dishvariety": "North Indian, South Indian",
+      "timeDel": "16",
+      "Costfortwo": "₹200",
+      "offer": ""
+    },
+    {
+      "id": 14,
+      "hotelimage": "./assets/hotelpage/Ramesh Mess.webp",
+      "hotelname": "Ramesh Mess",
+      "dishvariety": "South Indian",
+      "timeDel": "22",
+      "Costfortwo": "₹200",
+      "offer": ""
+    },
+    {
+      "id": 15,
+      "hotelimage": "./assets/hotelpage/Hotel Sri Krishna.jpeg",
+      "hotelname": "Hotel Sri Krishna",
+      "dishvariety": "South Indian, Indian, Chinese",
+      "timeDel": "27",
+      "Costfortwo": "₹200",
+      "offer": ""
+    },
+    {
+      "id": 16,
+      "hotelimage": "./assets/hotelpage/Chai Kings.webp",
+      "hotelname": "Chai Kings",
+      "dishvariety": "Beverages, Snacks, Bakery",
+      "timeDel": "21",
+      "Costfortwo": "₹150",
+      "offer": "40% off | Use TRYNEW"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

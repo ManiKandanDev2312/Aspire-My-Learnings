@@ -1,0 +1,22 @@
+<div class="background" *ngIf="exit">
+<div class="inner">
+  <div class="topnav">
+    <button class="exit" [routerLink]="link"><i class="fa-solid fa-xmark"></i></button>
+    <h3>Filter</h3>
+  </div>
+  <div class="bottomnav">
+    <button class="clear">CLEAR</button>
+    <button class="show">SHOW RESTAURANTS</button>
+  </div>
+  <h3>cuisines</h3>
+  <div class="flex">
+    <div *ngFor="let varieties of variety"><input type="checkbox"><p>{{varieties}}</p></div>
+  </div>
+  <h3>show restaurants with</h3>
+  <div class="flex1">
+    <div><input type="checkbox"><p class="offers">offers</p></div>
+    <div><input type="checkbox"><p class="veg">pure&nbsp;veg</p></div>
+  </div>
+</div>
+</div>
+

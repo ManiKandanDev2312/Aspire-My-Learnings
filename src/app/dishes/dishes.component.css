@@ -1,0 +1,127 @@
+*{
+  font-family: sans-serif;
+}
+.outer{
+  width: 40%;
+  margin-left: 27%;
+  margin-top: 3%;
+}
+.hotelDetails{
+  border-bottom: 1px dotted gray;
+  width: 100%;
+}
+h1{
+font-size: 1.5vw;
+font-weight: medium;
+}
+h3{
+  margin-top: 0.5%;
+  font-weight: lighter;
+  color: gray;
+  font-size: 0.8vw;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  height: 8vh;
+  width: 10%;
+  margin-left: 90%;
+  margin-top: -8%;
+  margin-bottom: 3%;
+}
+.flex div{
+  border: 0.1px solid rgb(188, 187, 187);
+  height: 50%;
+}
+.flex div h3{
+  font-size: 0.6vw;
+  font-weight: bold;
+  margin-top: 16%;
+  margin-left: 5%;
+}
+.flex div i{
+  font-size: 0.8vw;
+  font-weight: bold;
+  margin-top: 13%;
+  margin-left: 13%;
+  color: green;
+}
+.rating{
+  color: green;
+  font-size: 1vw;
+  margin-left: 45%;
+  margin-top: -25%;
+}
+.fa-clock{
+  font-size: 1.4vw;
+}
+.flex1{
+  margin-top: 2%;
+  display: flex;
+  gap: 7%;
+  margin-bottom: 3%;
+}
+.flex1 h2{
+  font-size: 1.3vw;
+  margin-left: 40%;
+  margin-top: -29%;
+}
+.flex1 h1{
+  font-size: 1.3vw;
+  margin-left: 25%;
+  margin-top: -15.5%;
+}
+.fa-indian-rupee-sign{
+margin-left: 25%;
+font-size: 0.9vw;
+}
+
+.round{
+width: 15%;
+height: 3vh;
+border: 2px solid black;
+border-radius: 50%;
+}
+
+.inner1{
+  border-bottom: 1px dotted gray;
+}
+
+.veg{
+  font-size: 1vw;
+  font-weight: bold;
+  color: black;
+}
+
+
+.rectangle{
+  width: 7%;
+  height: 2vh;
+  border: 1px solid rgb(191, 189, 189);
+  background-color: rgba(224, 219, 219, 0.937);
+  margin-left: 13%;
+  margin-top: -3%;
+}
+.square{
+  height: 2vh;
+  width: 37%;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+.circle{
+  height: 1vh;
+  width: 50%;
+  border-radius: 50%;
+  /* background-color: green; */
+}
+input{
+  margin-top: -220%;
+}
+input:checked + .rectangle{
+  background-color: green;
+}
+/* .rectangle:hover{
+background-color: green;
+} */
+
