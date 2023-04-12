@@ -76,3 +76,28 @@
   top: 40%;
   right: 15%;
 }
+.secondnav{
+display: flex;
+border-bottom: 1px solid gray;
+}
+.secondnav div{
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+.secondnav h3{
+  font-weight: lighter;
+}
+.secondnav a{
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+}
+
+.secondnav a:hover{
+  color: rgb(255, 128, 0);
+}
+
+.activeLink{
+  color:rgb(255, 128, 0);
+}

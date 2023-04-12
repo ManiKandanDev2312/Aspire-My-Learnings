@@ -17,6 +17,8 @@ import { LowToHighComponent } from './low-to-high/low-to-high.component';
 import { RatingComponent } from './rating/rating.component';
 import {HttpClientModule} from '@angular/common/http';
 import { DishesComponent } from './dishes/dishes.component';
+import { ResOffersComponent } from './res-offers/res-offers.component';
+import { PayOffersComponent } from './pay-offers/pay-offers.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { DishesComponent } from './dishes/dishes.component';
     HighToLowComponent,
     LowToHighComponent,
     RatingComponent,
-    DishesComponent
+    DishesComponent,
+    ResOffersComponent,
+    PayOffersComponent
   ],
   imports: [
     BrowserModule,

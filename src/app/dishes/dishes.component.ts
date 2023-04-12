@@ -8,6 +8,7 @@ import { DatabaseService } from '../database.service';
 })
 export class DishesComponent {
   value:any=[];
+
 constructor( private hotelName:DatabaseService){
   this.readDetails();
 }

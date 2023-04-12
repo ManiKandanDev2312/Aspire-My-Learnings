@@ -9,8 +9,10 @@ import { HighToLowComponent } from './high-to-low/high-to-low.component';
 import { HomeComponent } from './home/home.component';
 import { LowToHighComponent } from './low-to-high/low-to-high.component';
 import { OffersComponent } from './offers/offers.component';
+import { PayOffersComponent } from './pay-offers/pay-offers.component';
 import { RatingComponent } from './rating/rating.component';
 import { RelevanceComponent } from './relevance/relevance.component';
+import { ResOffersComponent } from './res-offers/res-offers.component';
 
 import { SearchComponent } from './search/search.component';
 
@@ -55,7 +57,17 @@ const routes: Routes = [
 },
 {
   path:"offers",
-  component:OffersComponent
+  component:OffersComponent,
+  children:[
+    {
+      path:"offers",
+      component:ResOffersComponent
+    },
+    {
+      path:"PayOffers",
+      component:PayOffersComponent
+    }
+  ]
 },
 {
   path:"cart",
