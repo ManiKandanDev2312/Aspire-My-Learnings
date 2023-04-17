@@ -22,18 +22,32 @@
       "confirmPassword": "@Mani2001"
     },
     {
-      "username": "mani",
+      "username": "Manikandan",
       "phonenumber": 6379623737,
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "id": 2
     },
     {
-      "username": "jeeva",
-      "phonenumber": 7904925991,
-      "password": "@Jeeva2001",
-      "ConfirmPassword": "@Jeeva2001",
+      "username": "mani",
+      "phonenumber": 6379623739,
+      "password": "@Mani2001",
+      "ConfirmPassword": "@Mani2001",
       "id": 3
+    },
+    {
+      "username": "harish",
+      "phonenumber": 9874563215,
+      "password": "@Mani2001",
+      "ConfirmPassword": "@Mani2001",
+      "id": 4
+    },
+    {
+      "username": "padma",
+      "phonenumber": 6547893215,
+      "password": "@Mani2001",
+      "ConfirmPassword": "@Mani2001",
+      "id": 5
     }
   ],
   "hotelDetails": [

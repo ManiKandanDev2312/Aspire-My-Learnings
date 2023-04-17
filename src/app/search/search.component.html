@@ -5,8 +5,8 @@
   <div class="items">
 <form>
   <div class="form-control">
-    <input type="text" placeholder="Search for restaurants and foods" [(ngModel)]="hotelName">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="Search for restaurants and foods" name="hotelName" [(ngModel)]="hotelName">
+    <i class="fa-solid fa-magnifying-glass" ></i>
     <i class="fa-solid fa-xmark"></i>
   </div>
 </form>
@@ -14,41 +14,17 @@
   <div class="items">
     <h3>Recent Searches</h3>
     <h3 class="more">SHOW MORE</h3>
-    <div class="recents" *ngFor="let arrays of array">
+    <div class="recents" *ngFor="let hotelName of hotelNameFinal">
       <i class="fa-solid fa-magnifying-glass"></i>
-      <h3>{{arrays}}</h3>
+      <h3>{{hotelName}}</h3>
     </div>
   </div>
   <div class="items">
     <h4>Popular Cuisines</h4>
     </div>
     <div class="items">
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img1.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img2.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img3.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img4.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img5.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img6.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img7.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img8.webp" alt="">
-      </div>
-      <div class="images">
-        <img src="./assets/Popular_Cuisines/img9.webp" alt="">
+      <div class="images" *ngFor="let cuisine of cuisines">
+        <img src="{{cuisine}}" alt="">
       </div>
     </div>
   </div>

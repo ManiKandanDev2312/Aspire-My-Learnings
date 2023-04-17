@@ -55,7 +55,7 @@ passCheck(){
 saveData(){
 this.data_ser.save_data(this.register.value).subscribe(x=>{
   console.log(x);
-});
+})
 this.exit=false;
 }
 
