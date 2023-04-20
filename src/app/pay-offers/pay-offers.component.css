@@ -3,95 +3,104 @@
   font-family: sans-serif;
 }
 .hotel{
-  display: flex;
-  flex-wrap: wrap;
   width: 90%;
   margin-left: 6%;
-  gap: 2%;
+  margin-top: 5%;
+}
+.coupons{
+  display: flex;
+  width: 100%;
+  margin-left: 3%;
+  flex-wrap: wrap;
 }
 .hotels{
-   cursor: pointer;
-   width: 23%;
-   margin-top: 2%;
+   margin-top: 1%;
+   border: 1px solid rgb(81, 80, 80);
+   width: 27%;
+   margin-left: 2%;
 }
-h4{
-  font-weight: bold;
-  margin-left: 4%;
-  margin-top: -3%;
+h1{
+  font-size: 2vw;
+  margin: 3% 0% 1% 5%;
+}
+.couponName{
+  width: 50%;
+  height: 5vh;
+  margin-top: 8%;
+  margin-left: 8%;
+  background: rgb(249, 249, 183);
+  border: 1px solid lightcoral;
+}
+.couponName img{
+  width: 10%;
+  height: 4vh;
+  margin-top: 2%;
+  margin-left: 8%;
+}
+.couponName h3{
+  margin-left: 23%;
+  margin-top: -13%;
   font-size: 1vw;
 }
-h5{
-  font-weight: lighter;
-  color: gray;
-  font-size: 0.8vw;
-  margin-left: 4%;
-  margin-top: 2%;
-}
-.hotels img{
-  width: 90%;
-  height:170px;
-  margin: 5%;
-}
-.offer{
-  display: flex;
-  border-bottom: 1px solid gray;
-  width: 88%;
-  gap: 30px;
-  align-items: center;
-  margin: 4%;
-}
-.offer div{
-  width: 50px;
-  height: 30px;
-}
-.rating{
-  background-color: rgb(17, 202, 17);
-  margin: 2%;
-}
-.time h5{
-margin-top: 10%;
-}
-.rate h5{
-  margin-top: 10%;
-}
-.offer_1{
-  margin-left: 4%;
-  width: 88%;
-  height: 4vh;
-  border-bottom: 1px solid gray;
-}
-.offer_1 i{
-  margin-left: 2%;
-  color: rgb(191, 28, 28);
-}
-.offer_1 h4{
-  margin-left: 10%;
-  margin-top: -7%;
-  width: 70%;
-  font-weight: lighter;
-  color: rgb(191, 28, 28);
-}
-.view{
-  text-align: center;
-  margin-top: 5%;
-  font-size: 0.8vw;
-  height: 5vh;
-  font-weight: medium;
-  width: 90%;
-  color: rgb(0, 166, 255);
-  visibility: hidden;
-  cursor: pointer;
+
+h4{
+  font-size: 0.9vw;
+  margin-left: 8%;
+  margin-top: 6%;
+  margin-right: 5%;
+  color: rgb(81, 80, 80);
 }
 
-.hotels:hover{
-  border: 1px solid gray;
-  box-shadow: 0.5px 0.5px 2.5px 0.5px rgba(0, 0,0,1);
+h5{
+  font-size: 0.8vw;
+  color: gray;
+  font-weight: lighter;
+  margin-left: 8%;
+  margin-top: 4%;
+  margin-right: 5%;
 }
-.hotels:hover .view{
-  visibility: visible;
+
+h2{
+  font-size: 1vw;
+  color: rgb(76, 76, 242);
+  margin-left: 8%;
+  margin-top: 4%;
+  cursor: pointer;
+  margin-bottom: 4%;
 }
-.rating i{
-  margin-top: 12%;
+
+button{
+  background-color: white;
+  color: rgb(255, 128, 0);
+  border: 1px solid rgb(255, 128, 0);
+  font-size: 0.9vw;
+  margin-left: 8%;
+  margin-top: 2%;
+  font-weight: bold;
+  height: 5vh;
+  width: 30%;
+  margin-bottom: 8%;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0.2px 0.2px 1.5px 1.2px rgba(0, 0,0,0.3);
+}
+.bankimage{
+  width: 20%;
+  height: 10vh;
+  margin-top: 5%;
   margin-left: 5%;
-  color: white;
 }
+.bankAppcode{
+  margin-top: -20%;
+  margin-left: 30%;
+}
+.bankofferDesc{
+  margin-left: 30%;
+}
+
+.more{
+  margin-left: 30%;
+  margin-top: 4%;
+}
+

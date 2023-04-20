@@ -7,45 +7,33 @@ import { DatabaseService } from '../database.service';
   styleUrls: ['./pay-offers.component.css']
 })
 export class PayOffersComponent {
-  dummyArray:any=[];
-  hotelCount=0;
-  realTime:any=[];
+val:any=[];
+available:any=[];
+unavailable:any=[];
+bankOffers:any=[];
+a:number=0;
+u:number=0;
+b:number=0;
 constructor(private delTime:DatabaseService){
 this.read_deltime();
 }
 
 read_deltime(){
-  this.delTime.read_hotels().subscribe(x=>{
-    this.dummyArray=x;
-    this.hotelCount=this.dummyArray.length;
-    var del=[];
-    var del1=[];
-    for(var i=0;i< this.hotelCount;i++){
-       del[i]=this.dummyArray[i].offer;
-       del1[i]=del[i];
-    }
-    // del=del.sort();
-    for(var i=0;i< this.hotelCount;i++){
-      for(var j=0;j< this.hotelCount;j++){
-        if(del[i]==""){
-          del[i]="cleared";
-        }
+  this.delTime.read_Offers().subscribe((x:any)=>{
+    this.val=x;
+    for(var i=0;i<this.val.length;i++){
+      if(this.val[i].Coupons=="Available Coupons"){
+        this.available[this.a++]=this.val[i];
+      }
+      else if(this.val[i].Coupons=="Bank Offers"){
+        this.bankOffers[this.b++]=this.val[i];
+      }
+      else{
+        this.unavailable[this.u++]=this.val[i];
       }
     }
-    console.log(del);
-    var m=0;
-    for(var i=0;i< this.hotelCount;i++){
-      var index=0;
-      for(var j=0;j< this.hotelCount;j++){
-        if(del[i]==del1[i]){
-          index=del1.indexOf(del[i]);
-          del1[index]="";
-          this.realTime[m++]=this.dummyArray[index];
-          break;
-        }
-      }
-    }
-    // console.log(this.realTime);
-});
+  });
 }
+
+
 }

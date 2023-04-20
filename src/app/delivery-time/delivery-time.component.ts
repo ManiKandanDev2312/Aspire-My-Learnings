@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 @Component({
   selector: 'app-delivery-time',
@@ -9,7 +10,7 @@ export class DeliveryTimeComponent {
   dummyArray:any=[];
   hotelCount=0;
   realTime:any=[];
-constructor(private delTime:DatabaseService){
+constructor(private delTime:DatabaseService, private router:Router){
 this.read_deltime();
 }
 
@@ -36,5 +37,10 @@ read_deltime(){
       }
     }
 });
+}
+
+sendHotel(index:any){
+  this.delTime.getHotelName(this.realTime[index]);
+  this.router.navigateByUrl("/dishPage");
 }
 }

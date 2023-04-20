@@ -19,7 +19,10 @@
       "username": "manikandan",
       "phonenumber": 6379623737,
       "password": "@Mani2001",
-      "confirmPassword": "@Mani2001"
+      "confirmPassword": "@Mani2001",
+      "search": [
+        "Geetha Canteen"
+      ]
     },
     {
       "username": "Manikandan",
@@ -48,6 +51,250 @@
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "id": 5
+    },
+    {
+      "username": "Dhanush",
+      "phonenumber": 6379630065,
+      "password": "@Dhanu2004",
+      "ConfirmPassword": "@Dhanu2004"
+    }
+  ],
+  "Offers": [
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/paytm.webp",
+      "AppCode": "PAYTMFEST",
+      "offerDesc1": "Get assured cashback between ₹25 to ₹100 using Paytm wallet",
+      "offerDesc2": "Assured cashback between ₹25 to ₹100 on Paytm wallet transactions above ₹399",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/HSB.webp",
+      "AppCode": "HSBCFEST",
+      "offerDesc1": "Get 15% discount using HSBC Credit Cards",
+      "offerDesc2": "Maximum discount up to ₹100 on orders above ₹499",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/AUD.webp",
+      "AppCode": "AUDC100",
+      "offerDesc1": "Get flat ₹100 discount using AU Debit Cards",
+      "offerDesc2": "Maximum discount up to ₹100 on orders above ₹299",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/FED.webp",
+      "AppCode": "FEDERALCC",
+      "offerDesc1": "Get 20% discount using Federal Bank Credit Cards",
+      "offerDesc2": "Maximum discount up to ₹120 on orders above ₹249",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/AUC.webp",
+      "AppCode": "AUCC100",
+      "offerDesc1": "Get flat ₹100 discount using AU Credit Cards",
+      "offerDesc2": "Maximum discount of ₹100 on orders above ₹399",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/Avail.webp",
+      "AppCode": "AXIS200",
+      "offerDesc1": "Get 40% discount using Axis Bank Select Credit Cards",
+      "offerDesc2": "Maximum discount up to ₹200 on orders above ₹400",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/Avail.webp",
+      "AppCode": "AXIS40",
+      "offerDesc1": "Get 40% discount using Axis Bank My Zone Credit Cards",
+      "offerDesc2": "Maximum discount up to ₹120 on orders above ₹200",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/Avail.webp",
+      "AppCode": "150AXIS",
+      "offerDesc1": "Get 25% discount using Axis Bank Delight Debit Cards",
+      "offerDesc2": "Maximum discount up to ₹150 on orders above ₹400",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/MBK.webp",
+      "AppCode": "MBK25",
+      "offerDesc1": "Get flat ₹25 cashback using MobiKwik wallet",
+      "offerDesc2": "Flat cashback of ₹25 on MobiKwik transactions above ₹249",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Available Coupons",
+      "AppImage": "./assets/Avail.webp",
+      "AppCode": "AXIS100",
+      "offerDesc1": "Get flat ₹100 discount using Axis Bank Prepaid & Transit Cards",
+      "offerDesc2": "Flat ₹100 discount on orders above ₹299",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "unAvailable Coupons",
+      "AppImage": "./assets/KOTAK.webp",
+      "AppCode": "KOTAK125",
+      "offerDesc1": "Get 20% discount using Kotak Bank Debit Cards",
+      "offerDesc2": "Maximum discount up to ₹125 on orders above ₹500",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "unAvailable Coupons",
+      "AppImage": "./assets/ICICI.webp",
+      "AppCode": "ICICIFEST",
+      "offerDesc1": "Get 20% discount using selective ICICI Bank Credit Cards",
+      "offerDesc2": "Maximum discount up to ₹150 on orders above ₹600",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Bank Offers",
+      "AppImage": "./assets/pay.webp",
+      "AppCode": "Get up to 2% Cashback",
+      "offerDesc": "Unlimited 2% cashback for Amazon Prime customers & Unlimited 1% cashback for Non-Prime customers",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Bank Offers",
+      "AppImage": "./assets/Axis.webp",
+      "AppCode": "Get up to 2% Cashback",
+      "offerDesc": "Unlimited 2% cashback for Amazon Prime customers & Unlimited 1% cashback for Non-Prime customers",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Bank Offers",
+      "AppImage": "./assets/Avail.webp",
+      "AppCode": "Get up to 2% Cashback",
+      "offerDesc": "Unlimited 2% cashback for Amazon Prime customers & Unlimited 1% cashback for Non-Prime customers",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
+    },
+    {
+      "Coupons": "Bank Offers",
+      "AppImage": "./assets/Flip.webp",
+      "AppCode": "Get up to 2% Cashback",
+      "offerDesc": "Unlimited 2% cashback for Amazon Prime customers & Unlimited 1% cashback for Non-Prime customers",
+      "terms": [
+        "Applicable twice per user during the campaign",
+        "Valid on the net transaction amount of ₹399 using the Paytm wallet",
+        "Cashback will be available in the form of a scratch card to your Paytm account within 24 hours",
+        "Avail Cashback through a scratch card on your Paytm app in the Cashback & Offers section within 7 days.",
+        "Other T&Cs may apply",
+        "Offer valid till Apr 30, 2023 11:59 PM"
+      ]
     }
   ],
   "hotelDetails": [

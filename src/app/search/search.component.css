@@ -62,3 +62,37 @@ h3{
   margin-left: 80%;
   margin-top: -1%;
 }
+.searchItem{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 100%;
+  margin-left: 0;
+  height: 13vh;
+}
+.searchItem img{
+  width: 7%;
+  height: 10vh;
+  margin: 1%;
+  border-radius: 10px;
+}
+.searchItem h4{
+  margin-top: -8%;
+  margin-left: 10%;
+  font-size: 1vw;
+  font-weight: lighter;
+}
+.searchItem h5{
+  margin-left: 10%;
+  margin-top: 1%;
+  color: gray;
+  font-size: 1vw;
+  font-weight: lighter;
+}
+.searchItem:hover{
+  background-color:hsla(180,100%,50%,0.1);
+}
+.error{
+  font-size: 1vw;
+  font-weight: lighter;
+}

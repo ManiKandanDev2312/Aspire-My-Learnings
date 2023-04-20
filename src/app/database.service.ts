@@ -11,6 +11,10 @@ export class DatabaseService {
   username:string="";
   checkMob:number=0;
   userMob:number=0;
+  dummy:any;
+  dummy1:any;
+  dummy2:any;
+  islogged:boolean=false;
   constructor(private http:HttpClient) {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const check=x.find((Umob:any)=>{
@@ -22,7 +26,7 @@ export class DatabaseService {
 
 
   save_data(data:any){
-    console.log(data);
+    // console.log(data);
     this.userMob=data.phonenumber;
     if(data.phonenumber==this.checkMob){
       alert("this number is already taken");
@@ -39,11 +43,14 @@ export class DatabaseService {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const data=x.find((log:any)=>{
         this.name=log.username;
+        this.userMob=log.phonenumber;
         return log.phonenumber===phone && log.password===pass;
       });
 
       if(data){
         this.username=this.name;
+        this.islogged=true;
+        this.read_search();
         return alert("login successfull");
       }
       else{
@@ -68,18 +75,35 @@ export class DatabaseService {
 
 
   sendUserName(){
-    console.log(this.username);
+    // console.log(this.username);
     return this.username;
   }
 
-  update_data(){
-    var array=["mani","jeeva","harish"];
-    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob,array).subscribe(x=>{
-      alert("added successfully");
+
+  read_Offers(){
+    return this.http.get("http://localhost:3000/Offers");
+  }
+
+  get_search(search:any){
+    // console.log(search);
+    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob,{search:search});
+  }
+
+  read_search(){
+    this.http.get<any>("http://localhost:3000/customerDetails").subscribe(x=>{
+      this.dummy=x.find((log:any)=>{
+        this.dummy1=log.search;
+        return this.userMob==log.phonenumber;
+      })
+      if(this.dummy){
+        this.dummy2=this.dummy1;
+        // console.log(this.dummy2);
+      }
     });
   }
 
-  // search(hotelName:any){
-  //   this.http.put("http://localhost:3000/hotelDetails")
-  // }
+  send_search(){
+    // console.log(this.dummy2);
+    return this.dummy2;
+  }
 }

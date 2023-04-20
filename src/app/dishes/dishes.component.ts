@@ -14,5 +14,6 @@ constructor( private hotelName:DatabaseService){
 }
 readDetails(){
 this.value=this.hotelName.sendHotelName();
+console.log(this.value);
 }
 }

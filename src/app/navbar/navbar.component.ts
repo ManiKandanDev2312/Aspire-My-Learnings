@@ -57,12 +57,14 @@ this.data_ser.save_data(this.register.value).subscribe(x=>{
   console.log(x);
 })
 this.exit=false;
+this.register.reset();
 }
 
 sendData(){
   this.data_ser.read_data(this.login.controls['loginPhoneNumber'].value,this.login.controls['loginPassword'].value);
   this.exit=false;
    setTimeout(()=>{this.userName()},3000);
+   this.register.reset();
 }
 
 userName(){

@@ -1,19 +1,45 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <div class="hotel">
-  <div class="hotels" *ngFor="let realTimes of realTime">
-    <img src="{{realTimes.hotelimage}}" alt="">
-    <h4>{{realTimes.hotelname}}</h4>
-    <h5>{{realTimes.dishvariety}}</h5>
-    <div class="offer">
-      <div class="rating"><i class="fa-solid fa-star"></i></div>
-      <div class="time"><h5>{{realTimes.timeDel}}&nbsp;MINS</h5></div>
-      <div class="rate"><h5>{{realTimes.Costfortwo}}&nbsp;FOR&nbsp;TWO</h5></div>
+  <h1>Available Coupons</h1>
+  <div class="coupons">
+    <div class="hotels" *ngFor="let values of available">
+      <div class="couponName">
+        <img src="{{values.AppImage}}" alt="">
+        <h3>{{values.AppCode}}</h3>
+      </div>
+      <h4>{{values.offerDesc1}}</h4>
+      <h5>{{values.offerDesc2}}</h5>
+
+      <h2>+ MORE</h2>
+
+      <button>COPY CODE</button>
     </div>
-    <div class="offer_1" *ngIf="realTimes.offer.length>=1">
-      <i class="fa-solid fa-percent"></i>
-      <h4>{{realTimes.offer}}</h4>
+  </div>
+
+  <h1>UnAvailable Coupons</h1>
+  <div class="coupons">
+    <div class="hotels" *ngFor="let values of unavailable">
+      <div class="couponName">
+        <img src="{{values.AppImage}}" alt="">
+        <h3>{{values.AppCode}}</h3>
+      </div>
+      <h4>{{values.offerDesc1}}</h4>
+      <h5>{{values.offerDesc2}}</h5>
+
+      <h2>+ MORE</h2>
+
+      <button>COPY CODE</button>
     </div>
-    <h4 class="view">QUICK VIEW</h4>
+  </div>
+
+  <h1>Bank Offers</h1>
+  <div class="coupons">
+    <div class="hotels" *ngFor="let values of bankOffers">
+        <img src="{{values.AppImage}}" alt="" class="bankimage">
+        <h3 class="bankAppcode">{{values.AppCode}}</h3>
+        <h5 class="bankofferDesc">{{values.offerDesc}}</h5>
+      <h2 class="more">+ MORE</h2>
+    </div>
   </div>
 </div>

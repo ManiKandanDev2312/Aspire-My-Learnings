@@ -20,6 +20,7 @@ readhotels(){
   this.hotel.read_hotels().subscribe((x:any)=>{
     this.val=x;
 })
+// console.log(this.val);
 };
 
 
