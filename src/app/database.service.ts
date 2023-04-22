@@ -85,7 +85,7 @@ export class DatabaseService {
   }
 
   get_search(search:any){
-    // console.log(search);
+    console.log(search);
     return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob,{search:search});
   }
 

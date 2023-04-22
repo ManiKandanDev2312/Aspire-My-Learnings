@@ -46,7 +46,6 @@ read_deltime(){
         }
       }
     }
-    // console.log(this.realTime);
 });
 }
 

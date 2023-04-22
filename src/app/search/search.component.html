@@ -7,7 +7,7 @@
   <div class="form-control">
     <form [formGroup]="hotel">
     <input type="text" placeholder="Search for restaurants and foods" formControlName="hotelname" [(ngModel)]="hotelName">
-    <i class="fa-solid fa-magnifying-glass"  (click)="searchData()" *ngIf="issearched"></i>
+    <i class="fa-solid fa-magnifying-glass" *ngIf="issearched"></i>
     <i class="fa-solid fa-xmark" *ngIf="ishotelName"></i>
   </form>
   </div>
@@ -16,7 +16,7 @@
   <div class="items" *ngIf="issearched">
     <h3>Recent Searches</h3>
     <h3 class="more" >SHOW MORE</h3>
-    <div class="recents" *ngFor="let hotelName of data1">
+    <div class="recents" *ngFor="let hotelName of data">
       <i class="fa-solid fa-magnifying-glass"></i>
       <h3>{{hotelName}}</h3>
     </div>

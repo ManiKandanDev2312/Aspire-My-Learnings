@@ -21,42 +21,18 @@
       "password": "@Mani2001",
       "confirmPassword": "@Mani2001",
       "search": [
-        "Geetha Canteen"
+        "Sree Annapoorna Sweets & Savouries"
       ]
-    },
-    {
-      "username": "Manikandan",
-      "phonenumber": 6379623737,
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001",
-      "id": 2
-    },
-    {
-      "username": "mani",
-      "phonenumber": 6379623739,
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001",
-      "id": 3
-    },
-    {
-      "username": "harish",
-      "phonenumber": 9874563215,
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001",
-      "id": 4
-    },
-    {
-      "username": "padma",
-      "phonenumber": 6547893215,
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001",
-      "id": 5
     },
     {
       "username": "Dhanush",
       "phonenumber": 6379630065,
       "password": "@Dhanu2004",
-      "ConfirmPassword": "@Dhanu2004"
+      "ConfirmPassword": "@Dhanu2004",
+      "id": 2,
+      "search": [
+        "Sree Annapoorna"
+      ]
     }
   ],
   "Offers": [
