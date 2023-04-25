@@ -60,32 +60,6 @@ this.data=this.search.send_search();
   })
 }
 
-
-
-// searchData(){
-//   if(this.dummy==5){
-//     this.dummy=0;
-//   }
-//     this.hotelNameArray[this.dummy++]=this.hotelName;
-//     this.search.get_search(this.hotelNameArray).subscribe(x=>{
-//       // console.log(x);
-//     });
-//     setInterval(()=>{
-//       this.get_data();
-//     },3000);
-
-// }
-// get_data(){
-//   this.data=this.search.read_search();
-//   setInterval(()=>{
-//     this.get_search();
-//   },3000);
-// }
-// get_search(){
-//   this.data1=this.search.send_search();
-// }
-
-
 searchHotel(Hname:string){
   this.issearched=false;
   this.ishotelName=true;

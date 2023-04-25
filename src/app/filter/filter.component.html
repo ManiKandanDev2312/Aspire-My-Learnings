@@ -10,7 +10,7 @@
   </div>
   <h3>cuisines</h3>
   <div class="flex">
-    <div *ngFor="let varieties of variety"><input type="checkbox"><p>{{varieties}}</p></div>
+    <div *ngFor="let varieties of variety; let ind=index" (click)="varietyName(ind)"><input type="checkbox"><p>{{varieties}}</p></div>
   </div>
   <h3>show restaurants with</h3>
   <div class="flex1">

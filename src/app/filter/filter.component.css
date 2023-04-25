@@ -82,11 +82,14 @@ h3{
   margin-left: 7%;
   margin-top: 1%;
   display: flex;
-  gap: 35%;
+  overflow-y: scroll;
+  height: 50vh;
+  gap: 2%;
   flex-wrap: wrap;
 }
 .flex div{
   margin-bottom: 2%;
+  margin-left: 10%;
   width: 30%;
   height: 5vh;
 }

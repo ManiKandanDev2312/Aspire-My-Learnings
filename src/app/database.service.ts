@@ -7,14 +7,22 @@ import { HttpClient } from "@angular/common/http";
 })
 export class DatabaseService {
   Array:any=[];
+  Array1:any=[];
   name:string="";
   username:string="";
   checkMob:number=0;
   userMob:number=0;
+  demo:any=[];
   dummy:any;
   dummy1:any;
   dummy2:any;
+  variety:any=[];
+  varietydish:any=[];
+  varietyfood:any=[];
+  mani:any=[];
+  array:any=[];
   islogged:boolean=false;
+  s:number=0;
   constructor(private http:HttpClient) {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const check=x.find((Umob:any)=>{
@@ -66,7 +74,6 @@ export class DatabaseService {
 
   getHotelName(data:any){
     this.Array=data;
-    // console.log(data);
   }
 
   sendHotelName(){
@@ -75,7 +82,6 @@ export class DatabaseService {
 
 
   sendUserName(){
-    // console.log(this.username);
     return this.username;
   }
 
@@ -97,13 +103,37 @@ export class DatabaseService {
       })
       if(this.dummy){
         this.dummy2=this.dummy1;
-        // console.log(this.dummy2);
       }
     });
   }
 
   send_search(){
-    // console.log(this.dummy2);
     return this.dummy2;
+  }
+  send_variety(){
+    this.http.get("http://localhost:3000/hotelDetails").subscribe(x=>{
+      this.demo=x;
+      for(var i=0;i<this.demo.length;i++){
+        this.variety[i]=this.demo[i].dishvariety;
+        var str=this.variety[i];
+        this.varietydish[i]=str.split(", ");
+
+      }
+      for(var i=0;i<this.varietydish.length;i++){
+        this.array=this.varietydish[i];
+         if(this.array.length==1){
+          if(!this.varietyfood.includes(this.array[0]))
+          this.varietyfood[this.s++]=this.array[0];
+        }
+        else{
+          for(var j=0; j<this.array.length;j++)
+            {
+              if(!this.varietyfood.includes(this.array[j]))
+              this.varietyfood[this.s++]=this.array[j];
+            }
+        }
+      }
+    });
+    return this.varietyfood;
   }
 }
