@@ -14,7 +14,7 @@
         </div>
         <div *ngIf="user"> <li><i class="fa-sharp fa-regular fa-user"></i>&nbsp;&nbsp;{{username}}</li>
         </div>
-        <div> <li> <a [routerLink]="cart" routerLinkActive="activeLink">&nbsp;&nbsp;Cart</a></li>
+        <div> <li><div class="cartFlex"><div [ngClass]="iscart?'colored':'circle'" id="circle"><h4 id="count" [ngClass]="iscart?'cartCountTrue':'cartCountfalse'">{{cartCount}}</h4></div> <div><a [routerLink]="cart" routerLinkActive="activeLink" class="cart">&nbsp;cart</a></div></div></li>
         </div>
       </nav>
     </div>

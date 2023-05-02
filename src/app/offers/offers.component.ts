@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./offers.component.css']
 })
 export class OffersComponent {
-  ResOffers:string="offers";
+  ResOffers:string="resoffers";
   PayOffers:string="PayOffers";
-  constructor(){}
+  constructor(){
+
+  }
 }

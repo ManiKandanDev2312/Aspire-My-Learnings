@@ -69,6 +69,7 @@ h3{
   width: 100%;
   margin-left: 0;
   height: 13vh;
+  cursor: pointer;
 }
 .searchItem img{
   width: 7%;

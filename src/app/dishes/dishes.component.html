@@ -32,3 +32,13 @@
 </div>
 
 
+<div class="dish">
+  <div class="dishes" *ngFor="let dishes of dishArray;let ind=index">
+    <h2>{{dishes.dishName}}</h2>
+    <h4>₹ {{dishes.dishPrice}}</h4>
+    <h5>{{dishes.dishDescription}}</h5>
+    <img src="{{dishes.dishImage}}" alt="juice">
+    <button class="add" (click)="cartItems(ind)">ADD</button>
+    <!-- <div class="cart"><button class="minus">-</button><h3 class="count">1</h3><button class="plus">+</button></div> -->
+  </div>
+</div>

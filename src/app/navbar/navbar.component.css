@@ -27,6 +27,7 @@
   display: flex;
   margin-left: -100%;
   gap: 10%;
+  position: relative;
 }
 nav li{
  display: inline;
@@ -228,4 +229,38 @@ p{
 
 .invalid{
   color: red;
+}
+
+.cartFlex{
+  display: flex;
+  width: 120%;
+}
+
+.circle{
+  width: 100%;
+  height: 4vh;
+  margin-right: 2%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.cartCountfalse{
+  margin-left: 25%;
+  margin-top: 30%;
+  font-size: 1vw;
+}
+
+.cartCountTrue{
+  margin-left: 25%;
+  margin-top: 30%;
+  color: white;
+  font-size: 1vw;
+}
+
+.colored{
+  width: 100%;
+  height: 4vh;
+  margin-right: 2%;
+  border-radius: 50%;
+  background-color: rgb(255, 128, 0);
 }

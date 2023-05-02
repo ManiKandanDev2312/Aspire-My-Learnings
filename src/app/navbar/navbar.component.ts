@@ -20,7 +20,7 @@ signup:boolean=false;
 exit:boolean=false;
 register:FormGroup;
 login:FormGroup;
-username:string="";
+username:any;
 error:boolean=false;
 showLabel:boolean=true;
 user:boolean=false;
@@ -28,6 +28,9 @@ loginuser:boolean=true;
 passwordCheck="";
 confiPasswordCheck="";
 
+cartitems:any=[];
+cartCount:number=0;
+iscart:boolean=false;
 constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router){
   this.login=fb.group({
     loginPhoneNumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
@@ -38,6 +41,18 @@ constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Rou
     phonenumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
     password:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
     ConfirmPassword:['',[Validators.required,Validators.minLength(8)]]});
+
+    setInterval(()=>{
+      this.cartitems=this.data_ser.sendCart();
+      this.cartCount=this.cartitems.length;
+      if(this.cartCount>=1){
+        this.iscart=true;
+      }
+      else{
+        this.iscart=false;
+      }
+    },2000);
+
 }
 
 passCheck(){
@@ -58,6 +73,7 @@ this.data_ser.save_data(this.register.value).subscribe(x=>{
 })
 this.exit=false;
 this.register.reset();
+this.login.reset();
 }
 
 sendData(){
@@ -65,15 +81,18 @@ sendData(){
   this.exit=false;
    setTimeout(()=>{this.userName()},3000);
    this.register.reset();
+   this.login.reset();
 }
 
 userName(){
-  this.username=this.data_ser.sendUserName();
+  this.username=localStorage.getItem('isusername');
   this.user=true;
   this.loginuser=false;
 }
 close(){
   this.exit=false;
+  this.login.reset();
+  this.register.reset();
 }
 signUp(){
   this.signin=false;

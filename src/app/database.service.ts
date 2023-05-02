@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Router } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 
 @Injectable({
@@ -22,8 +25,9 @@ export class DatabaseService {
   mani:any=[];
   array:any=[];
   islogged:boolean=false;
+  itemArray:any=[];
   s:number=0;
-  constructor(private http:HttpClient) {
+  constructor(private http:HttpClient, private router:Router) {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const check=x.find((Umob:any)=>{
         this.checkMob=Umob.phonenumber;
@@ -59,6 +63,8 @@ export class DatabaseService {
         this.username=this.name;
         this.islogged=true;
         this.read_search();
+        localStorage.setItem('isentered','true');
+        localStorage.setItem('isusername',this.username);
         return alert("login successfull");
       }
       else{
@@ -115,6 +121,7 @@ export class DatabaseService {
       this.demo=x;
       for(var i=0;i<this.demo.length;i++){
         this.variety[i]=this.demo[i].dishvariety;
+        // console.log(this.variety[i]);
         var str=this.variety[i];
         this.varietydish[i]=str.split(", ");
 
@@ -135,5 +142,14 @@ export class DatabaseService {
       }
     });
     return this.varietyfood;
+  }
+
+
+  getCart(dish:any){
+   this.itemArray=dish;
+  }
+
+  sendCart(){
+    return this.itemArray;
   }
 }

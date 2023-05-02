@@ -21,7 +21,9 @@
       "password": "@Mani2001",
       "confirmPassword": "@Mani2001",
       "search": [
-        "Sree Annapoorna Sweets & Savouries"
+        "Sree Annapoorna Sweets & Savouries",
+        "Geetha Canteen",
+        "Chicking"
       ]
     },
     {
@@ -98,7 +100,7 @@
     },
     {
       "Coupons": "Available Coupons",
-      "AppImage": "./assets/AUC.webp",
+      "AppImage": "./assets/AUD.webp",
       "AppCode": "AUCC100",
       "offerDesc1": "Get flat ₹100 discount using AU Credit Cards",
       "offerDesc2": "Maximum discount of ₹100 on orders above ₹399",
@@ -281,7 +283,44 @@
       "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
       "timeDel": "30",
       "Costfortwo": "₹200",
-      "offer": "40% off | Use TRYNEW"
+      "offer": "40% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 2,
@@ -290,7 +329,44 @@
       "dishvariety": "Biryani, South Indian, Seafood",
       "timeDel": "18",
       "Costfortwo": "₹350",
-      "offer": "40% off | Use TRYNEW"
+      "offer": "40% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 3,

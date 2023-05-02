@@ -13,11 +13,10 @@ export class SearchComponent {
   cuisines=["./assets/Popular_Cuisines/img1.webp","./assets/Popular_Cuisines/img2.webp","./assets/Popular_Cuisines/img3.webp",
 "./assets/Popular_Cuisines/img4.webp","./assets/Popular_Cuisines/img5.webp","./assets/Popular_Cuisines/img6.webp",
 "./assets/Popular_Cuisines/img7.webp","./assets/Popular_Cuisines/img8.webp","./assets/Popular_Cuisines/img9.webp"];
-// dummy:number=0;
+
 hotelNameArray:any=[];
 data:any=[];
-// data1:any;
-// data2:any;
+
 array:any=[];
 array2:any=[];
 finalArray:any=[];
@@ -33,10 +32,7 @@ constructor(private search:DatabaseService ,hn:FormBuilder, private router:Route
   this.search.read_hotels().subscribe((x)=>{
     this.array=x;
  });
-//   this.search.send_search().subscribe((x:any)=>{
-//     this.data=x;
-//     console.log(this.data);
-//  });
+
 
 this.data=this.search.send_search();
 
@@ -69,8 +65,9 @@ searchHotel(Hname:string){
     this.originalArray[i]=this.array[i].hotelname;
   }
   for(var i=0; i< this.array.length; i++){
-    var str=this.originalArray[i];
-   if(str.includes(Hname)){
+    var str=this.originalArray[i].toLowerCase();
+    var str1=Hname.toLowerCase();
+   if(str.includes(str1)){
    this.array2[s++]=this.array[i];
    }
   }

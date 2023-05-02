@@ -8,6 +8,7 @@ import { HelpComponent } from './help/help.component';
 import { HighToLowComponent } from './high-to-low/high-to-low.component';
 import { HomeComponent } from './home/home.component';
 import { LowToHighComponent } from './low-to-high/low-to-high.component';
+// import { NavbarComponent } from './navbar/navbar.component';
 import { OffersComponent } from './offers/offers.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
 import { RatingComponent } from './rating/rating.component';
@@ -60,7 +61,7 @@ const routes: Routes = [
   component:OffersComponent,
   children:[
     {
-      path:"offers",
+      path:"resoffers",
       component:ResOffersComponent
     },
     {
@@ -80,7 +81,11 @@ const routes: Routes = [
 {
   path:"dishPage",
   component:DishesComponent
-}
+},
+// {
+//   path:"navbar",
+//   component:NavbarComponent
+// }
 ];
 
 @NgModule({
