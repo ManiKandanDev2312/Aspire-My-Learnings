@@ -87,10 +87,6 @@ export class DatabaseService {
   }
 
 
-  sendUserName(){
-    return this.username;
-  }
-
 
   read_Offers(){
     return this.http.get("http://localhost:3000/Offers");

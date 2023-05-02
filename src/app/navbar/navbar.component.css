@@ -264,3 +264,21 @@ p{
   border-radius: 50%;
   background-color: rgb(255, 128, 0);
 }
+
+.logout{
+  width: 20%;
+  /* height: 30vh; */
+  position: absolute;
+  left: 57%;
+  top: 85%;
+  display: none;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+nav li:nth-child(4):hover .logout{
+  display: block;
+}
+.log{
+  margin: 20%;
+}

@@ -33,8 +33,7 @@ constructor(private router:Router, private dish:DatabaseService){
     }
   }
 
-  setInterval(()=>{
-    this.user=this.dish.sendUserName();
+    this.user=localStorage.getItem('isusername');
     if(this.user.length == 0){
       this.islogged=false;
       this.iserror=true;
@@ -45,7 +44,6 @@ constructor(private router:Router, private dish:DatabaseService){
       this.iserror=false;
       this.address();
     }
-  },2000);
 }
 
 cartUi(){

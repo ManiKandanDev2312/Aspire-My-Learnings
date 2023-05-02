@@ -98,6 +98,6 @@ border-bottom: 1px solid gray;
   color: rgb(255, 128, 0);
 }
 
-.activeLink{
+.secondnav .activeLink{
   color:rgb(255, 128, 0);
 }

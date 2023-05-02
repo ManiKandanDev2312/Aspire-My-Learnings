@@ -23,14 +23,16 @@ login:FormGroup;
 username:any;
 error:boolean=false;
 showLabel:boolean=true;
-user:boolean=false;
-loginuser:boolean=true;
+
 passwordCheck="";
 confiPasswordCheck="";
 
 cartitems:any=[];
 cartCount:number=0;
 iscart:boolean=false;
+
+user:any;
+loginuser:any;
 constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router){
   this.login=fb.group({
     loginPhoneNumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
@@ -42,6 +44,16 @@ constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Rou
     password:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
     ConfirmPassword:['',[Validators.required,Validators.minLength(8)]]});
 
+    this.username=localStorage.getItem('isusername');
+
+    if(this.username != undefined){
+      this.loginuser=false;
+      this.user=true;
+    }
+    else{
+      this.loginuser=true;
+      this.user=false;
+    }
     setInterval(()=>{
       this.cartitems=this.data_ser.sendCart();
       this.cartCount=this.cartitems.length;
@@ -103,6 +115,15 @@ signIn(){
   this.signin=true;
   this.signup=false;
   this.exit=true;
+}
+
+logout(){
+  localStorage.removeItem('isusername');
+  localStorage.setItem('isentered','false');
+
+  this.router.navigateByUrl("").then(()=>{
+    window.location.reload();
+  })
 }
 ngOnInit(){
 

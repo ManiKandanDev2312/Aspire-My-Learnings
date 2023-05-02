@@ -13,12 +13,21 @@
         <div *ngIf="loginuser"> <li (click)="signIn()" routerLinkActive="activeLink"><i class="fa-sharp fa-regular fa-user"></i>&nbsp;&nbsp;Log in</li>
         </div>
         <div *ngIf="user"> <li><i class="fa-sharp fa-regular fa-user"></i>&nbsp;&nbsp;{{username}}</li>
+          <div class="logout">
+            <li>
+              <a routerLink="" class="log" (click)="logout()">log out</a>
+            </li>
+          </div>
         </div>
         <div> <li><div class="cartFlex"><div [ngClass]="iscart?'colored':'circle'" id="circle"><h4 id="count" [ngClass]="iscart?'cartCountTrue':'cartCountfalse'">{{cartCount}}</h4></div> <div><a [routerLink]="cart" routerLinkActive="activeLink" class="cart">&nbsp;cart</a></div></div></li>
         </div>
       </nav>
     </div>
   </div>
+
+
+
+
   <div class="background" *ngIf="exit">
     <div class="signin" *ngIf="signin">
       <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
