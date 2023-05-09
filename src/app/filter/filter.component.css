@@ -96,6 +96,7 @@ h3{
 .flex input{
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 .flex p{
 margin-top: -13%;

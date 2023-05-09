@@ -15,6 +15,9 @@ export class DatabaseService {
   username:string="";
   checkMob:number=0;
   userMob:number=0;
+  filter:any=[];
+  filteredHotel:any=[];
+  Hotels:any=[];
   demo:any=[];
   dummy:any;
   dummy1:any;
@@ -73,9 +76,15 @@ export class DatabaseService {
     })
   }
 
-  read_hotels(){
-   return this.http.get("http://localhost:3000/hotelDetails");
+
+  getFilter(hotelVariety:any){
+    this.filter=hotelVariety;
+    this.send_variety();
+    // console.log(this.filter);
   }
+
+
+
 
 
   getHotelName(data:any){
@@ -113,33 +122,72 @@ export class DatabaseService {
     return this.dummy2;
   }
   send_variety(){
+    var  s=0;
     this.http.get("http://localhost:3000/hotelDetails").subscribe(x=>{
       this.demo=x;
       for(var i=0;i<this.demo.length;i++){
         this.variety[i]=this.demo[i].dishvariety;
-        // console.log(this.variety[i]);
         var str=this.variety[i];
         this.varietydish[i]=str.split(", ");
-
       }
       for(var i=0;i<this.varietydish.length;i++){
         this.array=this.varietydish[i];
+        // console.log(this.array.length);
          if(this.array.length==1){
           if(!this.varietyfood.includes(this.array[0]))
-          this.varietyfood[this.s++]=this.array[0];
+          {
+            this.varietyfood[this.s++]=this.array[0];
+            // console.log(this.array[0]);
+          }
+
         }
         else{
+          var m=0;
           for(var j=0; j<this.array.length;j++)
             {
-              if(!this.varietyfood.includes(this.array[j]))
-              this.varietyfood[this.s++]=this.array[j];
+              if(!this.varietyfood.includes(this.array[j])){
+                this.varietyfood[this.s++]=this.array[j];
+                console.log("this.filter");
+                for(var k=0;k<this.filter.length;k++){
+                  if(this.filter[k]==this.array[j]){
+                    this.filteredHotel[m++]=this.demo[i];
+                    console.log(this.filteredHotel);
+                  }
+                }
+                // console.log(this.array[j]);
+              }
+
             }
         }
       }
     });
+
     return this.varietyfood;
   }
 
+  sendFilter(){
+    // var s=0;
+    // this.http.get("http://localhost:3000/hotelDetails").subscribe(x=>{
+    //   this.Hotels=x;
+    //   if(this.filter.length>=1){
+    //     for(var i=0;i< this.variety.length;i++){
+    //       if(this.filter.includes(this.variety[i])){
+    //         this.filteredHotel[s++]=this.Hotels[i];
+    //       }
+    //     }
+    //   }
+    //   else{
+    //     this.filteredHotel="dummy";
+    //   }
+    // });
+    // console.log(this.filteredHotel);
+    return this.filteredHotel;
+
+  }
+
+  read_hotels(){
+      return this.http.get("http://localhost:3000/hotelDetails");
+  }
 
   getCart(dish:any){
    this.itemArray=dish;

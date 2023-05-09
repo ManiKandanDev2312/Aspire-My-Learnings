@@ -271,7 +271,7 @@ p{
   position: absolute;
   left: 57%;
   top: 85%;
-  display: none;
+  /* display: none; */
   border: 2px solid black;
   background-color: white;
   cursor: pointer;

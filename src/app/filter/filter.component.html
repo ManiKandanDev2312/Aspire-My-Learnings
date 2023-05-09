@@ -6,11 +6,11 @@
   </div>
   <div class="bottomnav">
     <button class="clear">CLEAR</button>
-    <button class="show">SHOW RESTAURANTS</button>
+    <button class="show" (click)="home()">SHOW RESTAURANTS</button>
   </div>
   <h3>cuisines</h3>
   <div class="flex">
-    <div *ngFor="let varieties of variety; let ind=index" (click)="varietyName(ind)"><input type="checkbox"><p>{{varieties}}</p></div>
+    <div *ngFor="let varieties of variety; let ind=index"><input type="checkbox" (click)="varietyName(ind)"><p>{{varieties}}</p></div>
   </div>
   <h3>show restaurants with</h3>
   <div class="flex1">

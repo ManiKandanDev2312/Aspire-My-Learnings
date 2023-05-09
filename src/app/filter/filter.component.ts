@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class FilterComponent {
   count:number=0;
   s:number=0;
   i:number=0;
-  constructor(private filter:DatabaseService){
+  constructor(private filter:DatabaseService, private router:Router){
     this.variety=this.filter.send_variety();
   }
 
@@ -25,15 +26,27 @@ export class FilterComponent {
       this.indexarray[this.i++]=index;
     }
     else{
-      this.indexarray.splice(index,1);
+      var ind=this.indexarray.indexOf(index);
+      this.indexarray.splice(ind,1);
+      this.i-=1;
     }
 
-    if(this.count%2!=0){
-      this.varietyDishes[this.s++]=this.variety[index];
+    var size=this.indexarray.length;
+
+    if(size==1){
+      this.varietyDishes=this.variety[this.indexarray[0]];
     }
     else{
-      this.varietyDishes.slice(index,1);
+      this.varietyDishes=[];
+      for(var i=0;i< size;i++){
+        this.varietyDishes[i]=this.variety[this.indexarray[i]];
+      }
     }
-    console.log(this.indexarray);
+
+    this.filter.getFilter(this.varietyDishes);
+  }
+
+  home(){
+    this.router.navigateByUrl("");
   }
 }

@@ -10,8 +10,8 @@ import { DatabaseService } from '../database.service';
 export class CartComponent {
   itemArray:any=[];
   hotelDetails:any;
-  cart:boolean=true;
-  iscartAdded:boolean=false;
+  cart:boolean=false;
+  iscartAdded:boolean=true;
   itemPrice:any=[];
   itemTotal:number=0;
   totalPrice:number=0;
@@ -34,7 +34,7 @@ constructor(private router:Router, private dish:DatabaseService){
   }
 
     this.user=localStorage.getItem('isusername');
-    if(this.user.length == 0){
+    if(this.user == undefined){
       this.islogged=false;
       this.iserror=true;
       this.isaddress=false;

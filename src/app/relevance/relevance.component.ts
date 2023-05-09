@@ -12,22 +12,31 @@ export class RelevanceComponent {
 val:any=[];
 value:any;
 dishPage="dispage";
+filterhotels:any=[];
 constructor(private hotel:DatabaseService, private router:Router){
+
+this.filterhotels=this.hotel.sendFilter();
+// console.log(this.filterhotels);
 this.readhotels();
 }
 
 readhotels(){
-  this.hotel.read_hotels().subscribe((x:any)=>{
-    this.val=x;
-})
-// console.log(this.val);
+  if(this.filterhotels.length == 0){
+    this.hotel.read_hotels().subscribe((x:any)=>{
+      this.val=x;
+      // console.log("this.val");
+  });
+  }
+  else{
+    this.val=this.filterhotels;
+    // console.log("hi");
+  }
 };
 
 
 hotelList(ind:number){
   this.value=this.val[ind];
   this.hotel.getHotelName(this.value);
-  // console.log(this.value);
   this.router.navigateByUrl("/dishPage");
 }
 }
