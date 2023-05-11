@@ -35,8 +35,11 @@ readhotels(){
 
 
 hotelList(ind:number){
-  this.value=this.val[ind];
-  this.hotel.getHotelName(this.value);
+  this.value=JSON.stringify(this.val[ind]);
+
+  localStorage.setItem('hotelDetails',this.value);
+
+  // this.hotel.getHotelName(this.value);
   this.router.navigateByUrl("/dishPage");
 }
 }

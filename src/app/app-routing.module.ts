@@ -11,6 +11,7 @@ import { LowToHighComponent } from './low-to-high/low-to-high.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 import { OffersComponent } from './offers/offers.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
+import { ProfileComponent } from './profile/profile.component';
 import { RatingComponent } from './rating/rating.component';
 import { RelevanceComponent } from './relevance/relevance.component';
 import { ResOffersComponent } from './res-offers/res-offers.component';
@@ -82,10 +83,10 @@ const routes: Routes = [
   path:"dishPage",
   component:DishesComponent
 },
-// {
-//   path:"navbar",
-//   component:NavbarComponent
-// }
+{
+  path:"profile",
+  component:ProfileComponent
+}
 ];
 
 @NgModule({

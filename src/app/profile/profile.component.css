@@ -1,0 +1,65 @@
+*{
+  font-family: sans-serif;
+}
+
+.outer{
+  background-color: #37718e;
+  width: 100%;
+}
+.details{
+  border: 2px solid #37718e;
+  margin-left: 10%;
+}
+
+.details h1{
+  color: white;
+  margin-top: 5%;
+  font-size: 2vw;
+}
+.details h2{
+  color: white;
+  margin-top: 0.5%;
+  font-size: 1vw;
+  font-weight: lighter;
+}
+
+.profilebox{
+  margin-left: 10%;
+  background-color: white;
+  width: 80%;
+  margin-top: 1%;
+  padding: 4%;
+}
+
+.left{
+  margin-top: 10%;
+  margin-left: 10%;
+  height: 8vh;
+}
+
+.content{
+  display: flex;
+}
+
+.content .boxes:nth-child(1){
+  background-color: #edf1f7;
+  width: 25%;
+  height: 80vh;
+}
+
+.left h3{
+  margin-top: 7%;
+  margin-left: 35%;
+  font-size: 1.2vw;
+  font-weight: lighter;
+  cursor: pointer;
+ }
+
+ .left h3:hover{
+  font-weight: bold;
+ }
+
+ .boxes:nth-child(2){
+  border: 2px solid black;
+  margin-left: 2%;
+}

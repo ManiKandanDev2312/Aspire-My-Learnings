@@ -16,7 +16,7 @@ export class SearchComponent {
 
 hotelNameArray:any=[];
 data:any=[];
-
+value:any;
 array:any=[];
 array2:any=[];
 finalArray:any=[];
@@ -80,7 +80,9 @@ searchHotel(Hname:string){
   this.finalArray=new Set(this.array2);
 }
 sendHotel(index:any){
-  this.search.getHotelName(this.array2[index]);
+  // this.search.getHotelName(this.array2[index]);
+  this.value=JSON.stringify(this.array2[index]);
+  localStorage.setItem('hotelDetails',this.value);
   if(this.data==undefined || this.data.length==5){
     var ind=0;
     this.hotelNameArray[ind]=this.array2[index].hotelname;

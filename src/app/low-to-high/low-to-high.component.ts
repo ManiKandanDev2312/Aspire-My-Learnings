@@ -11,6 +11,7 @@ export class LowToHighComponent {
   dummyArray:any=[];
   hotelCount=0;
   realTime:any=[];
+  value:any;
 constructor(private lowtohigh:DatabaseService, private router:Router){
 this.read_deltime();
 }
@@ -41,7 +42,9 @@ read_deltime(){
 }
 
 sendHotel(index:any){
-  this.lowtohigh.getHotelName(this.realTime[index]);
+  // this.lowtohigh.getHotelName(this.realTime[index]);
+  this.value=JSON.stringify(this.realTime[index]);
+  localStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");
 }
 }

@@ -11,6 +11,7 @@ export class RatingComponent {
   dummyArray:any=[];
   hotelCount=0;
   realTime:any=[];
+  value:any;
 constructor(private Rating:DatabaseService, private router:Router){
 this.read_deltime();
 }
@@ -41,7 +42,9 @@ read_deltime(){
 }
 
 sendHotel(index:any){
-  this.Rating.getHotelName(this.realTime[index]);
+  // this.Rating.getHotelName(this.realTime[index]);
+  this.value=JSON.stringify(this.realTime[index]);
+  localStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");
 }
 }

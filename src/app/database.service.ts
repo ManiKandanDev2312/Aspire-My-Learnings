@@ -22,6 +22,7 @@ export class DatabaseService {
   dummy:any;
   dummy1:any;
   dummy2:any;
+  dummy3:any;
   variety:any=[];
   varietydish:any=[];
   varietyfood:any=[];
@@ -29,6 +30,7 @@ export class DatabaseService {
   array:any=[];
   islogged:boolean=false;
   itemArray:any=[];
+  itemArray1:any=[];
   s:number=0;
   constructor(private http:HttpClient, private router:Router) {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
@@ -57,13 +59,14 @@ export class DatabaseService {
     // console.log(phone);
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const data=x.find((log:any)=>{
-        this.name=log.username;
+        this.name=log;
         this.userMob=log.phonenumber;
         return log.phonenumber===phone && log.password===pass;
       });
 
       if(data){
-        this.username=this.name;
+        this.username=JSON.stringify(this.name);
+        // console.log(this.username);
         this.islogged=true;
         this.read_search();
         localStorage.setItem('isentered','true');
@@ -80,18 +83,12 @@ export class DatabaseService {
   getFilter(hotelVariety:any){
     this.filter=hotelVariety;
     this.send_variety();
-    // console.log(this.filter);
   }
 
-
-
-
-
-  getHotelName(data:any){
-    this.Array=data;
-  }
 
   sendHotelName(){
+    this.dummy3=localStorage.getItem('hotelDetails');
+    this.Array=JSON.parse(this.dummy3);
     return this.Array;
   }
 
@@ -102,7 +99,7 @@ export class DatabaseService {
   }
 
   get_search(search:any){
-    console.log(search);
+    // console.log(search);
     return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob,{search:search});
   }
 
@@ -189,11 +186,13 @@ export class DatabaseService {
       return this.http.get("http://localhost:3000/hotelDetails");
   }
 
-  getCart(dish:any){
-   this.itemArray=dish;
-  }
+  // getCart(){
+  //  this.itemArray=localStorage.getItem('dishes');
+  //  this.itemArray1=JSON.parse(this.itemArray);
+  //  console.log(this.itemArray1);
+  // }
 
-  sendCart(){
-    return this.itemArray;
-  }
+  // sendCart(){
+  //   return this.itemArray1;
+  // }
 }

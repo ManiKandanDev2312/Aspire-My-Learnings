@@ -12,11 +12,14 @@
         </div>
         <div *ngIf="loginuser"> <li (click)="signIn()" routerLinkActive="activeLink"><i class="fa-sharp fa-regular fa-user"></i>&nbsp;&nbsp;Log in</li>
         </div>
-        <div *ngIf="user"> <li><i class="fa-sharp fa-regular fa-user"></i>&nbsp;&nbsp;{{username}}</li>
+        <div *ngIf="user" class="user"> <li><i class="fa-sharp fa-regular fa-user"></i>&nbsp;&nbsp;{{username}}</li>
           <div class="logout">
             <li>
+              <a [routerLink]="profile" class="log">profile</a>
+            </li><br>
+            <li>
               <a routerLink="" class="log" (click)="logout()">log out</a>
-            </li>
+            </li><br>
           </div>
         </div>
         <div> <li><div class="cartFlex"><div [ngClass]="iscart?'colored':'circle'" id="circle"><h4 id="count" [ngClass]="iscart?'cartCountTrue':'cartCountfalse'">{{cartCount}}</h4></div> <div><a [routerLink]="cart" routerLinkActive="activeLink" class="cart">&nbsp;cart</a></div></div></li>
@@ -77,6 +80,12 @@
             <label *ngIf="register.controls['phonenumber'].errors?.['required'] && register.controls['phonenumber'].invalid && register.controls['phonenumber'].dirty" class="invalid">Please enter phone Number</label>
             <label *ngIf="register.controls['phonenumber'].errors?.['pattern'] && (register.controls['phonenumber'].invalid || register.controls['phonenumber'].dirty)" class="invalid">invalid Mobile Number</label>
             <input type="number" placeholder=" " name="PhoneNumber" formControlName="phonenumber" [maxlength]="10">
+          </div>
+          <div class="forms">
+            <label for="Email" *ngIf="!register.controls['email'].errors?.['required'] && !register.controls['email'].errors?.['pattern'] || !register.controls['email'].dirty">Email</label>
+            <label *ngIf="register.controls['email'].errors?.['required'] && register.controls['email'].invalid && register.controls['email'].dirty" class="invalid">Please enter your Email ID</label>
+            <label *ngIf="register.controls['email'].errors?.['pattern'] && (register.controls['email'].invalid || register.controls['email'].dirty)" class="invalid">invalid Email</label>
+            <input type="text" placeholder=" " name="Email" formControlName="email">
           </div>
           <div class="forms">
             <label for="Password" *ngIf="!register.controls['password'].errors?.['required'] && !register.controls['password'].errors?.['pattern'] || !register.controls['password'].dirty">Password</label>

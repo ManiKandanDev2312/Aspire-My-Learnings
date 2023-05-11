@@ -15,26 +15,11 @@
   ],
   "customerDetails": [
     {
-      "id": 1,
-      "username": "manikandan",
+      "username": "Manikandan",
       "phonenumber": 6379623737,
+      "email": "manidhanush2001@gmail.com",
       "password": "@Mani2001",
-      "confirmPassword": "@Mani2001",
-      "search": [
-        "Sree Annapoorna Sweets & Savouries",
-        "Geetha Canteen",
-        "Chicking"
-      ]
-    },
-    {
-      "username": "Dhanush",
-      "phonenumber": 6379630065,
-      "password": "@Dhanu2004",
-      "ConfirmPassword": "@Dhanu2004",
-      "id": 2,
-      "search": [
-        "Sree Annapoorna"
-      ]
+      "ConfirmPassword": "@Mani2001"
     }
   ],
   "Offers": [
@@ -375,7 +360,44 @@
       "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
       "timeDel": "23",
       "Costfortwo": "₹350",
-      "offer": "60% off | Use TRYNEW"
+      "offer": "60% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 4,
@@ -384,7 +406,44 @@
       "dishvariety": "Biryani, Indian, chinese, Seafood, Tandoori, Mexican",
       "timeDel": "29",
       "Costfortwo": "₹300",
-      "offer": "40% off | Use TRYNEW"
+      "offer": "40% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 5,
@@ -393,7 +452,44 @@
       "dishvariety": "Indian, South Indian, North Indian, Chinese, Desserts",
       "timeDel": "27",
       "Costfortwo": "₹200",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 6,
@@ -402,7 +498,44 @@
       "dishvariety": "Snacks",
       "timeDel": "32",
       "Costfortwo": "₹200",
-      "offer": "20% off | Use TRYNEW"
+      "offer": "20% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 7,
@@ -411,7 +544,44 @@
       "dishvariety": "Indian",
       "timeDel": "33",
       "Costfortwo": "₹250",
-      "offer": "60% off | Use TRYNEW"
+      "offer": "60% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 8,
@@ -420,7 +590,44 @@
       "dishvariety": "Desserts",
       "timeDel": "28",
       "Costfortwo": "₹200",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 9,
@@ -429,7 +636,44 @@
       "dishvariety": "Burgers, Desserts",
       "timeDel": "31",
       "Costfortwo": "₹350",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 10,
@@ -438,7 +682,44 @@
       "dishvariety": "North Indian, Thaalis, Chaat, Desserts, Gujarati, South Indian",
       "timeDel": "35",
       "Costfortwo": "₹200",
-      "offer": "10% off | Use TRYNEW"
+      "offer": "10% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 11,
@@ -447,7 +728,44 @@
       "dishvariety": "Pizzas",
       "timeDel": "29",
       "Costfortwo": "₹400",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 12,
@@ -456,7 +774,44 @@
       "dishvariety": "South Indian",
       "timeDel": "23",
       "Costfortwo": "₹200",
-      "offer": "40% off | Use TRYNEW"
+      "offer": "40% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 13,
@@ -465,7 +820,44 @@
       "dishvariety": "North Indian, South Indian",
       "timeDel": "16",
       "Costfortwo": "₹200",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 14,
@@ -474,7 +866,44 @@
       "dishvariety": "South Indian",
       "timeDel": "22",
       "Costfortwo": "₹200",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 15,
@@ -483,7 +912,44 @@
       "dishvariety": "South Indian, Indian, Chinese",
       "timeDel": "27",
       "Costfortwo": "₹200",
-      "offer": ""
+      "offer": "",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     },
     {
       "id": 16,
@@ -492,7 +958,44 @@
       "dishvariety": "Beverages, Snacks, Bakery",
       "timeDel": "21",
       "Costfortwo": "₹150",
-      "offer": "40% off | Use TRYNEW"
+      "offer": "40% off | Use TRYNEW",
+      "dishes": [
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Pineapple Juice",
+          "dishPrice": "55",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/cool boost.webp",
+          "dishName": "Cool Boost",
+          "dishPrice": "44",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishName": "Mosambii Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/sweet corn maggi.webp",
+          "dishName": "Sweet Corn Maggi",
+          "dishPrice": "69",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/paneer sandwitch.webp",
+          "dishName": "paneer Sandwitch",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        }
+      ]
     }
   ],
   "profile": {

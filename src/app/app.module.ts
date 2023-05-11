@@ -19,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { DishesComponent } from './dishes/dishes.component';
 import { ResOffersComponent } from './res-offers/res-offers.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PayOffersComponent } from './pay-offers/pay-offers.component';
     RatingComponent,
     DishesComponent,
     ResOffersComponent,
-    PayOffersComponent
+    PayOffersComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

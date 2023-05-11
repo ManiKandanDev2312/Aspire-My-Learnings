@@ -1,3 +1,4 @@
+import { JsonPipe } from '@angular/common';
 import { Component,OnInit, ViewEncapsulation } from '@angular/core';
 import { FormControl, FormGroup, Validators ,FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
@@ -15,14 +16,20 @@ Help:string="Help";
 offers:string="offers";
 cart:string="cart";
 search:string="search";
+profile:string="profile";
 signin:boolean=false;
 signup:boolean=false;
 exit:boolean=false;
 register:FormGroup;
 login:FormGroup;
-username:any;
+userdetails:any;
 error:boolean=false;
 showLabel:boolean=true;
+
+details:any;
+dummy:any;
+
+username:any;
 
 passwordCheck="";
 confiPasswordCheck="";
@@ -31,6 +38,7 @@ cartitems:any=[];
 cartCount:number=0;
 iscart:boolean=false;
 
+islogged:any;
 user:any;
 loginuser:any;
 constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router){
@@ -41,13 +49,18 @@ constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Rou
   this.register= fb.group({
     username:['',[Validators.required,Validators.pattern("^[A-Za-z][A-Za-z0-9_]{3,13}$")]],
     phonenumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
+    email:['',[Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
     password:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
     ConfirmPassword:['',[Validators.required,Validators.minLength(8)]]});
 
-    this.username=localStorage.getItem('isusername');
 
-    if(this.username != undefined){
+    this.islogged=localStorage.getItem('isentered');
+
+
+    if(this.islogged == "true"){
       this.loginuser=false;
+      this.userName();
+
       this.user=true;
     }
     else{
@@ -55,15 +68,17 @@ constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Rou
       this.user=false;
     }
     setInterval(()=>{
-      this.cartitems=this.data_ser.sendCart();
-      this.cartCount=this.cartitems.length;
+      this.cartitems=localStorage.getItem('dishes');
+      this.dummy=JSON.parse(this.cartitems);
+      this.cartCount=this.dummy.length;
+    // console.log(this.details);
       if(this.cartCount>=1){
         this.iscart=true;
       }
       else{
         this.iscart=false;
       }
-    },2000);
+    },1000);
 
 }
 
@@ -97,7 +112,10 @@ sendData(){
 }
 
 userName(){
-  this.username=localStorage.getItem('isusername');
+  this.userdetails=localStorage.getItem('isusername');
+  this.details=JSON.parse(this.userdetails);
+  this.username=this.details.username;
+  // console.log(this.details);
   this.user=true;
   this.loginuser=false;
 }
