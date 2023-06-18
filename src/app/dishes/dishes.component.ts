@@ -43,8 +43,6 @@ cartItems(ind:number){
     this.itemArray[this.ind]=this.dishArray[ind];
     this.items=JSON.stringify(this.itemArray);
     localStorage.setItem('dishes',this.items);
-    // this.hotelName.getCart();
-    // console.log(this.itemArray);
   }
   else{
     alert("this item is  already added in cart");

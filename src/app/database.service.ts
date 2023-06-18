@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Router } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { outputAst } from '@angular/compiler';
 
 
 
@@ -14,7 +15,7 @@ export class DatabaseService {
   name:string="";
   username:string="";
   checkMob:number=0;
-  userMob:number=0;
+  userMob:any;
   filter:any=[];
   filteredHotel:any=[];
   Hotels:any=[];
@@ -32,6 +33,9 @@ export class DatabaseService {
   itemArray:any=[];
   itemArray1:any=[];
   s:number=0;
+  userEmail:any;
+
+  loggedPhonenumber:any;
   constructor(private http:HttpClient, private router:Router) {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const check=x.find((Umob:any)=>{
@@ -45,12 +49,14 @@ export class DatabaseService {
   save_data(data:any){
     // console.log(data);
     this.userMob=data.phonenumber;
+    console.log(this.userMob);
     if(data.phonenumber==this.checkMob){
       alert("this number is already taken");
       return this.http.get("http://localhost:3000/customerDetails",data);
     }
     else{
       alert("registered successfully");
+      this.userEmail=1;
       return this.http.post("http://localhost:3000/customerDetails",data);
     }
   }
@@ -60,13 +66,13 @@ export class DatabaseService {
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const data=x.find((log:any)=>{
         this.name=log;
-        this.userMob=log.phonenumber;
+        // this.userMob=log.phonenumber;
         return log.phonenumber===phone && log.password===pass;
       });
 
       if(data){
         this.username=JSON.stringify(this.name);
-        // console.log(this.username);
+        window.location.reload();
         this.islogged=true;
         this.read_search();
         localStorage.setItem('isentered','true');
@@ -99,8 +105,10 @@ export class DatabaseService {
   }
 
   get_search(search:any){
-    // console.log(search);
-    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob,{search:search});
+   this.loggedPhonenumber = localStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    console.log(this.userMob.phonenumber);
+    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{search:search});
   }
 
   read_search(){
@@ -195,4 +203,15 @@ export class DatabaseService {
   // sendCart(){
   //   return this.itemArray1;
   // }
+
+  sendEmail(url:any,otp:any){
+    console.log(otp);
+    if(this.userEmail==1){
+      return this.http.post(url,otp);
+    }
+    else{
+      return this.http.get(url,otp);
+    }
+
+  }
 }

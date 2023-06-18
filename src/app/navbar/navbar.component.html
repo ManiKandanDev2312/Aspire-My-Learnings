@@ -52,14 +52,40 @@
             <label *ngIf="login.controls['loginPassword'].errors?.['pattern'] && (login.controls['loginPassword'].invalid || login.controls['loginPassword'].dirty)" class="invalid">invalid Password</label>
             <input type="text" placeholder=" " name="Password" formControlName="loginPassword">
           </div>
-          <button class="Fpassword">forgot Password?</button><br>
+          <button class="Fpassword" (click)="forgotPass()">forgot Password?</button><br>
           <button class="login" type="submit" [disabled]="!login.valid" (click)="sendData()">LOGIN</button>
         </form>
         <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
       </div>
     </div>
 
+<!-- forgot -->
+<div class="signin" *ngIf="isforgotPass">
+  <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+  <h1>Forgort Password</h1>
+  <button class="createAccount" (click)="signIn()"><span>or</span>Login to Your Account</button>
+  <img src="./assets/img9.webp" alt="image" class="image">
 
+  <div class="loginForm">
+    <form [formGroup]="forgotPassword">
+      <div class="forms">
+        <label for="Email"*ngIf="!forgotPassword.controls['forgotEmail'].errors?.['required'] && !forgotPassword.controls['forgotEmail'].errors?.['pattern'] || !forgotPassword.controls['forgotEmail'].dirty">Email Id</label>
+        <label *ngIf="forgotPassword.controls['forgotEmail'].errors?.['required'] && forgotPassword.controls['forgotEmail'].invalid && forgotPassword.controls['forgotEmail'].dirty" class="invalid">Please enter Email Id</label>
+        <label *ngIf="forgotPassword.controls['forgotEmail'].errors?.['pattern'] && (forgotPassword.controls['forgotEmail'].invalid || forgotPassword.controls['forgotEmail'].dirty)" class="invalid">invalid Email Id</label>
+        <input type="email" placeholder=" " name="Email"  formControlName="forgotEmail">
+      </div>
+      <div class="forms">
+        <label for="Password"*ngIf="!forgotPassword.controls['forgotOTP'].errors?.['forgotOTP'] && !forgotPassword.controls['forgotOTP'].errors?.['pattern'] || !forgotPassword.controls['forgotOTP'].dirty">OTP</label>
+        <label *ngIf="forgotPassword.controls['forgotOTP'].errors?.['required'] && forgotPassword.controls['forgotOTP'].invalid && forgotPassword.controls['forgotOTP'].dirty" class="invalid">Please enter OTP</label>
+        <label *ngIf="forgotPassword.controls['forgotOTP'].errors?.['pattern'] && (forgotPassword.controls['forgotOTP'].invalid || forgotPassword.controls['forgotOTP'].dirty)" class="invalid">invalid OTP</label>
+        <input type="text" placeholder=" " name="Password" formControlName="forgotOTP">
+      </div>
+      <button class="login" type="submit" [disabled]="!forgotPassword.valid" (click)="forgotEmail()">LOGIN</button>
+    </form>
+    <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+  </div>
+</div>
+<!-- --------------- -->
 
     <div class="signup" *ngIf="signup">
       <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>

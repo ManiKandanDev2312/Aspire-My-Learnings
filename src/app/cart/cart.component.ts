@@ -10,8 +10,15 @@ import { DatabaseService } from '../database.service';
 export class CartComponent {
   itemArray:any=[];
   hotelDetails:any;
+
+
   cart:boolean=false;
   iscartAdded:boolean=true;
+
+
+
+
+
   itemPrice:any=[];
   itemsArray:any;
   itemTotal:number=0;
@@ -23,6 +30,7 @@ export class CartComponent {
   dummy2:any;
   dummyPrice:any=[];
   user:any;
+  log:any;
   islogged:boolean=false;
   iserror:boolean=true;
   isaddress:boolean=false;
@@ -30,22 +38,23 @@ constructor(private router:Router, private dish:DatabaseService){
   this.itemArray=localStorage.getItem('dishes');
   this.itemsArray=JSON.parse(this.itemArray);
   this.hotelDetails=this.dish.sendHotelName();
-
-  if(this.itemArray.length>=1){
+  console.log(this.itemsArray.length);
+  if(this.itemsArray.length>=1){
     this.cartUi();
     for(var i=0;i<this.itemArray.length;i++){
       this.count[i]=1;
     }
   }
-    this.details=localStorage.getItem('isusername');
-    this.dummy1=JSON.parse(this.details);
-    this.user=this.dummy1.username;
-    if(this.user == undefined){
+  this.log=localStorage.getItem('isentered');
+    if(this.log == "false"){
       this.islogged=false;
       this.iserror=true;
       this.isaddress=false;
     }
     else{
+    this.details=localStorage.getItem('isusername');
+    this.dummy1=JSON.parse(this.details);
+    this.user=this.dummy1.username;
       this.islogged=true;
       this.iserror=false;
       this.address();

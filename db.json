@@ -17,6 +17,16 @@
     {
       "username": "Manikandan",
       "phonenumber": 6379623737,
+      "email": "2k21aids11@kiot.ac.in",
+      "password": "@Mani2001",
+      "ConfirmPassword": "@Mani2001",
+      "search": [
+        "Chicking"
+      ]
+    },
+    {
+      "username": "Dhanush",
+      "phonenumber": 6379630065,
       "email": "manidhanush2001@gmail.com",
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001"
