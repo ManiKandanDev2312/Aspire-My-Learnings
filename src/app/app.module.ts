@@ -20,6 +20,7 @@ import { DishesComponent } from './dishes/dishes.component';
 import { ResOffersComponent } from './res-offers/res-offers.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProfileComponent } from './profile/profile.component';
     DishesComponent,
     ResOffersComponent,
     PayOffersComponent,
-    ProfileComponent
+    ProfileComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
