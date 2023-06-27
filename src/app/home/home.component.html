@@ -1,22 +1,22 @@
-<div class="slideshow">
-    <img src="{{img}}" alt="image">
-    <div class="flex">
-     <div *ngFor="let rounds of url; let ind=index" class="round" (click)="changeImage(ind)"></div>
+<div class="HomeSlideShow">
+    <img src="{{slideImage}}" alt="image">
+    <div class="HomeSlideContainer">
+     <div *ngFor="let rounds of slideImageUrl; let ind=index" class="HomeSlideRounds" (click)="SlideImages(ind)"></div>
     </div>
   </div>
 
-  <div class="secondnav">
+  <div class="HomeNavBar">
     <h2>{{hotelCount}}&nbsp;&nbsp;restaurants</h2>
-    <nav class="nav">
-      <div><a [routerLink]="Relevance" routerLinkActive="activeLink"><li>Hotels</li></a></div>
-      <div><a [routerLink]="Delivery_Time" routerLinkActive="activeLink"><li>Delivery&nbsp;Time</li></a></div>
-      <div><a [routerLink]="rating" routerLinkActive="activeLink"><li>Rating</li></a></div>
-      <div><a [routerLink]="low_to_high" routerLinkActive="activeLink"><li>Cost:Low&nbsp;to&nbsp;High</li></a></div>
-      <div><a [routerLink]="high_to_low" routerLinkActive="activeLink"><li>Cost:High&nbsp;to&nbsp;Low</li></a></div>
-      <div><a [routerLink]="filter" routerLinkActive="activeLink"><li><i class="fa-sharp fa-solid fa-sort"></i>&nbsp;&nbsp;Filters</li></a></div>
+    <nav class="HomeNav">
+      <div><a [routerLink]="Relevance" routerLinkActive="ActiveLink"><li>Hotels</li></a></div>
+      <div><a [routerLink]="Delivery_Time" routerLinkActive="ActiveLink"><li>Delivery&nbsp;Time</li></a></div>
+      <div><a [routerLink]="rating" routerLinkActive="ActiveLink"><li>Rating</li></a></div>
+      <div><a [routerLink]="low_to_high" routerLinkActive="ActiveLink"><li>Cost:Low&nbsp;to&nbsp;High</li></a></div>
+      <div><a [routerLink]="high_to_low" routerLinkActive="ActiveLink"><li>Cost:High&nbsp;to&nbsp;Low</li></a></div>
+      <div><a [routerLink]="filter" routerLinkActive="ActiveLink"><li><i class="fa-sharp fa-solid fa-sort"></i>&nbsp;&nbsp;Filters</li></a></div>
  </nav>
   </div>
-<div class="contents">
+<div class="HomeContents">
   <router-outlet></router-outlet>
 </div>
 

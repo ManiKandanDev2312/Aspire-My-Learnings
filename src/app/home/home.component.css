@@ -4,16 +4,16 @@ img{
   height: 80vh;
   margin-left: 5%;
 }
-.slideshow{
+.HomeSlideShow{
   position: relative;
 }
-.flex{
+.HomeSlideContainer{
   display: flex;
   margin-left: 47%;
   margin-top: -3%;
   gap: 3%;
 }
-.round{
+.HomeSlideRounds{
   width: 2%;
   height: 2vh;
   border-radius: 50%;
@@ -26,15 +26,14 @@ img{
 
 /*    second nav bar*/
 
-.secondnav{
+.HomeNavBar{
   width: 100%;
   height: 10vh;
   margin-top: 3%;
   position: relative;
   border-bottom: 1px solid gray;
-  /* box-shadow: 1.5px 0px 0px 2px rgba(0,0,0,0.2); */
 }
-.secondnav h2{
+.HomeNavBar h2{
 position: absolute;
 left: 9%;
 top: 35%;
@@ -42,7 +41,7 @@ font-size: 2vw;
 font-family: sans-serif;
 }
 
-.nav{
+.HomeNav{
   position: absolute;
   left: 40%;
   top: 44%;
@@ -50,12 +49,12 @@ font-family: sans-serif;
   display: flex;
   gap: 5%;
 }
-.nav li{
+.HomeNav li{
   font-weight: lighter;
   font-size: 1.1vw;
 }
 /*--------------------------------*/
 
-.activeLink{
+.ActiveLink{
   color:rgb(255, 128, 0);
 }
