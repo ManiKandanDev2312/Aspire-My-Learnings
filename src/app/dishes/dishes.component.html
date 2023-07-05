@@ -29,7 +29,7 @@
     <h4>₹ {{dishes.dishPrice}}</h4>
     <h5>{{dishes.dishDescription}}</h5>
     <img src="{{dishes.dishImage}}" alt="juice">
-    <button class="add" (click)="cartItems(ind)">ADD</button>
+    <button class="add" (click)="cartItems(ind)" [ngClass]="{'addedButton': indexNumber === ind}" id="{{ind}}">ADD</button>
     <!-- <div class="cart"><button class="minus">-</button><h3 class="count">1</h3><button class="plus">+</button></div> -->
   </div>
 </div>

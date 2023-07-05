@@ -11,20 +11,20 @@
     <div class="content">
       <div class="boxes">
         <div class="left">
-          <h3><i class="fa-sharp fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;Orders</h3>
+          <a routerLink="orders"><i class="fa-sharp fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;Orders</a>
         </div>
         <div class="left">
-          <h3><i class="fa-sharp fa-solid fa-heart"></i>&nbsp;&nbsp;favorites</h3>
+          <a routerLink="Favorites"><i class="fa-sharp fa-solid fa-heart"></i>&nbsp;&nbsp;favorites</a>
         </div>
         <div class="left">
-          <h3><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;adresses</h3>
+          <a routerLink="Address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;adresses</a>
         </div>
         <div class="left">
-          <h3><i class="fa-regular fa-credit-card"></i>&nbsp;&nbsp;payment</h3>
+          <a routerLink="Payment"><i class="fa-regular fa-credit-card"></i>&nbsp;&nbsp;payment</a>
         </div>
       </div>
       <div class="boxes">
-
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>

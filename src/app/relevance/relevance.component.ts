@@ -37,7 +37,7 @@ readhotels(){
 hotelList(ind:number){
   this.value=JSON.stringify(this.val[ind]);
 
-  localStorage.setItem('hotelDetails',this.value);
+  sessionStorage.setItem('hotelDetails',this.value);
 
   // this.hotel.getHotelName(this.value);
   this.router.navigateByUrl("/dishPage");

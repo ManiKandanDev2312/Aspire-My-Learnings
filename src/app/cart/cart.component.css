@@ -8,6 +8,7 @@ body{
 .outer{
   margin-left: 40%;
   margin-top: 17vh;
+  margin-bottom: 100px;
 }
 .outer img{
   width: 30%;
@@ -35,13 +36,18 @@ body{
   cursor: pointer;
  }
 
+.outer1{
+  display: flex;
+  gap: 50px;
 
+}
 
  .first{
   display: flex;
   flex-direction: column;
   width: 55%;
   margin-left: 5%;
+  margin-bottom: 100px;
  }
 
  .firsts{
@@ -83,8 +89,8 @@ body{
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin-left: 63%;
-  margin-top: -33%;
+  margin-bottom: 50px;
+
  }
 
  .seconds{
@@ -272,3 +278,141 @@ body{
   color: black;
   text-transform: uppercase;
  }
+
+
+
+ /* .emptyAddress{
+  border: 2px solid black;
+ } */
+ .addAddress{
+  border: 3px solid lightgreen;
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+ }
+
+ .addAddress h1{
+  margin: 10px 10px 10px 17px;
+  font-size: 2rem;
+  color: lightgreen;
+  font-weight: bold;
+  cursor: pointer;
+ }
+
+
+
+ .background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(6, 76, 240, 0.233);
+  z-index: 1;
+}
+
+.Address{
+  height: 100%;
+  width: 37%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  animation: slide 0.2s linear 1;
+  transition: transform 500ms ease-in-out;
+  transform-origin: left;
+}
+@keyframes slide {
+from{
+  transform: scaleX(0);
+}
+to{
+  transform: scaleX(1);
+}
+}
+.exit{
+  background-color: white;
+  border: none;
+  font-size: 2vw;
+  margin-left: 86%;
+  margin-top: 4%;
+  cursor: pointer;
+}
+.exit:hover{
+  color: rgb(255, 128, 0);
+}
+.Address h1{
+  margin-left: 30%;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 2vw;
+}
+.image{
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  margin-top: -15%;
+  margin-left: 7%;
+}
+.AddressForm{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+.forms{
+  height: 12vh;
+  width: 70%;
+  background-color: white;
+  border: 0.05vw solid rgb(114, 110, 110);
+}
+label{
+  position: absolute;
+  left: 27%;
+  font-weight: bold;
+  font-size: 1.2vw;
+  transition: top 200ms ease-in-out,left 200ms ease-in-out,font-size 200ms ease-in-out;
+}
+input{
+  margin-left: 6%;
+  margin-top: 5%;
+  width: 80%;
+  height: 6vh;
+  border: none;
+  padding-left: 5%;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+input:focus{
+  border: none;
+  outline: none;
+}
+
+.AddressButton{
+  margin-top: 2%;
+  width: 70%;
+  height: 8vh;
+  background-color: rgb(255, 128, 0);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1vw;
+  cursor: pointer;
+}
+.forms:nth-child(4){
+  display: flex;
+}
+.formsIcon{
+  border-left: 0.05vw solid gray;
+  width: 100px;
+  display: grid;
+  place-items: center;
+}
+.forms h2{
+  font-size: 0.9vw;
+  font-weight: lighter;
+  color: gray;
+  cursor: pointer;
+}

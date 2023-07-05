@@ -18,9 +18,19 @@
     <h1 class="error" *ngIf="islogged">THE USERNAME IS <span>{{user}}</span></h1>
   </div>
   <div class="firsts">
-    <h1>DELIVERY ADDRESS</h1>
+    <h1 *ngIf="!isShowAddress">DELIVERY ADDRESS</h1>
+    <h1 *ngIf="isShowAddress" style="color:black">SELECT YOUR ADDRESS</h1>
+    <div class="showAddress">
+      <div class="emptyAddress" *ngIf="isShowAddress">
+        <div class="addAddress" (click)="addAdress()">
+          <h1>+</h1>
+        </div>
+      </div>
+    </div>
+
+
   </div>
-  <div class="firsts">
+  <div class="firsts" (click)="Payment()">
     <h1>PAYMENT</h1>
   </div>
 </div>
@@ -77,4 +87,54 @@
   </div>
 </div>
 </div>
+
+
+
+
+<div class="background" *ngIf="isaddAdress">
+  <div class="Address">
+    <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+    <h1>YOUR ADDRESS</h1>
+    <!-- <button class="createAccount"><span>or</span> Create a Account</button> -->
+    <img src="./assets/img9.webp" alt="image" class="image">
+
+    <div class="AddressForm">
+      <form [formGroup]="Address">
+        <div class="forms">
+          <label for="PhoneNumber"*ngIf="!Address.controls['yourAddress'].errors?.['required'] && !Address.controls['yourAddress'].errors?.['pattern'] || !Address.controls['yourAddress'].dirty">Address</label>
+          <label *ngIf="Address.controls['yourAddress'].errors?.['required'] && Address.controls['yourAddress'].invalid && Address.controls['yourAddress'].dirty" class="invalid">Please enter Address</label>
+          <label *ngIf="Address.controls['yourAddress'].errors?.['pattern'] && (Address.controls['yourAddress'].invalid || Address.controls['yourAddress'].dirty)" class="invalid">invalid Address</label>
+          <input type="text" placeholder=" " name="Address"  formControlName="yourAddress">
+        </div>
+        <div class="forms">
+          <label for="DoorNo"*ngIf="!Address.controls['DoorNo'].errors?.['required'] && !Address.controls['DoorNo'].errors?.['pattern'] || !Address.controls['DoorNo'].dirty">Door - Flat No.</label>
+          <label *ngIf="Address.controls['DoorNo'].errors?.['required'] && Address.controls['DoorNo'].invalid && Address.controls['DoorNo'].dirty" class="invalid">Please enter Door - Flat No.</label>
+          <label *ngIf="Address.controls['DoorNo'].errors?.['pattern'] && (Address.controls['DoorNo'].invalid || Address.controls['DoorNo'].dirty)" class="invalid">invalid Door - Flat No.</label>
+          <input type="number" placeholder=" " name="DoorNo" formControlName="DoorNo">
+        </div>
+        <div class="forms">
+          <label for="Password"*ngIf="!Address.controls['DoorNo'].errors?.['required'] && !Address.controls['DoorNo'].errors?.['pattern'] || !Address.controls['DoorNo'].dirty">Landmark</label>
+          <label *ngIf="Address.controls['DoorNo'].errors?.['required'] && Address.controls['DoorNo'].invalid && Address.controls['DoorNo'].dirty" class="invalid">Please enter Landmark</label>
+          <label *ngIf="Address.controls['DoorNo'].errors?.['pattern'] && (Address.controls['DoorNo'].invalid || Address.controls['DoorNo'].dirty)" class="invalid">invalid Landmark</label>
+          <input type="text" placeholder=" " name="Password" formControlName="DoorNo">
+        </div>
+        <div class="forms">
+          <div class="formsIcon">
+            <h2><i class="fa-solid fa-house"></i>&nbsp;Home</h2>
+          </div>
+          <div class="formsIcon">
+            <h2><i class="fa-solid fa-briefcase"></i>&nbsp;Work</h2>
+          </div>
+          <div class="formsIcon">
+            <h2><i class="fa-solid fa-location-crosshairs"></i>&nbsp;Others</h2>
+          </div>
+        </div>
+        <!-- <button class="Fpassword" (click)="ForgotPassPage()">forgot Password?</button><br> -->
+        <button class="AddressButton" type="submit" [disabled]="!Address.valid">SAVE YOUR ADDRESS</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
 </body>

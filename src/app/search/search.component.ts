@@ -27,6 +27,14 @@ issearched:boolean=true;
 ishotelName:boolean=false;
 isfound:boolean=false;
 x:number=0;
+
+getSearchArray:any;
+setSearchArray:any=[];
+
+getHotels:any=[];
+getHotel1:any;
+getHotel2:any;
+
 constructor(private search:DatabaseService ,hn:FormBuilder, private router:Router){
 
   this.search.read_hotels().subscribe((x)=>{
@@ -35,6 +43,7 @@ constructor(private search:DatabaseService ,hn:FormBuilder, private router:Route
 
 
 this.data=this.search.send_search();
+
 
 
   const time = setInterval(()=>{
@@ -80,9 +89,8 @@ searchHotel(Hname:string){
   this.finalArray=new Set(this.array2);
 }
 sendHotel(index:any){
-  // this.search.getHotelName(this.array2[index]);
   this.value=JSON.stringify(this.array2[index]);
-  localStorage.setItem('hotelDetails',this.value);
+  sessionStorage.setItem('hotelDetails',this.value);
   if(this.data==undefined || this.data.length==5){
     var ind=0;
     this.hotelNameArray[ind]=this.array2[index].hotelname;
@@ -92,8 +100,30 @@ sendHotel(index:any){
     this.hotelNameArray[this.data.length]=this.array2[index].hotelname;
   }
   this.search.get_search(this.hotelNameArray).subscribe(x=>{
-    // console.log(x);
+    console.log(x);
   });
   this.router.navigateByUrl("/dishPage");
+}
+
+
+clear(){
+  window.location.reload();
+}
+
+hotelRoute(ind:any){
+  this.getHotels=this.search.read_hotels().subscribe(x=>{
+    this.getHotel1=x;
+    console.log(this.getHotel1.length);
+    for(var i=0;i<this.getHotel1.length;i++){
+      if(this.getHotel1[i].hotelname == this.data[ind]){
+        console.log(this.getHotel1[i]);
+        this.getHotel2=JSON.stringify(this.getHotel1[i]);
+        sessionStorage.setItem('hotelDetails',this.getHotel2);
+        this.router.navigateByUrl("/dishPage");
+      }
+    }
+
+  });
+
 }
 }

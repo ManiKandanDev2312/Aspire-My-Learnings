@@ -3,6 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Router } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { outputAst } from '@angular/compiler';
+import { LoginGuardGuard } from './login-guard.guard';
 
 
 
@@ -14,7 +15,14 @@ export class DatabaseService {
   Array1:any=[];
   name:string="";
   username:string="";
-  checkMob:number=0;
+
+
+
+
+
+
+
+
   userMob:any;
   filter:any=[];
   filteredHotel:any=[];
@@ -33,50 +41,78 @@ export class DatabaseService {
   itemArray:any=[];
   itemArray1:any=[];
   s:number=0;
-  userEmail:any;
+  // userEmail:any;
 
   loggedPhonenumber:any;
-  constructor(private http:HttpClient, private router:Router) {
+
+
+  getrecentSearchPhone:any;
+  setrecentSearchPhone:any;
+  // recentSearchPhone:any;
+
+  duplicateHotelName:any=[];
+  duplicateHotelCount:number=0;
+  getsessionHotelname:any;
+  setsessionHotelname:any=[];
+  putsessionHotelDetails:any;
+  getsessionHotelDetails:any;
+  setsessionHotelDetails:any=[];
+
+  constructor(private http:HttpClient, private router:Router, private LoginGuard:LoginGuardGuard) {
+  }
+
+  save_data(data:any){
+
+    this.userMob=data.phonenumber;
+
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const check=x.find((Umob:any)=>{
-        this.checkMob=Umob.phonenumber;
+        return data.phonenumber==Umob.phonenumber;
       })
+      if(check){
+        return alert("this number is already taken");
+      }
+      else{
+        alert("registered successfully");
+        // this.userEmail=1;
+        return this.http.post("http://localhost:3000/customerDetails",data).subscribe(x=>{
+          console.log(x);
+          let body={
+            email:data.email,
+            userName: data.username
+          };
+          this.sendEmail("http://localhost:2300/email",body).subscribe(x=>{
+            console.log(x);
+          });
+        });
+      }
     });
 
   }
 
-
-  save_data(data:any){
-    // console.log(data);
-    this.userMob=data.phonenumber;
-    console.log(this.userMob);
-    if(data.phonenumber==this.checkMob){
-      alert("this number is already taken");
-      return this.http.get("http://localhost:3000/customerDetails",data);
-    }
-    else{
-      alert("registered successfully");
-      this.userEmail=1;
-      return this.http.post("http://localhost:3000/customerDetails",data);
-    }
+  sendEmail(url:any,body:any){
+    return this.http.post(url,body);
   }
 
-  read_data(phone:any,pass:any){
-    // console.log(phone);
+
+
+
+  read_data(loginData:any){
+
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const data=x.find((log:any)=>{
         this.name=log;
-        // this.userMob=log.phonenumber;
-        return log.phonenumber===phone && log.password===pass;
+
+        return log.phonenumber===loginData.loginPhoneNumber && log.password===loginData.loginPassword;
       });
 
       if(data){
         this.username=JSON.stringify(this.name);
         window.location.reload();
         this.islogged=true;
-        this.read_search();
-        localStorage.setItem('isentered','true');
-        localStorage.setItem('isusername',this.username);
+        // this.read_search();
+        sessionStorage.setItem('isentered','true');
+        sessionStorage.setItem('isusername',this.username);
         return alert("login successfull");
       }
       else{
@@ -93,38 +129,94 @@ export class DatabaseService {
 
 
   sendHotelName(){
-    this.dummy3=localStorage.getItem('hotelDetails');
+    this.dummy3=sessionStorage.getItem('hotelDetails');
     this.Array=JSON.parse(this.dummy3);
     return this.Array;
+
   }
 
 
+  sendCartHotelDetails(){
+    this.duplicateHotelName[this.duplicateHotelCount++]=this.Array;
+    console.log(this.duplicateHotelName);
+    this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
+    sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
+      if(this.duplicateHotelName.length==1){
+      return true;
+    }
+    else{
+      if(this.duplicateHotelName[0].hotelname==this.duplicateHotelName[1].hotelname){
+        --this.duplicateHotelCount;
+        return true;
+      }
+      else{
+        this.getsessionHotelname=sessionStorage.getItem('dishes');
+        this.setsessionHotelname=JSON.parse(this.getsessionHotelname);
+        if(this.setsessionHotelname.length==0)
+        {
+          // this.duplicateHotelCount=-1;
+          // alert("hi");
+          this.duplicateHotelName[0]=this.Array;
+          this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
+          sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
+          --this.duplicateHotelCount;
+          return true;
+        }
+        else{
+          --this.duplicateHotelCount;
+          return false;
+        }
+
+      }
+    }
+  }
+
+  sendCartHotelname(){
+    this.getsessionHotelDetails=sessionStorage.getItem('cartHotelDetails');
+    this.setsessionHotelDetails=JSON.parse(this.getsessionHotelDetails);
+    return this.setsessionHotelDetails[0];
+  }
 
   read_Offers(){
     return this.http.get("http://localhost:3000/Offers");
   }
 
   get_search(search:any){
-   this.loggedPhonenumber = localStorage.getItem('isusername');
+   this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    console.log(this.userMob.phonenumber);
+    // console.log(this.userMob.phonenumber);
     return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{search:search});
   }
 
   read_search(){
+
+    this.getrecentSearchPhone=sessionStorage.getItem('isusername');
+    this.setrecentSearchPhone=JSON.parse(this.getrecentSearchPhone);
+    // console.log(this.setrecentSearchPhone.phonenumber);
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe(x=>{
       this.dummy=x.find((log:any)=>{
         this.dummy1=log.search;
-        return this.userMob==log.phonenumber;
+        return this.setrecentSearchPhone.phonenumber==log.phonenumber;
       })
       if(this.dummy){
         this.dummy2=this.dummy1;
+        // console.log(this.dummy2);
+      }
+      else{
+        console.log(this.dummy2);
       }
     });
   }
 
   send_search(){
-    return this.dummy2;
+    if(this.dummy2==undefined){
+      this.read_search();
+    }
+    else{
+      console.log(this.dummy2);
+      return this.dummy2;
+    }
+
   }
   send_variety(){
     var  s=0;
@@ -204,14 +296,5 @@ export class DatabaseService {
   //   return this.itemArray1;
   // }
 
-  sendEmail(url:any,otp:any){
-    console.log(otp);
-    if(this.userEmail==1){
-      return this.http.post(url,otp);
-    }
-    else{
-      return this.http.get(url,otp);
-    }
 
-  }
 }

@@ -19,7 +19,7 @@ img{
   border-radius: 50%;
   border: 1px solid white;
 }
-.round:hover{
+.HomeSlideRounds:hover{
   background-color: white;
 }
 /*--------------------------8*/
@@ -49,12 +49,17 @@ font-family: sans-serif;
   display: flex;
   gap: 5%;
 }
-.HomeNav li{
+nav li{
   font-weight: lighter;
   font-size: 1.1vw;
+  list-style: none;
+  color: black;
+}
+nav a{
+  text-decoration: none;
 }
 /*--------------------------------*/
 
-.ActiveLink{
+.activeLink{
   color:rgb(255, 128, 0);
 }

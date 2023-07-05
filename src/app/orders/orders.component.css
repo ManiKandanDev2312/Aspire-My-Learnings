@@ -1,0 +1,118 @@
+
+.commonBox{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  /* border: 2px solid rgb(255, 128, 0); */
+  box-shadow: 1.5px 0.5px 5px 2px rgba(0,0,0,0.2);
+  margin-left: 25px;
+  /* mar */
+}
+
+.commonBoxes{
+
+  width: 90%;
+  /* height: 50px; */
+  margin-left: 35px;
+
+
+}
+
+.commonBoxes:nth-child(1){
+  border-bottom: 0.01vw solid gray;
+  padding: 40px 0px 30px 0px;
+}
+
+.commonBoxes:nth-child(2){
+  flex-direction: column;
+  /* border: 2px solid black; */
+  padding: 20px 0px 30px 0px;
+}
+.commonBoxes p{
+  padding-bottom: 50px;
+}
+.OrderButton{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  /* margin-left: 20px; */
+  /* margin-top: 40px; */
+  /* border: 2px solid black; */
+}
+.button{
+  margin-top: 100px;
+}
+.button button{
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.button:nth-child(1) button{
+  background-color: rgb(246, 103, 21);
+  color: white;
+  font-weight: bold;
+  font-size: 0.9vw;
+}
+.button:nth-child(2) button{
+  background-color: white;
+  color: rgb(246, 103, 21);
+  border: 1px solid rgb(246, 103, 21);
+  font-weight: bold;
+  font-size: 0.9vw;
+}
+
+
+.Orders h1{
+
+  padding: 20px 0px 10px 30px;
+  font-weight: bold;
+  font-size: 1.4vw;
+}
+.commonBoxes{
+  display: flex;
+  gap:15px;
+}
+.commonBoxes div{
+  /* border: 2px solid black; */
+  margin-top: -24px;
+}
+.commonBoxes img{
+  width: 140px;
+  height: 110px;
+  /* border: 2px solid black; */
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.commonBoxes  div h2{
+  font-size: 1.1vw;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+.commonBoxes  div h3{
+  color: gray;
+  font-size: 0.9vw;
+  margin-bottom: 3px;
+  font-weight: lighter;
+}
+.commonBoxes  div h4{
+  color: gray;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-size: 0.9vw;
+}
+
+.commonBoxes div a{
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+  color: rgb(246, 103, 21);
+  cursor: pointer;
+}
+
+.commonBoxes div a:hover{
+  color: black;
+}

@@ -1,22 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AddressComponent } from './address/address.component';
+import { CancelComponent } from './cancel/cancel.component';
 import { CartComponent } from './cart/cart.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { DishesComponent } from './dishes/dishes.component';
+import { FAQsComponent } from './faqs/faqs.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 import { FilterComponent } from './filter/filter.component';
 import { HelpComponent } from './help/help.component';
 import { HighToLowComponent } from './high-to-low/high-to-low.component';
 import { HomeComponent } from './home/home.component';
+import { LegalComponent } from './legal/legal.component';
+import { LoginGuardGuard } from './login-guard.guard';
+import { LoginComponent } from './login/login.component';
 import { LowToHighComponent } from './low-to-high/low-to-high.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 import { OffersComponent } from './offers/offers.component';
+import { OrdersComponent } from './orders/orders.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RatingComponent } from './rating/rating.component';
 import { RelevanceComponent } from './relevance/relevance.component';
 import { ResOffersComponent } from './res-offers/res-offers.component';
 
 import { SearchComponent } from './search/search.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
   {path:' ',
@@ -55,12 +67,30 @@ const routes: Routes = [
 },
 {
   path:"Help",
-  component:HelpComponent
+  component:HelpComponent,
+  children:[
+    {path:'',
+    redirectTo:'Help',
+    pathMatch: 'full'
+  },
+  {
+    path:"Help",
+    component:LegalComponent
+  },
+  {
+    path:"FAQs",
+    component:FAQsComponent
+  }
+]
 },
 {
   path:"offers",
   component:OffersComponent,
   children:[
+    {path:'',
+    redirectTo:'resoffers',
+    pathMatch: 'full'
+  },
     {
       path:"resoffers",
       component:ResOffersComponent
@@ -73,11 +103,16 @@ const routes: Routes = [
 },
 {
   path:"cart",
-  component:CartComponent
+  component:CartComponent,
+  canActivate: [LoginGuardGuard]
 },
 {
   path:"search",
   component:SearchComponent
+},
+{
+  path:"login",
+  component:LoginComponent
 },
 {
   path:"dishPage",
@@ -85,7 +120,45 @@ const routes: Routes = [
 },
 {
   path:"profile",
-  component:ProfileComponent
+  component:ProfileComponent,
+  children:[{
+    path:'',
+    redirectTo:'orders',
+    pathMatch: 'full'
+  },
+  {
+    path:"orders",
+    component:OrdersComponent
+  },
+  {
+    path:"Address",
+    component:AddressComponent
+  },
+  {
+    path:"Payment",
+    component:PaymentComponent
+  }
+]
+},
+{
+  path:"Terms",
+  component:TermsComponent
+},
+{
+  path:"Privacy",
+  component:PrivacyPolicyComponent
+},
+{
+  path:"Cancel",
+  component:CancelComponent
+},
+{
+  path:"About",
+  component:AboutUsComponent
+},
+{
+  path:"Favorites",
+  component:FavoritesComponent
 }
 ];
 

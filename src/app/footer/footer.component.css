@@ -1,6 +1,6 @@
-footer{
+/* footer{
   margin-top: 100px;
-}
+} */
 .box5{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
@@ -20,12 +20,17 @@ footer{
 .list1{
   list-style: none;
   font-weight: normal;
-  font-size: 0.4cm;
   cursor: pointer;
   margin-top: 20px;
 }
 .list1 li{
   margin-top: 10px;
+}
+
+.list1 a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.4cm;
 }
 .list1 li:hover{
   font-weight: bold;

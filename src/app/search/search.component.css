@@ -7,15 +7,20 @@
   margin-left: 20%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 input{
   border: 0.5px solid rgb(220, 211, 211);
-  width: 95%;
+  width: 98%;
   height: 7vh;
   font-size: 1vw;
-  margin-left: 0;
+  margin-left: 15px;
+  margin-top: 40px;
   font-weight: light;
+  padding-left: 10px;
+  outline: none;
 }
+
 .items{
   margin-bottom: 3%;
 }

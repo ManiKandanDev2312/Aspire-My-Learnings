@@ -25,6 +25,7 @@ slideImageUrl:string[];
 slideImage="./assets/BURGER.png";
 countingVariable=0;
 
+emptyArray:any=[];
 
 constructor(private hotel:DatabaseService){
   this.slideImageUrl=["./assets/BURGER.png","./assets/FLAT_50.png"

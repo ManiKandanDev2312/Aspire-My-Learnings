@@ -173,6 +173,11 @@ input:checked + .rectangle{
   border-radius: 5px;
 }
 
+/* .add:hover{
+  background: orange;
+  color: white;
+} */
+
 .dishes h5{
   font-size: 1vw;
   margin-top: 4%;
@@ -223,4 +228,9 @@ input:checked + .rectangle{
   top:18%;
   color: green;
   font-weight: bold;
+}
+
+.addedButton{
+  background-color: rgb(3, 217, 3);
+  color: white;
 }

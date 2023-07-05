@@ -1,0 +1,100 @@
+
+<div class="background">
+  <div class="signin" *ngIf="signInPage">
+    <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
+    <h1>Login</h1>
+    <button class="createAccount" (click)="SignUp()"><span>or</span> Create a Account</button>
+    <img src="./assets/img9.webp" alt="image" class="image">
+
+    <div class="loginForm">
+      <form [formGroup]="login">
+        <div class="forms">
+          <label for="PhoneNumber"*ngIf="!login.controls['loginPhoneNumber'].errors?.['required'] && !login.controls['loginPhoneNumber'].errors?.['pattern'] || !login.controls['loginPhoneNumber'].dirty">Phone Number</label>
+          <label *ngIf="login.controls['loginPhoneNumber'].errors?.['required'] && login.controls['loginPhoneNumber'].invalid && login.controls['loginPhoneNumber'].dirty" class="invalid">Please enter Phone Number</label>
+          <label *ngIf="login.controls['loginPhoneNumber'].errors?.['pattern'] && (login.controls['loginPhoneNumber'].invalid || login.controls['loginPhoneNumber'].dirty)" class="invalid">invalid Phone Number</label>
+          <input type="number" placeholder=" " name="PhoneNumber"  formControlName="loginPhoneNumber">
+        </div>
+        <div class="forms">
+          <label for="Password"*ngIf="!login.controls['loginPassword'].errors?.['required'] && !login.controls['loginPassword'].errors?.['pattern'] || !login.controls['loginPassword'].dirty">Password</label>
+          <label *ngIf="login.controls['loginPassword'].errors?.['required'] && login.controls['loginPassword'].invalid && login.controls['loginPassword'].dirty" class="invalid">Please enter Password</label>
+          <label *ngIf="login.controls['loginPassword'].errors?.['pattern'] && (login.controls['loginPassword'].invalid || login.controls['loginPassword'].dirty)" class="invalid">invalid Password</label>
+          <input type="text" placeholder=" " name="Password" formControlName="loginPassword">
+        </div>
+        <button class="Fpassword" (click)="ForgotPassPage()">forgot Password?</button><br>
+        <button class="login" type="submit" [disabled]="!login.valid" (click)="SendData()">LOGIN</button>
+      </form>
+      <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+    </div>
+  </div>
+
+  <div class="signin" *ngIf="forgotPasswordPage">
+    <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
+    <h1>Forgort Password</h1>
+    <button class="createAccount" (click)="SignIn()"><span>or</span>Login to Your Account</button>
+    <img src="./assets/img9.webp" alt="image" class="image">
+
+    <div class="loginForm">
+      <form [formGroup]="forgotPassword">
+        <div class="forms">
+          <label for="Email"*ngIf="!forgotPassword.controls['forgotEmail'].errors?.['required'] && !forgotPassword.controls['forgotEmail'].errors?.['pattern'] || !forgotPassword.controls['forgotEmail'].dirty">Email Id</label>
+          <label *ngIf="forgotPassword.controls['forgotEmail'].errors?.['required'] && forgotPassword.controls['forgotEmail'].invalid && forgotPassword.controls['forgotEmail'].dirty" class="invalid">Please enter Email Id</label>
+          <label *ngIf="forgotPassword.controls['forgotEmail'].errors?.['pattern'] && (forgotPassword.controls['forgotEmail'].invalid || forgotPassword.controls['forgotEmail'].dirty)" class="invalid">invalid Email Id</label>
+          <input type="email" placeholder=" " name="Email"  formControlName="forgotEmail">
+        </div>
+        <div class="forms">
+          <label for="Password"*ngIf="!forgotPassword.controls['forgotOTP'].errors?.['forgotOTP'] && !forgotPassword.controls['forgotOTP'].errors?.['pattern'] || !forgotPassword.controls['forgotOTP'].dirty">OTP</label>
+          <label *ngIf="forgotPassword.controls['forgotOTP'].errors?.['required'] && forgotPassword.controls['forgotOTP'].invalid && forgotPassword.controls['forgotOTP'].dirty" class="invalid">Please enter OTP</label>
+          <label *ngIf="forgotPassword.controls['forgotOTP'].errors?.['pattern'] && (forgotPassword.controls['forgotOTP'].invalid || forgotPassword.controls['forgotOTP'].dirty)" class="invalid">invalid OTP</label>
+          <input type="text" placeholder=" " name="Password" formControlName="forgotOTP">
+        </div>
+        <button class="login" type="submit" [disabled]="!forgotPassword.valid" (click)="Close()">LOGIN</button>
+      </form>
+      <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+    </div>
+    </div>
+
+
+      <div class="signup" *ngIf="signUpPage">
+        <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Sign Up</h1>
+        <button class="createAccount" (click)="SignIn()"><span>or</span> log in to your account</button>
+        <img src="./assets/img9.webp" alt="image" class="image">
+
+        <div class="signupForm">
+          <form [formGroup]="register">
+            <div class="forms">
+              <label for="UserName" *ngIf="!register.controls['username'].errors?.['required'] && !register.controls['username'].errors?.['pattern'] || !register.controls['username'].dirty">Username</label>
+              <label *ngIf="register.controls['username'].errors?.['required'] && register.controls['username'].invalid && register.controls['username'].dirty" class="invalid">Please enter username</label>
+              <label *ngIf="register.controls['username'].errors?.['pattern'] && (register.controls['username'].invalid || register.controls['username'].dirty)" class="invalid">invalid username</label>
+              <input type="text" placeholder=" " formControlName="username">
+            </div>
+            <div class="forms">
+              <label for="PhoneNumber" *ngIf="!register.controls['phonenumber'].errors?.['required'] && !register.controls['phonenumber'].errors?.['pattern'] || !register.controls['phonenumber'].dirty">Phone Number</label>
+              <label *ngIf="register.controls['phonenumber'].errors?.['required'] && register.controls['phonenumber'].invalid && register.controls['phonenumber'].dirty" class="invalid">Please enter phone Number</label>
+              <label *ngIf="register.controls['phonenumber'].errors?.['pattern'] && (register.controls['phonenumber'].invalid || register.controls['phonenumber'].dirty)" class="invalid">invalid Mobile Number</label>
+              <input type="number" placeholder=" " name="PhoneNumber" formControlName="phonenumber" [maxlength]="10">
+            </div>
+            <div class="forms">
+              <label for="Email" *ngIf="!register.controls['email'].errors?.['required'] && !register.controls['email'].errors?.['pattern'] || !register.controls['email'].dirty">Email</label>
+              <label *ngIf="register.controls['email'].errors?.['required'] && register.controls['email'].invalid && register.controls['email'].dirty" class="invalid">Please enter your Email ID</label>
+              <label *ngIf="register.controls['email'].errors?.['pattern'] && (register.controls['email'].invalid || register.controls['email'].dirty)" class="invalid">invalid Email</label>
+              <input type="text" placeholder=" " name="Email" formControlName="email">
+            </div>
+            <div class="forms">
+              <label for="Password" *ngIf="!register.controls['password'].errors?.['required'] && !register.controls['password'].errors?.['pattern'] || !register.controls['password'].dirty">Password</label>
+                <label *ngIf="register.controls['password'].errors?.['required'] && register.controls['password'].invalid && register.controls['password'].dirty" class="invalid">Please enter password</label>
+                <label *ngIf="register.controls['password'].errors?.['pattern'] && (register.controls['password'].invalid || register.controls['password'].dirty)" class="invalid">use 8 digits one caps,small & special char</label>
+
+              <input type="text" placeholder=" " name="Password" formControlName="password" [(ngModel)]="passwordCheck">
+            </div>
+            <div class="forms">
+              <label for="ConfirmPassword" *ngIf="PasswordChecker()">Confirm Password</label>
+             <label for="UserName" class="invalid" *ngIf="!isPasswordChecked">password doesnot match</label>
+              <input type="text" placeholder=" " name="ConfirmPassword" formControlName="ConfirmPassword" [(ngModel)]="confirmPasswordCheck">
+            </div>
+            <button class="login" type="submit" [disabled]="!register.valid && isPasswordChecked" (click)="SaveData()">REGISTER</button>
+          </form>
+          <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+        </div>
+      </div>
+    </div>

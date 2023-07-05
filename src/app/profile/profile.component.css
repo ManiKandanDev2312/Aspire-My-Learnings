@@ -5,6 +5,7 @@
 .outer{
   background-color: #37718e;
   width: 100%;
+  padding-bottom: 40px;
 }
 .details{
   border: 2px solid #37718e;
@@ -47,19 +48,22 @@
   height: 80vh;
 }
 
-.left h3{
+.left a{
   margin-top: 7%;
   margin-left: 35%;
   font-size: 1.2vw;
+  color: gray;
   font-weight: lighter;
+  text-decoration: none;
   cursor: pointer;
  }
 
- .left h3:hover{
+ .left a:hover{
   font-weight: bold;
+  color:black;
  }
 
  .boxes:nth-child(2){
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-left: 2%;
 }

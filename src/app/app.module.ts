@@ -21,6 +21,17 @@ import { ResOffersComponent } from './res-offers/res-offers.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsComponent } from './terms/terms.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CancelComponent } from './cancel/cancel.component';
+import { LegalComponent } from './legal/legal.component';
+import { FAQsComponent } from './faqs/faqs.component';
+import { OrdersComponent } from './orders/orders.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { PaymentComponent } from './payment/payment.component';
+import { AddressComponent } from './address/address.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +52,18 @@ import { FooterComponent } from './footer/footer.component';
     ResOffersComponent,
     PayOffersComponent,
     ProfileComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    PrivacyPolicyComponent,
+    TermsComponent,
+    AboutUsComponent,
+    CancelComponent,
+    LegalComponent,
+    FAQsComponent,
+    OrdersComponent,
+    FavoritesComponent,
+    PaymentComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,

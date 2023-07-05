@@ -45,7 +45,7 @@ read_deltime(){
 sendHotel(index:any){
   // this.hightolow.getHotelName(this.realTime[index]);
   this.value=JSON.stringify(this.realTime[index]);
-  localStorage.setItem('hotelDetails',this.value);
+  sessionStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");
 }
 }
