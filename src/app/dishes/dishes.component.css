@@ -6,6 +6,12 @@
   margin-left: 27%;
   margin-top: 3%;
 }
+.outer .fa-heart{
+  font-size: 1.6vw;
+  padding-bottom: 40px;
+  margin-left: 90%;
+  cursor: pointer;
+}
 .hotelDetails{
   border-bottom: 1px dotted gray;
   width: 100%;
@@ -114,8 +120,6 @@ border-radius: 50%;
   height: 1vh;
   width: 50%;
   border-radius: 50%;
-  /* background-color: green; */
-
 }
 input{
   margin-top: -220%;
@@ -173,10 +177,6 @@ input:checked + .rectangle{
   border-radius: 5px;
 }
 
-/* .add:hover{
-  background: orange;
-  color: white;
-} */
 
 .dishes h5{
   font-size: 1vw;

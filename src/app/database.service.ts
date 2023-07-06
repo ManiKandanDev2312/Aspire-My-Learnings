@@ -23,7 +23,7 @@ export class DatabaseService {
 
 
 
-  userMob:any;
+  userMob:any=[];
   filter:any=[];
   filteredHotel:any=[];
   Hotels:any=[];
@@ -41,14 +41,12 @@ export class DatabaseService {
   itemArray:any=[];
   itemArray1:any=[];
   s:number=0;
-  // userEmail:any;
 
   loggedPhonenumber:any;
 
 
   getrecentSearchPhone:any;
   setrecentSearchPhone:any;
-  // recentSearchPhone:any;
 
   duplicateHotelName:any=[];
   duplicateHotelCount:number=0;
@@ -74,7 +72,6 @@ export class DatabaseService {
       }
       else{
         alert("registered successfully");
-        // this.userEmail=1;
         return this.http.post("http://localhost:3000/customerDetails",data).subscribe(x=>{
           console.log(x);
           let body={
@@ -110,7 +107,6 @@ export class DatabaseService {
         this.username=JSON.stringify(this.name);
         window.location.reload();
         this.islogged=true;
-        // this.read_search();
         sessionStorage.setItem('isentered','true');
         sessionStorage.setItem('isusername',this.username);
         return alert("login successfull");
@@ -138,7 +134,7 @@ export class DatabaseService {
 
   sendCartHotelDetails(){
     this.duplicateHotelName[this.duplicateHotelCount++]=this.Array;
-    console.log(this.duplicateHotelName);
+    // console.log(this.duplicateHotelName);
     this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
     sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
       if(this.duplicateHotelName.length==1){
@@ -154,8 +150,6 @@ export class DatabaseService {
         this.setsessionHotelname=JSON.parse(this.getsessionHotelname);
         if(this.setsessionHotelname.length==0)
         {
-          // this.duplicateHotelCount=-1;
-          // alert("hi");
           this.duplicateHotelName[0]=this.Array;
           this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
           sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
@@ -184,7 +178,6 @@ export class DatabaseService {
   get_search(search:any){
    this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    // console.log(this.userMob.phonenumber);
     return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{search:search});
   }
 
@@ -192,7 +185,6 @@ export class DatabaseService {
 
     this.getrecentSearchPhone=sessionStorage.getItem('isusername');
     this.setrecentSearchPhone=JSON.parse(this.getrecentSearchPhone);
-    // console.log(this.setrecentSearchPhone.phonenumber);
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe(x=>{
       this.dummy=x.find((log:any)=>{
         this.dummy1=log.search;
@@ -200,7 +192,6 @@ export class DatabaseService {
       })
       if(this.dummy){
         this.dummy2=this.dummy1;
-        // console.log(this.dummy2);
       }
       else{
         console.log(this.dummy2);
@@ -229,12 +220,10 @@ export class DatabaseService {
       }
       for(var i=0;i<this.varietydish.length;i++){
         this.array=this.varietydish[i];
-        // console.log(this.array.length);
          if(this.array.length==1){
           if(!this.varietyfood.includes(this.array[0]))
           {
             this.varietyfood[this.s++]=this.array[0];
-            // console.log(this.array[0]);
           }
 
         }
@@ -251,7 +240,6 @@ export class DatabaseService {
                     console.log(this.filteredHotel);
                   }
                 }
-                // console.log(this.array[j]);
               }
 
             }
@@ -263,21 +251,6 @@ export class DatabaseService {
   }
 
   sendFilter(){
-    // var s=0;
-    // this.http.get("http://localhost:3000/hotelDetails").subscribe(x=>{
-    //   this.Hotels=x;
-    //   if(this.filter.length>=1){
-    //     for(var i=0;i< this.variety.length;i++){
-    //       if(this.filter.includes(this.variety[i])){
-    //         this.filteredHotel[s++]=this.Hotels[i];
-    //       }
-    //     }
-    //   }
-    //   else{
-    //     this.filteredHotel="dummy";
-    //   }
-    // });
-    // console.log(this.filteredHotel);
     return this.filteredHotel;
 
   }
@@ -286,15 +259,16 @@ export class DatabaseService {
       return this.http.get("http://localhost:3000/hotelDetails");
   }
 
-  // getCart(){
-  //  this.itemArray=localStorage.getItem('dishes');
-  //  this.itemArray1=JSON.parse(this.itemArray);
-  //  console.log(this.itemArray1);
-  // }
+  getFavorite(Favorite:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Favorites:Favorite});
+  }
 
-  // sendCart(){
-  //   return this.itemArray1;
-  // }
-
+  sendFavorite(){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+  }
 
 }

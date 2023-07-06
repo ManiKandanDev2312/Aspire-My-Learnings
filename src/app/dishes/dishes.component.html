@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <div class="outer">
+  <i class="fa-solid fa-heart" (click)="Favorite()"  [ngStyle]="{'color':favorite}"></i>
   <div class="hotelDetails">
     <h1>{{value.hotelname}}</h1>
     <h3>{{value.dishvariety}}</h3>
@@ -30,6 +31,5 @@
     <h5>{{dishes.dishDescription}}</h5>
     <img src="{{dishes.dishImage}}" alt="juice">
     <button class="add" (click)="cartItems(ind)" [ngClass]="{'addedButton': indexNumber === ind}" id="{{ind}}">ADD</button>
-    <!-- <div class="cart"><button class="minus">-</button><h3 class="count">1</h3><button class="plus">+</button></div> -->
   </div>
 </div>

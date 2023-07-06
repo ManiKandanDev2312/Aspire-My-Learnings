@@ -32,6 +32,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AddressComponent } from './address/address.component';
+import { FinalfavoritesComponent } from './finalfavorites/finalfavorites.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { AddressComponent } from './address/address.component';
     OrdersComponent,
     FavoritesComponent,
     PaymentComponent,
-    AddressComponent
+    AddressComponent,
+    FinalfavoritesComponent
   ],
   imports: [
     BrowserModule,

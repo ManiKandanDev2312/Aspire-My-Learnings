@@ -9,6 +9,7 @@ import { DishesComponent } from './dishes/dishes.component';
 import { FAQsComponent } from './faqs/faqs.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { FilterComponent } from './filter/filter.component';
+import { FinalfavoritesComponent } from './finalfavorites/finalfavorites.component';
 import { HelpComponent } from './help/help.component';
 import { HighToLowComponent } from './high-to-low/high-to-low.component';
 import { HomeComponent } from './home/home.component';
@@ -131,6 +132,10 @@ const routes: Routes = [
     component:OrdersComponent
   },
   {
+    path:"Favorites",
+    component:FavoritesComponent
+  },
+  {
     path:"Address",
     component:AddressComponent
   },
@@ -157,8 +162,8 @@ const routes: Routes = [
   component:AboutUsComponent
 },
 {
-  path:"Favorites",
-  component:FavoritesComponent
+  path:"finalFavorites",
+  component:FinalfavoritesComponent
 }
 ];
 

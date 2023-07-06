@@ -4,19 +4,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 800px;
-  /* border: 2px solid rgb(255, 128, 0); */
   box-shadow: 1.5px 0.5px 5px 2px rgba(0,0,0,0.2);
   margin-left: 25px;
-  /* mar */
 }
 
 .commonBoxes{
-
   width: 90%;
-  /* height: 50px; */
   margin-left: 35px;
-
-
 }
 
 .commonBoxes:nth-child(1){
@@ -26,7 +20,6 @@
 
 .commonBoxes:nth-child(2){
   flex-direction: column;
-  /* border: 2px solid black; */
   padding: 20px 0px 30px 0px;
 }
 .commonBoxes p{
@@ -36,9 +29,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  /* margin-left: 20px; */
-  /* margin-top: 40px; */
-  /* border: 2px solid black; */
+  padding-top: 50px;
 }
 .button{
   margin-top: 100px;
@@ -76,20 +67,18 @@
   gap:15px;
 }
 .commonBoxes div{
-  /* border: 2px solid black; */
   margin-top: -24px;
 }
 .commonBoxes img{
   width: 140px;
   height: 110px;
-  /* border: 2px solid black; */
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
 .commonBoxes  div h2{
   font-size: 1.1vw;
-  font-weight: lighter;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 .commonBoxes  div h3{
@@ -115,4 +104,24 @@
 
 .commonBoxes div a:hover{
   color: black;
+}
+
+.commonBoxes:nth-child(1) p{
+  margin-left: 210px;
+  font-size: 1vw;
+  font-weight: lighter;
+  padding-bottom: 0px;
+  color: gray;
+}
+
+.commonBoxes:nth-child(1) i{
+  color: green;
+}
+
+.commonBoxes:nth-child(2) h4{
+  margin-left: 570px;
+  margin-top: -80px;
+  font-size: 1vw;
+  font-weight: lighter;
+  color: gray;
 }

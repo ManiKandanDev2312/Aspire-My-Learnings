@@ -1,9 +1,11 @@
-<div class="Favorites">
-  <h1>Favorites</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <div class="commonBox" *ngIf="isshow">
-    <div class="hotel">
-      <div class="hotels" *ngFor="let FavoriteArrays of limitedFavorite; let ind=index" (click)="sendHotel(ind)">
+<div class="Favorites">
+  <h1>Favorite Hotels</h1>
+
+  <div class="commonBox">
+
+      <div class="hotels" *ngFor="let FavoriteArrays of FavoritesArray; let ind=index" (click)="sendHotel(ind)">
         <img src="{{FavoriteArrays.hotelimage}}" alt="">
         <h4>{{FavoriteArrays.hotelname}}</h4>
         <h5>{{FavoriteArrays.dishvariety}}</h5>
@@ -19,6 +21,4 @@
         <h4 class="view">QUICK VIEW</h4>
       </div>
     </div>
-    <button (click)="FavoritePage()" *ngIf="isButton">VIEW MORE FAVORITES</button>
-  </div>
-</div>
+   </div>

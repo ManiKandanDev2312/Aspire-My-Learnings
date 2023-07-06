@@ -25,63 +25,55 @@
         "Geetha Canteen",
         "Chicking",
         "Barbequeen Restaurant"
+      ],
+      "Favorites": [
+        {
+          "id": 1,
+          "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
+          "hotelname": "Hotel Maa",
+          "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
+          "timeDel": "30",
+          "Costfortwo": "₹200",
+          "offer": "40% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Pineapple Juice",
+              "dishPrice": "55",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/cool boost.webp",
+              "dishName": "Cool Boost",
+              "dishPrice": "44",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Mosambii Juice",
+              "dishPrice": "60",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/sweet corn maggi.webp",
+              "dishName": "Sweet Corn Maggi",
+              "dishPrice": "69",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/paneer sandwitch.webp",
+              "dishName": "paneer Sandwitch",
+              "dishPrice": "88",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
+        }
       ]
-    },
-    {
-      "username": "Jeeva",
-      "phonenumber": 3214569874,
-      "email": "2k19me028@kiot.ac.in",
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001"
-    },
-    {
-      "username": "Manikandan",
-      "phonenumber": 7894561230,
-      "email": "manidhansuh2001@gmail.com",
-      "password": "@Mani2002",
-      "ConfirmPassword": "@Mani2002"
-    },
-    {
-      "username": "Santhosh",
-      "phonenumber": 7418279778,
-      "email": "santhoshkumarsrinivasan421@gmail.com",
-      "password": "@Dhanu2004",
-      "ConfirmPassword": "@Dhanu2004"
-    },
-    {
-      "username": "DhanushRaj",
-      "phonenumber": 6379630065,
-      "email": "rajdhanush06587@gmail.com",
-      "password": "@Jeeva2001",
-      "ConfirmPassword": "@Jeeva2001"
-    },
-    {
-      "username": "santhosh",
-      "phonenumber": 9874562310,
-      "email": "sandy23092000@gmail.com",
-      "password": "@Dhanu2004",
-      "ConfirmPassword": "@Dhanu2004"
-    },
-    {
-      "username": "padma",
-      "phonenumber": 9360408441,
-      "email": "padmapriya0016@gamil.com",
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001"
-    },
-    {
-      "username": "sripadma",
-      "phonenumber": 8745963210,
-      "email": "2k19cse105@kiot.ac.in",
-      "password": "@Mani2001",
-      "ConfirmPassword": "@Mani2001"
-    },
-    {
-      "username": "Shudarvizhi",
-      "phonenumber": 9344144837,
-      "email": "shudarvizhi2001@gmail.com",
-      "password": "@Shudar2001",
-      "ConfirmPassword": "@Shudar2001"
     }
   ],
   "Offers": [
