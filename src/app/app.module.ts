@@ -33,6 +33,10 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AddressComponent } from './address/address.component';
 import { FinalfavoritesComponent } from './finalfavorites/finalfavorites.component';
+import { FinalPaymentComponent } from './final-payment/final-payment.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { UPIComponent } from './upi/upi.component';
+import { CDCardComponent } from './cdcard/cdcard.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +69,11 @@ import { FinalfavoritesComponent } from './finalfavorites/finalfavorites.compone
     FavoritesComponent,
     PaymentComponent,
     AddressComponent,
-    FinalfavoritesComponent
+    FinalfavoritesComponent,
+    FinalPaymentComponent,
+    WalletComponent,
+    UPIComponent,
+    CDCardComponent
   ],
   imports: [
     BrowserModule,

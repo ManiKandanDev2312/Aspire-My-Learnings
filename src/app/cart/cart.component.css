@@ -108,6 +108,7 @@ body{
   font-size: 1.2vw;
   margin-left: 25%;
   margin-top: -15%;
+  cursor: pointer;
  }
  .seconds h4{
   font-size: 1vw;
@@ -278,29 +279,61 @@ body{
   color: black;
   text-transform: uppercase;
  }
-
-
-
- /* .emptyAddress{
-  border: 2px solid black;
- } */
+.emptyAddress{
+  display: flex;
+  flex-wrap: wrap;
+}
  .addAddress{
-  border: 3px solid lightgreen;
-  width: 60px;
-  height: 60px;
+  box-shadow: 1.5px 0.5px 5px 2px rgba(0,0,0,0.2);
   margin-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  width: 300px;
  }
+.addAddress i{
+  margin: 30px;
+  font-size: 1.3vw;
+  color: #60b246;
+}
 
- .addAddress h1{
-  margin: 10px 10px 10px 17px;
-  font-size: 2rem;
-  color: lightgreen;
+.addAddress p{
+  color: black;
+  margin-left: 70px;
+  font-size: 1vw;
+  margin-top: -50px;
   font-weight: bold;
+}
+
+.addAddress .deliveryButton{
   cursor: pointer;
- }
+  background-color: #60b246;
+  font-size: 0.9vw;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
 
-
+.addAddress button{
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #60b246;
+  font-size: 0.9vw;
+  font-weight: bold;
+  color: #60b246;
+  padding: 15px;
+  margin: 50px;
+}
+.addAddress div{
+  margin-top: 30px;
+}
+.addAddress div p{
+  margin-top: 0px;
+  font-size: 0.7vw;
+  color: gray;
+  font-weight: lighter;
+}
 
  .background{
   position: fixed;
@@ -359,7 +392,7 @@ to{
 .AddressForm{
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-left: 25%;
 }
 .forms{
@@ -393,7 +426,7 @@ input:focus{
 .AddressButton{
   margin-top: 2%;
   width: 70%;
-  height: 8vh;
+  height: 7vh;
   background-color: rgb(255, 128, 0);
   color: white;
   border: none;
@@ -410,9 +443,23 @@ input:focus{
   display: grid;
   place-items: center;
 }
-.forms h2{
+.forms button{
   font-size: 0.9vw;
   font-weight: lighter;
   color: gray;
+  cursor: pointer;
+  background: white;
+  border: none;
+}
+.paymentButton{
+  width: 200px;
+  height: 40px;
+  margin-left: 45px;
+  margin-bottom: 30px;
+  border: none;
+  background: #60b246;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: bold;
   cursor: pointer;
 }

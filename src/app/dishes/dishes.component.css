@@ -9,9 +9,16 @@
 .outer .fa-heart{
   font-size: 1.6vw;
   padding-bottom: 40px;
-  margin-left: 90%;
+  margin-left: 85%;
   cursor: pointer;
 }
+
+.outer .fa-magnifying-glass{
+margin-left: 30px;
+font-size: 1.6vw;
+cursor:pointer;
+}
+
 .hotelDetails{
   border-bottom: 1px dotted gray;
   width: 100%;
@@ -131,7 +138,6 @@ input:checked + .rectangle{
   display: flex;
   flex-direction: column;
   gap: 2%;
-  /* border: 2px solid black; */
   width: 40%;
   margin-left: 27%;
   margin-top: 3%;
@@ -233,4 +239,83 @@ input:checked + .rectangle{
 .addedButton{
   background-color: rgb(3, 217, 3);
   color: white;
+}
+
+.searchBar{
+  /* border: 2px solid black; */
+  margin-left: 400px;
+  /* width: 800px; */
+  margin-right: 400px;
+  margin-bottom: 50px;
+  padding-bottom: 500px;
+}
+
+.searchBar input{
+    border: 0.5px solid rgb(220, 211, 211);
+    width: 85%;
+    height: 6vh;
+    font-size: 1.1vw;
+    margin-left: 15px;
+    margin-top: 40px;
+    font-weight: light;
+    padding-left: 20px;
+    border-radius: 30px;
+    outline: none;
+}
+.fa-xmark{
+  margin-left: 30px;
+  padding-top: 20px;
+  font-size: 1.8vw;
+  cursor: pointer;
+  color: gray;
+}
+.searchdish {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 3%;
+}
+
+.searchdishes{
+  border-bottom: 1px solid rgb(180, 180, 180);
+  position: relative;
+}
+
+.searchdishes h2{
+  font-size: 1vw;
+  margin-top: 8%;
+  margin-left: 4%;
+}
+.searchdishes h4{
+  font-size: 1vw;
+  margin-top: 1%;
+  margin-left: 4%;
+  font-weight: lighter;
+}
+
+.searchdishes img{
+  width: 20%;
+  height: 14vh;
+  margin-left: 80%;
+  margin-top: -14%;
+  border-radius: 10px;
+  margin-bottom: 4%;
+}
+
+.searchdishes h5{
+  font-size: 1vw;
+  margin-top: 4%;
+  margin-left: 4%;
+  font-weight: lighter;
+  color: gray;
+}
+
+
+.error{
+  font-size: 1vw;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-top: 10px;
 }

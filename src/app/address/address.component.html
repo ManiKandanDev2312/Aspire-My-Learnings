@@ -1,1 +1,24 @@
-<p>address works!</p>
+<div class="Address">
+  <h1>Address</h1>
+
+  <div class="commonBox">
+    <div class="hotel">
+      <div class="emptyAddress">
+        <div class="addAddress" *ngFor="let adressTypes of AddressDetails">
+          <i class="fa-solid {{this.adressTypes.iconType}}"></i>
+          <p>{{this.adressTypes.addressType}}</p>
+          <div>
+            <p>{{this.adressTypes.doorNo}},&nbsp; {{this.adressTypes.adress}},</p><br>
+            <p>{{this.adressTypes.landmark}},</p><br>
+            <p>{{this.adressTypes.district}}.</p><br>
+          </div>
+        </div>
+        <div class="addAddress">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>ADD NEW ADDRESS</p>
+          <button>ADD NEW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

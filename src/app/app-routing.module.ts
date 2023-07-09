@@ -4,11 +4,13 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AddressComponent } from './address/address.component';
 import { CancelComponent } from './cancel/cancel.component';
 import { CartComponent } from './cart/cart.component';
+import { CDCardComponent } from './cdcard/cdcard.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { DishesComponent } from './dishes/dishes.component';
 import { FAQsComponent } from './faqs/faqs.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { FilterComponent } from './filter/filter.component';
+import { FinalPaymentComponent } from './final-payment/final-payment.component';
 import { FinalfavoritesComponent } from './finalfavorites/finalfavorites.component';
 import { HelpComponent } from './help/help.component';
 import { HighToLowComponent } from './high-to-low/high-to-low.component';
@@ -30,6 +32,8 @@ import { ResOffersComponent } from './res-offers/res-offers.component';
 
 import { SearchComponent } from './search/search.component';
 import { TermsComponent } from './terms/terms.component';
+import { UPIComponent } from './upi/upi.component';
+import { WalletComponent } from './wallet/wallet.component';
 
 const routes: Routes = [
   {path:' ',
@@ -104,8 +108,7 @@ const routes: Routes = [
 },
 {
   path:"cart",
-  component:CartComponent,
-  canActivate: [LoginGuardGuard]
+  component:CartComponent
 },
 {
   path:"search",
@@ -164,6 +167,31 @@ const routes: Routes = [
 {
   path:"finalFavorites",
   component:FinalfavoritesComponent
+},
+{
+  path:"finalPayment",
+  component:FinalPaymentComponent,
+  children:[
+    {
+      path:'',
+      redirectTo:'Wallets',
+      pathMatch: 'full'
+    },
+    {
+      path:"Wallets",
+      component:WalletComponent
+    },
+    {
+      path:"UPI",
+      component:UPIComponent
+    },
+    {
+      path:"CDCard",
+      component:CDCardComponent
+    }
+
+  ],
+  canActivate: [LoginGuardGuard]
 }
 ];
 

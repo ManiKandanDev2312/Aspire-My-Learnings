@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators ,FormBuilder} from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 
 @Component({
@@ -24,8 +24,14 @@ isPasswordChecked:boolean=true;
 register:FormGroup;
 login:FormGroup;
 forgotPassword:FormGroup;
+returl:any;
 
-  constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router){
+  constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router,private route:ActivatedRoute){
+    this.route.queryParamMap.subscribe(w=>{
+      this.returl=w.get('returl');
+      console.log(this.returl);
+    })
+
     this.login=fb.group({
       loginPhoneNumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
       loginPassword:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]]
@@ -39,9 +45,9 @@ forgotPassword:FormGroup;
 
 
     this.register= fb.group({
-      username:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{2,15}$")]],
+      username:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,15}$")]],
       phonenumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
-      email:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
+      email:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$")]],
       password:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
       ConfirmPassword:['',[Validators.required,Validators.minLength(8)]]});
   }
@@ -88,8 +94,7 @@ forgotPassword:FormGroup;
   }
 
   SendData(){
-    this.data_ser.read_data(this.login.value);
-    this.router.navigateByUrl("/");
+    this.data_ser.read_data(this.login.value,this.returl);
 }
 
 

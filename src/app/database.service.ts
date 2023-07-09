@@ -94,7 +94,7 @@ export class DatabaseService {
 
 
 
-  read_data(loginData:any){
+  read_data(loginData:any,returl:any){
 
     this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
       const data=x.find((log:any)=>{
@@ -105,10 +105,22 @@ export class DatabaseService {
 
       if(data){
         this.username=JSON.stringify(this.name);
-        window.location.reload();
+
+
         this.islogged=true;
         sessionStorage.setItem('isentered','true');
         sessionStorage.setItem('isusername',this.username);
+        if(returl==null){
+          this.router.navigateByUrl("").then(()=>{
+            location.reload();
+          });
+        }
+        else{
+          console.log(returl);
+          this.router.navigate([returl]).then(()=>{
+            location.reload()
+          });
+        }
         return alert("login successfull");
       }
       else{
@@ -168,7 +180,13 @@ export class DatabaseService {
   sendCartHotelname(){
     this.getsessionHotelDetails=sessionStorage.getItem('cartHotelDetails');
     this.setsessionHotelDetails=JSON.parse(this.getsessionHotelDetails);
-    return this.setsessionHotelDetails[0];
+    if(this.setsessionHotelDetails==null){
+      return null;
+    }
+    else{
+      return this.setsessionHotelDetails[0];
+    }
+
   }
 
   read_Offers(){
@@ -271,4 +289,22 @@ export class DatabaseService {
     return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
   }
 
+  getAddress(Address:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Address:Address});
+  }
+  sendAddress(){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob= JSON.parse(this.loggedPhonenumber);
+    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+  }
+
+
+  getvisaDetails(){
+    return this.http.get("http://Localhost:3000/Visa");
+  }
+  getmasterDetails(){
+    return this.http.get("http://Localhost:3000/Mastercard");
+  }
 }

@@ -1,4 +1,6 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { DatabaseService } from '../database.service';
 
 @Component({
@@ -33,9 +35,20 @@ export class DishesComponent {
   checkFavoriteArray:any=[];
   // checkFavoriteCount:number=0;
 
+  dishes:string="";
+
   islogged:any;
 
-constructor( private hotelName:DatabaseService){
+  frontUi:boolean=true;
+  searchdish:FormGroup;
+
+
+  emptyArray:any=[];
+  dishNameArray:any=[];
+  finalDishArray:any=[];
+  isfound:boolean=false;
+
+constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
   this.dummy=sessionStorage.getItem('dishes');
   this.dummy1=JSON.parse(this.dummy);
 
@@ -78,13 +91,44 @@ constructor( private hotelName:DatabaseService){
 
   }
 
+  this.searchdish=dishSearch.group({
+    searchdishes:new FormControl(['',Validators.required])
+  });
 
-  this.readDetails();
+  this.searchdish.valueChanges.subscribe(x=>{
+    if(x.searchdishes!=''){
+      this.searchdishname(x.searchdishes);
+    }
+    else{
+      this.finalDishArray=[];
+    }
+  });
+  this.value=this.hotelName.sendHotelName();
+  this.dishArray=this.value.dishes;
 }
-readDetails(){
-this.value=this.hotelName.sendHotelName();
-this.dishArray=this.value.dishes;
+
+searchdishname(dish:string){
+  var s=0;
+  this.emptyArray=[];
+  for(var i=0; i< this.dishArray.length; i++){
+    this.dishNameArray[i]=this.dishArray[i].dishName;
+  }
+  for(var i=0; i< this.dishArray.length; i++){
+    var str=this.dishNameArray[i].toLowerCase();
+    var str1=dish.toLowerCase();
+   if(str.includes(str1)){
+   this.emptyArray[s++]=this.dishArray[i];
+   }
+  }
+  if(this.emptyArray.length==0){
+    this.isfound=true;
+  }
+  else{
+    this.isfound=false;
+  }
+  this.finalDishArray=new Set(this.emptyArray);
 }
+
 
 cartItems(ind:number){
 
@@ -178,6 +222,13 @@ Favorite(){
   }
 }
 
+searchBar(){
+  this.frontUi=false;
+}
+
+closeSearchbar() {
+  this.frontUi=true;
+}
 
 }
 

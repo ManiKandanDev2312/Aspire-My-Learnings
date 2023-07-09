@@ -21,7 +21,7 @@ export class FavoritesComponent {
     this.favorite.sendFavorite().subscribe(x=>{
       this.totalDetails=x;
       this.FavoritesArray=this.totalDetails.Favorites;
-      console.log(this.FavoritesArray.length);
+
       if(this.FavoritesArray.length==0){
         this.isshow=false;
       }
@@ -30,6 +30,7 @@ export class FavoritesComponent {
         this.limitedFavorite[0]=this.FavoritesArray[0]
       }
       else{
+        this.isshow=true;
         this.isButton=true;
         for(var i=0; i<2; i++){
           this.limitedFavorite[i]=this.FavoritesArray[i];

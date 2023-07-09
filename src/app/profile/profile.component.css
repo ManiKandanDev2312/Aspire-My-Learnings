@@ -27,15 +27,16 @@
 .profilebox{
   margin-left: 10%;
   background-color: white;
-  width: 80%;
+  width: 70%;
   margin-top: 1%;
   padding: 4%;
 }
 
 .left{
   margin-top: 10%;
-  margin-left: 10%;
-  height: 8vh;
+  margin-left: 4%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .content{
@@ -45,17 +46,15 @@
 .content .boxes:nth-child(1){
   background-color: #edf1f7;
   width: 25%;
-  height: 80vh;
 }
 
 .left a{
-  margin-top: 7%;
-  margin-left: 35%;
-  font-size: 1.2vw;
+  margin-left: 25%;
+  font-size: 1vw;
+  font-weight: bold;
   color: gray;
-  font-weight: lighter;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
  }
 
  .left a:hover{

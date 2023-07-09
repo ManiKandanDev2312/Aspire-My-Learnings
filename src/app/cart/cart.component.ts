@@ -11,6 +11,8 @@ import { DatabaseService } from '../database.service';
 export class CartComponent {
   itemArray:any=[];
   hotelDetails:any;
+  customerDetails:any;
+  AddressDetails:any;
 
 
   cart:boolean=false;
@@ -35,57 +37,74 @@ export class CartComponent {
   log:any;
   islogged:boolean=false;
   iserror:boolean=true;
-  // isaddress:boolean=false;
-
-  // getsessionHotelname:any;
-  // setsessionHotelname:any;
 
 
   Address:FormGroup;
   isaddAdress:boolean=false;
+  setTotalPrice:any;
 
 
+  orderitemArray:any=[];
+  orderArray:any=[];
+  setOrderDetails:any=[];
+  setItemQuantity:any=[];
 
+  setHotelDetails:any;
+  addressDetails:any=[];
+  sendAddressDetails:any=[];
+  AddressCount:any=0;
+  isAddress:boolean=false;
+  setsessionAdress:any;
 constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
   this.Address=fb.group({
     yourAddress:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{15,30}$")]],
-    DoorNo:['',[Validators.required,Validators.pattern("[0-9][/]{10}")]],
-    Landmark:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{2,15}$")]]
+    DoorNo:['',[Validators.required,Validators.pattern("^[0-9]+\s*[a-zA-Z]?(\/[0-9]+\s*[a-zA-Z]?)?$")]],
+    Landmark:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{2,10}$")]],
+    District:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,10}$")]]
   });
 
   this.itemArray=sessionStorage.getItem('dishes');
   this.itemsArray=JSON.parse(this.itemArray);
   this.hotelDetails=this.dish.sendCartHotelname();
 
+  if(sessionStorage.getItem('isentered')=="true"){
+    this.dish.sendAddress().subscribe(x=>{
+      this.customerDetails=x;
+      this.AddressDetails=this.customerDetails.Address;
+    })
+  }
 
-  // console.log(this.itemsArray);
+
+
   if(this.itemsArray==null){
     this.iscartAdded=true;
   }else{
     this.cartUi();
-    for(var i=0;i<this.itemArray.length;i++){
+    for(var i=0;i<this.itemsArray.length;i++){
       this.count[i]=1;
     }
   }
   this.log=sessionStorage.getItem('isentered');
-  console.log(sessionStorage.getItem('isentered'));
     if(this.log ==null || this.log=="false"){
       this.islogged=false;
       this.iserror=true;
-      // alert('hi');
-      // this.isaddress=false;
     }
     else{
     this.details=sessionStorage.getItem('isusername');
     this.dummy1=JSON.parse(this.details);
-    // console.log(this.dummy1.username);
     this.user=this.dummy1.username;
       this.islogged=true;
       this.iserror=false;
       this.DeliveryAddress();
-      this.Payment();
-      // this.address();
+    }
+
+
+    if(sessionStorage.getItem("isAddressAdded")=="false" || sessionStorage.getItem("isAddressAdded")==null){
+      this.isAddress=false;
+    }
+    else{
+      this.isAddress=true;
     }
 }
 
@@ -98,17 +117,14 @@ cartUi(){
     this.itemTotal=this.itemTotal+parseInt(this.itemPrice[i]);
   }
   this.totalPrice=this.itemTotal+this.deliverFee;
+  this.setTotalPrice=JSON.stringify(this.totalPrice);
+  sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
 }
 
 
 home(){
   this.router.navigateByUrl("");
 }
-
-// address(){
-//   this.isaddress=true;
-// }
-
 
 
 minus(ind:number){
@@ -120,8 +136,9 @@ minus(ind:number){
     sessionStorage.setItem('dishes',this.dummy2);
     this.dummyPrice.splice(ind,1);
     this.count.splice(ind,1);
+    console.log(this.count.length);
     if(this.itemsArray.length==1){
-      this.itemTotal=this.itemsArray[0];
+      this.itemTotal=this.itemPrice[0];
     }
     else if(this.itemsArray.length==0){
       this.iscartAdded=true;
@@ -140,16 +157,23 @@ minus(ind:number){
     }
   }
   this.totalPrice=this.itemTotal+this.deliverFee;
+  this.setTotalPrice=JSON.stringify(this.totalPrice);
+  sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
 }
 
 plus(ind:number){
   this.itemTotal=0;
   this.count[ind]=this.count[ind]+1;
+  console.log(this.count.length);
+  this.setItemQuantity=JSON.stringify(this.count);
+  sessionStorage.setItem('itemQuantityArray',this.setItemQuantity);
   this.itemPrice[ind]=this.count[ind]*this.dummyPrice[ind];
   for(var i=0;i<this.itemsArray.length;i++){
     this.itemTotal=this.itemTotal+this.itemPrice[i];
   }
   this.totalPrice=this.itemTotal+this.deliverFee;
+  this.setTotalPrice=JSON.stringify(this.totalPrice);
+  sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
 }
 
 
@@ -157,8 +181,159 @@ DeliveryAddress(){
   this.isShowAddress=true
 }
 
-Payment(){
 
+
+homeAddress(addressData:any,addressType:any){
+  this.dish.sendAddress().subscribe(x=>{
+    this.customerDetails=x;
+    this.AddressDetails=this.customerDetails.Address;
+
+    if(this.AddressDetails==undefined || this.AddressDetails.length==0){
+
+      if(addressType=="Home"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-house"
+        }]
+      }
+      else if(addressType=="Work"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-briefcase"
+        }]
+      }
+      else{
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-location-dot"
+        }]
+      }
+      this.sendAddressDetails=this.addressDetails;
+      this.dish.getAddress(this.addressDetails).subscribe(x=>{
+        console.log(x);
+      })
+    }
+
+
+    else{
+      if(addressType=="Home"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-house"
+        }]
+      for(var i=0;i<this.AddressDetails.length;i++){
+        if(addressType==this.AddressDetails[i].addressType){
+          this.AddressDetails.splice(i,1);
+        }
+        this.sendAddressDetails[i]=this.AddressDetails[i];
+      }
+      this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
+
+      }
+      else if(addressType=="Work"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-briefcase"
+        }]
+      for(var i=0;i<this.AddressDetails.length;i++){
+        if(addressType==this.AddressDetails[i].addressType){
+          this.AddressDetails.splice(i,1);
+        }
+        this.sendAddressDetails[i]=this.AddressDetails[i];
+      }
+      this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
+      }
+      else{
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-location-dot"
+        }]
+      for(var i=0;i<this.AddressDetails.length;i++){
+        if(addressType==this.AddressDetails[i].addressType){
+          this.AddressDetails.splice(i,1);
+        }
+        this.sendAddressDetails[i]=this.AddressDetails[i];
+      }
+      this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
+      }
+      console.log(this.sendAddressDetails);
+      this.dish.getAddress(this.sendAddressDetails).subscribe(x=>{
+        console.log(x);
+      })
+    }
+
+  })
+
+  setTimeout(()=>{
+    window.location.reload();
+  },1000);
+
+  this.close();
+}
+
+
+setAddress(ind:any){
+  if(this.isAddress==false){
+    this.setsessionAdress=JSON.stringify(this.AddressDetails[ind]);
+
+    sessionStorage.setItem('orderAddress',this.setsessionAdress);
+    sessionStorage.setItem('isAddressAdded',"true");
+    alert("your Address is added for delivery");
+    this.isAddress=true;
+  }
+  else{
+    this.isAddress=false;
+    alert("your Address is removed from delivery Address");
+    sessionStorage.removeItem('orderAddress');
+    sessionStorage.setItem('isAddressAdded',"false");
+  }
+}
+
+Payment(){
+  if(this.isAddress || sessionStorage.getItem('isentered')=='false'){
+    this.router.navigateByUrl("finalPayment");
+  }
+  else{
+    alert("you must add your address before payment");
+  }
+  for(var i=0;i<this.itemsArray.length;i++){
+      this.orderitemArray[i]={
+        dishName:this.itemsArray[i].dishName,
+        dishQuantity:this.count[i],
+        dishPrice:this.itemPrice[i]
+    }
+  }
+  this.orderArray={
+    hotelName:this.hotelDetails[0].hotelname,
+    hotelImage:this.hotelDetails[0].hotelimage,
+    orderItems:this.orderitemArray
+  }
+  this.setOrderDetails=JSON.stringify(this.orderArray);
+  sessionStorage.setItem('OrderDetails',this.setOrderDetails);
 }
 
 addAdress(){
@@ -167,5 +342,14 @@ addAdress(){
 
 close(){
   this.isaddAdress=false;
+}
+
+
+
+
+hotelRoute(){
+  this.setHotelDetails=JSON.stringify(this.hotelDetails);
+  sessionStorage.setItem('hotelDetails',this.setHotelDetails);
+  this.router.navigateByUrl("dishPage");
 }
 }

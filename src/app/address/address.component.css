@@ -1,0 +1,85 @@
+
+*{
+  font-family: sans-serif;
+}
+
+.commonBox{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  box-shadow: 1.5px 0.5px 5px 2px rgba(0,0,0,0.2);
+  margin-left: 25px;
+}
+
+.Address h1{
+  padding: 20px 0px 10px 30px;
+  font-weight: bold;
+  font-size: 1.4vw;
+}
+
+.hotel{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 6%;
+  gap: 2%;
+  padding: 20px;
+  padding-right: 30px;
+}
+
+.emptyAddress{
+  display: flex;
+  flex-wrap: wrap;
+}
+ .addAddress{
+  box-shadow: 1.5px 0.5px 5px 2px rgba(0,0,0,0.2);
+  margin-left: 40px;
+  margin-bottom: 40px;
+  width: 300px;
+ }
+.addAddress i{
+  margin: 30px;
+  font-size: 1.3vw;
+  color: #60b246;
+}
+
+.addAddress p{
+  color: black;
+  margin-left: 70px;
+  font-size: 1vw;
+  margin-top: -50px;
+  font-weight: bold;
+}
+
+.addAddress .deliveryButton{
+  cursor: pointer;
+  background-color: #60b246;
+  font-size: 0.9vw;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+.addAddress button{
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #60b246;
+  font-size: 0.9vw;
+  font-weight: bold;
+  color: #60b246;
+  padding: 15px;
+  margin: 50px;
+}
+.addAddress div{
+  margin-top: 30px;
+}
+.addAddress div p{
+  margin-top: 0px;
+  font-size: 0.7vw;
+  color: gray;
+  font-weight: lighter;
+}

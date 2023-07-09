@@ -44,8 +44,6 @@ constructor(){
 
 
     if(this.islogged == "true"){
-
-      // this.userName();
     this.details=sessionStorage.getItem('isusername');
     this.dummy1=JSON.parse(this.details);
     this.username=this.dummy1.username;
@@ -57,7 +55,6 @@ constructor(){
     setInterval(()=>{
       this.cartitems=sessionStorage.getItem('dishes');
       this.dummy=JSON.parse(this.cartitems);
-      // this.cartCount=this.dummy.length;
       if(this.dummy==null){
         this.iscart=false;
         this.cartCount=0;
@@ -73,6 +70,7 @@ constructor(){
 LogOut(){
   sessionStorage.setItem('isentered','false');
   sessionStorage.setItem('isusername','');
+  sessionStorage.setItem('isAddressAdded','false');
   window.location.reload();
 }
 

@@ -21,10 +21,7 @@
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "search": [
-        "HMR Hotel",
-        "Geetha Canteen",
-        "Chicking",
-        "Barbequeen Restaurant"
+        "Geetha Canteen"
       ],
       "Favorites": [
         {
@@ -72,6 +69,151 @@
               "dishDescription": "Serves 1"
             }
           ]
+        },
+        {
+          "id": 3,
+          "hotelimage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "hotelname": "Barbequeen Restaurant",
+          "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
+          "timeDel": "23",
+          "Costfortwo": "₹350",
+          "offer": "60% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Pineapple Juice",
+              "dishPrice": "55",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/cool boost.webp",
+              "dishName": "Cool Boost",
+              "dishPrice": "44",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Mosambii Juice",
+              "dishPrice": "60",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/sweet corn maggi.webp",
+              "dishName": "Sweet Corn Maggi",
+              "dishPrice": "69",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/paneer sandwitch.webp",
+              "dishName": "paneer Sandwitch",
+              "dishPrice": "88",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
+        }
+      ],
+      "Address": [
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "madurai",
+          "addressType": "Others",
+          "iconType": "fa-location-dot"
+        },
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        },
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Work",
+          "iconType": "fa-briefcase"
+        }
+      ]
+    },
+    {
+      "username": "Jeeva",
+      "phonenumber": 6379630065,
+      "email": "2k21aids11@kiot.ac.in",
+      "password": "@Jeeva2001",
+      "ConfirmPassword": "@Jeeva2001",
+      "Favorites": [
+        {
+          "id": 2,
+          "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "hotelname": "SS HYDERABAD BIRYANI",
+          "dishvariety": "Biryani, South Indian, Seafood",
+          "timeDel": "18",
+          "Costfortwo": "₹350",
+          "offer": "40% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Pineapple Juice",
+              "dishPrice": "55",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/cool boost.webp",
+              "dishName": "Cool Boost",
+              "dishPrice": "44",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Mosambii Juice",
+              "dishPrice": "60",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/sweet corn maggi.webp",
+              "dishName": "Sweet Corn Maggi",
+              "dishPrice": "69",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/paneer sandwitch.webp",
+              "dishName": "paneer Sandwitch",
+              "dishPrice": "88",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
+        }
+      ],
+      "Address": [
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "madurai",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        },
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "chennai",
+          "addressType": "Others",
+          "iconType": "fa-location-dot"
         }
       ]
     }
@@ -332,6 +474,13 @@
           "dishDescription": "Healthy Juice"
         },
         {
+          "dishImage": "./assets/dishes/Orange Juice.webp",
+          "dishName": "Orange Juice",
+          "dishPrice": "150",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
           "dishImage": "./assets/dishes/cool boost.webp",
           "dishName": "Cool Boost",
           "dishPrice": "44",
@@ -339,23 +488,51 @@
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Butterscotch Mini Jar Cake.webp",
+          "dishName": "Butterscotch Mini Jar Cake",
+          "dishPrice": "119",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Chilly Chickenn.webp",
+          "dishName": "Chilly Chickenn",
+          "dishPrice": "120",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Chilli Mushroomm.webp",
+          "dishName": "Chilli Mushroomm",
+          "dishPrice": "89",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
+          "dishImage": "./assets/dishes/Paneer Sandwich.webp",
+          "dishName": "Paneer Sandwich",
           "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Cheese Mix Bread Omlet.webp",
+          "dishName": "Cheese Mix Bread Omlet",
+          "dishPrice": "74",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Egg Nooodles...webp",
+          "dishName": "Egg Nooodles..",
+          "dishPrice": "99",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Plain Samosa (1 Pc).webp",
+          "dishName": "Plain Samosa (1 Pc)",
+          "dishPrice": "25",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -371,37 +548,74 @@
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Coconut Sharbat.webp",
+          "dishName": "Coconut Sharbat",
+          "dishPrice": "200",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Cold Pressed Orange Juice.webp",
+          "dishName": "Cold Pressed Orange Juice",
+          "dishPrice": "220",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Rasmalai Mini Jar Cake.webp",
+          "dishName": "Rasmalai Mini Jar Cake",
+          "dishPrice": "139",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Gulab Jamun Vanilla Pastry.webp",
+          "dishName": "Gulab Jamun Vanilla Pastry",
+          "dishPrice": "99",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+
+        {
+          "dishImage": "./assets/dishes/Chicken Biryani Half.webp",
+          "dishName": "Chicken Biryani Half",
+          "dishPrice": "278",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Chicken Special Leg.webp",
+          "dishName": "Chicken Special Leg",
+          "dishPrice": "259",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Chicken DUM Exec BIRYANI.webp",
+          "dishName": "Chicken DUM Exec BIRYANI",
+          "dishPrice": "240",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Hyderabadi Mutton Dum Biryrani.webp",
+          "dishName": "Hyderabadi Mutton Dum Biryrani",
+          "dishPrice": "312",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Prawn Biryani.webp",
+          "dishName": "Prawn Biryani",
+          "dishPrice": "350",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+
+        {
+          "dishImage": "./assets/dishes/Mutton Biriyani.webp",
+          "dishName": "Mutton Biriyani",
+          "dishPrice": "312",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -417,37 +631,68 @@
       "offer": "60% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Mango Juice.webp",
+          "dishName": "Mango Juice",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Fresh Lime Juice.webp",
+          "dishName": "Fresh Lime Juice",
+          "dishPrice": "38",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+
+        {
+          "dishImage": "./assets/dishes/Choco Truffle Pastry.webp",
+          "dishName": "Choco Truffle Pastry",
+          "dishPrice": "89",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Chocolate Truffle Lunch Box Cake.webp",
+          "dishName": "Chocolate Truffle Lunch Box Cake",
+          "dishPrice": "249",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Grill Pepper Fry.jpg",
+          "dishName": "Grill Pepper Fry",
+          "dishPrice": "285",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Grill Pichupotta Fry.webp",
+          "dishName": "Grill Pichupotta Fry",
+          "dishPrice": "309",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+
+        {
+          "dishImage": "./assets/dishes/Chicken Kabab (5pcs Bone).webp",
+          "dishName": "Chicken Kabab (5pcs Bone)",
+          "dishPrice": "250",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+
+        {
+          "dishImage": "./assets/dishes/Tandoori Chicken.webp",
+          "dishName": "Tandoori Chicken",
+          "dishPrice": "149",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Kuska.webp",
+          "dishName": "Kuska",
+          "dishPrice": "209",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -463,37 +708,72 @@
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
+          "dishImage": "./assets/dishes/Watermelon Juice.webp",
+          "dishName": "Watermelon Juice",
           "dishPrice": "55",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Miracle Abc - 100% Juice.webp",
+          "dishName": "Miracle Abc - 100% Juice",
+          "dishPrice": "129",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Time For Chocolate Photo Cupcakes - Pack Of 6.webp",
+          "dishName": "Time For Chocolate Photo Cupcakes - Pack Of 6",
+          "dishPrice": "619",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Assorted Sweets [250 Gms].webp",
+          "dishName": "Assorted Sweets [250 Gms]",
+          "dishPrice": "198",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Vanjaram Fish.webp",
+          "dishName": "Vanjaram Fish",
+          "dishPrice": "250",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Beef Chukka.webp",
+          "dishName": "Beef Chukka",
+          "dishPrice": "180",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Chicken Pepper.webp",
+          "dishName": "Chicken Pepper",
+          "dishPrice": "225",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Garlic Chicken.webp",
+          "dishName": "Garlic Chicken",
+          "dishPrice": "235",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Parotta.webp",
+          "dishName": "Parotta",
+          "dishPrice": "25",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Fish Manchurian.webp",
+          "dishName": "Fish Manchurian",
+          "dishPrice": "265",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -509,37 +789,72 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Grape Juice.webp",
+          "dishName": "Grape Juice",
+          "dishPrice": "50",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Tangy Orange - 100 % Juice.webp",
+          "dishName": "Tangy Orange - 100 % Juice",
+          "dishPrice": "129",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Milk Halwa.webp",
+          "dishName": "Milk Halwa",
+          "dishPrice": "178",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Mini Jamun.webp",
+          "dishName": "Mini Jamun",
+          "dishPrice": "140",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Chilli Paneer.webp",
+          "dishName": "Chilli Paneer",
+          "dishPrice": "257",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Veg Noodles.webp",
+          "dishName": "Veg Noodles",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Kadai Paneer.webp",
+          "dishName": "Kadai Paneer",
+          "dishPrice": "257",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Uthappam.webp",
+          "dishName": "Uthappam",
+          "dishPrice": "100",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Onion Roast.webp",
+          "dishName": "Onion Roast",
+          "dishPrice": "150",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Poori (2 PC).webp",
+          "dishName": "Poori (2 PC)",
+          "dishPrice": "100",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -555,37 +870,72 @@
       "offer": "20% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/California Quencher Juice.webp",
+          "dishName": "California Quencher Juice",
+          "dishPrice": "120",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Apple Juice.webp",
+          "dishName": "Apple Juice",
+          "dishPrice": "50",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Mothichur Laddu.webp",
+          "dishName": "Mothichur Laddu",
+          "dishPrice": "190",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Brownie A La Mode.webp",
+          "dishName": "Brownie A La Mode",
+          "dishPrice": "340",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Chilli Garlic Potato Peppers.webp",
+          "dishName": "Chilli Garlic Potato Peppers",
+          "dishPrice": "59",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Italian Egg Sandwich.webp",
+          "dishName": "Italian Egg Sandwich",
+          "dishPrice": "45",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/French Fries.webp",
+          "dishName": "French Fries",
+          "dishPrice": "56",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Flavored Chicken Sausage.webp",
+          "dishName": "Flavored Chicken Sausage",
+          "dishPrice": "49",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Veg Maggi.webp",
+          "dishName": "Veg Maggi",
+          "dishPrice": "50",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Murukku settu.webp",
+          "dishName": "Murukku settu",
+          "dishPrice": "42",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -601,37 +951,72 @@
       "offer": "60% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Pomegranate Juice.webp",
+          "dishName": "Pomegranate Juice",
+          "dishPrice": "90",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Lime Mint Cooler.webp",
+          "dishName": "Lime Mint Cooler",
+          "dishPrice": "90",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Thiruenelveli Halwa (250 gms).webp",
+          "dishName": "Thiruenelveli Halwa (250 gms)",
+          "dishPrice": "120",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Red Velvet Roll Cake Slice.webp",
+          "dishName": "Red Velvet Roll Cake Slice",
+          "dishPrice": "125",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/15 Pcs Hot Wings.webp",
+          "dishName": "15 Pcs Hot Wings",
+          "dishPrice": "399",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/5 Pcs Crispy Chicken + 2 Mayo Dips.webp",
+          "dishName": "5 Pcs Crispy Chicken + 2 Mayo Dips",
+          "dishPrice": "499",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Burger Box.webp",
+          "dishName": "Burger Box",
+          "dishPrice": "288",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/10 Pcs Crispy Chicken + 3 Mayo Dips.webp",
+          "dishName": "10 Pcs Crispy Chicken + 3 Mayo Dips",
+          "dishPrice": "888",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Mexicano Pizza [medium].webp",
+          "dishName": "Mexicano Pizza [medium]",
+          "dishPrice": "519",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Veg Royal Wrap.webp",
+          "dishName": "Veg Royal Wrap",
+          "dishPrice": "179",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -647,37 +1032,72 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Muskmelon Juice.webp",
+          "dishName": "Muskmelon Juice",
+          "dishPrice": "45",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Mint Ginger Juice.webp",
+          "dishName": "Mint Ginger Juice",
+          "dishPrice": "91",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Jilebi - 250 Gms.webp",
+          "dishName": "Jilebi - 250 Gms",
+          "dishPrice": "95",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Cotton Candy Milkshake.webp",
+          "dishName": "Cotton Candy Milkshake",
+          "dishPrice": "255",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Mango Sundae Ice Cream.webp",
+          "dishName": "Mango Sundae Ice Cream",
+          "dishPrice": "97",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Chocolate Milk Shake.webp",
+          "dishName": "Chocolate Milk Shake",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Nutella Milk Shake.webp",
+          "dishName": "Nutella Milk Shake",
+          "dishPrice": "188",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Lychee Milk Shake.webp",
+          "dishName": "Lychee Milk Shake",
+          "dishPrice": "221",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Fruit & Nut Sundae Ice cream.webp",
+          "dishName": "Fruit & Nut Sundae Ice cream",
+          "dishPrice": "428",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Brownie.webp",
+          "dishName": "Brownie",
+          "dishPrice": "110",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -693,37 +1113,72 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Abc Juices.webp",
+          "dishName": "Abc Juices",
+          "dishPrice": "70",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Coco Panagalkandu Juice.webp",
+          "dishName": "Coco Panagalkandu Juice",
+          "dishPrice": "90",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Rasagulla.webp",
+          "dishName": "Rasagulla",
+          "dishPrice": "50",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Cafe Mocha Super-Duper Thickshake.webp",
+          "dishName": "Cafe Mocha Super-Duper Thickshake",
+          "dishPrice": "240",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Family Combo.webp",
+          "dishName": "Family Combo",
+          "dishPrice": "899",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Falooda.webp",
+          "dishName": "Falooda",
+          "dishPrice": "169",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Chicken Wrap.webp",
+          "dishName": "Chicken Wrap",
+          "dishPrice": "165",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Popcorn [X Large].webp",
+          "dishName": "Popcorn [X Large]",
+          "dishPrice": "284",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Veg Burger.webp",
+          "dishName": "Veg Burger",
+          "dishPrice": "109",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Crispy Chicken Burger.webp",
+          "dishName": "Crispy Chicken Burger",
+          "dishPrice": "169",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -739,37 +1194,72 @@
       "offer": "10% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Lemon Juice.webp",
+          "dishName": "Lemon Juice",
+          "dishPrice": "65",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Pomegranate Juice.webp",
+          "dishName": "Pomegranate Juice",
+          "dishPrice": "125",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Choco Badam Roll.webp",
+          "dishName": "Choco Badam Roll",
+          "dishPrice": "240",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Bavarian Chocolate Ice cream.webp",
+          "dishName": "Bavarian Chocolate Ice cream",
+          "dishPrice": "90",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Plain Paratha.webp",
+          "dishName": "Plain Paratha",
+          "dishPrice": "34",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Aloo Gobi Masala.webp",
+          "dishName": "Aloo Gobi Masala",
+          "dishPrice": "221",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Chana Masala.webp",
+          "dishName": "Chana Masala",
+          "dishPrice": "199",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Tawa Pulao (Our Special).webp",
+          "dishName": "Tawa Pulao (Our Special)",
+          "dishPrice": "196",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Gujarati Thali.webp",
+          "dishName": "Gujarati Thali",
+          "dishPrice": "150",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Aloo Paratha.webp",
+          "dishName": "Aloo Paratha",
+          "dishPrice": "90",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -785,37 +1275,72 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Mosambi Juice.webp",
+          "dishName": "Mosambi Juice",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Fresh Watermelon Juice 200ml.webp",
+          "dishName": "Fresh Watermelon Juice 200ml",
+          "dishPrice": "49",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Kesar Badam Milkshake.webp",
+          "dishName": "Kesar Badam Milkshake",
+          "dishPrice": "219",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Ferrero Rocher Chocolate Stone Dessert Jar.webp",
+          "dishName": "Ferrero Rocher Chocolate Stone Dessert Jar",
+          "dishPrice": "319",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Moroccan Spice Pasta Pizza - Veg.webp",
+          "dishName": "Moroccan Spice Pasta Pizza - Veg",
+          "dishPrice": "140",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Farmhouse Pizza.webp",
+          "dishName": "Farmhouse Pizza",
+          "dishPrice": "469",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Chicken Dominator Pizza.webp",
+          "dishName": "Chicken Dominator Pizza",
+          "dishPrice": "649",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Veg Loaded.webp",
+          "dishName": "Veg Loaded",
+          "dishPrice": "159",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Paneer, Onion & Capsicum with Desi Makhani Sauce.webp",
+          "dishName": "Paneer, Onion & Capsicum with Desi Makhani Sauce",
+          "dishPrice": "139",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Summer Special Combo @ Rs.180 off.webp",
+          "dishName": "Summer Special Combo @ Rs.180 off",
+          "dishPrice": "749",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -831,37 +1356,72 @@
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
+          "dishImage": "./assets/dishes/Mosambi Juice 200ml.webp",
           "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishPrice": "65",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Watermelon Ice Juice.webp",
+          "dishName": "Watermelon Ice Juice",
+          "dishPrice": "50",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Gulab Jamun.webp",
+          "dishName": "Gulab Jamun",
+          "dishPrice": "90",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
+          "dishImage": "./assets/dishes/Hazelnut Hot Chocolate.webp",
+          "dishName": "Hazelnut Hot Chocolate",
+          "dishPrice": "149",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Kothu Parotta.webp",
+          "dishName": "Kothu Parotta",
           "dishPrice": "60",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Paneer Fried Rice.webp",
+          "dishName": "Paneer Fried Rice",
+          "dishPrice": "180",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Mushroom Briyani.webp",
+          "dishName": "Mushroom Briyani",
+          "dishPrice": "185",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Parcel Non Veg Meals.webp",
+          "dishName": "Parcel Non Veg Meals",
+          "dishPrice": "200",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Crab Fry.webp",
+          "dishName": "Crab Fry",
+          "dishPrice": "120",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Plain Biryani.webp",
+          "dishName": "Plain Biryani",
+          "dishPrice": "230",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -877,37 +1437,72 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Mint Lime Juice.webp",
+          "dishName": "Mint Lime Juice",
+          "dishPrice": "35",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Watermelon 500ml.webp",
+          "dishName": "Watermelon 500ml",
+          "dishPrice": "70",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Black Currant Ice Cream.webp",
+          "dishName": "Black Currant Ice Cream",
+          "dishPrice": "112",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
+          "dishImage": "./assets/dishes/Ferroro Rocher Milkshake.webp",
+          "dishName": "Ferroro Rocher Milkshake",
+          "dishPrice": "200",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Podi Roast.webp",
+          "dishName": "Podi Roast",
+          "dishPrice": "113",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Paneer Parotta.webp",
+          "dishName": "Paneer Parotta",
+          "dishPrice": "139",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Pongal.webp",
+          "dishName": "Pongal",
+          "dishPrice": "88",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Sambar Vadai.webp",
+          "dishName": "Sambar Vadai",
           "dishPrice": "60",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Tomato Soup.webp",
+          "dishName": "Tomato Soup",
+          "dishPrice": "113",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Lemon Sevai.webp",
+          "dishName": "Lemon Sevai",
+          "dishPrice": "78",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -923,37 +1518,71 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
+          "dishImage": "./assets/dishes/Blue Mint Juice.jpg",
+          "dishName": "Blue Mint Juice",
           "dishPrice": "55",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Italian Grape Juice.webp",
+          "dishName": "Italian Grape Juice",
+          "dishPrice": "78",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Banana Gulkand Milkshake.webp",
+          "dishName": "Banana Gulkand Milkshake",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
+          "dishImage": "./assets/dishes/Rasmalai.webp",
+          "dishName": "Rasmalai",
           "dishPrice": "60",
           "dishType": "veg",
-          "dishDescription": "Serves 1"
+          "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Idli (1 Set).webp",
+          "dishName": "Idli (1 Set)",
+          "dishPrice": "27",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Egg Roast Dosa.webp",
+          "dishName": "Egg Roast Dosa",
+          "dishPrice": "86",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Onion Uttapam.webp",
+          "dishName": "Onion Uttapam",
+          "dishPrice": "87",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Paniyaram 7pc (2 Chutneys).webp",
+          "dishName": "Paniyaram 7pc (2 Chutneys)",
+          "dishPrice": "76",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Chola Poori.webp",
+          "dishName": "Chola Poori",
+          "dishPrice": "79",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },{
+          "dishImage": "./assets/dishes/Chapati 1 set.webp",
+          "dishName": "Chapati 1 set",
+          "dishPrice": "70",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -969,37 +1598,72 @@
       "offer": "",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Raw Coconut Water.webp",
+          "dishName": "Raw Coconut Water",
+          "dishPrice": "79",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Dates Juice.webp",
+          "dishName": "Dates Juice",
+          "dishPrice": "99",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Murukku.webp",
+          "dishName": "Murukku",
+          "dishPrice": "80",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
+          "dishImage": "./assets/dishes/Lemon Iced Tea.webp",
+          "dishName": "Lemon Iced Tea",
+          "dishPrice": "130",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Chilli Gobi.webp",
+          "dishName": "Chilli Gobi",
+          "dishPrice": "120",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Paneer Butter Masala.webp",
+          "dishName": "Paneer Butter Masala",
+          "dishPrice": "185",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Kadai Veg.webp",
+          "dishName": "Kadai Veg",
+          "dishPrice": "160",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Rumali Roti.webp",
+          "dishName": "Rumali Roti",
           "dishPrice": "60",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Veg Fried Rice.webp",
+          "dishName": "Veg Fried Rice",
+          "dishPrice": "140",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Paneer Noodles.webp",
+          "dishName": "Paneer Noodles",
+          "dishPrice": "170",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
@@ -1015,41 +1679,504 @@
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Pineapple Juice",
-          "dishPrice": "55",
+          "dishImage": "./assets/dishes/Salt Fresh Lime with Soda.webp",
+          "dishName": "Salt Fresh Lime with Soda",
+          "dishPrice": "120",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/cool boost.webp",
-          "dishName": "Cool Boost",
-          "dishPrice": "44",
+          "dishImage": "./assets/dishes/Carrot Juice.webp",
+          "dishName": "Carrot Juice",
+          "dishPrice": "60",
+          "dishType": "veg",
+          "dishDescription": "Healthy Juice"
+        },
+        {
+          "dishImage": "./assets/dishes/Egg Puff.webp",
+          "dishName": "Egg Puff",
+          "dishPrice": "40",
           "dishType": "veg",
           "dishDescription": ""
         },
         {
-          "dishImage": "./assets/dishes/mosambii juice.webp",
-          "dishName": "Mosambii Juice",
-          "dishPrice": "60",
+          "dishImage": "./assets/dishes/Rose Milk.webp",
+          "dishName": "Rose Milk",
+          "dishPrice": "100",
+          "dishType": "veg",
+          "dishDescription": ""
+        },
+        {
+          "dishImage": "./assets/dishes/Ginger Chai Flask (500ml).webp",
+          "dishName": "Ginger Chai Flask (500ml)",
+          "dishPrice": "90",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/sweet corn maggi.webp",
-          "dishName": "Sweet Corn Maggi",
-          "dishPrice": "69",
+          "dishImage": "./assets/dishes/Lemon Chai Flask (500ml).webp",
+          "dishName": "Lemon Chai Flask (500ml)",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/paneer sandwitch.webp",
-          "dishName": "paneer Sandwitch",
-          "dishPrice": "88",
+          "dishImage": "./assets/dishes/Hibiscus Chai Flask (500ml).webp",
+          "dishName": "Hibiscus Chai Flask (500ml)",
+          "dishPrice": "150",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Mini Chai Flask & Bread Butter Jam.webp",
+          "dishName": "Mini Chai Flask & Bread Butter Jam",
+          "dishPrice": "160",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Mini Chai Flask & Special Maggi.webp",
+          "dishName": "Mini Chai Flask & Special Maggi",
+          "dishPrice": "140",
+          "dishType": "veg",
+          "dishDescription": "Serves 1"
+        },
+        {
+          "dishImage": "./assets/dishes/Filter Coffee Flask.webp",
+          "dishName": "Filter Coffee Flask",
+          "dishPrice": "150",
           "dishType": "veg",
           "dishDescription": "Serves 1"
         }
       ]
+    }
+  ],
+  "Visa":[
+    {
+      "binNumber":"406814",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"461934",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"461933",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"457357",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"470441",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"483748",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"438623",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"483749",
+      "bankname":"CITY UNION BANK"
+    },
+    {
+      "binNumber":"436370",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"436369",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"436371",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"466256",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"457500",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"463237",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"463238",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"466257",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"436312",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"436372",
+      "bankname":"DBS BANK"
+    },
+    {
+      "binNumber":"445533",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"445535",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"445532",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"462851",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"404322",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"445534",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"418254",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"418234",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"474864",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"486575",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"421334",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"421334",
+      "bankname":"HDFC BANK"
+    }
+  ],
+  "Mastercard":[
+    {
+      "binNumber":"539194",
+      "bankname":"KVB BANK"
+    },
+    {
+      "binNumber":"511511",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"511665",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"511666",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"512962",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"512967",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"512968",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"513490",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"514560",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"514834",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"517635",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"517652",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"517848",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"521511",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"522023",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"522024",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526266",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"523674",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524111",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524181",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524216",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524254",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524368",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524877",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"524931",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"525760",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526266",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526269",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526265",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526271",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526419",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"526715",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"527692",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"528882",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"528887",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"528945",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"529185",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"529186",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"546094",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"550372",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552088",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552260",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552365",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552394",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"553583",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"556620",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"559300",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"531829",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"531831",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"531836",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"532118",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"532135",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"532676",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"532961",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"533136",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"534952",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"540536",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"541919",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"545226",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552274",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552385",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"553115",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"555153",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552218",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"532973",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"533744",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"533744",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"536311",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"541172",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"541919",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"545964",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552344",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"552389",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"553162",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"556042",
+      "bankname":"HDFC BANK"
+    },
+    {
+      "binNumber":"558983",
+      "bankname":"HDFC BANK"
     }
   ],
   "profile": {
