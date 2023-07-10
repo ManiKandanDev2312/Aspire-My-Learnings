@@ -8,6 +8,12 @@
   margin-left: 25px;
 }
 
+.orderBox{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .commonBoxes{
   width: 90%;
   margin-left: 35px;

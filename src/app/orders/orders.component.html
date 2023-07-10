@@ -1,20 +1,20 @@
 <div class="Orders">
   <h1>Past Orders</h1>
 
+  <div class="orderBox">
   <div class="commonBox">
-<div class="commonBoxes">
-  <div><img src="./assets/LOGO.png" alt=""></div>
+<div class="commonBoxes" *ngFor="let setPaymentOrderedDetails of setPaymentOrderedDetails ">
+  <div><img src="{{setPaymentOrderedDetails.hotelImage}}" alt=""></div>
   <div>
     <p>Delivered on Sun, Nov 20, 2022, 07:59PM <i class="fa-solid fa-circle-check"></i></p>
-    <h2>Shri Gupta Sweets</h2>
-    <h3>Dadagapatty</h3>
-    <h4>Order #152029746532 | Sun, Nov 20, 2022, 07:59PM</h4>
+    <h2>{{setPaymentOrderedDetails.hotelName}}</h2>
+    <h4>Order #{{setPaymentOrderedDetails.orderId}} | {{setPaymentOrderedDetails.date[0]}}, {{setPaymentOrderedDetails.date[1]}}</h4>
     <a href="">VIEW DETAILS</a>
   </div>
 </div>
-<div class="commonBoxes">
-  <p>Gobi manchurian x 1</p>
-  <h4>Total Paid: $145</h4>
+<div class="commonBoxes" *ngFor="let orderedItems of orderItemArray">
+  <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
+  <h4>Total Paid: ₹ {{setPaymentOrderedDetails.totalPrice}}</h4>
   <div class="OrderButton">
     <div class="button">
       <button>REORDER</button>
@@ -25,4 +25,5 @@
   </div>
 </div>
   </div>
+</div>
 </div>

@@ -166,7 +166,7 @@ Favorite(){
     this.hotelName.sendFavorite().subscribe(x=>{
       this.getFavorites=x;
       this.getFavoritesArray[this.getfavoritesCount++]=this.getFavorites.Favorites;
-      console.log(this.getFavoritesArray[0]);
+      // console.log(this.getFavoritesArray[0]);
       if(this.getFavoritesArray[0]==null || this.getFavoritesArray.length==0){
         this.getFavoritesArray[0]=this.setHotelName;
         this.hotelName.getFavorite(this.getFavoritesArray).subscribe(x=>{

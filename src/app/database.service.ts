@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Router } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { outputAst } from '@angular/compiler';
 import { LoginGuardGuard } from './login-guard.guard';
+import { formatDate } from '@angular/common';
+import { OrderDeliveredService } from './order-delivered.service';
 
 
 
@@ -56,7 +56,35 @@ export class DatabaseService {
   getsessionHotelDetails:any;
   setsessionHotelDetails:any=[];
 
-  constructor(private http:HttpClient, private router:Router, private LoginGuard:LoginGuardGuard) {
+
+
+  date:any;
+  time:any;
+  day:any;
+  dayName:any;
+  dateArray:any=[];
+
+  orderDetails:any;
+  orderId:any;
+  cartTotalPrice:any;
+  setorderDetails:any;
+  getorderDetails:any;
+  setAddressDetails:any;
+  getAddressDetails:any;
+  paymentOrderDetails:any;
+  getOrderedDetails:any=[];
+  setOrderedDetails:any=[];
+
+  orderAddMinutes:any;
+  orderedDelayTimeFormat:any;
+
+  cardNumberChange:any;
+  cardNumberChanged="";
+  cardNumbersubString="";
+  cardDetailsAfterChange:any;
+
+
+  constructor(private http:HttpClient, private router:Router, private LoginGuard:LoginGuardGuard, private ordered:OrderDeliveredService) {
   }
 
   save_data(data:any){
@@ -146,7 +174,6 @@ export class DatabaseService {
 
   sendCartHotelDetails(){
     this.duplicateHotelName[this.duplicateHotelCount++]=this.Array;
-    // console.log(this.duplicateHotelName);
     this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
     sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
       if(this.duplicateHotelName.length==1){
@@ -307,4 +334,136 @@ export class DatabaseService {
   getmasterDetails(){
     return this.http.get("http://Localhost:3000/Mastercard");
   }
+
+
+  paymentOrdered(paymentType:any){
+    this.getorderDetails=sessionStorage.getItem('cartOrderDetails');
+    this.setorderDetails=JSON.parse(this.getorderDetails);
+
+    this.getOrderedDetails=sessionStorage.getItem('paymentOrderedDetails');
+    this.setOrderedDetails=JSON.parse(this.getOrderedDetails);
+
+
+    this.getAddressDetails=sessionStorage.getItem('orderAddress');
+    this.setAddressDetails=JSON.parse(this.getAddressDetails);
+    this.orderId=Math.floor((Math.random()*1000000)+1);
+    this.date=new Date();
+    this.orderAddMinutes=this.date.setMinutes(
+      this.date.getMinutes()+1
+    );
+    this.orderedDelayTimeFormat=formatDate(this.orderAddMinutes, 'dd-MMM-yyyy hh:mm:ss a', 'en-US', '+0530');
+
+
+
+    this.time=this.date.getTime();
+    this.day=this.date.getDay();
+    if(this.day==0){
+      this.dayName="Sun";
+    }
+    else if(this.day==1){
+      this.dayName="Mon";
+    }
+    else if(this.day==2){
+      this.dayName="Tue";
+    }
+    else if(this.day==3){
+      this.dayName="Wed";
+    }
+    else if(this.day==4){
+      this.dayName="Thu";
+    }
+    else if(this.day==5){
+      this.dayName="Fri";
+    }
+    else{
+      this.dayName="Sat";
+    }
+
+    this.dateArray[0]=this.dayName;
+    this.dateArray[1]=formatDate(this.time, 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
+
+    if(paymentType=="Card"){
+      this.orderDetails=[{
+        orderId: this.orderId,
+        totalPrice:this.cartTotalPrice,
+        hotelName:this.setorderDetails.hotelName,
+        hotelImage:this.setorderDetails.hotelImage,
+        address:this.setAddressDetails,
+        date:this.dateArray,
+        orderedItems:this.setorderDetails.orderItems,
+        paymentMenthod:"Card"
+      }]
+    }
+    else if(paymentType=="UPI"){
+      this.orderDetails=[{
+        orderId: this.orderId,
+        totalPrice:this.cartTotalPrice,
+        hotelName:this.setorderDetails.hotelName,
+        hotelImage:this.setorderDetails.hotelImage,
+        address:this.setAddressDetails,
+        date:this.dateArray,
+        orderedItems:this.setorderDetails.orderItems,
+        paymentMenthod:"UPI"
+      }]
+    }
+    else{
+      this.orderDetails=[{
+        orderId: this.orderId,
+        totalPrice:this.cartTotalPrice,
+        hotelName:this.setorderDetails.hotelName,
+        hotelImage:this.setorderDetails.hotelImage,
+        address:this.setAddressDetails,
+        date:this.dateArray,
+        orderedItems:this.setorderDetails.orderItems,
+        paymentMenthod:"Cash On Delivery",
+        amountPaid:"not paid"
+      }]
+    }
+
+    if(this.setOrderedDetails==null || this.setOrderedDetails.length==0){
+
+      this.paymentOrderDetails=JSON.stringify(this.orderDetails);
+
+    }else{
+      this.setOrderedDetails.push(this.orderDetails[0]);
+      this.paymentOrderDetails=JSON.stringify(this.setOrderedDetails);
+
+    }
+    sessionStorage.setItem('paymentOrderedDetails',this.paymentOrderDetails);
+    this.ordered.getTime();
+  }
+
+  UPI(){
+    return this.http.get("http://Localhost:3000/UPI");
+  }
+
+  sendOrderedInfo(){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+  }
+
+
+
+  cardDetails(cardDetails:any){
+  this.cardNumberChange=cardDetails.cardNumber;
+  this.cardNumbersubString=this.cardNumberChange.substring(12,17);
+   for(var i=0;i<12;i++){
+    this.cardNumberChanged+=this.cardNumberChange[i].replace(this.cardNumberChange.charAt([i]),'X');
+   }
+
+   this.cardNumberChanged+=this.cardNumbersubString;
+
+   this.cardDetailsAfterChange={
+    cardNumber:this.cardNumberChanged,
+    cardHolderName:cardDetails.cardHolderName.toUpperCase(cardDetails.cardHolderName),
+    cardType:cardDetails.cardType
+   }
+   this.loggedPhonenumber = sessionStorage.getItem('isusername');
+   this.userMob = JSON.parse(this.loggedPhonenumber);
+  this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{PaymentCradDetails:this.cardDetailsAfterChange}).subscribe(x=>{
+    console.log(x);
+  });
+  }
+
 }

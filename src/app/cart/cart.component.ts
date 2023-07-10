@@ -315,12 +315,7 @@ setAddress(ind:any){
 
 Payment(){
   if(this.isAddress || sessionStorage.getItem('isentered')=='false'){
-    this.router.navigateByUrl("finalPayment");
-  }
-  else{
-    alert("you must add your address before payment");
-  }
-  for(var i=0;i<this.itemsArray.length;i++){
+    for(var i=0;i<this.itemsArray.length;i++){
       this.orderitemArray[i]={
         dishName:this.itemsArray[i].dishName,
         dishQuantity:this.count[i],
@@ -328,12 +323,17 @@ Payment(){
     }
   }
   this.orderArray={
-    hotelName:this.hotelDetails[0].hotelname,
-    hotelImage:this.hotelDetails[0].hotelimage,
+    hotelName:this.hotelDetails.hotelname,
+    hotelImage:this.hotelDetails.hotelimage,
     orderItems:this.orderitemArray
   }
   this.setOrderDetails=JSON.stringify(this.orderArray);
-  sessionStorage.setItem('OrderDetails',this.setOrderDetails);
+  sessionStorage.setItem('cartOrderDetails',this.setOrderDetails);
+  this.router.navigateByUrl("finalPayment");
+  }
+  else{
+    alert("you must add your address before payment");
+  }
 }
 
 addAdress(){

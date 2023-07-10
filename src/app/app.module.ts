@@ -37,6 +37,7 @@ import { FinalPaymentComponent } from './final-payment/final-payment.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { UPIComponent } from './upi/upi.component';
 import { CDCardComponent } from './cdcard/cdcard.component';
+// import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
   declarations: [

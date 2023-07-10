@@ -18,7 +18,10 @@ forgotPasswordPage:boolean=false;
 
 passwordCheck:any;
 confirmPasswordCheck:any;
+ForgotConfirmpasswordCheck:any;
+ForgotpasswordCheck:any;
 isPasswordChecked:boolean=true;
+isForgotPasswordChecked:boolean=true;
 
 
 register:FormGroup;
@@ -39,8 +42,9 @@ returl:any;
 
 
     this.forgotPassword=fb.group({
-      forgotEmail:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
-      forgotOTP:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]]
+      forgotPhone:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
+      forgotPass:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
+      forgotConfirm:['',[Validators.required]]
     });
 
 
@@ -49,7 +53,7 @@ returl:any;
       phonenumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
       email:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$")]],
       password:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
-      ConfirmPassword:['',[Validators.required,Validators.minLength(8)]]});
+      ConfirmPassword:['',[Validators.required]]});
   }
 
 
@@ -62,6 +66,16 @@ returl:any;
       this.isPasswordChecked=false;
     }
     return this.isPasswordChecked;
+  }
+
+  ForgotPasswordChecker():boolean{
+    if(this.ForgotConfirmpasswordCheck===this.ForgotpasswordCheck){
+      this.isForgotPasswordChecked=true;
+    }
+    else{
+      this.isForgotPasswordChecked=false;
+    }
+    return this.isForgotPasswordChecked;
   }
 
   SignIn(){

@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DatabaseService } from '../database.service';
@@ -21,6 +22,8 @@ export class CDCardComponent {
   isDBS:boolean=false;
   isCityUnionBank:boolean=false;
 
+  CardDetails:any;
+
   constructor(private FormDetails:FormBuilder,private cardType:DatabaseService){
     this.cardType.getvisaDetails().subscribe(x=>{
       this.visa=x;
@@ -38,6 +41,7 @@ export class CDCardComponent {
       this.cardValidation(x);
     })
     this.cartTotalPrice=sessionStorage.getItem("TotalCartPrice");
+
   }
 
   cardValidation(CardNumber:any){
@@ -142,6 +146,20 @@ export class CDCardComponent {
   }
 
   saveCardDetails(cardDetails:any){
-    console.log(cardDetails);
+    // this.cardType.paymentOrdered("Card");
+    var cardType;
+    if(cardDetails.CardNumber[0]=="4"){
+      cardType="visa";
+    }
+    else{
+      cardType="mastercard"
+    }
+
+    this.CardDetails={
+      cardNumber:cardDetails.CardNumber,
+      cardHolderName:cardDetails.HolderName,
+      cardType:cardType
+    }
+    this.cardType.cardDetails(this.CardDetails);
   }
 }

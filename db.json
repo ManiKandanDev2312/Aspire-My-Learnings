@@ -142,80 +142,12 @@
           "addressType": "Work",
           "iconType": "fa-briefcase"
         }
-      ]
-    },
-    {
-      "username": "Jeeva",
-      "phonenumber": 6379630065,
-      "email": "2k21aids11@kiot.ac.in",
-      "password": "@Jeeva2001",
-      "ConfirmPassword": "@Jeeva2001",
-      "Favorites": [
-        {
-          "id": 2,
-          "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "hotelname": "SS HYDERABAD BIRYANI",
-          "dishvariety": "Biryani, South Indian, Seafood",
-          "timeDel": "18",
-          "Costfortwo": "₹350",
-          "offer": "40% off | Use TRYNEW",
-          "dishes": [
-            {
-              "dishImage": "./assets/dishes/mosambii juice.webp",
-              "dishName": "Pineapple Juice",
-              "dishPrice": "55",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/cool boost.webp",
-              "dishName": "Cool Boost",
-              "dishPrice": "44",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/mosambii juice.webp",
-              "dishName": "Mosambii Juice",
-              "dishPrice": "60",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/sweet corn maggi.webp",
-              "dishName": "Sweet Corn Maggi",
-              "dishPrice": "69",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/paneer sandwitch.webp",
-              "dishName": "paneer Sandwitch",
-              "dishPrice": "88",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            }
-          ]
-        }
       ],
-      "Address": [
-        {
-          "adress": "kondalamPattyByepass",
-          "doorNo": "546",
-          "landmark": "nearByePass",
-          "district": "madurai",
-          "addressType": "Home",
-          "iconType": "fa-house"
-        },
-        {
-          "adress": "kondalamPattyByepass",
-          "doorNo": "546",
-          "landmark": "nearByePass",
-          "district": "chennai",
-          "addressType": "Others",
-          "iconType": "fa-location-dot"
-        }
-      ]
+      "PaymentCradDetails": {
+        "cardNumber": "XXXXXXXXXXXX6123",
+        "cardHolderName": "MANIKANDAN O",
+        "cardType": "visa"
+      }
     }
   ],
   "Offers": [
@@ -523,8 +455,8 @@
           "dishDescription": "Serves 1"
         },
         {
-          "dishImage": "./assets/dishes/Egg Nooodles...webp",
-          "dishName": "Egg Nooodles..",
+          "dishImage": "./assets/dishes/Egg Noodles.webp",
+          "dishName": "Egg Noodles",
           "dishPrice": "99",
           "dishType": "veg",
           "dishDescription": "Serves 1"
@@ -575,7 +507,6 @@
           "dishType": "veg",
           "dishDescription": ""
         },
-
         {
           "dishImage": "./assets/dishes/Chicken Biryani Half.webp",
           "dishName": "Chicken Biryani Half",
@@ -611,7 +542,6 @@
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
-
         {
           "dishImage": "./assets/dishes/Mutton Biriyani.webp",
           "dishName": "Mutton Biriyani",
@@ -644,7 +574,6 @@
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
         },
-
         {
           "dishImage": "./assets/dishes/Choco Truffle Pastry.webp",
           "dishName": "Choco Truffle Pastry",
@@ -673,7 +602,6 @@
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
-
         {
           "dishImage": "./assets/dishes/Chicken Kabab (5pcs Bone).webp",
           "dishName": "Chicken Kabab (5pcs Bone)",
@@ -681,7 +609,6 @@
           "dishType": "veg",
           "dishDescription": "Serves 1"
         },
-
         {
           "dishImage": "./assets/dishes/Tandoori Chicken.webp",
           "dishName": "Tandoori Chicken",
@@ -715,7 +642,7 @@
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/Miracle Abc - 100% Juice.webp",
+          "dishImage": "./assets/dishes/Miracle Abc.webp",
           "dishName": "Miracle Abc - 100% Juice",
           "dishPrice": "129",
           "dishType": "veg",
@@ -796,8 +723,8 @@
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/Tangy Orange - 100 % Juice.webp",
-          "dishName": "Tangy Orange - 100 % Juice",
+          "dishImage": "./assets/dishes/Tangy Orange.webp",
+          "dishName": "Tangy Orange",
           "dishPrice": "129",
           "dishType": "veg",
           "dishDescription": "Healthy Juice"
@@ -1120,7 +1047,7 @@
           "dishDescription": "Healthy Juice"
         },
         {
-          "dishImage": "./assets/dishes/Coco Panagalkandu Juice.webp",
+          "dishImage": "./assets/dishes/Coco Panagalkandu Juice.jpg",
           "dishName": "Coco Panagalkandu Juice",
           "dishPrice": "90",
           "dishType": "veg",
@@ -1579,7 +1506,8 @@
           "dishPrice": "79",
           "dishType": "veg",
           "dishDescription": "Serves 1"
-        },{
+        },
+        {
           "dishImage": "./assets/dishes/Chapati 1 set.webp",
           "dishName": "Chapati 1 set",
           "dishPrice": "70",
@@ -1751,435 +1679,449 @@
       ]
     }
   ],
-  "Visa":[
+  "Visa": [
     {
-      "binNumber":"406814",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "406814",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"461934",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "461934",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"461933",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "461933",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"457357",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "457357",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"470441",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "470441",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"483748",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "483748",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"438623",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "438623",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"483749",
-      "bankname":"CITY UNION BANK"
+      "binNumber": "483749",
+      "bankname": "CITY UNION BANK"
     },
     {
-      "binNumber":"436370",
-      "bankname":"DBS BANK"
+      "binNumber": "436370",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"436369",
-      "bankname":"DBS BANK"
+      "binNumber": "436369",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"436371",
-      "bankname":"DBS BANK"
+      "binNumber": "436371",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"466256",
-      "bankname":"DBS BANK"
+      "binNumber": "466256",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"457500",
-      "bankname":"DBS BANK"
+      "binNumber": "457500",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"463237",
-      "bankname":"DBS BANK"
+      "binNumber": "463237",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"463238",
-      "bankname":"DBS BANK"
+      "binNumber": "463238",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"466257",
-      "bankname":"DBS BANK"
+      "binNumber": "466257",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"436312",
-      "bankname":"DBS BANK"
+      "binNumber": "436312",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"436372",
-      "bankname":"DBS BANK"
+      "binNumber": "436372",
+      "bankname": "DBS BANK"
     },
     {
-      "binNumber":"445533",
-      "bankname":"KVB BANK"
+      "binNumber": "445533",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"445535",
-      "bankname":"KVB BANK"
+      "binNumber": "445535",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"445532",
-      "bankname":"KVB BANK"
+      "binNumber": "445532",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"462851",
-      "bankname":"KVB BANK"
+      "binNumber": "462851",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"404322",
-      "bankname":"KVB BANK"
+      "binNumber": "404322",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"445534",
-      "bankname":"KVB BANK"
+      "binNumber": "445534",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"418254",
-      "bankname":"HDFC BANK"
+      "binNumber": "418254",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"418234",
-      "bankname":"HDFC BANK"
+      "binNumber": "418234",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"474864",
-      "bankname":"HDFC BANK"
+      "binNumber": "474864",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"486575",
-      "bankname":"HDFC BANK"
+      "binNumber": "486575",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"421334",
-      "bankname":"HDFC BANK"
+      "binNumber": "421334",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"421334",
-      "bankname":"HDFC BANK"
+      "binNumber": "421334",
+      "bankname": "HDFC BANK"
     }
   ],
-  "Mastercard":[
+  "Mastercard": [
     {
-      "binNumber":"539194",
-      "bankname":"KVB BANK"
+      "binNumber": "539194",
+      "bankname": "KVB BANK"
     },
     {
-      "binNumber":"511511",
-      "bankname":"HDFC BANK"
+      "binNumber": "511511",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"511665",
-      "bankname":"HDFC BANK"
+      "binNumber": "511665",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"511666",
-      "bankname":"HDFC BANK"
+      "binNumber": "511666",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"512962",
-      "bankname":"HDFC BANK"
+      "binNumber": "512962",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"512967",
-      "bankname":"HDFC BANK"
+      "binNumber": "512967",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"512968",
-      "bankname":"HDFC BANK"
+      "binNumber": "512968",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"513490",
-      "bankname":"HDFC BANK"
+      "binNumber": "513490",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"514560",
-      "bankname":"HDFC BANK"
+      "binNumber": "514560",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"514834",
-      "bankname":"HDFC BANK"
+      "binNumber": "514834",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"517635",
-      "bankname":"HDFC BANK"
+      "binNumber": "517635",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"517652",
-      "bankname":"HDFC BANK"
+      "binNumber": "517652",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"517848",
-      "bankname":"HDFC BANK"
+      "binNumber": "517848",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"521511",
-      "bankname":"HDFC BANK"
+      "binNumber": "521511",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"522023",
-      "bankname":"HDFC BANK"
+      "binNumber": "522023",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"522024",
-      "bankname":"HDFC BANK"
+      "binNumber": "522024",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526266",
-      "bankname":"HDFC BANK"
+      "binNumber": "526266",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"523674",
-      "bankname":"HDFC BANK"
+      "binNumber": "523674",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524111",
-      "bankname":"HDFC BANK"
+      "binNumber": "524111",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524181",
-      "bankname":"HDFC BANK"
+      "binNumber": "524181",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524216",
-      "bankname":"HDFC BANK"
+      "binNumber": "524216",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524254",
-      "bankname":"HDFC BANK"
+      "binNumber": "524254",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524368",
-      "bankname":"HDFC BANK"
+      "binNumber": "524368",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524877",
-      "bankname":"HDFC BANK"
+      "binNumber": "524877",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"524931",
-      "bankname":"HDFC BANK"
+      "binNumber": "524931",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"525760",
-      "bankname":"HDFC BANK"
+      "binNumber": "525760",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526266",
-      "bankname":"HDFC BANK"
+      "binNumber": "526266",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526269",
-      "bankname":"HDFC BANK"
+      "binNumber": "526269",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526265",
-      "bankname":"HDFC BANK"
+      "binNumber": "526265",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526271",
-      "bankname":"HDFC BANK"
+      "binNumber": "526271",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526419",
-      "bankname":"HDFC BANK"
+      "binNumber": "526419",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"526715",
-      "bankname":"HDFC BANK"
+      "binNumber": "526715",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"527692",
-      "bankname":"HDFC BANK"
+      "binNumber": "527692",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"528882",
-      "bankname":"HDFC BANK"
+      "binNumber": "528882",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"528887",
-      "bankname":"HDFC BANK"
+      "binNumber": "528887",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"528945",
-      "bankname":"HDFC BANK"
+      "binNumber": "528945",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"529185",
-      "bankname":"HDFC BANK"
+      "binNumber": "529185",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"529186",
-      "bankname":"HDFC BANK"
+      "binNumber": "529186",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"546094",
-      "bankname":"HDFC BANK"
+      "binNumber": "546094",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"550372",
-      "bankname":"HDFC BANK"
+      "binNumber": "550372",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552088",
-      "bankname":"HDFC BANK"
+      "binNumber": "552088",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552260",
-      "bankname":"HDFC BANK"
+      "binNumber": "552260",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552365",
-      "bankname":"HDFC BANK"
+      "binNumber": "552365",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552394",
-      "bankname":"HDFC BANK"
+      "binNumber": "552394",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"553583",
-      "bankname":"HDFC BANK"
+      "binNumber": "553583",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"556620",
-      "bankname":"HDFC BANK"
+      "binNumber": "556620",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"559300",
-      "bankname":"HDFC BANK"
+      "binNumber": "559300",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"531829",
-      "bankname":"HDFC BANK"
+      "binNumber": "531829",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"531831",
-      "bankname":"HDFC BANK"
+      "binNumber": "531831",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"531836",
-      "bankname":"HDFC BANK"
+      "binNumber": "531836",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"532118",
-      "bankname":"HDFC BANK"
+      "binNumber": "532118",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"532135",
-      "bankname":"HDFC BANK"
+      "binNumber": "532135",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"532676",
-      "bankname":"HDFC BANK"
+      "binNumber": "532676",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"532961",
-      "bankname":"HDFC BANK"
+      "binNumber": "532961",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"533136",
-      "bankname":"HDFC BANK"
+      "binNumber": "533136",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"534952",
-      "bankname":"HDFC BANK"
+      "binNumber": "534952",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"540536",
-      "bankname":"HDFC BANK"
+      "binNumber": "540536",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"541919",
-      "bankname":"HDFC BANK"
+      "binNumber": "541919",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"545226",
-      "bankname":"HDFC BANK"
+      "binNumber": "545226",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552274",
-      "bankname":"HDFC BANK"
+      "binNumber": "552274",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552385",
-      "bankname":"HDFC BANK"
+      "binNumber": "552385",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"553115",
-      "bankname":"HDFC BANK"
+      "binNumber": "553115",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"555153",
-      "bankname":"HDFC BANK"
+      "binNumber": "555153",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552218",
-      "bankname":"HDFC BANK"
+      "binNumber": "552218",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"532973",
-      "bankname":"HDFC BANK"
+      "binNumber": "532973",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"533744",
-      "bankname":"HDFC BANK"
+      "binNumber": "533744",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"533744",
-      "bankname":"HDFC BANK"
+      "binNumber": "533744",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"536311",
-      "bankname":"HDFC BANK"
+      "binNumber": "536311",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"541172",
-      "bankname":"HDFC BANK"
+      "binNumber": "541172",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"541919",
-      "bankname":"HDFC BANK"
+      "binNumber": "541919",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"545964",
-      "bankname":"HDFC BANK"
+      "binNumber": "545964",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552344",
-      "bankname":"HDFC BANK"
+      "binNumber": "552344",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"552389",
-      "bankname":"HDFC BANK"
+      "binNumber": "552389",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"553162",
-      "bankname":"HDFC BANK"
+      "binNumber": "553162",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"556042",
-      "bankname":"HDFC BANK"
+      "binNumber": "556042",
+      "bankname": "HDFC BANK"
     },
     {
-      "binNumber":"558983",
-      "bankname":"HDFC BANK"
+      "binNumber": "558983",
+      "bankname": "HDFC BANK"
     }
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "UPI": [
+    {
+      "upiImage": "./assets/Gpay.jpg"
+    },
+    {
+      "upiImage": "./assets/PhonePayUPI.png"
+    },
+    {
+      "upiImage": "./assets/Paytm.jpg"
+    },
+    {
+      "upiImage": "./assets/BHIM.png"
+    }
+  ]
 }
