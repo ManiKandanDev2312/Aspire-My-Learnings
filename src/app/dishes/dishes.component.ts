@@ -48,9 +48,13 @@ export class DishesComponent {
   finalDishArray:any=[];
   isfound:boolean=false;
 
+  sendDishArray:any;
+
 constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
   this.dummy=sessionStorage.getItem('dishes');
   this.dummy1=JSON.parse(this.dummy);
+  this.getHotelName=sessionStorage.getItem('hotelDetails');
+  this.setHotelName=JSON.parse(this.getHotelName);
 
   this.array=this.dummy1;
   if(this.array == null){
@@ -65,9 +69,7 @@ constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
       this.checkFavoriteArray=this.checkFavorite.Favorites;
       this.getHotelName=sessionStorage.getItem('hotelDetails');
       this.setHotelName=JSON.parse(this.getHotelName);
-      // console.log(this.checkFavoriteArray.length);
       if(this.checkFavoriteArray.length==1){
-        // console.log(this.checkFavoriteArray[0].hotelname);
         if(this.checkFavoriteArray[0].hotelname===this.setHotelName.hotelname){
           this.favorite="red";
         }
@@ -126,9 +128,44 @@ searchdishname(dish:string){
   else{
     this.isfound=false;
   }
-  this.finalDishArray=new Set(this.emptyArray);
-}
+  this.finalDishArray=this.emptyArray;
 
+}
+searchcartItems(ind:any){
+
+  this.indexNumber=ind;
+  this.itemArray=this.array;
+  this.ind=this.array.length;
+  if(!this.itemArray.includes(this.dishArray[ind]))
+  {
+    if(this.hotelName.sendCartHotelDetails())
+    {
+      this.sendDishArray={
+        hotelName:this.setHotelName.hotelname,
+        hotelImage:this.setHotelName.hotelimage,
+        dishName:this.finalDishArray[ind].dishName,
+        dishCount:1,
+        dishPrice:parseInt(this.dishArray[ind].dishPrice),
+        dishType:this.finalDishArray[ind].dishType
+      }
+      this.itemArray[this.ind]=this.sendDishArray;
+      if(sessionStorage.getItem('isentered')=="true"){
+        this.hotelName.getAddToCart(this.itemArray);
+      }
+      this.items=JSON.stringify(this.itemArray);
+      sessionStorage.setItem('dishes',this.items);
+    }
+    else{
+      confirm("new hotel entry");
+    }
+
+
+  }
+  else{
+    alert("this item is  already added in cart");
+  }
+
+}
 
 cartItems(ind:number){
 
@@ -139,7 +176,19 @@ cartItems(ind:number){
   {
     if(this.hotelName.sendCartHotelDetails())
     {
-      this.itemArray[this.ind]=this.dishArray[ind];
+      this.sendDishArray={
+        hotelName:this.setHotelName.hotelname,
+        hotelImage:this.setHotelName.hotelimage,
+        dishName:this.dishArray[ind].dishName,
+        dishCount:1,
+        dishPrice:parseInt(this.dishArray[ind].dishPrice),
+        dishType:this.dishArray[ind].dishType
+      }
+      this.itemArray[this.ind]=this.sendDishArray;
+      if(sessionStorage.getItem('isentered')=="true"){
+        this.hotelName.getAddToCart(this.itemArray);
+      }
+
       this.items=JSON.stringify(this.itemArray);
       sessionStorage.setItem('dishes',this.items);
     }
@@ -166,7 +215,6 @@ Favorite(){
     this.hotelName.sendFavorite().subscribe(x=>{
       this.getFavorites=x;
       this.getFavoritesArray[this.getfavoritesCount++]=this.getFavorites.Favorites;
-      // console.log(this.getFavoritesArray[0]);
       if(this.getFavoritesArray[0]==null || this.getFavoritesArray.length==0){
         this.getFavoritesArray[0]=this.setHotelName;
         this.hotelName.getFavorite(this.getFavoritesArray).subscribe(x=>{
@@ -191,15 +239,12 @@ Favorite(){
     alert("this hotel is removed from your favorite list");
     this.getfavoritesCount=0;
     this.hotelName.sendFavorite().subscribe(x=>{
-      // console.log(x);
       this.getFavorites=x;
       this.getFavoritesArray[this.getfavoritesCount++]=this.getFavorites.Favorites;
       this.getFavoriteArray=this.getFavoritesArray[0];
-      // console.log(this.getFavoriteArray[0]);
       if(this.getFavoriteArray.length==1){
         if(this.getFavoriteArray[0].hotelname===this.setHotelName.hotelname){
           this.getFavoriteArray=[];
-          // console.log("hi");
           this.hotelName.getFavorite(this.getFavoriteArray).subscribe(x=>{
             console.log(x) ;
          });

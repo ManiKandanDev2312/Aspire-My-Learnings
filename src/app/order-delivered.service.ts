@@ -45,19 +45,19 @@ export class OrderDeliveredService{
 
 
 
-getTime(){
-
+getTime(ordereddate:any){
+  sessionStorage.setItem('isTimeStarted',"true");
   this.getOrderedDetails=sessionStorage.getItem('paymentOrderedDetails');
   this.setOrderedDetails=JSON.parse(this.getOrderedDetails);
   this.orderCount1=++this.orderCount1;
-  this.orderDate[this.orderCount++]=new Date();
-  this.newDate[this.orderCount2++]=this.orderDate[this.orderCount3++].setMinutes(
-    this.orderDate[this.orderCount4++].getMinutes()+1
-  );
-  for(var j=0;j<this.orderDate.length;j++){
-    this.dateFormat[j]=formatDate(this.newDate[j],'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
-  }
-  if(this.orderCount1==1){
+  this.dateFormat[this.orderCount++]=ordereddate;
+  // this.newDate[this.orderCount2++]=this.orderDate[this.orderCount3++].setMinutes(
+  //   this.orderDate[this.orderCount4++].getMinutes()+1
+  // );
+  // for(var j=0;j<this.orderDate.length;j++){
+  //   this.dateFormat[j]=formatDate(this.newDate[j],'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
+  // }
+  if(this.orderCount1==1 && sessionStorage.getItem('isTimeStarted')=="true"){
     setInterval(()=>{
       this.date=new Date();
       this.normaldateFormat=formatDate(this.date.getTime(), 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');

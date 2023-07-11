@@ -176,6 +176,7 @@ export class DatabaseService {
     this.duplicateHotelName[this.duplicateHotelCount++]=this.Array;
     this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
     sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
+    console.log(this.duplicateHotelName);
       if(this.duplicateHotelName.length==1){
       return true;
     }
@@ -230,18 +231,20 @@ export class DatabaseService {
 
     this.getrecentSearchPhone=sessionStorage.getItem('isusername');
     this.setrecentSearchPhone=JSON.parse(this.getrecentSearchPhone);
-    this.http.get<any>("http://localhost:3000/customerDetails").subscribe(x=>{
-      this.dummy=x.find((log:any)=>{
-        this.dummy1=log.search;
-        return this.setrecentSearchPhone.phonenumber==log.phonenumber;
-      })
-      if(this.dummy){
-        this.dummy2=this.dummy1;
-      }
-      else{
-        console.log(this.dummy2);
-      }
-    });
+      this.http.get<any>("http://localhost:3000/customerDetails").subscribe(x=>{
+        this.dummy=x.find((log:any)=>{
+          this.dummy1=log.search;
+          return this.setrecentSearchPhone.phonenumber==log.phonenumber;
+        })
+        if(this.dummy){
+          this.dummy2=this.dummy1;
+        }
+        else{
+          console.log(this.dummy2);
+        }
+      });
+
+
   }
 
   send_search(){
@@ -430,7 +433,7 @@ export class DatabaseService {
 
     }
     sessionStorage.setItem('paymentOrderedDetails',this.paymentOrderDetails);
-    this.ordered.getTime();
+    this.ordered.getTime(this.orderedDelayTimeFormat);
   }
 
   UPI(){
@@ -464,6 +467,21 @@ export class DatabaseService {
   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{PaymentCradDetails:this.cardDetailsAfterChange}).subscribe(x=>{
     console.log(x);
   });
+  }
+
+
+  getAddToCart(AddToCart:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+   this.userMob = JSON.parse(this.loggedPhonenumber);
+  this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{AddToCartDetails:AddToCart}).subscribe(x=>{
+    console.log(x);
+  });
+  }
+
+  sendAddToCart(){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
   }
 
 }

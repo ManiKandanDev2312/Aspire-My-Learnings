@@ -37,13 +37,14 @@ getHotel2:any;
 
 constructor(private search:DatabaseService ,hn:FormBuilder, private router:Router){
 
+
+  if(sessionStorage.getItem('isentered')=="true"){
+  this.data=this.search.send_search();
+  }
+
   this.search.read_hotels().subscribe((x)=>{
     this.array=x;
  });
-
-
-this.data=this.search.send_search();
-
 
 
   const time = setInterval(()=>{
@@ -99,10 +100,17 @@ sendHotel(index:any){
     this.hotelNameArray=this.data;
     this.hotelNameArray[this.data.length]=this.array2[index].hotelname;
   }
-  this.search.get_search(this.hotelNameArray).subscribe(x=>{
-    console.log(x);
-  });
-  this.router.navigateByUrl("/dishPage");
+
+  if(sessionStorage.getItem('isentered')=="true"){
+    this.search.get_search(this.hotelNameArray).subscribe(x=>{
+      console.log(x);
+    });
+    this.router.navigateByUrl("/dishPage");
+  }
+  else{
+    this.router.navigateByUrl("/dishPage");
+  }
+
 }
 
 
@@ -113,7 +121,7 @@ clear(){
 hotelRoute(ind:any){
   this.getHotels=this.search.read_hotels().subscribe(x=>{
     this.getHotel1=x;
-    console.log(this.getHotel1.length);
+    // console.log(this.getHotel1.length);
     for(var i=0;i<this.getHotel1.length;i++){
       if(this.getHotel1[i].hotelname == this.data[ind]){
         console.log(this.getHotel1[i]);

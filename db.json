@@ -147,7 +147,138 @@
         "cardNumber": "XXXXXXXXXXXX6123",
         "cardHolderName": "MANIKANDAN O",
         "cardType": "visa"
-      }
+      },
+      "AddToCartDetails": [
+        {
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "dishName": "Mango Juice",
+          "dishCount": 1,
+          "dishPrice": 150,
+          "dishType": "veg"
+        }
+      ]
+    },
+    {
+      "username": "Jeevaarav",
+      "phonenumber": 7904925991,
+      "email": "2k19me070@kiot.ac.in",
+      "password": "Jeeva@2001",
+      "ConfirmPassword": "Jeeva@2001",
+      "AddToCartDetails": [
+        {
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "dishName": "Mango Juice",
+          "dishCount": 2,
+          "dishPrice": 300,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "dishName": "Fresh Lime Juice",
+          "dishCount": 3,
+          "dishPrice": 114,
+          "dishType": "veg"
+        }
+      ],
+      "search": [
+        "Chicking"
+      ],
+      "Address": [
+        {
+          "adress": "JaisuryasSanjeevara",
+          "doorNo": "586B",
+          "landmark": "DBSbank",
+          "district": "Salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        }
+      ],
+      "Favorites": [
+        {
+          "id": 2,
+          "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "hotelname": "SS HYDERABAD BIRYANI",
+          "dishvariety": "Biryani, South Indian, Seafood",
+          "timeDel": "18",
+          "Costfortwo": "₹350",
+          "offer": "40% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/Coconut Sharbat.webp",
+              "dishName": "Coconut Sharbat",
+              "dishPrice": "200",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Cold Pressed Orange Juice.webp",
+              "dishName": "Cold Pressed Orange Juice",
+              "dishPrice": "220",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Rasmalai Mini Jar Cake.webp",
+              "dishName": "Rasmalai Mini Jar Cake",
+              "dishPrice": "139",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Gulab Jamun Vanilla Pastry.webp",
+              "dishName": "Gulab Jamun Vanilla Pastry",
+              "dishPrice": "99",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Chicken Biryani Half.webp",
+              "dishName": "Chicken Biryani Half",
+              "dishPrice": "278",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Chicken Special Leg.webp",
+              "dishName": "Chicken Special Leg",
+              "dishPrice": "259",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Chicken DUM Exec BIRYANI.webp",
+              "dishName": "Chicken DUM Exec BIRYANI",
+              "dishPrice": "240",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Hyderabadi Mutton Dum Biryrani.webp",
+              "dishName": "Hyderabadi Mutton Dum Biryrani",
+              "dishPrice": "312",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Prawn Biryani.webp",
+              "dishName": "Prawn Biryani",
+              "dishPrice": "350",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Mutton Biriyani.webp",
+              "dishName": "Mutton Biriyani",
+              "dishPrice": "312",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
+        }
+      ]
     }
   ],
   "Offers": [

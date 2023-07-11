@@ -27,9 +27,18 @@ countingVariable=0;
 
 emptyArray:any=[];
 
+dishArray:any=[];
+setAddtoCart:any=[];
 constructor(private hotel:DatabaseService){
   this.slideImageUrl=["./assets/BURGER.png","./assets/FLAT_50.png"
 ,"./assets/pizza.png","./assets/FOOD COURT.png"];
+
+this.dishArray=sessionStorage.getItem('dishes');
+if(this.dishArray=="undefined"){
+  this.dishArray=[];
+  this.setAddtoCart=JSON.stringify(this.dishArray);
+  sessionStorage.setItem('dishes',this.setAddtoCart);
+}
 this.HotelList();
 }
 

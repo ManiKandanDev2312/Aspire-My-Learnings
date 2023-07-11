@@ -15,7 +15,7 @@ export class CartComponent {
   AddressDetails:any;
 
 
-  cart:boolean=false;
+  // cart:boolean=false;
   iscartAdded:boolean=true;
 
 
@@ -24,13 +24,13 @@ export class CartComponent {
 
 
   itemPrice:any=[];
-  itemsArray:any;
+  itemsArray:any=[];
   itemTotal:number=0;
   totalPrice:number=0;
   deliverFee:number=43;
   count:any=[];
   details:any;
-  dummy1:any;
+  dummy1:any=[];
   dummy2:any;
   dummyPrice:any=[];
   user:any;
@@ -55,6 +55,8 @@ export class CartComponent {
   AddressCount:any=0;
   isAddress:boolean=false;
   setsessionAdress:any;
+
+  setAddtoCart:any=[];
 constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
   this.Address=fb.group({
@@ -64,27 +66,41 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
     District:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,10}$")]]
   });
 
-  this.itemArray=sessionStorage.getItem('dishes');
-  this.itemsArray=JSON.parse(this.itemArray);
+
   this.hotelDetails=this.dish.sendCartHotelname();
 
   if(sessionStorage.getItem('isentered')=="true"){
     this.dish.sendAddress().subscribe(x=>{
       this.customerDetails=x;
       this.AddressDetails=this.customerDetails.Address;
+      this.itemsArray=this.customerDetails.AddToCartDetails
+      if(this.itemsArray==null){
+        this.itemsArray=[];
+      }
+      this.cartUi();
+      this.setAddtoCart=JSON.stringify(this.itemsArray);
+      sessionStorage.setItem('dishes',this.setAddtoCart);
+      if(this.itemsArray==null || this.itemsArray.length==0){
+        this.iscartAdded=true;
+      }
+      else{
+        this.iscartAdded=false;
+      }
     })
+
   }
 
-
-
-  if(this.itemsArray==null){
+    this.itemArray=sessionStorage.getItem('dishes');
+    this.itemsArray=JSON.parse(this.itemArray);
+  if(this.itemsArray==null || this.itemsArray.length==0){
     this.iscartAdded=true;
   }else{
     this.cartUi();
-    for(var i=0;i<this.itemsArray.length;i++){
-      this.count[i]=1;
-    }
   }
+
+
+
+
   this.log=sessionStorage.getItem('isentered');
     if(this.log ==null || this.log=="false"){
       this.islogged=false;
@@ -110,10 +126,10 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
 cartUi(){
   this.iscartAdded=false;
-  this.cart=true;
+  this.itemTotal=0;
   for(var i=0;i<this.itemsArray.length;i++){
     this.itemPrice[i]=parseInt(this.itemsArray[i].dishPrice);
-    this.dummyPrice[i]=parseInt(this.itemsArray[i].dishPrice);
+    this.dummyPrice[i]=parseInt(this.itemsArray[i].dishPrice)/parseInt(this.itemsArray[i].dishCount);
     this.itemTotal=this.itemTotal+parseInt(this.itemPrice[i]);
   }
   this.totalPrice=this.itemTotal+this.deliverFee;
@@ -125,12 +141,12 @@ cartUi(){
 home(){
   this.router.navigateByUrl("");
 }
-
+// ---------------------------------------------------------------------
 
 minus(ind:number){
   this.itemTotal=0;
-  this.count[ind]=this.count[ind]-1;
-  if(this.count[ind]==0){
+  this.itemsArray[ind].dishCount=this.itemsArray[ind].dishCount-1;
+  if(this.itemsArray[ind].dishCount==0){
     this.itemsArray.splice(ind,1);
     this.dummy2=JSON.stringify(this.itemsArray);
     sessionStorage.setItem('dishes',this.dummy2);
@@ -142,43 +158,57 @@ minus(ind:number){
     }
     else if(this.itemsArray.length==0){
       this.iscartAdded=true;
-      this.cart=false;
     }
     else{
       for(var i=0;i<this.itemsArray.length;i++){
-        this.itemTotal=this.itemTotal+this.itemPrice[i];
+        this.itemTotal=this.itemTotal+this.itemsArray[i].dishPrice;
       }
     }
   }
   else{
-    this.itemPrice[ind]=this.count[ind]*this.dummyPrice[ind];
+    this.itemsArray[ind].dishPrice=this.itemsArray[ind].dishCount*this.dummyPrice[ind];
     for(var i=0;i<this.itemsArray.length;i++){
-      this.itemTotal=this.itemTotal+this.itemPrice[i];
+      this.itemTotal=this.itemTotal+this.itemsArray[i].dishPrice;
     }
   }
+  if(sessionStorage.getItem('isentered')=="true"){
+    this.dish.getAddToCart(this.itemsArray);
+  }
+  console.log(this.itemsArray);
+  this.setAddtoCart=JSON.stringify(this.itemsArray);
+  sessionStorage.setItem('dishes',this.setAddtoCart);
+  // window.location.reload();
   this.totalPrice=this.itemTotal+this.deliverFee;
   this.setTotalPrice=JSON.stringify(this.totalPrice);
   sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
 }
+
 
 plus(ind:number){
   this.itemTotal=0;
-  this.count[ind]=this.count[ind]+1;
-  console.log(this.count.length);
-  this.setItemQuantity=JSON.stringify(this.count);
-  sessionStorage.setItem('itemQuantityArray',this.setItemQuantity);
-  this.itemPrice[ind]=this.count[ind]*this.dummyPrice[ind];
+  this.itemsArray[ind].dishCount=this.itemsArray[ind].dishCount+1;
+  this.itemsArray[ind].dishPrice=this.itemsArray[ind].dishCount*this.dummyPrice[ind];
   for(var i=0;i<this.itemsArray.length;i++){
-    this.itemTotal=this.itemTotal+this.itemPrice[i];
+    this.itemTotal=this.itemTotal+this.itemsArray[i].dishPrice;
   }
+  console.log(this.itemsArray);
+  if(sessionStorage.getItem('isentered')=="true"){
+    this.dish.getAddToCart(this.itemsArray);
+  }
+  console.log(this.itemsArray);
+  this.setAddtoCart=JSON.stringify(this.itemsArray);
+  sessionStorage.setItem('dishes',this.setAddtoCart);
+  // window.location.reload();
   this.totalPrice=this.itemTotal+this.deliverFee;
   this.setTotalPrice=JSON.stringify(this.totalPrice);
   sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
 }
 
 
+// ------------------------------------------------------------
+
 DeliveryAddress(){
-  this.isShowAddress=true
+  this.isShowAddress=true;
 }
 
 
@@ -314,12 +344,12 @@ setAddress(ind:any){
 }
 
 Payment(){
-  if(this.isAddress || sessionStorage.getItem('isentered')=='false'){
+  if(this.isAddress){
     for(var i=0;i<this.itemsArray.length;i++){
       this.orderitemArray[i]={
         dishName:this.itemsArray[i].dishName,
-        dishQuantity:this.count[i],
-        dishPrice:this.itemPrice[i]
+        dishQuantity:this.itemsArray[i].dishCount,
+        dishPrice:this.itemsArray[i].dishPrice
     }
   }
   this.orderArray={
@@ -330,6 +360,9 @@ Payment(){
   this.setOrderDetails=JSON.stringify(this.orderArray);
   sessionStorage.setItem('cartOrderDetails',this.setOrderDetails);
   this.router.navigateByUrl("finalPayment");
+  }
+  else if(sessionStorage.getItem('isentered')==null || sessionStorage.getItem('isentered')=="false"){
+    this.router.navigateByUrl("finalPayment");
   }
   else{
     alert("you must add your address before payment");
@@ -348,8 +381,17 @@ close(){
 
 
 hotelRoute(){
-  this.setHotelDetails=JSON.stringify(this.hotelDetails);
-  sessionStorage.setItem('hotelDetails',this.setHotelDetails);
-  this.router.navigateByUrl("dishPage");
+  this.dish.read_hotels().subscribe(x=>{
+    this.hotelDetails=x;
+    for(var i=0;i<this.hotelDetails.length;i++){
+      if(this.itemsArray[0].hotelName==this.hotelDetails[i].hotelname){
+        this.setHotelDetails=JSON.stringify(this.hotelDetails[i]);
+        sessionStorage.setItem('hotelDetails',this.setHotelDetails);
+        this.router.navigateByUrl("dishPage");
+      }
+    }
+
+  })
+
 }
 }

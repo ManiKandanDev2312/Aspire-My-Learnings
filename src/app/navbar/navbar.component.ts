@@ -53,16 +53,16 @@ constructor(){
       this.user=false;
     }
     setInterval(()=>{
-      this.cartitems=sessionStorage.getItem('dishes');
-      this.dummy=JSON.parse(this.cartitems);
-      if(this.dummy==null){
-        this.iscart=false;
-        this.cartCount=0;
-      }
-      else{
-        this.cartCount=this.dummy.length;
-        this.iscart=true;
-      }
+        this.cartitems=sessionStorage.getItem('dishes');
+          this.dummy=JSON.parse(this.cartitems);
+          if(this.dummy==null || this.dummy.length==0){
+            this.iscart=false;
+            this.cartCount=0;
+          }
+          else{
+            this.cartCount=this.dummy.length;
+            this.iscart=true;
+          }
     },1000);
 
 }
