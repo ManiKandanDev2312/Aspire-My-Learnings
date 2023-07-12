@@ -82,6 +82,7 @@ export class DatabaseService {
   cardNumberChanged="";
   cardNumbersubString="";
   cardDetailsAfterChange:any;
+  customerDetails:any=[];
 
 
   constructor(private http:HttpClient, private router:Router, private LoginGuard:LoginGuardGuard, private ordered:OrderDeliveredService) {
@@ -175,7 +176,7 @@ export class DatabaseService {
   sendCartHotelDetails(){
     this.duplicateHotelName[this.duplicateHotelCount++]=this.Array;
     this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
-    sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
+    localStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
     console.log(this.duplicateHotelName);
       if(this.duplicateHotelName.length==1){
       return true;
@@ -192,7 +193,7 @@ export class DatabaseService {
         {
           this.duplicateHotelName[0]=this.Array;
           this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
-          sessionStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
+          localStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
           --this.duplicateHotelCount;
           return true;
         }
@@ -206,7 +207,7 @@ export class DatabaseService {
   }
 
   sendCartHotelname(){
-    this.getsessionHotelDetails=sessionStorage.getItem('cartHotelDetails');
+    this.getsessionHotelDetails=localStorage.getItem('cartHotelDetails');
     this.setsessionHotelDetails=JSON.parse(this.getsessionHotelDetails);
     if(this.setsessionHotelDetails==null){
       return null;
@@ -340,16 +341,14 @@ export class DatabaseService {
 
 
   paymentOrdered(paymentType:any){
-    this.getorderDetails=sessionStorage.getItem('cartOrderDetails');
-    this.setorderDetails=JSON.parse(this.getorderDetails);
-
-    this.getOrderedDetails=sessionStorage.getItem('paymentOrderedDetails');
-    this.setOrderedDetails=JSON.parse(this.getOrderedDetails);
-
-
-    this.getAddressDetails=sessionStorage.getItem('orderAddress');
-    this.setAddressDetails=JSON.parse(this.getAddressDetails);
-    this.orderId=Math.floor((Math.random()*1000000)+1);
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+      this.customerDetails=x;
+      this.setorderDetails=this.customerDetails.cartOrderDetails,
+      this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
+      console.log(this.setorderDetails.hotelName);
+      this.orderId=Math.floor((Math.random()*1000000)+1);
     this.date=new Date();
     this.orderAddMinutes=this.date.setMinutes(
       this.date.getMinutes()+1
@@ -384,6 +383,8 @@ export class DatabaseService {
 
     this.dateArray[0]=this.dayName;
     this.dateArray[1]=formatDate(this.time, 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
+
+
 
     if(paymentType=="Card"){
       this.orderDetails=[{
@@ -425,15 +426,21 @@ export class DatabaseService {
 
     if(this.setOrderedDetails==null || this.setOrderedDetails.length==0){
 
-      this.paymentOrderDetails=JSON.stringify(this.orderDetails);
+      this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails}).subscribe(x=>{
+    console.log(x);
+  });
 
     }else{
       this.setOrderedDetails.push(this.orderDetails[0]);
-      this.paymentOrderDetails=JSON.stringify(this.setOrderedDetails);
+
+      this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
+    console.log(x);
+  });
 
     }
-    sessionStorage.setItem('paymentOrderedDetails',this.paymentOrderDetails);
-    this.ordered.getTime(this.orderedDelayTimeFormat);
+     this.ordered.getTime(this.orderedDelayTimeFormat);
+    })
+
   }
 
   UPI(){
@@ -484,4 +491,21 @@ export class DatabaseService {
     return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
   }
 
+
+  getCurrentOrderAddress(CurrentOrderAddress:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{CurrentOrderAddress:CurrentOrderAddress}).subscribe(x=>{
+     console.log(x);
+   });
+  }
+
+
+  getCartOrderDetails(cartOrderDetails:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{cartOrderDetails:cartOrderDetails}).subscribe(x=>{
+     console.log(x);
+   });
+  }
 }

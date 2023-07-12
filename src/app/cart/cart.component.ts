@@ -57,6 +57,8 @@ export class CartComponent {
   setsessionAdress:any;
 
   setAddtoCart:any=[];
+
+  currentOrderDetails:any=[];
 constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
   this.Address=fb.group({
@@ -73,9 +75,16 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
     this.dish.sendAddress().subscribe(x=>{
       this.customerDetails=x;
       this.AddressDetails=this.customerDetails.Address;
-      this.itemsArray=this.customerDetails.AddToCartDetails
+      this.itemsArray=this.customerDetails.AddToCartDetails;
+      this.currentOrderDetails=this.customerDetails.CurrentOrderAddress
       if(this.itemsArray==null){
         this.itemsArray=[];
+      }
+      if(this.currentOrderDetails==null || this.currentOrderDetails.length==0){
+       this.isAddress=false;
+      }
+      else{
+        this.isAddress=true;
       }
       this.cartUi();
       this.setAddtoCart=JSON.stringify(this.itemsArray);
@@ -116,7 +125,7 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
     }
 
 
-    if(sessionStorage.getItem("isAddressAdded")=="false" || sessionStorage.getItem("isAddressAdded")==null){
+    if(localStorage.getItem("isAddressAdded")=="false" || localStorage.getItem("isAddressAdded")==null){
       this.isAddress=false;
     }
     else{
@@ -328,18 +337,16 @@ homeAddress(addressData:any,addressType:any){
 
 setAddress(ind:any){
   if(this.isAddress==false){
-    this.setsessionAdress=JSON.stringify(this.AddressDetails[ind]);
 
-    sessionStorage.setItem('orderAddress',this.setsessionAdress);
-    sessionStorage.setItem('isAddressAdded',"true");
+    this.dish.getCurrentOrderAddress(this.AddressDetails[ind]);
     alert("your Address is added for delivery");
+    this.currentOrderDetails=this.AddressDetails[ind];
     this.isAddress=true;
   }
   else{
     this.isAddress=false;
     alert("your Address is removed from delivery Address");
-    sessionStorage.removeItem('orderAddress');
-    sessionStorage.setItem('isAddressAdded',"false");
+    this.dish.getCurrentOrderAddress([]);
   }
 }
 
@@ -355,10 +362,12 @@ Payment(){
   this.orderArray={
     hotelName:this.hotelDetails.hotelname,
     hotelImage:this.hotelDetails.hotelimage,
-    orderItems:this.orderitemArray
+    orderItems:this.orderitemArray,
+    orderAddress:this.currentOrderDetails
   }
-  this.setOrderDetails=JSON.stringify(this.orderArray);
-  sessionStorage.setItem('cartOrderDetails',this.setOrderDetails);
+  // this.setOrderDetails=JSON.stringify(this.orderArray);
+  // sessionStorage.setItem('cartOrderDetails',this.setOrderDetails);
+  this.dish.getCartOrderDetails(this.orderArray);
   this.router.navigateByUrl("finalPayment");
   }
   else if(sessionStorage.getItem('isentered')==null || sessionStorage.getItem('isentered')=="false"){

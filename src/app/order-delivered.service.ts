@@ -1,6 +1,6 @@
 import { formatDate } from '@angular/common';
 import { Injectable } from '@angular/core';
-import {  Subscription } from 'rxjs';
+import {  interval, Subscription } from 'rxjs';
 import { HttpClient } from "@angular/common/http";
 
 
@@ -20,17 +20,13 @@ export class OrderDeliveredService{
 
 
   orderCount=0;
-  orderCount1=0;
-  orderCount2=0;
-  orderCount3=0;
-  orderCount4=0;
+  getOrderedDate:any=[];
+  setOrderedDate:any=[];
 
 
   getOrderedDetails:any=[];
   setOrderedDetails:any=[];
-  countDown:any=[];
 
-  constantCount=0;
 
   userMob:any=[];
   loggedPhonenumber:any=[];
@@ -38,6 +34,8 @@ export class OrderDeliveredService{
   customerDetails:any=[];
   OrderDetails:any=[];
 
+
+  intervalId:any;
   constructor(private http:HttpClient) {
 
   }
@@ -46,32 +44,68 @@ export class OrderDeliveredService{
 
 
 getTime(ordereddate:any){
-  sessionStorage.setItem('isTimeStarted',"true");
-  this.getOrderedDetails=sessionStorage.getItem('paymentOrderedDetails');
-  this.setOrderedDetails=JSON.parse(this.getOrderedDetails);
-  this.orderCount1=++this.orderCount1;
-  this.dateFormat[this.orderCount++]=ordereddate;
-  // this.newDate[this.orderCount2++]=this.orderDate[this.orderCount3++].setMinutes(
-  //   this.orderDate[this.orderCount4++].getMinutes()+1
-  // );
-  // for(var j=0;j<this.orderDate.length;j++){
-  //   this.dateFormat[j]=formatDate(this.newDate[j],'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
-  // }
-  if(this.orderCount1==1 && sessionStorage.getItem('isTimeStarted')=="true"){
-    setInterval(()=>{
+  this.loggedPhonenumber = sessionStorage.getItem('isusername');
+  this.userMob = JSON.parse(this.loggedPhonenumber);
+  this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+    this.customerDetails=x;
+    this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
+    this.getOrderedDate=this.customerDetails.orderedDate
+    ++this.orderCount;
+  if(this.getOrderedDate==null){
+    this.dateFormat=[ordereddate];
+    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.dateFormat}).subscribe(x=>{
+      console.log(x);
+     });;
+  }
+  else{
+    this.getOrderedDate.push(ordereddate);
+    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.getOrderedDate}).subscribe(x=>{
+      console.log(x);
+     });;
+  }
+  this.startInterval();
+});
+}
+
+
+startInterval(){
+  setInterval(()=>{
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+  this.userMob = JSON.parse(this.loggedPhonenumber);
+  this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+    this.customerDetails=x;
+    this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
+    this.getOrderedDate=this.customerDetails.orderedDate
+    if(this.getOrderedDate!=null){
       this.date=new Date();
       this.normaldateFormat=formatDate(this.date.getTime(), 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
 
-      if(this.dateFormat[0]==this.normaldateFormat){
+      if(this.getOrderedDate[0]==this.normaldateFormat){
+        if(this.setOrderedDetails.length>=0 && this.getOrderedDate.length>=0){
         this.getOrderedInfo(this.setOrderedDetails[0]);
+        }
         this.setOrderedDetails.splice(0,1);
-        sessionStorage.setItem("paymentOrderedDetails", JSON.stringify(this.setOrderedDetails));
-        this.dateFormat.splice(0,1);
+        this.getOrderedDate.splice(0,1);
+        // console.log(this.setOrderedDetails.length);
+        // console.log(this.getOrderedDate.length);
+        if(this.setOrderedDetails.length>=0 && this.getOrderedDate.length>=0){
+          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
+            console.log(x);
+          });
+
+        console.log(this.getOrderedDate);
+          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.getOrderedDate}).subscribe(x=>{
+            console.log(x);
+           });;
+        }
       }
 
-      console.log(this.date.toString().slice(18,21));
-  },1000)
-  }
+      // console.log(this.date.toString().slice(22,24));
+    }
+
+
+  });
+  },1000);
 }
 
 getOrderedInfo(orderedInfo:any){

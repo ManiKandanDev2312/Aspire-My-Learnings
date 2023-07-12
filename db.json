@@ -156,6 +156,73 @@
           "dishCount": 1,
           "dishPrice": 150,
           "dishType": "veg"
+        },
+        {
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "dishName": "Fresh Lime Juice",
+          "dishCount": 1,
+          "dishPrice": 38,
+          "dishType": "veg"
+        }
+      ],
+      "CurrentOrderAddress": {
+        "adress": "kondalamPattyByepass",
+        "doorNo": "546",
+        "landmark": "nearByePass",
+        "district": "salem",
+        "addressType": "Home",
+        "iconType": "fa-house"
+      },
+      "cartOrderDetails": {
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "orderItems": [
+          {
+            "dishName": "Mango Juice",
+            "dishQuantity": 1,
+            "dishPrice": 150
+          },
+          {
+            "dishName": "Fresh Lime Juice",
+            "dishQuantity": 1,
+            "dishPrice": 38
+          }
+        ],
+        "orderAddress": {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        }
+      },
+      "paymentOrderedDetails": [],
+      "orderedDate": [],
+      "Orders": [
+        {
+          "orderId": 89551,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "date": [
+            "Wed",
+            "12-Jul-2023 01:34:06 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 1,
+              "dishPrice": 150
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 1,
+              "dishPrice": 38
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
         }
       ]
     },
@@ -165,24 +232,7 @@
       "email": "2k19me070@kiot.ac.in",
       "password": "Jeeva@2001",
       "ConfirmPassword": "Jeeva@2001",
-      "AddToCartDetails": [
-        {
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "dishName": "Mango Juice",
-          "dishCount": 2,
-          "dishPrice": 300,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "dishName": "Fresh Lime Juice",
-          "dishCount": 3,
-          "dishPrice": 114,
-          "dishType": "veg"
-        }
-      ],
+      "AddToCartDetails": [],
       "search": [
         "Chicking"
       ],

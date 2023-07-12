@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DatabaseService } from '../database.service';
+import { OrderDeliveredService } from '../order-delivered.service';
 
 @Component({
   selector: 'app-upi',
@@ -11,10 +12,12 @@ cartTotalPrice:any;
 
 UPIArray:any=[];
 
-constructor(private upi:DatabaseService){
+constructor(private upi:DatabaseService, private ordered:OrderDeliveredService){
   this.cartTotalPrice=sessionStorage.getItem("TotalCartPrice");
+  this.ordered.startInterval();
 
   this.upi.UPI().subscribe(x=>{
+    // console.log(x);
     this.UPIArray=x;
   })
 }
