@@ -1,4 +1,10 @@
 
+.Orders{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .commonBox{
   display:flex;
   flex-direction: column;
@@ -71,12 +77,12 @@
   gap:15px;
 }
 .commonBoxes div{
-  margin-top: -24px;
+  margin-top: -20px;
 }
 .commonBoxes img{
   width: 140px;
   height: 110px;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: 20px;
 }
 
@@ -123,4 +129,15 @@
   color: green;
 }
 
-
+.LastButton{
+  width: 730px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  border: 0.05px solid rgb(246, 103, 21);
+  background: white;
+  font-weight: bold;
+  color: rgb(246, 103, 21);
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@ import { AddressComponent } from './address/address.component';
 import { CancelComponent } from './cancel/cancel.component';
 import { CartComponent } from './cart/cart.component';
 import { CDCardComponent } from './cdcard/cdcard.component';
+import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { DishesComponent } from './dishes/dishes.component';
 import { FAQsComponent } from './faqs/faqs.component';
@@ -19,9 +20,11 @@ import { LegalComponent } from './legal/legal.component';
 import { LoginGuardGuard } from './login-guard.guard';
 import { LoginComponent } from './login/login.component';
 import { LowToHighComponent } from './low-to-high/low-to-high.component';
+import { NewOrdersComponent } from './new-orders/new-orders.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 import { OffersComponent } from './offers/offers.component';
 import { OrdersComponent } from './orders/orders.component';
+import { PastOrdersComponent } from './past-orders/past-orders.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
@@ -192,6 +195,18 @@ const routes: Routes = [
 
   ],
   canActivate: [LoginGuardGuard]
+},
+{
+  path:"NewOrders",
+  component:NewOrdersComponent
+},
+{
+  path:"PastOrders",
+  component:PastOrdersComponent
+},
+{
+  path:"DeliveredOrders",
+  component:DeliveredOrdersComponent
 }
 ];
 

@@ -25,52 +25,6 @@
       ],
       "Favorites": [
         {
-          "id": 1,
-          "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
-          "hotelname": "Hotel Maa",
-          "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
-          "timeDel": "30",
-          "Costfortwo": "₹200",
-          "offer": "40% off | Use TRYNEW",
-          "dishes": [
-            {
-              "dishImage": "./assets/dishes/mosambii juice.webp",
-              "dishName": "Pineapple Juice",
-              "dishPrice": "55",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/cool boost.webp",
-              "dishName": "Cool Boost",
-              "dishPrice": "44",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/mosambii juice.webp",
-              "dishName": "Mosambii Juice",
-              "dishPrice": "60",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/sweet corn maggi.webp",
-              "dishName": "Sweet Corn Maggi",
-              "dishPrice": "69",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/paneer sandwitch.webp",
-              "dishName": "paneer Sandwitch",
-              "dishPrice": "88",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            }
-          ]
-        },
-        {
           "id": 3,
           "hotelimage": "./assets/hotelpage/Barbequeen Restaurant.webp",
           "hotelname": "Barbequeen Restaurant",
@@ -115,17 +69,171 @@
               "dishDescription": "Serves 1"
             }
           ]
+        },
+        {
+          "id": 7,
+          "hotelimage": "./assets/hotelpage/Chicking.webp",
+          "hotelname": "Chicking",
+          "dishvariety": "Indian",
+          "timeDel": "33",
+          "Costfortwo": "₹250",
+          "offer": "60% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/Pomegranate Juice.webp",
+              "dishName": "Pomegranate Juice",
+              "dishPrice": "90",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Lime Mint Cooler.webp",
+              "dishName": "Lime Mint Cooler",
+              "dishPrice": "90",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Thiruenelveli Halwa (250 gms).webp",
+              "dishName": "Thiruenelveli Halwa (250 gms)",
+              "dishPrice": "120",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Red Velvet Roll Cake Slice.webp",
+              "dishName": "Red Velvet Roll Cake Slice",
+              "dishPrice": "125",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/15 Pcs Hot Wings.webp",
+              "dishName": "15 Pcs Hot Wings",
+              "dishPrice": "399",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/5 Pcs Crispy Chicken + 2 Mayo Dips.webp",
+              "dishName": "5 Pcs Crispy Chicken + 2 Mayo Dips",
+              "dishPrice": "499",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Burger Box.webp",
+              "dishName": "Burger Box",
+              "dishPrice": "288",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/10 Pcs Crispy Chicken + 3 Mayo Dips.webp",
+              "dishName": "10 Pcs Crispy Chicken + 3 Mayo Dips",
+              "dishPrice": "888",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Mexicano Pizza [medium].webp",
+              "dishName": "Mexicano Pizza [medium]",
+              "dishPrice": "519",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Veg Royal Wrap.webp",
+              "dishName": "Veg Royal Wrap",
+              "dishPrice": "179",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "hotelimage": "./assets/hotelpage/HMR Hotel.webp",
+          "hotelname": "HMR Hotel",
+          "dishvariety": "Biryani, Indian, chinese, Seafood, Tandoori, Mexican",
+          "timeDel": "29",
+          "Costfortwo": "₹300",
+          "offer": "40% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/Watermelon Juice.webp",
+              "dishName": "Watermelon Juice",
+              "dishPrice": "55",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Miracle Abc.webp",
+              "dishName": "Miracle Abc - 100% Juice",
+              "dishPrice": "129",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Time For Chocolate Photo Cupcakes - Pack Of 6.webp",
+              "dishName": "Time For Chocolate Photo Cupcakes - Pack Of 6",
+              "dishPrice": "619",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Assorted Sweets [250 Gms].webp",
+              "dishName": "Assorted Sweets [250 Gms]",
+              "dishPrice": "198",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Vanjaram Fish.webp",
+              "dishName": "Vanjaram Fish",
+              "dishPrice": "250",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Beef Chukka.webp",
+              "dishName": "Beef Chukka",
+              "dishPrice": "180",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Chicken Pepper.webp",
+              "dishName": "Chicken Pepper",
+              "dishPrice": "225",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Garlic Chicken.webp",
+              "dishName": "Garlic Chicken",
+              "dishPrice": "235",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Parotta.webp",
+              "dishName": "Parotta",
+              "dishPrice": "25",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Fish Manchurian.webp",
+              "dishName": "Fish Manchurian",
+              "dishPrice": "265",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
         }
       ],
       "Address": [
-        {
-          "adress": "kondalamPattyByepass",
-          "doorNo": "546",
-          "landmark": "nearByePass",
-          "district": "madurai",
-          "addressType": "Others",
-          "iconType": "fa-location-dot"
-        },
         {
           "adress": "kondalamPattyByepass",
           "doorNo": "546",
@@ -141,92 +249,36 @@
           "district": "salem",
           "addressType": "Work",
           "iconType": "fa-briefcase"
+        },
+        {
+          "adress": "JaisuryasSanjeevara",
+          "doorNo": "415",
+          "landmark": "DBSbank",
+          "district": "madurai",
+          "addressType": "Others",
+          "iconType": "fa-location-dot"
         }
       ],
       "PaymentCradDetails": {
-        "cardNumber": "XXXXXXXXXXXX6123",
-        "cardHolderName": "MANIKANDAN O",
-        "cardType": "visa"
+        "cardNumber": "XXXXXXXXXXXX1231",
+        "cardHolderName": "DHANUSHRAJ O",
+        "cardType": "mastercard"
       },
       "AddToCartDetails": [
         {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Gulab Jamun Vanilla Pastry",
+          "hotelName": "HMR Hotel",
+          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "dishName": "Miracle Abc - 100% Juice",
           "dishCount": 1,
-          "dishPrice": 99,
+          "dishPrice": 129,
           "dishType": "veg"
         },
         {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Rasmalai Mini Jar Cake",
+          "hotelName": "HMR Hotel",
+          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "dishName": "Chicken Pepper",
           "dishCount": 1,
-          "dishPrice": 139,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Chicken Special Leg",
-          "dishCount": 1,
-          "dishPrice": 259,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Chicken DUM Exec BIRYANI",
-          "dishCount": 1,
-          "dishPrice": 240,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Hyderabadi Mutton Dum Biryrani",
-          "dishCount": 1,
-          "dishPrice": 312,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Prawn Biryani",
-          "dishCount": 1,
-          "dishPrice": 350,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Mutton Biriyani",
-          "dishCount": 1,
-          "dishPrice": 312,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Coconut Sharbat",
-          "dishCount": 1,
-          "dishPrice": 200,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Cold Pressed Orange Juice",
-          "dishCount": 1,
-          "dishPrice": 220,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Chicken Biryani Half",
-          "dishCount": 1,
-          "dishPrice": 278,
+          "dishPrice": 225,
           "dishType": "veg"
         }
       ],
@@ -235,17 +287,22 @@
         "doorNo": "546",
         "landmark": "nearByePass",
         "district": "salem",
-        "addressType": "Home",
-        "iconType": "fa-house"
+        "addressType": "Work",
+        "iconType": "fa-briefcase"
       },
       "cartOrderDetails": {
-        "hotelName": "SS HYDERABAD BIRYANI",
-        "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+        "hotelName": "HMR Hotel",
+        "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
         "orderItems": [
           {
-            "dishName": "Gulab Jamun Vanilla Pastry",
+            "dishName": "Miracle Abc - 100% Juice",
             "dishQuantity": 1,
-            "dishPrice": 99
+            "dishPrice": 129
+          },
+          {
+            "dishName": "Chicken Pepper",
+            "dishQuantity": 1,
+            "dishPrice": 225
           }
         ],
         "orderAddress": {
@@ -253,11 +310,121 @@
           "doorNo": "546",
           "landmark": "nearByePass",
           "district": "salem",
-          "addressType": "Home",
-          "iconType": "fa-house"
+          "addressType": "Work",
+          "iconType": "fa-briefcase"
         },
-        "totalPrice": 142
-      }
+        "totalPrice": 397
+      },
+      "paymentOrderedDetails": [],
+      "orderedDate": [],
+      "Orders": [
+        {
+          "orderId": 398657,
+          "totalPrice": 493,
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Fri",
+            "14-Jul-2023 08:35:33 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "14-Jul-2023 08:50:33 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Pomegranate Juice",
+              "dishQuantity": 1,
+              "dishPrice": 90
+            },
+            {
+              "dishName": "Lime Mint Cooler",
+              "dishQuantity": 4,
+              "dishPrice": 360
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 528546,
+          "totalPrice": 1033,
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Fri",
+            "14-Jul-2023 08:54:30 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "14-Jul-2023 09:09:30 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Pomegranate Juice",
+              "dishQuantity": 5,
+              "dishPrice": 450
+            },
+            {
+              "dishName": "Lime Mint Cooler",
+              "dishQuantity": 6,
+              "dishPrice": 540
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 232457,
+          "totalPrice": 397,
+          "hotelName": "HMR Hotel",
+          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Fri",
+            "14-Jul-2023 09:27:49 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "14-Jul-2023 09:42:49 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Miracle Abc - 100% Juice",
+              "dishQuantity": 1,
+              "dishPrice": 129
+            },
+            {
+              "dishName": "Chicken Pepper",
+              "dishQuantity": 1,
+              "dishPrice": 225
+            }
+          ],
+          "paymentMenthod": "Card"
+        }
+      ]
     },
     {
       "username": "Jeevaarav",

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 
@@ -10,44 +11,148 @@ import { DatabaseService } from '../database.service';
 export class AddressComponent {
   customerDetails:any=[];
   AddressDetails:any=[];
+  addressDetails:any=[];
 
-  constructor(private Address:DatabaseService,private router:Router){
+  AddressForm:FormGroup;
+  isaddAdress:boolean=false;
 
-    // this.favorite.sendFavorite().subscribe(x=>{
-    //   this.totalDetails=x;
-    //   this.FavoritesArray=this.totalDetails.Favorites;
+  sendAddressDetails:any=[];
 
-    //   if(this.FavoritesArray.length==0){
-    //     this.isshow=false;
-    //   }
-    //   else if(this.FavoritesArray.length==1){
-    //     this.isshow=true;
-    //     this.limitedFavorite[0]=this.FavoritesArray[0]
-    //   }
-    //   else{
-    //     this.isshow=true;
-    //     this.isButton=true;
-    //     console.log(this.FavoritesArray.length);
-    //     for(var i=0; i<2; i++){
-    //       this.limitedFavorite[i]=this.FavoritesArray[i];
-    //     }
-    //   }
-    // })
+  constructor(private Address:DatabaseService,private router:Router, private fb:FormBuilder){
 
     this.Address.sendAddress().subscribe(x=>{
       this.customerDetails=x;
       this.AddressDetails=this.customerDetails.Address;
     })
 
+    this.AddressForm=fb.group({
+      yourAddress:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{15,30}$")]],
+      DoorNo:['',[Validators.required,Validators.pattern("^[0-9]+\s*[a-zA-Z]?(\/[0-9]+\s*[a-zA-Z]?)?$")]],
+      Landmark:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{2,10}$")]],
+      District:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,10}$")]]
+    });
+
   }
 
-  // sendHotel(index:any){
-  //   this.FavoriteHotel=JSON.stringify(this.FavoritesArray[index]);
-  //   sessionStorage.setItem('hotelDetails',this.FavoriteHotel);
-  //   this.router.navigateByUrl("/dishPage");
-  // }
 
-  // FavoritePage(){
-  //   this.router.navigateByUrl("finalFavorites");
-  // }
+homeAddress(addressData:any,addressType:any){
+  this.Address.sendAddress().subscribe(x=>{
+    this.customerDetails=x;
+    this.AddressDetails=this.customerDetails.Address;
+
+    if(this.AddressDetails==undefined || this.AddressDetails.length==0){
+
+      if(addressType=="Home"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-house"
+        }]
+      }
+      else if(addressType=="Work"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-briefcase"
+        }]
+      }
+      else{
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-location-dot"
+        }]
+      }
+      this.sendAddressDetails=this.addressDetails;
+      this.Address.getAddress(this.addressDetails).subscribe(x=>{
+        console.log(x);
+      })
+    }
+
+
+    else{
+      if(addressType=="Home"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-house"
+        }]
+      for(var i=0;i<this.AddressDetails.length;i++){
+        if(addressType==this.AddressDetails[i].addressType){
+          this.AddressDetails.splice(i,1);
+        }
+        this.sendAddressDetails[i]=this.AddressDetails[i];
+      }
+      this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
+
+      }
+      else if(addressType=="Work"){
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-briefcase"
+        }]
+      for(var i=0;i<this.AddressDetails.length;i++){
+        if(addressType==this.AddressDetails[i].addressType){
+          this.AddressDetails.splice(i,1);
+        }
+        this.sendAddressDetails[i]=this.AddressDetails[i];
+      }
+      this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
+      }
+      else{
+        this.addressDetails=[{
+          adress:addressData.yourAddress,
+          doorNo:addressData.DoorNo,
+          landmark:addressData.Landmark,
+          district:addressData.District,
+          addressType:addressType,
+          iconType:"fa-location-dot"
+        }]
+      for(var i=0;i<this.AddressDetails.length;i++){
+        if(addressType==this.AddressDetails[i].addressType){
+          this.AddressDetails.splice(i,1);
+        }
+        this.sendAddressDetails[i]=this.AddressDetails[i];
+      }
+      this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
+      }
+      this.Address.getAddress(this.sendAddressDetails).subscribe(x=>{
+        console.log(x);
+      })
+    }
+
+  })
+
+  setTimeout(()=>{
+    window.location.reload();
+  },1000);
+
+  this.close();
+}
+
+
+close(){
+  this.isaddAdress=false;
+}
+
+showAddress(){
+  this.isaddAdress=true;
+}
+
 }

@@ -78,7 +78,7 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
       this.AddressDetails=this.customerDetails.Address;
       this.itemsArray=this.customerDetails.AddToCartDetails;
       this.currentOrderDetails=this.customerDetails.CurrentOrderAddress
-      
+
       if(this.itemsArray==null){
         this.itemsArray=[];
       }
@@ -356,6 +356,7 @@ Payment(){
         dishPrice:this.itemsArray[i].dishPrice
     }
   }
+  console.log(this.hotelDetails);
   this.orderArray={
     hotelName:this.hotelDetails.hotelname,
     hotelImage:this.hotelDetails.hotelimage,

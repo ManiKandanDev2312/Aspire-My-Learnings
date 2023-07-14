@@ -142,18 +142,16 @@ searchcartItems(ind:any){
       this.sendDishArray={
         hotelName:this.setHotelName.hotelname,
         hotelImage:this.setHotelName.hotelimage,
-        dishName:this.dishArray[ind].dishName,
+        dishName:this.finalDishArray[ind].dishName,
         dishCount:1,
-        dishPrice:parseInt(this.dishArray[ind].dishPrice),
-        dishType:this.dishArray[ind].dishType
+        dishPrice:parseInt(this.finalDishArray[ind].dishPrice),
+        dishType:this.finalDishArray[ind].dishType
       }
       if(this.itemArray.length>=1){
         for(var i=0;i<this.itemArray.length;i++){
 
-          console.log(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName));
-          if(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName)){
-            console.log("hi");
-
+          console.log(this.itemArray[i].dishName.includes(this.finalDishArray[ind].dishName));
+          if(this.itemArray[i].dishName.includes(this.finalDishArray[ind].dishName)){
               alert("this item is  already added in cart");
               break;
 
@@ -212,8 +210,6 @@ cartItems(ind:number){
 
           console.log(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName));
           if(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName)){
-            console.log("hi");
-
               alert("this item is  already added in cart");
               break;
 

@@ -37,6 +37,9 @@ import { FinalPaymentComponent } from './final-payment/final-payment.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { UPIComponent } from './upi/upi.component';
 import { CDCardComponent } from './cdcard/cdcard.component';
+import { NewOrdersComponent } from './new-orders/new-orders.component';
+import { PastOrdersComponent } from './past-orders/past-orders.component';
+import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.component';
 // import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
@@ -74,7 +77,10 @@ import { CDCardComponent } from './cdcard/cdcard.component';
     FinalPaymentComponent,
     WalletComponent,
     UPIComponent,
-    CDCardComponent
+    CDCardComponent,
+    NewOrdersComponent,
+    PastOrdersComponent,
+    DeliveredOrdersComponent
   ],
   imports: [
     BrowserModule,

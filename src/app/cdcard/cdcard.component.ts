@@ -1,6 +1,7 @@
 import { formatDate } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 
 @Component({
@@ -24,7 +25,7 @@ export class CDCardComponent {
 
   CardDetails:any;
 
-  constructor(private FormDetails:FormBuilder,private cardType:DatabaseService){
+  constructor(private FormDetails:FormBuilder,private cardType:DatabaseService, private router:Router){
     this.cardType.getvisaDetails().subscribe(x=>{
       this.visa=x;
     })
@@ -146,7 +147,7 @@ export class CDCardComponent {
   }
 
   saveCardDetails(cardDetails:any){
-    // this.cardType.paymentOrdered("Card");
+    this.cardType.paymentOrdered("Card");
     var cardType;
     if(cardDetails.CardNumber[0]=="4"){
       cardType="visa";
@@ -161,5 +162,7 @@ export class CDCardComponent {
       cardType:cardType
     }
     this.cardType.cardDetails(this.CardDetails);
+
+    this.router.navigateByUrl("/");
   }
 }

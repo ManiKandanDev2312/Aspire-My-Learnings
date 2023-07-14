@@ -12,7 +12,6 @@ import { OrderDeliveredService } from './order-delivered.service';
 })
 export class DatabaseService {
   Array:any=[];
-  Array1:any=[];
   name:string="";
   username:string="";
 
@@ -35,7 +34,6 @@ export class DatabaseService {
   variety:any=[];
   varietydish:any=[];
   varietyfood:any=[];
-  mani:any=[];
   array:any=[];
   islogged:boolean=false;
   itemArray:any=[];
@@ -210,7 +208,7 @@ export class DatabaseService {
       return null;
     }
     else{
-      return this.setsessionHotelDetails[0];
+      return this.setsessionHotelDetails;
     }
 
   }

@@ -1,9 +1,76 @@
-<div class="Orders">
+<div class="Orders" *ngIf="isNewOrder">
+  <h1>New Orders</h1>
+
+  <div class="orderBox">
+  <div class="commonBox" *ngFor="let OrderItems of newOrderDetails; let indexNumber=index ">
+<div class="commonBoxes">
+  <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
+  <div>
+    <h2>{{OrderItems.hotelName}}</h2>
+    <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
+    <a href="">VIEW DETAILS</a>
+    <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
+  </div>
+</div>
+<div class="commonBoxes" *ngFor="let orderedItems of newOrderDetails[indexNumber].orderedItems;">
+  <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
+</div>
+<div class="OrderButton">
+  <div class="button">
+    <button>CANCEL</button>
+  </div>
+  <div class="button">
+  <button>Help</button>
+</div>
+</div>
+  </div>
+
+  <button class="LastButton" routerLink="/NewOrders">VIEW MORE NEW ORDERS</button>
+</div>
+</div>
+
+
+
+<!-- -------------------------------------------------------------------Past Order-------------------------------------- -->
+<div class="Orders" *ngIf="isPastOrder">
   <h1>Past Orders</h1>
 
   <div class="orderBox">
-  <div class="commonBox">
-<div class="commonBoxes" *ngFor="let OrderItems of orderDeatils ">
+  <div class="commonBox" *ngFor="let OrderItems of pastOrderDetails;let indexNumber=index">
+  <div class="commonBoxes">
+  <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
+  <div>
+    <p style="margin-left: 400px;">Yet to be Deliver <i class="fa-solid fa-circle-xmark" style="color: red;"></i></p>
+    <h2>{{OrderItems.hotelName}}</h2>
+    <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
+    <a href="">VIEW DETAILS</a>
+    <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
+  </div>
+</div>
+<div class="commonBoxes" *ngFor="let orderedItems of pastOrderDetails[indexNumber].orderedItems;">
+  <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
+</div>
+<div class="OrderButton">
+  <div class="button">
+    <button>REORDER</button>
+  </div>
+  <div class="button">
+  <button>Help</button>
+ </div>
+</div>
+<button class="LastButton" routerLink="/PastOrders">VIEW MORE YET TO DELIVER ORDERS</button>
+</div>
+
+</div>
+</div>
+
+<!-- ---------------------------------------------------------Delivered Orders------------------------------ -->
+<div class="Orders" *ngIf="isDeliveredOrder">
+  <h1>Delivered Orders</h1>
+
+  <div class="orderBox">
+  <div class="commonBox" *ngFor="let OrderItems of deliveredOrderDetails; let indexNumber=index ">
+<div class="commonBoxes">
   <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
   <div>
     <p>Delivered on {{OrderItems.deliveryDate[0]}},  {{OrderItems.deliveryDate[1]}} <i class="fa-solid fa-circle-check"></i></p>
@@ -13,7 +80,7 @@
     <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
   </div>
 </div>
-<div class="commonBoxes" *ngFor="let orderedItems of orderItemArray">
+<div class="commonBoxes" *ngFor="let orderedItems of deliveredOrderDetails[indexNumber].orderedItems;">
   <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
 </div>
 <div class="OrderButton">
@@ -25,5 +92,6 @@
 </div>
 </div>
   </div>
+  <button class="LastButton" routerLink="/DeliveredOrders">VIEW MORE DELIVERED ORDERS</button>
 </div>
 </div>

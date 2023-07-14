@@ -25,6 +25,7 @@ export class ProfileComponent {
 
     this.edit.sendEditProfile().subscribe(x=>{
       this.userDetails=x;
+      console.log(this.userDetails);
     });
   }
 
