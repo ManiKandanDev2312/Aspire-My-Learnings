@@ -28,18 +28,16 @@
   flex-direction: column;
   padding: 20px 0px 30px 0px;
 }
-.commonBoxes p{
-  padding-bottom: 50px;
-}
+
 .OrderButton{
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding-top: 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
-.button{
-  margin-top: 100px;
-}
+
 .button button{
   width: 100px;
   height: 40px;
@@ -97,6 +95,7 @@
   color: gray;
   font-weight: lighter;
   margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 0.9vw;
 }
 
@@ -124,10 +123,4 @@
   color: green;
 }
 
-.commonBoxes:nth-child(2) h4{
-  margin-left: 570px;
-  margin-top: -80px;
-  font-size: 1vw;
-  font-weight: lighter;
-  color: gray;
-}
+

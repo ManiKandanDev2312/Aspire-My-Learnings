@@ -3,26 +3,26 @@
 
   <div class="orderBox">
   <div class="commonBox">
-<div class="commonBoxes" *ngFor="let setPaymentOrderedDetails of setPaymentOrderedDetails ">
-  <div><img src="{{setPaymentOrderedDetails.hotelImage}}" alt=""></div>
+<div class="commonBoxes" *ngFor="let OrderItems of orderDeatils ">
+  <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
   <div>
-    <p>Delivered on Sun, Nov 20, 2022, 07:59PM <i class="fa-solid fa-circle-check"></i></p>
-    <h2>{{setPaymentOrderedDetails.hotelName}}</h2>
-    <h4>Order #{{setPaymentOrderedDetails.orderId}} | {{setPaymentOrderedDetails.date[0]}}, {{setPaymentOrderedDetails.date[1]}}</h4>
+    <p>Delivered on {{OrderItems.deliveryDate[0]}},  {{OrderItems.deliveryDate[1]}} <i class="fa-solid fa-circle-check"></i></p>
+    <h2>{{OrderItems.hotelName}}</h2>
+    <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
     <a href="">VIEW DETAILS</a>
+    <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
   </div>
 </div>
 <div class="commonBoxes" *ngFor="let orderedItems of orderItemArray">
   <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
-  <h4>Total Paid: ₹ {{setPaymentOrderedDetails.totalPrice}}</h4>
-  <div class="OrderButton">
-    <div class="button">
-      <button>REORDER</button>
-    </div>
-    <div class="button">
-    <button>Help</button>
+</div>
+<div class="OrderButton">
+  <div class="button">
+    <button>REORDER</button>
   </div>
-  </div>
+  <div class="button">
+  <button>Help</button>
+</div>
 </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 import { OrderDeliveredService } from '../order-delivered.service';
 
@@ -12,9 +13,9 @@ cartTotalPrice:any;
 
 UPIArray:any=[];
 
-constructor(private upi:DatabaseService, private ordered:OrderDeliveredService){
+constructor(private upi:DatabaseService, private ordered:OrderDeliveredService,private router:Router){
   this.cartTotalPrice=sessionStorage.getItem("TotalCartPrice");
-  this.ordered.startInterval();
+
 
   this.upi.UPI().subscribe(x=>{
     // console.log(x);
@@ -24,9 +25,13 @@ constructor(private upi:DatabaseService, private ordered:OrderDeliveredService){
 
 SendPaymentUPI(paymentMethod:any){
   this.upi.paymentOrdered("UPI");
+
+  this.router.navigateByUrl("");
+
 }
 
 SendPaymentCashOnDelivery(){
   this.upi.paymentOrdered("Cash On Delivery");
+  this.router.navigateByUrl("");
 }
 }

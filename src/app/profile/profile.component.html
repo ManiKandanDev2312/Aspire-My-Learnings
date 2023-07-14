@@ -3,8 +3,13 @@
 <div class="outer">
 
   <div class="details">
-    <h1>Manikandan</h1>
-    <h2>6379623737  &nbsp; . &nbsp;&nbsp; manidhanush2001@gmail.com</h2>
+    <div>
+      <h1>{{userDetails.username}}</h1>
+      <h2>{{userDetails.phonenumber}}  &nbsp; . &nbsp;&nbsp; {{userDetails.email}}</h2>
+    </div>
+    <div>
+      <button (click)="showEditprofile()">Edit Profile</button>
+    </div>
   </div>
 
   <div class="profilebox">
@@ -26,6 +31,33 @@
       <div class="boxes">
         <router-outlet></router-outlet>
       </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="background" *ngIf="isEditProfile">
+  <div class="editProfile">
+    <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+    <h1>Edit Profile</h1>
+    <img src="./assets/img9.webp" alt="image" class="image">
+
+    <div class="editForm">
+      <form [formGroup]="editProfile">
+        <div class="forms">
+          <label for="editProfileUsername"*ngIf="!editProfile.controls['editProfileUsername'].errors?.['required'] && !editProfile.controls['editProfileUsername'].errors?.['pattern'] || !editProfile.controls['editProfileUsername'].dirty">Username</label>
+          <label *ngIf="editProfile.controls['editProfileUsername'].errors?.['required'] && editProfile.controls['editProfileUsername'].invalid && editProfile.controls['editProfileUsername'].dirty" class="invalid">Please enter Username</label>
+          <label *ngIf="editProfile.controls['editProfileUsername'].errors?.['pattern'] && (editProfile.controls['editProfileUsername'].invalid || editProfile.controls['editProfileUsername'].dirty)" class="invalid">invalid Username</label>
+          <input type="text" placeholder=" " name="editProfileUsername"  formControlName="editProfileUsername">
+        </div>
+        <div class="forms">
+          <label for="editProfileEmail"*ngIf="!editProfile.controls['editProfileEmail'].errors?.['required'] && !editProfile.controls['editProfileEmail'].errors?.['pattern'] || !editProfile.controls['editProfileEmail'].dirty">Email</label>
+          <label *ngIf="editProfile.controls['editProfileEmail'].errors?.['required'] && editProfile.controls['editProfileEmail'].invalid && editProfile.controls['editProfileEmail'].dirty" class="invalid">Please enter Email</label>
+          <label *ngIf="editProfile.controls['editProfileEmail'].errors?.['pattern'] && (editProfile.controls['editProfileEmail'].invalid || editProfile.controls['editProfileEmail'].dirty)" class="invalid">invalid Email</label>
+          <input type="text" placeholder=" " name="editProfileEmail" formControlName="editProfileEmail">
+        </div>
+        <button class="edit" type="submit" [disabled]="!editProfile.valid" (click)="editProfileDetails(editProfile.value)">Edit Profile</button>
+      </form>
     </div>
   </div>
 </div>

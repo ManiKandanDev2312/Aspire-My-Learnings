@@ -19,7 +19,6 @@ export class OrderDeliveredService{
   orderDate:any=[];
 
 
-  orderCount=0;
   getOrderedDate:any=[];
   setOrderedDate:any=[];
 
@@ -27,7 +26,7 @@ export class OrderDeliveredService{
   getOrderedDetails:any=[];
   setOrderedDetails:any=[];
 
-
+ 
   userMob:any=[];
   loggedPhonenumber:any=[];
 
@@ -50,7 +49,6 @@ getTime(ordereddate:any){
     this.customerDetails=x;
     this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
     this.getOrderedDate=this.customerDetails.orderedDate
-    ++this.orderCount;
   if(this.getOrderedDate==null){
     this.dateFormat=[ordereddate];
     this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.dateFormat}).subscribe(x=>{
@@ -86,8 +84,6 @@ startInterval(){
         }
         this.setOrderedDetails.splice(0,1);
         this.getOrderedDate.splice(0,1);
-        // console.log(this.setOrderedDetails.length);
-        // console.log(this.getOrderedDate.length);
         if(this.setOrderedDetails.length>=0 && this.getOrderedDate.length>=0){
           this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
             console.log(x);

@@ -59,6 +59,7 @@ export class CartComponent {
   setAddtoCart:any=[];
 
   currentOrderDetails:any=[];
+
 constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
   this.Address=fb.group({
@@ -77,6 +78,7 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
       this.AddressDetails=this.customerDetails.Address;
       this.itemsArray=this.customerDetails.AddToCartDetails;
       this.currentOrderDetails=this.customerDetails.CurrentOrderAddress
+      
       if(this.itemsArray==null){
         this.itemsArray=[];
       }
@@ -186,7 +188,6 @@ minus(ind:number){
   console.log(this.itemsArray);
   this.setAddtoCart=JSON.stringify(this.itemsArray);
   sessionStorage.setItem('dishes',this.setAddtoCart);
-  // window.location.reload();
   this.totalPrice=this.itemTotal+this.deliverFee;
   this.setTotalPrice=JSON.stringify(this.totalPrice);
   sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
@@ -200,14 +201,11 @@ plus(ind:number){
   for(var i=0;i<this.itemsArray.length;i++){
     this.itemTotal=this.itemTotal+this.itemsArray[i].dishPrice;
   }
-  console.log(this.itemsArray);
   if(sessionStorage.getItem('isentered')=="true"){
     this.dish.getAddToCart(this.itemsArray);
   }
-  console.log(this.itemsArray);
   this.setAddtoCart=JSON.stringify(this.itemsArray);
   sessionStorage.setItem('dishes',this.setAddtoCart);
-  // window.location.reload();
   this.totalPrice=this.itemTotal+this.deliverFee;
   this.setTotalPrice=JSON.stringify(this.totalPrice);
   sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
@@ -319,7 +317,6 @@ homeAddress(addressData:any,addressType:any){
       }
       this.sendAddressDetails[this.AddressDetails.length]=this.addressDetails[0];
       }
-      console.log(this.sendAddressDetails);
       this.dish.getAddress(this.sendAddressDetails).subscribe(x=>{
         console.log(x);
       })
@@ -363,10 +360,9 @@ Payment(){
     hotelName:this.hotelDetails.hotelname,
     hotelImage:this.hotelDetails.hotelimage,
     orderItems:this.orderitemArray,
-    orderAddress:this.currentOrderDetails
+    orderAddress:this.currentOrderDetails,
+    totalPrice:this.totalPrice
   }
-  // this.setOrderDetails=JSON.stringify(this.orderArray);
-  // sessionStorage.setItem('cartOrderDetails',this.setOrderDetails);
   this.dish.getCartOrderDetails(this.orderArray);
   this.router.navigateByUrl("finalPayment");
   }
@@ -400,7 +396,7 @@ hotelRoute(){
       }
     }
 
-  })
+  });
 
 }
 }

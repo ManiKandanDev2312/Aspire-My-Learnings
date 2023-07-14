@@ -112,4 +112,10 @@ returl:any;
 }
 
 
+changePassword(forgotValue:any){
+
+  this.data_ser.changePassword(forgotValue);
+  this.router.navigateByUrl("/");
+}
+
 }

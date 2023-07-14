@@ -14,20 +14,18 @@ export class OrdersComponent {
 
   orderedItems:any=[];
 
+  orderDeatils:any=[];
   orderItemArray:any=[];
 
+  customerDetails:any=[];
+
   constructor(private PastOrders:DatabaseService){
-    this.getPaymentOrderedDetails=sessionStorage.getItem("paymentOrderedDetails");
-    this.setPaymentOrderedDetails=JSON.parse(this.getPaymentOrderedDetails);
 
-    for(var i=0;i<this.setPaymentOrderedDetails.length;i++){
-      this.orderItemArray[i]=this.setPaymentOrderedDetails[i].orderedItems[i];
-    }
-
-    console.log(this.orderItemArray);
-
-    // this.PastOrders.sendOrderedInfo().subscribe(x=>{
-    //   this.orderedItems=x;
-    // });
+    this.PastOrders.sendOrders().subscribe(x=>{
+      this.customerDetails=x;
+      this.orderDeatils=this.customerDetails.Orders;
+      this.orderItemArray=this.orderDeatils[0].orderedItems
+      console.log(this.orderDeatils);
+    })
   }
 }

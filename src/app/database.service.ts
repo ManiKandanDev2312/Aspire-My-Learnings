@@ -49,7 +49,6 @@ export class DatabaseService {
   setrecentSearchPhone:any;
 
   duplicateHotelName:any=[];
-  duplicateHotelCount:number=0;
   getsessionHotelname:any;
   setsessionHotelname:any=[];
   putsessionHotelDetails:any;
@@ -58,7 +57,8 @@ export class DatabaseService {
 
 
 
-  date:any;
+  checkdate:any;
+  orderDate:any;
   time:any;
   day:any;
   dayName:any;
@@ -85,6 +85,13 @@ export class DatabaseService {
   customerDetails:any=[];
 
 
+  deliveryDateArray:any=[];
+  orderDateArray:any=[];
+
+  orderTime:any;
+  deliveryTime:any;
+
+  checkHotel:any=[];
   constructor(private http:HttpClient, private router:Router, private LoginGuard:LoginGuardGuard, private ordered:OrderDeliveredService) {
   }
 
@@ -173,41 +180,31 @@ export class DatabaseService {
   }
 
 
+
+
   sendCartHotelDetails(){
-    this.duplicateHotelName[this.duplicateHotelCount++]=this.Array;
-    this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
-    localStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
-    console.log(this.duplicateHotelName);
-      if(this.duplicateHotelName.length==1){
+    this.duplicateHotelName=sessionStorage.getItem('cartHotelDetails');
+    this.putsessionHotelDetails=JSON.parse(this.duplicateHotelName);
+    this.getsessionHotelname=sessionStorage.getItem('dishes');
+    this.setsessionHotelname=JSON.parse(this.getsessionHotelname);
+    if(this.putsessionHotelDetails==undefined || this.setsessionHotelname==undefined || this.setsessionHotelname.length==0){
+      sessionStorage.setItem('cartHotelDetails',JSON.stringify(this.Array));
+      return true;
+    }
+    else if(this.putsessionHotelDetails.hotelname == this.Array.hotelname){
       return true;
     }
     else{
-      if(this.duplicateHotelName[0].hotelname==this.duplicateHotelName[1].hotelname){
-        --this.duplicateHotelCount;
-        return true;
-      }
-      else{
-        this.getsessionHotelname=sessionStorage.getItem('dishes');
-        this.setsessionHotelname=JSON.parse(this.getsessionHotelname);
-        if(this.setsessionHotelname.length==0)
-        {
-          this.duplicateHotelName[0]=this.Array;
-          this.putsessionHotelDetails=JSON.stringify(this.duplicateHotelName);
-          localStorage.setItem('cartHotelDetails',this.putsessionHotelDetails);
-          --this.duplicateHotelCount;
-          return true;
-        }
-        else{
-          --this.duplicateHotelCount;
-          return false;
-        }
-
-      }
+      return false;
     }
+
   }
 
+
+
+
   sendCartHotelname(){
-    this.getsessionHotelDetails=localStorage.getItem('cartHotelDetails');
+    this.getsessionHotelDetails=sessionStorage.getItem('cartHotelDetails');
     this.setsessionHotelDetails=JSON.parse(this.getsessionHotelDetails);
     if(this.setsessionHotelDetails==null){
       return null;
@@ -346,19 +343,23 @@ export class DatabaseService {
     this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.setorderDetails=this.customerDetails.cartOrderDetails,
-      this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
-      console.log(this.setorderDetails.hotelName);
+      this.setOrderedDetails=this.customerDetails.paymentOrderedDetails,
+      this.setAddressDetails=this.customerDetails.CurrentOrderAddress
       this.orderId=Math.floor((Math.random()*1000000)+1);
-    this.date=new Date();
-    this.orderAddMinutes=this.date.setMinutes(
-      this.date.getMinutes()+1
+    this.checkdate=new Date();
+    this.orderAddMinutes=this.checkdate.setMinutes(
+      this.checkdate.getMinutes()+1
     );
     this.orderedDelayTimeFormat=formatDate(this.orderAddMinutes, 'dd-MMM-yyyy hh:mm:ss a', 'en-US', '+0530');
 
+    this.orderDate=new Date();
 
+    this.orderTime=this.orderDate.getTime();
+    this.deliveryTime=this.orderDate.setMinutes(
+      this.orderDate.getMinutes()+15
+    );
 
-    this.time=this.date.getTime();
-    this.day=this.date.getDay();
+    this.day=this.orderDate.getDay();
     if(this.day==0){
       this.dayName="Sun";
     }
@@ -381,19 +382,22 @@ export class DatabaseService {
       this.dayName="Sat";
     }
 
-    this.dateArray[0]=this.dayName;
-    this.dateArray[1]=formatDate(this.time, 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
+    this.deliveryDateArray[0]=this.dayName;
+    this.deliveryDateArray[1]=formatDate(this.deliveryTime, 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
+    this.orderDateArray[0]=this.dayName;
+    this.orderDateArray[1]=formatDate(this.orderTime, 'dd-MMM-yyyy hh:mm:ss a','en-US','+0530');
 
 
-
+    console.log(this.customerDetails);
     if(paymentType=="Card"){
       this.orderDetails=[{
         orderId: this.orderId,
-        totalPrice:this.cartTotalPrice,
+        totalPrice:this.setorderDetails.totalPrice,
         hotelName:this.setorderDetails.hotelName,
         hotelImage:this.setorderDetails.hotelImage,
         address:this.setAddressDetails,
-        date:this.dateArray,
+        orderedDate:this.orderDateArray,
+        deliveryDate:this.deliveryDateArray,
         orderedItems:this.setorderDetails.orderItems,
         paymentMenthod:"Card"
       }]
@@ -401,11 +405,12 @@ export class DatabaseService {
     else if(paymentType=="UPI"){
       this.orderDetails=[{
         orderId: this.orderId,
-        totalPrice:this.cartTotalPrice,
+        totalPrice:this.setorderDetails.totalPrice,
         hotelName:this.setorderDetails.hotelName,
         hotelImage:this.setorderDetails.hotelImage,
         address:this.setAddressDetails,
-        date:this.dateArray,
+        orderedDate:this.orderDateArray,
+        deliveryDate:this.deliveryDateArray,
         orderedItems:this.setorderDetails.orderItems,
         paymentMenthod:"UPI"
       }]
@@ -413,11 +418,12 @@ export class DatabaseService {
     else{
       this.orderDetails=[{
         orderId: this.orderId,
-        totalPrice:this.cartTotalPrice,
+        totalPrice:this.setorderDetails.totalPrice,
         hotelName:this.setorderDetails.hotelName,
         hotelImage:this.setorderDetails.hotelImage,
         address:this.setAddressDetails,
-        date:this.dateArray,
+        orderedDate:this.orderDateArray,
+        deliveryDate:this.deliveryDateArray,
         orderedItems:this.setorderDetails.orderItems,
         paymentMenthod:"Cash On Delivery",
         amountPaid:"not paid"
@@ -429,6 +435,7 @@ export class DatabaseService {
       this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails}).subscribe(x=>{
     console.log(x);
   });
+  this.ordered.getTime(this.orderedDelayTimeFormat);
 
     }else{
       this.setOrderedDetails.push(this.orderDetails[0]);
@@ -436,10 +443,10 @@ export class DatabaseService {
       this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
     console.log(x);
   });
-
+  this.ordered.getTime(this.orderedDelayTimeFormat);
     }
-     this.ordered.getTime(this.orderedDelayTimeFormat);
-    })
+
+    });
 
   }
 
@@ -507,5 +514,48 @@ export class DatabaseService {
    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{cartOrderDetails:cartOrderDetails}).subscribe(x=>{
      console.log(x);
    });
+  }
+
+
+  sendOrders(){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+  }
+
+  changePassword(PasswordDetails:any){
+
+    this.http.get<any>("http://localhost:3000/customerDetails/").subscribe(x=>{
+      this.customerDetails=x.find((log:any)=>{
+
+        return log.phonenumber == PasswordDetails.forgotPhone;
+      });
+
+      if(this.customerDetails){
+        this.http.patch("http://localhost:3000/customerDetails/"+PasswordDetails.forgotPhone,{password:PasswordDetails.forgotPass,ConfirmPassword:PasswordDetails.forgotConfirm}).subscribe(x=>{
+          console.log(x);
+        });
+        alert("your password is successfully changed");
+      }
+      else{
+        alert("mobile number is invalid");
+      }
+
+  });
+  }
+
+
+  editProfileDetails(editDetails:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{email:editDetails.editProfileEmail,username:editDetails.editProfileUsername}).subscribe(x=>{
+     console.log(x);
+   });
+  }
+
+  sendEditProfile(){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
   }
 }

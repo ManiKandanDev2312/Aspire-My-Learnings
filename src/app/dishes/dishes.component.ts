@@ -49,6 +49,7 @@ export class DishesComponent {
   isfound:boolean=false;
 
   sendDishArray:any;
+  putsessionHotelDetails:any=[];
 
 constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
   this.dummy=sessionStorage.getItem('dishes');
@@ -136,45 +137,7 @@ searchcartItems(ind:any){
   this.indexNumber=ind;
   this.itemArray=this.array;
   this.ind=this.array.length;
-  if(!this.itemArray.includes(this.dishArray[ind]))
-  {
-    if(this.hotelName.sendCartHotelDetails())
-    {
-      this.sendDishArray={
-        hotelName:this.setHotelName.hotelname,
-        hotelImage:this.setHotelName.hotelimage,
-        dishName:this.finalDishArray[ind].dishName,
-        dishCount:1,
-        dishPrice:parseInt(this.dishArray[ind].dishPrice),
-        dishType:this.finalDishArray[ind].dishType
-      }
-      this.itemArray[this.ind]=this.sendDishArray;
-      if(sessionStorage.getItem('isentered')=="true"){
-        this.hotelName.getAddToCart(this.itemArray);
-      }
-      this.items=JSON.stringify(this.itemArray);
-      sessionStorage.setItem('dishes',this.items);
-    }
-    else{
-      confirm("new hotel entry");
-    }
-
-
-  }
-  else{
-    alert("this item is  already added in cart");
-  }
-
-}
-
-cartItems(ind:number){
-
-  this.indexNumber=ind;
-  this.itemArray=this.array;
-  this.ind=this.array.length;
-  if(!this.itemArray.includes(this.dishArray[ind]))
-  {
-    if(this.hotelName.sendCartHotelDetails())
+  if(this.hotelName.sendCartHotelDetails())
     {
       this.sendDishArray={
         hotelName:this.setHotelName.hotelname,
@@ -184,23 +147,107 @@ cartItems(ind:number){
         dishPrice:parseInt(this.dishArray[ind].dishPrice),
         dishType:this.dishArray[ind].dishType
       }
-      this.itemArray[this.ind]=this.sendDishArray;
-      if(sessionStorage.getItem('isentered')=="true"){
-        this.hotelName.getAddToCart(this.itemArray);
+      if(this.itemArray.length>=1){
+        for(var i=0;i<this.itemArray.length;i++){
+
+          console.log(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName));
+          if(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName)){
+            console.log("hi");
+
+              alert("this item is  already added in cart");
+              break;
+
+          }
+          else{
+
+              if(i===this.itemArray.length-1){
+                this.itemArray[this.ind]=this.sendDishArray;
+                if(sessionStorage.getItem('isentered')=="true"){
+                  this.hotelName.getAddToCart(this.itemArray);
+                }
+                this.items=JSON.stringify(this.itemArray);
+                sessionStorage.setItem('dishes',this.items);
+                break;
+              }
+          }
+        }
+      }
+      else{
+        this.itemArray[this.ind]=this.sendDishArray;
+        if(sessionStorage.getItem('isentered')=="true"){
+          this.hotelName.getAddToCart(this.itemArray);
+        }
+
+        this.items=JSON.stringify(this.itemArray);
+        sessionStorage.setItem('dishes',this.items);
+
       }
 
-      this.items=JSON.stringify(this.itemArray);
-      sessionStorage.setItem('dishes',this.items);
+
     }
     else{
       confirm("new hotel entry");
     }
 
 
-  }
-  else{
-    alert("this item is  already added in cart");
-  }
+}
+
+cartItems(ind:number){
+
+  this.indexNumber=ind;
+  this.itemArray=this.array;
+  this.ind=this.array.length;
+  if(this.hotelName.sendCartHotelDetails())
+    {
+      this.sendDishArray={
+        hotelName:this.setHotelName.hotelname,
+        hotelImage:this.setHotelName.hotelimage,
+        dishName:this.dishArray[ind].dishName,
+        dishCount:1,
+        dishPrice:parseInt(this.dishArray[ind].dishPrice),
+        dishType:this.dishArray[ind].dishType
+      }
+      if(this.itemArray.length>=1){
+        for(var i=0;i<this.itemArray.length;i++){
+
+          console.log(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName));
+          if(this.itemArray[i].dishName.includes(this.dishArray[ind].dishName)){
+            console.log("hi");
+
+              alert("this item is  already added in cart");
+              break;
+
+          }
+          else{
+
+              if(i===this.itemArray.length-1){
+                this.itemArray[this.ind]=this.sendDishArray;
+                if(sessionStorage.getItem('isentered')=="true"){
+                  this.hotelName.getAddToCart(this.itemArray);
+                }
+                this.items=JSON.stringify(this.itemArray);
+                sessionStorage.setItem('dishes',this.items);
+                break;
+              }
+          }
+        }
+      }
+      else{
+        this.itemArray[this.ind]=this.sendDishArray;
+        if(sessionStorage.getItem('isentered')=="true"){
+          this.hotelName.getAddToCart(this.itemArray);
+        }
+
+        this.items=JSON.stringify(this.itemArray);
+        sessionStorage.setItem('dishes',this.items);
+
+      }
+
+
+    }
+    else{
+      confirm("new hotel entry");
+    }
 
 }
 

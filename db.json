@@ -17,7 +17,7 @@
     {
       "username": "Manikandan",
       "phonenumber": 6379623737,
-      "email": "2k21aids11@kiot.ac.in",
+      "email": "manidhanush2001@gmail.com",
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "search": [
@@ -150,19 +150,83 @@
       },
       "AddToCartDetails": [
         {
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "dishName": "Mango Juice",
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Gulab Jamun Vanilla Pastry",
           "dishCount": 1,
-          "dishPrice": 150,
+          "dishPrice": 99,
           "dishType": "veg"
         },
         {
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "dishName": "Fresh Lime Juice",
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Rasmalai Mini Jar Cake",
           "dishCount": 1,
-          "dishPrice": 38,
+          "dishPrice": 139,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Chicken Special Leg",
+          "dishCount": 1,
+          "dishPrice": 259,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Chicken DUM Exec BIRYANI",
+          "dishCount": 1,
+          "dishPrice": 240,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Hyderabadi Mutton Dum Biryrani",
+          "dishCount": 1,
+          "dishPrice": 312,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Prawn Biryani",
+          "dishCount": 1,
+          "dishPrice": 350,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Mutton Biriyani",
+          "dishCount": 1,
+          "dishPrice": 312,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Coconut Sharbat",
+          "dishCount": 1,
+          "dishPrice": 200,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Cold Pressed Orange Juice",
+          "dishCount": 1,
+          "dishPrice": 220,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Chicken Biryani Half",
+          "dishCount": 1,
+          "dishPrice": 278,
           "dishType": "veg"
         }
       ],
@@ -175,18 +239,13 @@
         "iconType": "fa-house"
       },
       "cartOrderDetails": {
-        "hotelName": "Barbequeen Restaurant",
-        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "hotelName": "SS HYDERABAD BIRYANI",
+        "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
         "orderItems": [
           {
-            "dishName": "Mango Juice",
+            "dishName": "Gulab Jamun Vanilla Pastry",
             "dishQuantity": 1,
-            "dishPrice": 150
-          },
-          {
-            "dishName": "Fresh Lime Juice",
-            "dishQuantity": 1,
-            "dishPrice": 38
+            "dishPrice": 99
           }
         ],
         "orderAddress": {
@@ -196,35 +255,9 @@
           "district": "salem",
           "addressType": "Home",
           "iconType": "fa-house"
-        }
-      },
-      "paymentOrderedDetails": [],
-      "orderedDate": [],
-      "Orders": [
-        {
-          "orderId": 89551,
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "date": [
-            "Wed",
-            "12-Jul-2023 01:34:06 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Mango Juice",
-              "dishQuantity": 1,
-              "dishPrice": 150
-            },
-            {
-              "dishName": "Fresh Lime Juice",
-              "dishQuantity": 1,
-              "dishPrice": 38
-            }
-          ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
-        }
-      ]
+        },
+        "totalPrice": 142
+      }
     },
     {
       "username": "Jeevaarav",
