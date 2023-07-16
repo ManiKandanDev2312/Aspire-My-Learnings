@@ -354,7 +354,7 @@ export class DatabaseService {
 
     this.orderTime=this.orderDate.getTime();
     this.deliveryTime=this.orderDate.setMinutes(
-      this.orderDate.getMinutes()+15
+      this.orderDate.getMinutes()+2
     );
 
     this.day=this.orderDate.getDay();
@@ -434,6 +434,7 @@ export class DatabaseService {
     console.log(x);
   });
   this.ordered.getTime(this.orderedDelayTimeFormat);
+  this.ordered.getDeliveredTime(this.deliveryDateArray[1]);
 
     }else{
       this.setOrderedDetails.push(this.orderDetails[0]);
@@ -442,11 +443,14 @@ export class DatabaseService {
     console.log(x);
   });
   this.ordered.getTime(this.orderedDelayTimeFormat);
+  this.ordered.getDeliveredTime(this.deliveryDateArray[1]);
     }
 
     });
 
   }
+
+
 
   UPI(){
     return this.http.get("http://Localhost:3000/UPI");

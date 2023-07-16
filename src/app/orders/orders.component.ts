@@ -36,8 +36,8 @@ export class OrdersComponent {
       this.customerDetails=x;
       this.newOrderDetailsArray=this.customerDetails.paymentOrderedDetails;
       this.pastOrderDetailsArray=this.customerDetails.Orders;
-      this.deliveredOrderDetailsArray=this.customerDetails.paymentOrderedDetails;
-      if(this.newOrderDetailsArray.length==0){
+      this.deliveredOrderDetailsArray=this.customerDetails.deliveredOrders;
+      if(this.newOrderDetailsArray.length==0 && this.deliveredOrderDetailsArray.length==0){
         this.isPastOrder=true;
         this.isDeliveredOrder=false;
         this.isNewOrder=false;

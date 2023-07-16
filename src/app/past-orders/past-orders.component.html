@@ -1,1 +1,29 @@
-<p>past-orders works!</p>
+<div class="Orders">
+  <h1>{{pastOrderDetails.length}} &nbsp;Delivered Orders</h1>
+
+  <div class="orderBox">
+  <div class="commonBox" *ngFor="let OrderItems of pastOrderDetails; let indexNumber=index ">
+<div class="commonBoxes">
+  <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
+  <div>
+    <p>Delivered on {{OrderItems.deliveryDate[0]}},  {{OrderItems.deliveryDate[1]}} <i class="fa-solid fa-circle-check"></i></p>
+    <h2 (click)="hotelRoute(indexNumber)">{{OrderItems.hotelName}}</h2>
+    <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
+    <a href="">VIEW DETAILS</a>
+    <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
+  </div>
+</div>
+<div class="commonBoxes" *ngFor="let orderedItems of pastOrderDetails[indexNumber].orderedItems;">
+  <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
+</div>
+<div class="OrderButton">
+  <div class="button">
+    <button>REORDER</button>
+  </div>
+  <div class="button">
+  <button>Help</button>
+</div>
+</div>
+  </div>
+</div>
+</div>

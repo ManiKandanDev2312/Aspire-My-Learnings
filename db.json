@@ -25,208 +25,83 @@
       ],
       "Favorites": [
         {
-          "id": 3,
-          "hotelimage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "hotelname": "Barbequeen Restaurant",
-          "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
-          "timeDel": "23",
+          "id": 2,
+          "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "hotelname": "SS HYDERABAD BIRYANI",
+          "dishvariety": "Biryani, South Indian, Seafood",
+          "timeDel": "18",
           "Costfortwo": "₹350",
-          "offer": "60% off | Use TRYNEW",
-          "dishes": [
-            {
-              "dishImage": "./assets/dishes/mosambii juice.webp",
-              "dishName": "Pineapple Juice",
-              "dishPrice": "55",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/cool boost.webp",
-              "dishName": "Cool Boost",
-              "dishPrice": "44",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/mosambii juice.webp",
-              "dishName": "Mosambii Juice",
-              "dishPrice": "60",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/sweet corn maggi.webp",
-              "dishName": "Sweet Corn Maggi",
-              "dishPrice": "69",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/paneer sandwitch.webp",
-              "dishName": "paneer Sandwitch",
-              "dishPrice": "88",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "hotelimage": "./assets/hotelpage/Chicking.webp",
-          "hotelname": "Chicking",
-          "dishvariety": "Indian",
-          "timeDel": "33",
-          "Costfortwo": "₹250",
-          "offer": "60% off | Use TRYNEW",
-          "dishes": [
-            {
-              "dishImage": "./assets/dishes/Pomegranate Juice.webp",
-              "dishName": "Pomegranate Juice",
-              "dishPrice": "90",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/Lime Mint Cooler.webp",
-              "dishName": "Lime Mint Cooler",
-              "dishPrice": "90",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/Thiruenelveli Halwa (250 gms).webp",
-              "dishName": "Thiruenelveli Halwa (250 gms)",
-              "dishPrice": "120",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/Red Velvet Roll Cake Slice.webp",
-              "dishName": "Red Velvet Roll Cake Slice",
-              "dishPrice": "125",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/15 Pcs Hot Wings.webp",
-              "dishName": "15 Pcs Hot Wings",
-              "dishPrice": "399",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/5 Pcs Crispy Chicken + 2 Mayo Dips.webp",
-              "dishName": "5 Pcs Crispy Chicken + 2 Mayo Dips",
-              "dishPrice": "499",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Burger Box.webp",
-              "dishName": "Burger Box",
-              "dishPrice": "288",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/10 Pcs Crispy Chicken + 3 Mayo Dips.webp",
-              "dishName": "10 Pcs Crispy Chicken + 3 Mayo Dips",
-              "dishPrice": "888",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Mexicano Pizza [medium].webp",
-              "dishName": "Mexicano Pizza [medium]",
-              "dishPrice": "519",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Veg Royal Wrap.webp",
-              "dishName": "Veg Royal Wrap",
-              "dishPrice": "179",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "hotelimage": "./assets/hotelpage/HMR Hotel.webp",
-          "hotelname": "HMR Hotel",
-          "dishvariety": "Biryani, Indian, chinese, Seafood, Tandoori, Mexican",
-          "timeDel": "29",
-          "Costfortwo": "₹300",
+          "RatingArray": [],
+          "Rating": "4",
           "offer": "40% off | Use TRYNEW",
           "dishes": [
             {
-              "dishImage": "./assets/dishes/Watermelon Juice.webp",
-              "dishName": "Watermelon Juice",
-              "dishPrice": "55",
+              "dishImage": "./assets/dishes/Coconut Sharbat.webp",
+              "dishName": "Coconut Sharbat",
+              "dishPrice": "200",
               "dishType": "veg",
               "dishDescription": "Healthy Juice"
             },
             {
-              "dishImage": "./assets/dishes/Miracle Abc.webp",
-              "dishName": "Miracle Abc - 100% Juice",
-              "dishPrice": "129",
+              "dishImage": "./assets/dishes/Cold Pressed Orange Juice.webp",
+              "dishName": "Cold Pressed Orange Juice",
+              "dishPrice": "220",
               "dishType": "veg",
               "dishDescription": "Healthy Juice"
             },
             {
-              "dishImage": "./assets/dishes/Time For Chocolate Photo Cupcakes - Pack Of 6.webp",
-              "dishName": "Time For Chocolate Photo Cupcakes - Pack Of 6",
-              "dishPrice": "619",
+              "dishImage": "./assets/dishes/Rasmalai Mini Jar Cake.webp",
+              "dishName": "Rasmalai Mini Jar Cake",
+              "dishPrice": "139",
               "dishType": "veg",
               "dishDescription": ""
             },
             {
-              "dishImage": "./assets/dishes/Assorted Sweets [250 Gms].webp",
-              "dishName": "Assorted Sweets [250 Gms]",
-              "dishPrice": "198",
+              "dishImage": "./assets/dishes/Gulab Jamun Vanilla Pastry.webp",
+              "dishName": "Gulab Jamun Vanilla Pastry",
+              "dishPrice": "99",
               "dishType": "veg",
               "dishDescription": ""
             },
             {
-              "dishImage": "./assets/dishes/Vanjaram Fish.webp",
-              "dishName": "Vanjaram Fish",
-              "dishPrice": "250",
+              "dishImage": "./assets/dishes/Chicken Biryani Half.webp",
+              "dishName": "Chicken Biryani Half",
+              "dishPrice": "278",
               "dishType": "veg",
               "dishDescription": "Serves 1"
             },
             {
-              "dishImage": "./assets/dishes/Beef Chukka.webp",
-              "dishName": "Beef Chukka",
-              "dishPrice": "180",
+              "dishImage": "./assets/dishes/Chicken Special Leg.webp",
+              "dishName": "Chicken Special Leg",
+              "dishPrice": "259",
               "dishType": "veg",
               "dishDescription": "Serves 1"
             },
             {
-              "dishImage": "./assets/dishes/Chicken Pepper.webp",
-              "dishName": "Chicken Pepper",
-              "dishPrice": "225",
+              "dishImage": "./assets/dishes/Chicken DUM Exec BIRYANI.webp",
+              "dishName": "Chicken DUM Exec BIRYANI",
+              "dishPrice": "240",
               "dishType": "veg",
               "dishDescription": "Serves 1"
             },
             {
-              "dishImage": "./assets/dishes/Garlic Chicken.webp",
-              "dishName": "Garlic Chicken",
-              "dishPrice": "235",
+              "dishImage": "./assets/dishes/Hyderabadi Mutton Dum Biryrani.webp",
+              "dishName": "Hyderabadi Mutton Dum Biryrani",
+              "dishPrice": "312",
               "dishType": "veg",
               "dishDescription": "Serves 1"
             },
             {
-              "dishImage": "./assets/dishes/Parotta.webp",
-              "dishName": "Parotta",
-              "dishPrice": "25",
+              "dishImage": "./assets/dishes/Prawn Biryani.webp",
+              "dishName": "Prawn Biryani",
+              "dishPrice": "350",
               "dishType": "veg",
               "dishDescription": "Serves 1"
             },
             {
-              "dishImage": "./assets/dishes/Fish Manchurian.webp",
-              "dishName": "Fish Manchurian",
-              "dishPrice": "265",
+              "dishImage": "./assets/dishes/Mutton Biriyani.webp",
+              "dishName": "Mutton Biriyani",
+              "dishPrice": "312",
               "dishType": "veg",
               "dishDescription": "Serves 1"
             }
@@ -264,24 +139,7 @@
         "cardHolderName": "DHANUSHRAJ O",
         "cardType": "mastercard"
       },
-      "AddToCartDetails": [
-        {
-          "hotelName": "HMR Hotel",
-          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
-          "dishName": "Miracle Abc - 100% Juice",
-          "dishCount": 1,
-          "dishPrice": 129,
-          "dishType": "veg"
-        },
-        {
-          "hotelName": "HMR Hotel",
-          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
-          "dishName": "Chicken Pepper",
-          "dishCount": 1,
-          "dishPrice": 225,
-          "dishType": "veg"
-        }
-      ],
+      "AddToCartDetails": [],
       "CurrentOrderAddress": {
         "adress": "kondalamPattyByepass",
         "doorNo": "546",
@@ -291,18 +149,18 @@
         "iconType": "fa-briefcase"
       },
       "cartOrderDetails": {
-        "hotelName": "HMR Hotel",
-        "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
         "orderItems": [
           {
-            "dishName": "Miracle Abc - 100% Juice",
+            "dishName": "Mango Juice",
             "dishQuantity": 1,
-            "dishPrice": 129
+            "dishPrice": 150
           },
           {
-            "dishName": "Chicken Pepper",
-            "dishQuantity": 1,
-            "dishPrice": 225
+            "dishName": "Choco Truffle Pastry",
+            "dishQuantity": 3,
+            "dishPrice": 267
           }
         ],
         "orderAddress": {
@@ -313,85 +171,16 @@
           "addressType": "Work",
           "iconType": "fa-briefcase"
         },
-        "totalPrice": 397
+        "totalPrice": 460
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
-      "Orders": [
+      "Orders": [],
+      "deliveredDate": [],
+      "deliveredOrders": [
         {
-          "orderId": 398657,
-          "totalPrice": 493,
-          "hotelName": "Chicking",
-          "hotelImage": "./assets/hotelpage/Chicking.webp",
-          "address": {
-            "adress": "kondalamPattyByepass",
-            "doorNo": "546",
-            "landmark": "nearByePass",
-            "district": "salem",
-            "addressType": "Work",
-            "iconType": "fa-briefcase"
-          },
-          "orderedDate": [
-            "Fri",
-            "14-Jul-2023 08:35:33 PM"
-          ],
-          "deliveryDate": [
-            "Fri",
-            "14-Jul-2023 08:50:33 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Pomegranate Juice",
-              "dishQuantity": 1,
-              "dishPrice": 90
-            },
-            {
-              "dishName": "Lime Mint Cooler",
-              "dishQuantity": 4,
-              "dishPrice": 360
-            }
-          ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
-        },
-        {
-          "orderId": 528546,
-          "totalPrice": 1033,
-          "hotelName": "Chicking",
-          "hotelImage": "./assets/hotelpage/Chicking.webp",
-          "address": {
-            "adress": "kondalamPattyByepass",
-            "doorNo": "546",
-            "landmark": "nearByePass",
-            "district": "salem",
-            "addressType": "Work",
-            "iconType": "fa-briefcase"
-          },
-          "orderedDate": [
-            "Fri",
-            "14-Jul-2023 08:54:30 PM"
-          ],
-          "deliveryDate": [
-            "Fri",
-            "14-Jul-2023 09:09:30 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Pomegranate Juice",
-              "dishQuantity": 5,
-              "dishPrice": 450
-            },
-            {
-              "dishName": "Lime Mint Cooler",
-              "dishQuantity": 6,
-              "dishPrice": 540
-            }
-          ],
-          "paymentMenthod": "Card"
-        },
-        {
-          "orderId": 232457,
-          "totalPrice": 397,
+          "orderId": 946532,
+          "totalPrice": 1072,
           "hotelName": "HMR Hotel",
           "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
           "address": {
@@ -404,11 +193,11 @@
           },
           "orderedDate": [
             "Fri",
-            "14-Jul-2023 09:27:49 PM"
+            "14-Jul-2023 10:21:43 PM"
           ],
           "deliveryDate": [
             "Fri",
-            "14-Jul-2023 09:42:49 PM"
+            "14-Jul-2023 10:23:43 PM"
           ],
           "orderedItems": [
             {
@@ -418,11 +207,47 @@
             },
             {
               "dishName": "Chicken Pepper",
-              "dishQuantity": 1,
-              "dishPrice": 225
+              "dishQuantity": 4,
+              "dishPrice": 900
             }
           ],
-          "paymentMenthod": "Card"
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 576049,
+          "totalPrice": 460,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Fri",
+            "14-Jul-2023 10:33:00 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "14-Jul-2023 10:35:00 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 1,
+              "dishPrice": 150
+            },
+            {
+              "dishName": "Choco Truffle Pastry",
+              "dishQuantity": 3,
+              "dishPrice": 267
+            }
+          ],
+          "paymentMenthod": "UPI"
         }
       ]
     },
@@ -777,6 +602,8 @@
       "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
       "timeDel": "30",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
@@ -858,6 +685,8 @@
       "dishvariety": "Biryani, South Indian, Seafood",
       "timeDel": "18",
       "Costfortwo": "₹350",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
@@ -939,6 +768,8 @@
       "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
       "timeDel": "23",
       "Costfortwo": "₹350",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "60% off | Use TRYNEW",
       "dishes": [
         {
@@ -1013,6 +844,8 @@
       "dishvariety": "Biryani, Indian, chinese, Seafood, Tandoori, Mexican",
       "timeDel": "29",
       "Costfortwo": "₹300",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
@@ -1094,6 +927,8 @@
       "dishvariety": "Indian, South Indian, North Indian, Chinese, Desserts",
       "timeDel": "27",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1175,6 +1010,8 @@
       "dishvariety": "Snacks",
       "timeDel": "32",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "20% off | Use TRYNEW",
       "dishes": [
         {
@@ -1256,6 +1093,8 @@
       "dishvariety": "Indian",
       "timeDel": "33",
       "Costfortwo": "₹250",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "60% off | Use TRYNEW",
       "dishes": [
         {
@@ -1337,6 +1176,8 @@
       "dishvariety": "Desserts",
       "timeDel": "28",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1418,6 +1259,8 @@
       "dishvariety": "Burgers, Desserts",
       "timeDel": "31",
       "Costfortwo": "₹350",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1499,6 +1342,8 @@
       "dishvariety": "North Indian, Thaalis, Chaat, Desserts, Gujarati, South Indian",
       "timeDel": "35",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "10% off | Use TRYNEW",
       "dishes": [
         {
@@ -1580,6 +1425,8 @@
       "dishvariety": "Pizzas",
       "timeDel": "29",
       "Costfortwo": "₹400",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1661,6 +1508,8 @@
       "dishvariety": "South Indian",
       "timeDel": "23",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
@@ -1742,6 +1591,8 @@
       "dishvariety": "North Indian, South Indian",
       "timeDel": "16",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1823,6 +1674,8 @@
       "dishvariety": "South Indian",
       "timeDel": "22",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1904,6 +1757,8 @@
       "dishvariety": "South Indian, Indian, Chinese",
       "timeDel": "27",
       "Costfortwo": "₹200",
+      "RatingArray": [],
+      "Rating": "4",
       "offer": "",
       "dishes": [
         {
@@ -1985,6 +1840,8 @@
       "dishvariety": "Beverages, Snacks, Bakery",
       "timeDel": "21",
       "Costfortwo": "₹150",
+      "RatingArray": [],
+      "Rating": "4.5",
       "offer": "40% off | Use TRYNEW",
       "dishes": [
         {
