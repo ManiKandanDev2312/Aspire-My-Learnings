@@ -15,6 +15,16 @@ export class ProfileComponent {
 
   isEditProfile:boolean=false;
 
+  Ordresbgcolor="white";
+  Orderscolor="black";
+  addressbgcolor="";
+  addresscolor="";
+  favoritesbgcolor="";
+  favoritescolor="";
+  paymentbgcolor="";
+  paymentcolor="";
+
+
   constructor(private fb:FormBuilder, private edit:DatabaseService){
 
     this.editProfile=fb.group({
@@ -43,5 +53,46 @@ export class ProfileComponent {
 
   close(){
     this.isEditProfile=false;
+  }
+
+  Orders(){
+  this.Ordresbgcolor="white";
+  this.Orderscolor="black";
+  this.addressbgcolor="";
+  this.addresscolor="";
+  this.favoritesbgcolor="";
+  this.favoritescolor="";
+  this.paymentbgcolor="";
+  this.paymentcolor="";
+  }
+  Address(){
+  this.Ordresbgcolor="";
+  this.Orderscolor="";
+  this.addressbgcolor="white";
+  this.addresscolor="black";
+  this.favoritesbgcolor="";
+  this.favoritescolor="";
+  this.paymentbgcolor="";
+  this.paymentcolor="";
+  }
+  Payment(){
+  this.Ordresbgcolor="";
+  this.Orderscolor="";
+  this.addressbgcolor="";
+  this.addresscolor="";
+  this.favoritesbgcolor="";
+  this.favoritescolor="";
+  this.paymentbgcolor="white";
+  this.paymentcolor="black";
+  }
+  Favorites(){
+  this.Ordresbgcolor="";
+  this.Orderscolor="";
+  this.addressbgcolor="";
+  this.addresscolor="";
+  this.favoritesbgcolor="white";
+  this.favoritescolor="black";
+  this.paymentbgcolor="";
+  this.paymentcolor="";
   }
 }

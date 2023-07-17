@@ -9,7 +9,7 @@
     <p>Delivered on {{OrderItems.deliveryDate[0]}},  {{OrderItems.deliveryDate[1]}} <i class="fa-solid fa-circle-check"></i></p>
     <h2 (click)="hotelRoute(indexNumber)">{{OrderItems.hotelName}}</h2>
     <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
-    <a href="">VIEW DETAILS</a>
+    <a (click)="ViewDetails(indexNumber)">VIEW DETAILS</a>
     <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
   </div>
 </div>
@@ -18,7 +18,7 @@
 </div>
 <div class="OrderButton">
   <div class="button">
-    <button>REORDER</button>
+    <button (click)="reOrder(indexNumber)">REORDER</button>
   </div>
   <div class="button">
   <button>Help</button>
@@ -26,4 +26,71 @@
 </div>
   </div>
 </div>
+</div>
+
+
+
+
+<div class="viewDetails" *ngIf="isViewDetails">
+
+  <div class="innerviewDetails">
+    <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+    <p>Order #{{viewDetailsInfo.orderId}}</p>
+
+    <div class="innerItemDetail">
+      <div class="innerItemDetails">
+
+        <div class="innerItemDetails1">
+          <h1><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;{{viewDetailsInfo.hotelName}}</h1>
+        </div>
+        <div class="innerItemDetails1">
+          <h1><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;{{viewDetailsInfo.address.addressType}}</h1>
+          <h2>{{viewDetailsInfo.address.doorNo}}, {{viewDetailsInfo.address.landmark}},{{viewDetailsInfo.address.adress}} <br> {{viewDetailsInfo.address.district}}</h2>
+        </div>
+        <div class="innerItemDetails1" style="margin-bottom: 10px;" *ngIf="isDeliverTime">
+          <h2><i class="fa-solid fa-circle-check" style="color:green"></i>&nbsp;&nbsp;Delivered on {{viewDetailsInfo.deliveryDate[0]}},  {{viewDetailsInfo.deliveryDate[1]}}</h2>
+        </div>
+
+      </div>
+      <div class="innerItemDetails">
+        <h2> {{viewDetailsInfo.orderedItems.length}} ITEM</h2>
+
+        <div class="innerDishDetail">
+          <div class="innerDishDetails">
+            <div class="innerDivDishDetails" *ngFor="let orderDishes of viewDetailsInfo.orderedItems">
+              <div> <p>{{orderDishes.dishName}} x {{orderDishes.dishQuantity}}</p></div>
+              <div> <h2>₹ {{orderDishes.dishPrice}}</h2></div>
+            </div>
+            <div class="innerDivDishDetails">
+              <div> <p>Item Total</p></div>
+              <div> <h2>₹ {{viewDetailsInfo.totalPrice-43}}</h2></div>
+            </div>
+            <div class="innerDivDishDetails" style="margin-bottom: 10px;">
+              <div> <p>Delivery Fee</p></div>
+              <div> <h2>₹ 43</h2></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="innerItemDetails">
+        <div class="paymentType">
+          <div>
+            <p>{{viewDetailsInfo.paymentMenthod}}</p>
+          </div>
+          <div>
+            <h2>Bill Total</h2>
+          </div>
+          <div>
+            <h2>₹ {{viewDetailsInfo.totalPrice}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="paymentButton" *ngIf="isPaymentButton">PAYMENT</button>
+  </div>
+
+
+
 </div>

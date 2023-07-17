@@ -15,6 +15,13 @@ export class DeliveredOrdersComponent {
   setHotelDetails:any=[];
   itemsArray:any=[];
 
+  isViewDetails:boolean=false;
+  isPaymentButton:boolean=false;
+  isDeliverTime:boolean=true;
+
+
+  viewDetailsInfo:any=[];
+
   constructor(private Delivered:DatabaseService, private router:Router){
 
     this.Delivered.sendOrders().subscribe(x=>{
@@ -40,6 +47,28 @@ export class DeliveredOrdersComponent {
 
     });
 
+  }
+
+
+
+  ViewDetails(indexNumber:any){
+    this.isViewDetails=true;
+    this.isPaymentButton=false;
+    this.isDeliverTime=true;
+
+    this.viewDetailsInfo=this.deliveredOrderDetails[indexNumber];
+
+    console.log(this.viewDetailsInfo);
+  }
+
+  reOrder(indexNumber:any){
+    this.isViewDetails=true;
+    this.isPaymentButton=true;
+    this.isDeliverTime=true;
+  }
+
+  close(){
+    this.isViewDetails=false;
   }
 
 }

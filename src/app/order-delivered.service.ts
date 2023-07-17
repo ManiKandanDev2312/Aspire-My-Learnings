@@ -148,7 +148,6 @@ startInterval(){
 }
 
 getOrderedInfo(orderedInfo:any){
-  console.log(orderedInfo);
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
     this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
@@ -172,7 +171,6 @@ getOrderedInfo(orderedInfo:any){
 
 
 getDeliveredInfo(deliveredInfo:any){
-  console.log(deliveredInfo);
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
     this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{

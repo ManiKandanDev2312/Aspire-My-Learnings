@@ -15,17 +15,17 @@
   <div class="profilebox">
     <div class="content">
       <div class="boxes">
-        <div class="left">
-          <a routerLink="orders"><i class="fa-sharp fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;Orders</a>
+        <div class="left" [ngStyle]="{'background-color':Ordresbgcolor}">
+          <a routerLink="orders" [ngStyle]="{'color':Orderscolor}" (click)="Orders()" ><i class="fa-sharp fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;Orders</a>
         </div>
-        <div class="left">
-          <a routerLink="Favorites"><i class="fa-sharp fa-solid fa-heart"></i>&nbsp;&nbsp;favorites</a>
+        <div class="left" [ngStyle]="{'background-color':favoritesbgcolor}">
+          <a routerLink="Favorites" [ngStyle]="{'color':favoritescolor}" (click)="Favorites()"><i class="fa-sharp fa-solid fa-heart"></i>&nbsp;&nbsp;favorites</a>
         </div>
-        <div class="left">
-          <a routerLink="Address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;adresses</a>
+        <div class="left" [ngStyle]="{'background-color':addressbgcolor}">
+          <a routerLink="Address" [ngStyle]="{'color':addresscolor}" (click)="Address()"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;address</a>
         </div>
-        <div class="left">
-          <a routerLink="Payment"><i class="fa-regular fa-credit-card"></i>&nbsp;&nbsp;payment</a>
+        <div class="left" [ngStyle]="{'background-color':paymentbgcolor}">
+          <a routerLink="Payment" [ngStyle]="{'color':paymentcolor}" (click)="Payment()"><i class="fa-regular fa-credit-card"></i>&nbsp;&nbsp;payment</a>
         </div>
       </div>
       <div class="boxes">

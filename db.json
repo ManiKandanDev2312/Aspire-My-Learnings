@@ -106,6 +106,89 @@
               "dishDescription": "Serves 1"
             }
           ]
+        },
+        {
+          "id": 1,
+          "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
+          "hotelname": "Hotel Maa",
+          "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
+          "timeDel": "30",
+          "Costfortwo": "₹200",
+          "RatingArray": [],
+          "Rating": "4",
+          "offer": "40% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/mosambii juice.webp",
+              "dishName": "Pineapple Juice",
+              "dishPrice": "55",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Orange Juice.webp",
+              "dishName": "Orange Juice",
+              "dishPrice": "150",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/cool boost.webp",
+              "dishName": "Cool Boost",
+              "dishPrice": "44",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Butterscotch Mini Jar Cake.webp",
+              "dishName": "Butterscotch Mini Jar Cake",
+              "dishPrice": "119",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Chilly Chickenn.webp",
+              "dishName": "Chilly Chickenn",
+              "dishPrice": "120",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Chilli Mushroomm.webp",
+              "dishName": "Chilli Mushroomm",
+              "dishPrice": "89",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Paneer Sandwich.webp",
+              "dishName": "Paneer Sandwich",
+              "dishPrice": "88",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Cheese Mix Bread Omlet.webp",
+              "dishName": "Cheese Mix Bread Omlet",
+              "dishPrice": "74",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Egg Noodles.webp",
+              "dishName": "Egg Noodles",
+              "dishPrice": "99",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Plain Samosa (1 Pc).webp",
+              "dishName": "Plain Samosa (1 Pc)",
+              "dishPrice": "25",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
         }
       ],
       "Address": [
@@ -135,18 +218,27 @@
         }
       ],
       "PaymentCradDetails": {
-        "cardNumber": "XXXXXXXXXXXX1231",
-        "cardHolderName": "DHANUSHRAJ O",
-        "cardType": "mastercard"
+        "cardNumber": "XXXXXXXXXXXX5661",
+        "cardHolderName": "MANIKANDAN O",
+        "cardType": "visa"
       },
-      "AddToCartDetails": [],
+      "AddToCartDetails": [
+        {
+          "hotelName": "Hotel Maa",
+          "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
+          "dishName": "Pineapple Juice",
+          "dishCount": 1,
+          "dishPrice": 55,
+          "dishType": "veg"
+        }
+      ],
       "CurrentOrderAddress": {
-        "adress": "kondalamPattyByepass",
-        "doorNo": "546",
-        "landmark": "nearByePass",
-        "district": "salem",
-        "addressType": "Work",
-        "iconType": "fa-briefcase"
+        "adress": "JaisuryasSanjeevara",
+        "doorNo": "415",
+        "landmark": "DBSbank",
+        "district": "madurai",
+        "addressType": "Others",
+        "iconType": "fa-location-dot"
       },
       "cartOrderDetails": {
         "hotelName": "Barbequeen Restaurant",
@@ -154,24 +246,24 @@
         "orderItems": [
           {
             "dishName": "Mango Juice",
-            "dishQuantity": 1,
-            "dishPrice": 150
+            "dishQuantity": 3,
+            "dishPrice": 450
           },
           {
-            "dishName": "Choco Truffle Pastry",
-            "dishQuantity": 3,
-            "dishPrice": 267
+            "dishName": "Fresh Lime Juice",
+            "dishQuantity": 1,
+            "dishPrice": 38
           }
         ],
         "orderAddress": {
-          "adress": "kondalamPattyByepass",
-          "doorNo": "546",
-          "landmark": "nearByePass",
-          "district": "salem",
-          "addressType": "Work",
-          "iconType": "fa-briefcase"
+          "adress": "JaisuryasSanjeevara",
+          "doorNo": "415",
+          "landmark": "DBSbank",
+          "district": "madurai",
+          "addressType": "Others",
+          "iconType": "fa-location-dot"
         },
-        "totalPrice": 460
+        "totalPrice": 531
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -248,6 +340,194 @@
             }
           ],
           "paymentMenthod": "UPI"
+        },
+        {
+          "orderId": 183950,
+          "totalPrice": 1214,
+          "hotelName": "Geetha Canteen",
+          "hotelImage": "./assets/hotelpage/Geetha Canteen.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Sun",
+            "16-Jul-2023 03:16:33 PM"
+          ],
+          "deliveryDate": [
+            "Sun",
+            "16-Jul-2023 03:18:33 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Hazelnut Hot Chocolate",
+              "dishQuantity": 4,
+              "dishPrice": 596
+            },
+            {
+              "dishName": "Watermelon Ice Juice",
+              "dishQuantity": 5,
+              "dishPrice": 250
+            },
+            {
+              "dishName": "Pineapple Juice",
+              "dishQuantity": 5,
+              "dishPrice": 325
+            }
+          ],
+          "paymentMenthod": "UPI"
+        },
+        {
+          "orderId": 689295,
+          "totalPrice": 2554,
+          "hotelName": "Oven Story Pizza",
+          "hotelImage": "./assets/hotelpage/Oven Story Pizza.jpeg",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Sun",
+            "16-Jul-2023 03:19:40 PM"
+          ],
+          "deliveryDate": [
+            "Sun",
+            "16-Jul-2023 03:21:40 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Moroccan Spice Pasta Pizza - Veg",
+              "dishQuantity": 1,
+              "dishPrice": 140
+            },
+            {
+              "dishName": "Ferrero Rocher Chocolate Stone Dessert Jar",
+              "dishQuantity": 4,
+              "dishPrice": 1276
+            },
+            {
+              "dishName": "Kesar Badam Milkshake",
+              "dishQuantity": 5,
+              "dishPrice": 1095
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 988896,
+          "totalPrice": 493,
+          "hotelName": "Chai Kings",
+          "hotelImage": "./assets/hotelpage/Chai Kings.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Sun",
+            "16-Jul-2023 03:22:38 PM"
+          ],
+          "deliveryDate": [
+            "Sun",
+            "16-Jul-2023 03:24:38 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Filter Coffee Flask",
+              "dishQuantity": 3,
+              "dishPrice": 450
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 940652,
+          "totalPrice": 2624,
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Sun",
+            "16-Jul-2023 04:07:34 PM"
+          ],
+          "deliveryDate": [
+            "Sun",
+            "16-Jul-2023 04:09:34 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Thiruenelveli Halwa (250 gms)",
+              "dishQuantity": 3,
+              "dishPrice": 360
+            },
+            {
+              "dishName": "Red Velvet Roll Cake Slice",
+              "dishQuantity": 5,
+              "dishPrice": 625
+            },
+            {
+              "dishName": "15 Pcs Hot Wings",
+              "dishQuantity": 4,
+              "dishPrice": 1596
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 17755,
+          "totalPrice": 531,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "JaisuryasSanjeevara",
+            "doorNo": "415",
+            "landmark": "DBSbank",
+            "district": "madurai",
+            "addressType": "Others",
+            "iconType": "fa-location-dot"
+          },
+          "orderedDate": [
+            "Mon",
+            "17-Jul-2023 10:45:19 AM"
+          ],
+          "deliveryDate": [
+            "Mon",
+            "17-Jul-2023 10:47:19 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 3,
+              "dishPrice": 450
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 1,
+              "dishPrice": 38
+            }
+          ],
+          "paymentMenthod": "Card"
         }
       ]
     },

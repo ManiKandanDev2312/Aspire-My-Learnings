@@ -29,6 +29,13 @@ export class OrdersComponent {
   isPastOrder:any;
   isDeliveredOrder:any;
 
+  isViewDetails:boolean=false;
+  isPaymentButton:boolean=false;
+  isDeliverTime:boolean=true;
+
+
+  viewDetailsInfo:any=[];
+
 
   constructor(private PastOrders:DatabaseService){
 
@@ -37,17 +44,17 @@ export class OrdersComponent {
       this.newOrderDetailsArray=this.customerDetails.paymentOrderedDetails;
       this.pastOrderDetailsArray=this.customerDetails.Orders;
       this.deliveredOrderDetailsArray=this.customerDetails.deliveredOrders;
-      if(this.newOrderDetailsArray.length==0 && this.deliveredOrderDetailsArray.length==0){
-        this.isPastOrder=true;
-        this.isDeliveredOrder=false;
-        this.isNewOrder=false;
-        this.pastOrderDetails[0]=this.pastOrderDetailsArray[0];
-      }
-      else if(this.newOrderDetailsArray.length==0 && this.pastOrderDetailsArray.length==0){
+      if(this.newOrderDetailsArray.length==0 && this.pastOrderDetailsArray.length==0){
         this.isPastOrder=false;
         this.isDeliveredOrder=true;
         this.isNewOrder=false;
         this.deliveredOrderDetails[0]=this.deliveredOrderDetailsArray[0];
+      }
+      else if(this.newOrderDetailsArray.length==0){
+        this.isPastOrder=true;
+        this.isDeliveredOrder=false;
+        this.isNewOrder=false;
+        this.pastOrderDetails[0]=this.pastOrderDetailsArray[0];
       }
       else{
         this.isPastOrder=false;
@@ -58,4 +65,25 @@ export class OrdersComponent {
     })
   }
 
+
+
+  ViewDetails(indexNumber:any){
+    this.isViewDetails=true;
+    this.isPaymentButton=false;
+    this.isDeliverTime=true;
+
+    this.viewDetailsInfo=this.deliveredOrderDetailsArray[indexNumber];
+
+    console.log(this.viewDetailsInfo);
+  }
+
+  reOrder(indexNumber:any){
+    this.isViewDetails=true;
+    this.isPaymentButton=true;
+    this.isDeliverTime=true;
+  }
+
+  close(){
+    this.isViewDetails=false;
+  }
 }
