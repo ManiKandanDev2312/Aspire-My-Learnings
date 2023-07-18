@@ -37,7 +37,7 @@ getHotel2:any;
 
 constructor(private search:DatabaseService ,hn:FormBuilder, private router:Router){
 
-
+// chech the user is login or not
   if(sessionStorage.getItem('isentered')=="true"){
   this.data=this.search.send_search();
   }
@@ -65,7 +65,7 @@ constructor(private search:DatabaseService ,hn:FormBuilder, private router:Route
     }
   })
 }
-
+// this block is used to search the hotels
 searchHotel(Hname:string){
   this.issearched=false;
   this.ishotelName=true;
@@ -89,6 +89,7 @@ searchHotel(Hname:string){
   }
   this.finalArray=new Set(this.array2);
 }
+// this block is used to send the hoteldetails
 sendHotel(index:any){
   this.value=JSON.stringify(this.array2[index]);
   sessionStorage.setItem('hotelDetails',this.value);
@@ -118,10 +119,10 @@ clear(){
   window.location.reload();
 }
 
+// this block is used to route dishcomponent for the particular hotel
 hotelRoute(ind:any){
   this.getHotels=this.search.read_hotels().subscribe(x=>{
     this.getHotel1=x;
-    // console.log(this.getHotel1.length);
     for(var i=0;i<this.getHotel1.length;i++){
       if(this.getHotel1[i].hotelname == this.data[ind]){
         console.log(this.getHotel1[i]);

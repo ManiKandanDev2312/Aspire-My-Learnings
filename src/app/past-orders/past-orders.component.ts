@@ -15,13 +15,14 @@ export class PastOrdersComponent {
   itemsArray:any=[];
 
   constructor(private PastOrder:DatabaseService, private router:Router){
-
+// get details about past orders
     this.PastOrder.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.pastOrderDetails=this.customerDetails.Orders
     });
   }
 
+  // this block is used to route the dishcomponent for the particular hotel
   hotelRoute(indexNumber:any){
     this.PastOrder.read_hotels().subscribe(x=>{
       this.hotelDetails=x;

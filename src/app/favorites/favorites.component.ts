@@ -18,6 +18,7 @@ export class FavoritesComponent {
 
   constructor(private favorite:DatabaseService,private router:Router){
 
+// get the details of favorite hotels
     this.favorite.sendFavorite().subscribe(x=>{
       this.totalDetails=x;
       this.FavoritesArray=this.totalDetails.Favorites;
@@ -39,12 +40,14 @@ export class FavoritesComponent {
     })
   }
 
+  // this block is used to route dish page for the particular hotel
   sendHotel(index:any){
     this.FavoriteHotel=JSON.stringify(this.FavoritesArray[index]);
     sessionStorage.setItem('hotelDetails',this.FavoriteHotel);
     this.router.navigateByUrl("/dishPage");
   }
 
+  // this block is used to route favorite component
   FavoritePage(){
     this.router.navigateByUrl("finalFavorites");
   }

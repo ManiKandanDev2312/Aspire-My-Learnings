@@ -1,4 +1,14 @@
+<!--
+  Description:
 
+
+  Title: FoodCourt
+  Author Name: Manikandan O
+  Started On: 23 March 2023
+
+ -->
+
+<!-- -----------------------------Display Offer details --------------------------------->
 
 <div class="top">
   <h3>OFFERS FOR YOU</h3>
@@ -13,6 +23,7 @@
     </div>
   </div>
 </div>
+<!-- -----------------------display Child Navbar----------------------------- -->
 <div class="secondnav">
   <div>
     <h3><a [routerLink]="ResOffers" routerLinkActive="activeLink">Restaurants Offers</a></h3>
@@ -21,6 +32,7 @@
     <h3><a [routerLink]="PayOffers" routerLinkActive="activeLink">Payment offers/Coupons</a></h3>
   </div>
 </div>
+<!-- ------------------------display Child routing Components-------------------- -->
 <div class="contents">
   <router-outlet></router-outlet>
 </div>

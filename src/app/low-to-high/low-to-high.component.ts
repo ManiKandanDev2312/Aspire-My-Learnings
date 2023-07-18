@@ -15,7 +15,7 @@ export class LowToHighComponent {
 constructor(private lowtohigh:DatabaseService, private router:Router){
 this.read_deltime();
 }
-
+// this block is used to arrange the hotels in the basis of price low-high
 read_deltime(){
   this.lowtohigh.read_hotels().subscribe(x=>{
     this.dummyArray=x;
@@ -41,8 +41,8 @@ read_deltime(){
 });
 }
 
+// this block is used to route the dishcomponent for the particular hotel
 sendHotel(index:any){
-  // this.lowtohigh.getHotelName(this.realTime[index]);
   this.value=JSON.stringify(this.realTime[index]);
   sessionStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");

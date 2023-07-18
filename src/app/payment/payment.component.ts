@@ -14,7 +14,7 @@ export class PaymentComponent {
   cardTypeImage:any;
   constructor(private payment:DatabaseService){
 
-
+// get details about registered bank card
     this.payment.sendOrders().subscribe(x=>{
 
       this.customerDetails=x;

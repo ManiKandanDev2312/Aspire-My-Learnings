@@ -1,4 +1,3 @@
-import { formatDate } from '@angular/common';
 import { Component } from '@angular/core';
 import { DatabaseService } from '../database.service';
 
@@ -39,6 +38,7 @@ export class OrdersComponent {
 
   constructor(private PastOrders:DatabaseService){
 
+    // split the orders like new, past, delivered
     this.PastOrders.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.newOrderDetailsArray=this.customerDetails.paymentOrderedDetails;
@@ -66,7 +66,7 @@ export class OrdersComponent {
   }
 
 
-
+// this block is used to show the details of the order
   ViewDetails(indexNumber:any){
     this.isViewDetails=true;
     this.isPaymentButton=false;
@@ -77,6 +77,7 @@ export class OrdersComponent {
     console.log(this.viewDetailsInfo);
   }
 
+  // this block is used to show the reorder details of the order
   reOrder(indexNumber:any){
     this.isViewDetails=true;
     this.isPaymentButton=true;

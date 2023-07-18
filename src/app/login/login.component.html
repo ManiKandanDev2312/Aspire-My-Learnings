@@ -1,4 +1,14 @@
+<!--
+  Description:
 
+
+  Title: FoodCourt
+  Author Name: Manikandan O
+  Started On: 28 June 2023
+
+ -->
+
+<!-- -----------------------------Display Login Form --------------------------------->
 <div class="background">
   <div class="signin" *ngIf="signInPage">
     <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
@@ -26,7 +36,7 @@
       <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
     </div>
   </div>
-
+<!-- -----------------------------Display ForgotPassword Form --------------------------------->
   <div class="signin" *ngIf="forgotPasswordPage">
     <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
     <h1>Forgort Password</h1>
@@ -58,7 +68,7 @@
     </div>
     </div>
 
-
+<!-- -----------------------------Display Signup Form --------------------------------->
       <div class="signup" *ngIf="signUpPage">
         <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
         <h1>Sign Up</h1>

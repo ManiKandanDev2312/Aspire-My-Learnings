@@ -18,11 +18,10 @@ constructor(private upi:DatabaseService, private ordered:OrderDeliveredService,p
 
 
   this.upi.UPI().subscribe(x=>{
-    // console.log(x);
     this.UPIArray=x;
   })
 }
-
+// this block is used to send the paymenttype of UPI
 SendPaymentUPI(paymentMethod:any){
   this.upi.paymentOrdered("UPI");
 
@@ -30,6 +29,7 @@ SendPaymentUPI(paymentMethod:any){
 
 }
 
+//this block is used to send the paymenttype of Cash on delivery
 SendPaymentCashOnDelivery(){
   this.upi.paymentOrdered("Cash On Delivery");
   this.router.navigateByUrl("");

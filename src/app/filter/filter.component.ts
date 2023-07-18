@@ -18,9 +18,11 @@ export class FilterComponent {
   s:number=0;
   i:number=0;
   constructor(private filter:DatabaseService, private router:Router){
+    // get details of about variety of dishes
     this.variety=this.filter.send_variety();
   }
 
+  // this block is used to display variety details
   varietyName(index:any){
     if(!this.indexarray.includes(index)){
       this.indexarray[this.i++]=index;
@@ -46,6 +48,7 @@ export class FilterComponent {
     this.filter.getFilter(this.varietyDishes);
   }
 
+  // this block is route to home component
   home(){
     this.router.navigateByUrl("");
   }

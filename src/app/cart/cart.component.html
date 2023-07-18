@@ -1,6 +1,21 @@
+<!--
+  Description:
+
+
+  Title: FoodCourt
+  Author Name: Manikandan O
+  Started On: 22 March 2023
+
+ -->
+
+
+<!-- --------------font awesome link for the icons-------------- -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
+  <!-- -----------------------Cart Empty ------------------------ -->
+
 <div class="outer" *ngIf="iscartAdded">
   <img src="./assets/cart.png" alt="cart">
   <h3>Your cart is empty</h3>
@@ -8,8 +23,12 @@
 
   <button (click)="home()">GO TO HOMEPAGE</button>
 </div>
+
+<!-- ------------------Details of Cart-------------------- -->
 <div class="outer1" *ngIf="!iscartAdded">
 <div class="first">
+
+  <!-- -------------------Login Details------------------------- -->
   <div class="firsts">
     <h2>Account</h2>
     <p *ngIf="iserror">To place your order now, log in to your existing account or sign up.</p>
@@ -17,6 +36,8 @@
     <h1 class="error" *ngIf="iserror">PLEASE LOGIN OR SIGNUP YOUR ACCOUNT</h1>
     <h1 class="error" *ngIf="islogged">THE USERNAME IS <span>{{user}}</span></h1>
   </div>
+
+  <!-- --------------Address Details-------------------------- -->
   <div class="firsts">
     <h1 *ngIf="!isShowAddress">DELIVERY ADDRESS</h1>
     <h1 *ngIf="isShowAddress" style="color:black">SELECT YOUR ADDRESS</h1>
@@ -43,13 +64,20 @@
 
 
   </div>
+
+  <!-- ---------------------Payment Details---------------- -->
   <div class="firsts">
     <h1>PAYMENT</h1>
     <button class="paymentButton" (click)="Payment()">Pay &nbsp;₹ {{totalPrice}}</button>
   </div>
 </div>
 
+
+
+<!-- -----------------Display the added Food items------------------ -->
 <div class="second">
+
+  <!-- --------------------Display the items------------------------ -->
   <div class="seconds">
     <img src="{{itemsArray[0].hotelImage}}" alt="hotelimage">
     <h2 (click)="hotelRoute()">{{itemsArray[0].hotelName}}</h2>
@@ -111,6 +139,9 @@
     <h1>YOUR ADDRESS</h1>
 
     <img src="./assets/img9.webp" alt="image" class="image">
+
+
+    <!-- ---------------------Address Form------------------------- -->
 
     <div class="AddressForm">
       <form [formGroup]="Address">

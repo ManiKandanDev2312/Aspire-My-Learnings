@@ -1,6 +1,18 @@
+<!--
+  Description:
+
+
+  Title: FoodCourt
+  Author Name: Manikandan O
+  Started On: 03 July 2023
+
+ -->
+
+
+ <!-- -----------------display favorite hotel----------------------- -->
 <div class="Favorites">
   <h1>Favorites</h1>
-
+<!-- ------------------display the favorite hotel details------------- -->
   <div class="commonBox" *ngIf="isshow">
     <div class="hotel">
       <div class="hotels" *ngFor="let FavoriteArrays of limitedFavorite; let ind=index" (click)="sendHotel(ind)">

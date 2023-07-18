@@ -9,21 +9,33 @@ import { DatabaseService } from '../database.service';
   styleUrls: ['./address.component.css']
 })
 export class AddressComponent {
+
+  // variables for store the details of the customer
   customerDetails:any=[];
   AddressDetails:any=[];
   addressDetails:any=[];
 
+  // Address formgroup variable
   AddressForm:FormGroup;
+
+  // condition variable to show the Address form
   isaddAdress:boolean=false;
 
+  // send the address for the particular Order
   sendAddressDetails:any=[];
 
   constructor(private Address:DatabaseService,private router:Router, private fb:FormBuilder){
+
+
+    // Getting Address details of the customer
 
     this.Address.sendAddress().subscribe(x=>{
       this.customerDetails=x;
       this.AddressDetails=this.customerDetails.Address;
     })
+
+
+    // Address Form Validation
 
     this.AddressForm=fb.group({
       yourAddress:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{15,30}$")]],
@@ -34,6 +46,8 @@ export class AddressComponent {
 
   }
 
+
+// this block is used send the address information for the Order
 
 homeAddress(addressData:any,addressType:any){
   this.Address.sendAddress().subscribe(x=>{
@@ -147,9 +161,13 @@ homeAddress(addressData:any,addressType:any){
 }
 
 
+// this is block is used to close the address form
+
 close(){
   this.isaddAdress=false;
 }
+
+// this is block is used to show the address form
 
 showAddress(){
   this.isaddAdress=true;

@@ -1,15 +1,11 @@
-import { JsonPipe } from '@angular/common';
-import { Component,OnInit, ViewEncapsulation } from '@angular/core';
-
-import { Router } from '@angular/router';
-import { DatabaseService } from '../database.service';
+import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
   encapsulation:ViewEncapsulation.None
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent{
 
 home:string="";
 Help:string="Help";
@@ -67,6 +63,7 @@ constructor(){
 
 }
 
+// this block is used to logout the user information
 LogOut(){
   sessionStorage.setItem('isentered','false');
   sessionStorage.setItem('isusername','');
@@ -75,8 +72,5 @@ LogOut(){
 }
 
 
-ngOnInit(){
-
-}
 }
 

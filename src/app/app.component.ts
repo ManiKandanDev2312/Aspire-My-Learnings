@@ -15,6 +15,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+    // This Block is used to iniate the time Countdown for Order purpose
+
     if(sessionStorage.getItem('isentered')=="true"){
       this.ordered.startInterval();
     }

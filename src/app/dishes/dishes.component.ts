@@ -33,7 +33,6 @@ export class DishesComponent {
 
   checkFavorite:any=[];
   checkFavoriteArray:any=[];
-  // checkFavoriteCount:number=0;
 
   dishes:string="";
 
@@ -52,6 +51,7 @@ export class DishesComponent {
   putsessionHotelDetails:any=[];
 
 constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
+  //  get details of the hotel and dishes
   this.dummy=sessionStorage.getItem('dishes');
   this.dummy1=JSON.parse(this.dummy);
   this.getHotelName=sessionStorage.getItem('hotelDetails');
@@ -63,6 +63,7 @@ constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
     this.array=[];
   }
 
+  // store the added food items in json after login
   this.islogged=sessionStorage.getItem('isentered');
   if(this.islogged=="true"){
     this.hotelName.sendFavorite().subscribe(x=>{
@@ -94,6 +95,7 @@ constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
 
   }
 
+  // searchbar form
   this.searchdish=dishSearch.group({
     searchdishes:new FormControl(['',Validators.required])
   });
@@ -109,6 +111,8 @@ constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
   this.value=this.hotelName.sendHotelName();
   this.dishArray=this.value.dishes;
 }
+
+// this block is used to display the searched dishes and added to the cart
 
 searchdishname(dish:string){
   var s=0;
@@ -132,6 +136,9 @@ searchdishname(dish:string){
   this.finalDishArray=this.emptyArray;
 
 }
+
+
+// this block is used added the items in cart
 searchcartItems(ind:any){
 
   this.indexNumber=ind;
@@ -190,6 +197,7 @@ searchcartItems(ind:any){
 
 }
 
+// this block is used store the hotel details of the order
 cartItems(ind:number){
 
   this.indexNumber=ind;
@@ -247,6 +255,7 @@ cartItems(ind:number){
 
 }
 
+// this block is used to add the hotel to the favorites
 Favorite(){
 
   this.getHotelName=sessionStorage.getItem('hotelDetails');
@@ -310,10 +319,12 @@ Favorite(){
   }
 }
 
+// this block is used to show the search bar
 searchBar(){
   this.frontUi=false;
 }
 
+// this block is used to hide the search bar
 closeSearchbar() {
   this.frontUi=true;
 }

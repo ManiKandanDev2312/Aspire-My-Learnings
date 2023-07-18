@@ -18,6 +18,7 @@ constructor(private delTime:DatabaseService){
 this.read_deltime();
 }
 
+// this block is used to split the coupons into Available and unAvailable
 read_deltime(){
   this.delTime.read_Offers().subscribe((x:any)=>{
     this.val=x;

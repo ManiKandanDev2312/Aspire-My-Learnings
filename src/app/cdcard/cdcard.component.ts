@@ -26,25 +26,36 @@ export class CDCardComponent {
   CardDetails:any;
 
   constructor(private FormDetails:FormBuilder,private cardType:DatabaseService, private router:Router){
+
+    // get details of visa card
     this.cardType.getvisaDetails().subscribe(x=>{
       this.visa=x;
     })
+
+    //get details of mastercard
     this.cardType.getmasterDetails().subscribe(y=>{
       this.mastercard=y;
     })
+
+    //card form validation
     this.myForm=FormDetails.group({
       CardNumber:['',[Validators.required,Validators.pattern("^[45][0-9]*$")]],
       ExpDate:['',[Validators.required,Validators.pattern("(0[1-9]|1[0-2])\/\\d{2}")]],
       CVV:['',Validators.required],
       HolderName:['',Validators.required]
     })
+
+    //checking the bank details from card number
     this.myForm.controls['CardNumber'].valueChanges.subscribe(x=>{
       this.cardValidation(x);
     })
+
+    // getting total price of the order
     this.cartTotalPrice=sessionStorage.getItem("TotalCartPrice");
 
   }
 
+  // this block used to display the card type and bank name of the card
   cardValidation(CardNumber:any){
     if(CardNumber[0]=="4"){
       this.isVisa=true;
@@ -146,6 +157,7 @@ export class CDCardComponent {
     }
   }
 
+  // this block is used to save the card details and order the food  
   saveCardDetails(cardDetails:any){
     this.cardType.paymentOrdered("Card");
     var cardType;

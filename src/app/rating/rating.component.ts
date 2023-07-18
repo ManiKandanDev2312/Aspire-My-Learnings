@@ -16,6 +16,7 @@ constructor(private Rating:DatabaseService, private router:Router){
 this.read_deltime();
 }
 
+// this block is used to arrange the hotels in the basis of rating
 read_deltime(){
   this.Rating.read_hotels().subscribe(x=>{
     this.dummyArray=x;
@@ -40,9 +41,8 @@ read_deltime(){
     }
 });
 }
-
+// this block is used to route the dishcomponent for the particular hotel
 sendHotel(index:any){
-  // this.Rating.getHotelName(this.realTime[index]);
   this.value=JSON.stringify(this.realTime[index]);
   sessionStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");

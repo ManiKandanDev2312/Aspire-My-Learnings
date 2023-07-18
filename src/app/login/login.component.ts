@@ -30,24 +30,26 @@ forgotPassword:FormGroup;
 returl:any;
 
   constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router,private route:ActivatedRoute){
+
+    // guard purpose
     this.route.queryParamMap.subscribe(w=>{
       this.returl=w.get('returl');
       console.log(this.returl);
     })
-
+// Login form validations
     this.login=fb.group({
       loginPhoneNumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
       loginPassword:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]]
     });
 
-
+// forgotPassword form validations
     this.forgotPassword=fb.group({
       forgotPhone:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
       forgotPass:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
       forgotConfirm:['',[Validators.required]]
     });
 
-
+// Signup form validations
     this.register= fb.group({
       username:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,15}$")]],
       phonenumber:['',[Validators.required,Validators.pattern("[0-9 ]{10}")]],
@@ -57,7 +59,7 @@ returl:any;
   }
 
 
-
+// this block is used to compare the passwords in signup form
   PasswordChecker():boolean{
     if(this.passwordCheck===this.confirmPasswordCheck){
       this.isPasswordChecked=true;
@@ -67,7 +69,7 @@ returl:any;
     }
     return this.isPasswordChecked;
   }
-
+// this block is used to compare the passwords in Forgotpassword form
   ForgotPasswordChecker():boolean{
     if(this.ForgotConfirmpasswordCheck===this.ForgotpasswordCheck){
       this.isForgotPasswordChecked=true;

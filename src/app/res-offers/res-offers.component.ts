@@ -16,6 +16,7 @@ constructor(private delTime:DatabaseService, private router:Router){
 this.read_deltime();
 }
 
+// this block is used to arrange the hotel basis on offers
 read_deltime(){
   this.delTime.read_hotels().subscribe(x=>{
     this.dummyArray=x;
@@ -26,7 +27,6 @@ read_deltime(){
        del[i]=this.dummyArray[i].offer;
        del1[i]=del[i];
     }
-    // del=del.sort();
     for(var i=0;i< this.hotelCount;i++){
       for(var j=0;j< this.hotelCount;j++){
         if(del[i]==""){
@@ -49,11 +49,9 @@ read_deltime(){
     }
 });
 }
-
+// this block is used for route the dishcomponent for the particular hotel
 sendHotel(index:any){
-  // this.delTime.getHotelName(this.realTime[index]);
   this.value=JSON.stringify(this.realTime[index]);
-  // console.log(this.value);
   sessionStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");
 }

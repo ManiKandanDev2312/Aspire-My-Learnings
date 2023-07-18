@@ -34,6 +34,7 @@ constructor(private hotel:DatabaseService, private ordered:OrderDeliveredService
   this.slideImageUrl=["./assets/BURGER.png","./assets/FLAT_50.png"
 ,"./assets/pizza.png","./assets/FOOD COURT.png"];
 
+// set the dish  array as empty after login
 this.dishArray=sessionStorage.getItem('dishes');
 if(this.dishArray=="undefined"){
   this.dishArray=[];
@@ -43,6 +44,7 @@ if(this.dishArray=="undefined"){
 this.HotelList();
 }
 
+// this block is used to find the number of hotels
 HotelList(){
   this.hotel.read_hotels().subscribe(x=>{
     this.hotelArray=x;
@@ -50,6 +52,7 @@ HotelList(){
   })
 }
 
+// this block is used for slide show
 SlideImages(ind:number){
   this.slideImage=this.slideImageUrl[ind];
   this.countingVariable=ind;
@@ -57,6 +60,7 @@ SlideImages(ind:number){
 
 
 ngOnInit(){
+  // this block is to initate the silde show
   setInterval(()=>{
     if(this.countingVariable==-1){
       this.countingVariable;

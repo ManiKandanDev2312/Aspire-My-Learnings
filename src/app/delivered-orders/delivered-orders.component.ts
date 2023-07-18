@@ -24,12 +24,14 @@ export class DeliveredOrdersComponent {
 
   constructor(private Delivered:DatabaseService, private router:Router){
 
+    // get details of Delivered orders of the customer
     this.Delivered.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.deliveredOrderDetails=this.customerDetails.deliveredOrders
     });
   }
 
+  // this block is  used to route the particular hotel of the order
   hotelRoute(indexNumber:any){
     this.Delivered.read_hotels().subscribe(x=>{
       this.hotelDetails=x;
@@ -50,7 +52,7 @@ export class DeliveredOrdersComponent {
   }
 
 
-
+// this block is  show the details of the order
   ViewDetails(indexNumber:any){
     this.isViewDetails=true;
     this.isPaymentButton=false;
@@ -61,12 +63,14 @@ export class DeliveredOrdersComponent {
     console.log(this.viewDetailsInfo);
   }
 
+// this is block is show the reorder details of the order
   reOrder(indexNumber:any){
     this.isViewDetails=true;
     this.isPaymentButton=true;
     this.isDeliverTime=true;
   }
 
+  // this block is close the order details ui
   close(){
     this.isViewDetails=false;
   }

@@ -15,6 +15,7 @@ constructor(private delTime:DatabaseService, private router:Router){
 this.read_deltime();
 }
 
+// this block is used to arrange the hotels in the basis of delivery time
 read_deltime(){
   this.delTime.read_hotels().subscribe(x=>{
     this.dummyArray=x;
@@ -40,8 +41,8 @@ read_deltime(){
 });
 }
 
+// this block is used to route to the dishpage for the particular hotel
 sendHotel(index:any){
-  // this.delTime.getHotelName(this.realTime[index]);
   this.value=JSON.stringify(this.realTime[index]);
   sessionStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");
