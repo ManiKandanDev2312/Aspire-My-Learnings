@@ -90,6 +90,12 @@ export class DatabaseService {
   deliveryTime:any;
 
   checkHotel:any=[];
+
+  orderedDate:any=[];
+  deliveredDate:any=[];
+
+  orderMail:any;
+
   constructor(private http:HttpClient, private router:Router, private LoginGuard:LoginGuardGuard, private ordered:OrderDeliveredService) {
   }
 
@@ -119,10 +125,6 @@ export class DatabaseService {
       }
     });
 
-  }
-
-  sendEmail(url:any,body:any){
-    return this.http.post(url,body);
   }
 
 
@@ -342,7 +344,8 @@ export class DatabaseService {
       this.customerDetails=x;
       this.setorderDetails=this.customerDetails.cartOrderDetails,
       this.setOrderedDetails=this.customerDetails.paymentOrderedDetails,
-      this.setAddressDetails=this.customerDetails.CurrentOrderAddress
+      this.setAddressDetails=this.customerDetails.CurrentOrderAddress,
+
       this.orderId=Math.floor((Math.random()*1000000)+1);
     this.checkdate=new Date();
     this.orderAddMinutes=this.checkdate.setMinutes(
@@ -427,7 +430,15 @@ export class DatabaseService {
         amountPaid:"not paid"
       }]
     }
-
+    this.orderMail={
+      userName:this.customerDetails.username,
+      email:this.customerDetails.email,
+      orderId:this.orderId,
+      hotelName:this.setorderDetails.hotelName,
+      totalPrice:this.setorderDetails.totalPrice,
+      paymentType:this.orderDetails[0].paymentMenthod,
+      orderDate:this.orderDateArray
+    }
     if(this.setOrderedDetails==null || this.setOrderedDetails.length==0){
 
       this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails}).subscribe(x=>{
@@ -435,7 +446,9 @@ export class DatabaseService {
   });
   this.ordered.getTime(this.orderedDelayTimeFormat);
   this.ordered.getDeliveredTime(this.deliveryDateArray[1]);
-
+  this.sendEmail("http://localhost:2300/newOrders",this.orderMail).subscribe(mailinfo=>{
+    console.log(mailinfo);
+  });
     }else{
       this.setOrderedDetails.push(this.orderDetails[0]);
 
@@ -444,6 +457,9 @@ export class DatabaseService {
   });
   this.ordered.getTime(this.orderedDelayTimeFormat);
   this.ordered.getDeliveredTime(this.deliveryDateArray[1]);
+  this.sendEmail("http://localhost:2300/newOrders",this.orderMail).subscribe(mailinfo=>{
+    console.log(mailinfo);
+  });
     }
 
     });
@@ -560,4 +576,43 @@ export class DatabaseService {
     this.userMob = JSON.parse(this.loggedPhonenumber);
     return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
   }
+
+  cancelOrder(indexNumber:any){
+    this.loggedPhonenumber = sessionStorage.getItem('isusername');
+    this.userMob = JSON.parse(this.loggedPhonenumber);
+    this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+      this.customerDetails=x;
+      this.orderDetails=this.customerDetails.paymentOrderedDetails;
+      this.orderedDate=this.customerDetails.orderedDate
+      this.deliveredDate=this.customerDetails.deliveredDate
+
+      this.orderMail={
+        userName:this.customerDetails.username,
+        email:this.customerDetails.email,
+        orderId:this.orderDetails[indexNumber].orderId,
+        hotelName:this.orderDetails[indexNumber].hotelName,
+        totalPrice:this.orderDetails[indexNumber].totalPrice,
+        orderDate:this.orderDetails[indexNumber].orderedDate
+      }
+
+      this.orderDetails.splice(indexNumber,1);
+      this.orderedDate.splice(indexNumber,1);
+      this.deliveredDate.splice(indexNumber,1);
+      this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails,orderedDate:this.orderedDate,deliveredDate:this.deliveredDate}).subscribe(x=>{
+        console.log(x);
+      });
+
+      this.sendEmail("http://localhost:2300/cancelOrders",this.orderMail).subscribe(mailinfo=>{
+        console.log(mailinfo);
+      });
+    })
+
+  }
+
+
+
+  sendEmail(url:any,body:any){
+    return this.http.post(url,body);
+  }
+
 }

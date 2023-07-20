@@ -21,6 +21,7 @@ export class DeliveredOrdersComponent {
 
 
   viewDetailsInfo:any=[];
+  isEmpty:boolean=false;
 
   constructor(private Delivered:DatabaseService, private router:Router){
 
@@ -28,6 +29,9 @@ export class DeliveredOrdersComponent {
     this.Delivered.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.deliveredOrderDetails=this.customerDetails.deliveredOrders
+      if(this.deliveredOrderDetails.length==0){
+        this.isEmpty=true;
+      }
     });
   }
 
@@ -65,9 +69,21 @@ export class DeliveredOrdersComponent {
 
 // this is block is show the reorder details of the order
   reOrder(indexNumber:any){
-    this.isViewDetails=true;
-    this.isPaymentButton=true;
-    this.isDeliverTime=true;
+      this.Delivered.read_hotels().subscribe(x=>{
+        this.hotelDetails=x;
+        for(var i=0;i<this.hotelDetails.length;i++){
+          if(this.deliveredOrderDetails[indexNumber].hotelName==this.hotelDetails[i].hotelname){
+            this.setHotelDetails=JSON.stringify(this.hotelDetails[i]);
+            sessionStorage.setItem('cartHotelDetails',this.setHotelDetails);
+            this.Delivered.getAddToCart(this.deliveredOrderDetails[indexNumber].orderedItems);
+            setTimeout(()=>{
+              this.router.navigateByUrl("cart");
+            },1000);
+          }
+        }
+
+      });
+
   }
 
   // this block is close the order details ui

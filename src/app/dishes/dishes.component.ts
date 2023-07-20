@@ -150,7 +150,7 @@ searchcartItems(ind:any){
         hotelName:this.setHotelName.hotelname,
         hotelImage:this.setHotelName.hotelimage,
         dishName:this.finalDishArray[ind].dishName,
-        dishCount:1,
+        dishQuantity:1,
         dishPrice:parseInt(this.finalDishArray[ind].dishPrice),
         dishType:this.finalDishArray[ind].dishType
       }
@@ -209,7 +209,7 @@ cartItems(ind:number){
         hotelName:this.setHotelName.hotelname,
         hotelImage:this.setHotelName.hotelimage,
         dishName:this.dishArray[ind].dishName,
-        dishCount:1,
+        dishQuantity:1,
         dishPrice:parseInt(this.dishArray[ind].dishPrice),
         dishType:this.dishArray[ind].dishType
       }

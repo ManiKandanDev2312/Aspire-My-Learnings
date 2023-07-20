@@ -40,6 +40,7 @@ import { CDCardComponent } from './cdcard/cdcard.component';
 import { NewOrdersComponent } from './new-orders/new-orders.component';
 import { PastOrdersComponent } from './past-orders/past-orders.component';
 import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.component';
+import { OrderFeedbackComponent } from './order-feedback/order-feedback.component';
 // import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
@@ -80,7 +81,8 @@ import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.co
     CDCardComponent,
     NewOrdersComponent,
     PastOrdersComponent,
-    DeliveredOrdersComponent
+    DeliveredOrdersComponent,
+    OrderFeedbackComponent
   ],
   imports: [
     BrowserModule,

@@ -282,3 +282,13 @@ to{
   background: #60b246;
   cursor: pointer;
 }
+
+.gif img{
+  width: 650px;
+  margin-left: 450px;
+  margin-top: 40px;
+}
+.gif h1{
+  margin-left: 600px;
+  font-size: 2vw;
+}

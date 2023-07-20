@@ -10,9 +10,12 @@
 
 <!-- -----------------------------Display Delivered Orders --------------------------------->
 
-
+<div class="gif" *ngIf="isEmpty">
+  <img src="./assets/emptycart.gif" alt="image">
+  <h1>Your Orders Are Empty!</h1>
+</div>
 <div class="Orders">
-  <h1>{{deliveredOrderDetails.length}} &nbsp;Delivered Orders</h1>
+  <h1 *ngIf="!isEmpty">{{deliveredOrderDetails.length}} &nbsp;Delivered Orders</h1>
 
   <div class="orderBox">
   <div class="commonBox" *ngFor="let OrderItems of deliveredOrderDetails; let indexNumber=index ">

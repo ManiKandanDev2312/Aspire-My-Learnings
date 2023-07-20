@@ -79,8 +79,8 @@
 
   <!-- --------------------Display the items------------------------ -->
   <div class="seconds">
-    <img src="{{itemsArray[0].hotelImage}}" alt="hotelimage">
-    <h2 (click)="hotelRoute()">{{itemsArray[0].hotelName}}</h2>
+    <img src="{{hotelDetailsShow.hotelimage}}" alt="hotelimage">
+    <h2 (click)="hotelRoute()">{{hotelDetailsShow.hotelname}}</h2>
     <h4>restaurant</h4>
 
     <div class="item">
@@ -90,7 +90,7 @@
         <div class="names">
 
             <div class="itemvalidates"><button (click)="minus(ind)">-</button></div>
-            <div class="itemvalidates"><h5 id="count">{{items.dishCount}}</h5></div>
+            <div class="itemvalidates"><h5 id="count">{{items.dishQuantity}}</h5></div>
             <div class="itemvalidates"><button (click)="plus(ind)">+</button></div>
 
         </div>

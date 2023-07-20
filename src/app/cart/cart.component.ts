@@ -10,6 +10,7 @@ import { DatabaseService } from '../database.service';
 })
 export class CartComponent {
   itemArray:any=[];
+  hotelDetailsShow:any;
   hotelDetails:any;
   customerDetails:any;
   AddressDetails:any;
@@ -70,7 +71,7 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
   });
 
 
-  this.hotelDetails=this.dish.sendCartHotelname();
+  this.hotelDetailsShow=this.dish.sendCartHotelname();
 
   if(sessionStorage.getItem('isentered')=="true"){
     this.dish.sendAddress().subscribe(x=>{
@@ -140,7 +141,7 @@ cartUi(){
   this.itemTotal=0;
   for(var i=0;i<this.itemsArray.length;i++){
     this.itemPrice[i]=parseInt(this.itemsArray[i].dishPrice);
-    this.dummyPrice[i]=parseInt(this.itemsArray[i].dishPrice)/parseInt(this.itemsArray[i].dishCount);
+    this.dummyPrice[i]=parseInt(this.itemsArray[i].dishPrice)/parseInt(this.itemsArray[i].dishQuantity);
     this.itemTotal=this.itemTotal+parseInt(this.itemPrice[i]);
   }
   this.totalPrice=this.itemTotal+this.deliverFee;
@@ -156,8 +157,8 @@ home(){
 
 minus(ind:number){
   this.itemTotal=0;
-  this.itemsArray[ind].dishCount=this.itemsArray[ind].dishCount-1;
-  if(this.itemsArray[ind].dishCount==0){
+  this.itemsArray[ind].dishQuantity=this.itemsArray[ind].dishQuantity-1;
+  if(this.itemsArray[ind].dishQuantity==0){
     this.itemsArray.splice(ind,1);
     this.dummy2=JSON.stringify(this.itemsArray);
     sessionStorage.setItem('dishes',this.dummy2);
@@ -177,7 +178,7 @@ minus(ind:number){
     }
   }
   else{
-    this.itemsArray[ind].dishPrice=this.itemsArray[ind].dishCount*this.dummyPrice[ind];
+    this.itemsArray[ind].dishPrice=this.itemsArray[ind].dishQuantity*this.dummyPrice[ind];
     for(var i=0;i<this.itemsArray.length;i++){
       this.itemTotal=this.itemTotal+this.itemsArray[i].dishPrice;
     }
@@ -196,8 +197,8 @@ minus(ind:number){
 
 plus(ind:number){
   this.itemTotal=0;
-  this.itemsArray[ind].dishCount=this.itemsArray[ind].dishCount+1;
-  this.itemsArray[ind].dishPrice=this.itemsArray[ind].dishCount*this.dummyPrice[ind];
+  this.itemsArray[ind].dishQuantity=this.itemsArray[ind].dishQuantity+1;
+  this.itemsArray[ind].dishPrice=this.itemsArray[ind].dishQuantity*this.dummyPrice[ind];
   for(var i=0;i<this.itemsArray.length;i++){
     this.itemTotal=this.itemTotal+this.itemsArray[i].dishPrice;
   }
@@ -352,14 +353,14 @@ Payment(){
     for(var i=0;i<this.itemsArray.length;i++){
       this.orderitemArray[i]={
         dishName:this.itemsArray[i].dishName,
-        dishQuantity:this.itemsArray[i].dishCount,
+        dishQuantity:this.itemsArray[i].dishQuantity,
         dishPrice:this.itemsArray[i].dishPrice
     }
   }
-  console.log(this.hotelDetails);
+  console.log(this.hotelDetailsShow);
   this.orderArray={
-    hotelName:this.hotelDetails.hotelname,
-    hotelImage:this.hotelDetails.hotelimage,
+    hotelName:this.hotelDetailsShow.hotelname,
+    hotelImage:this.hotelDetailsShow.hotelimage,
     orderItems:this.orderitemArray,
     orderAddress:this.currentOrderDetails,
     totalPrice:this.totalPrice
@@ -390,7 +391,7 @@ hotelRoute(){
   this.dish.read_hotels().subscribe(x=>{
     this.hotelDetails=x;
     for(var i=0;i<this.hotelDetails.length;i++){
-      if(this.itemsArray[0].hotelName==this.hotelDetails[i].hotelname){
+      if(this.hotelDetailsShow.hotelname==this.hotelDetails[i].hotelname){
         this.setHotelDetails=JSON.stringify(this.hotelDetails[i]);
         sessionStorage.setItem('hotelDetails',this.setHotelDetails);
         this.router.navigateByUrl("dishPage");

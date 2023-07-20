@@ -9,6 +9,11 @@
  -->
 
 <!-- -----------------------------DisplayNew Orders --------------------------------->
+
+<div class="gif" *ngIf="isEmpty">
+  <img src="./assets/emptycart.gif" alt="image">
+  <h1>Your Orders Are Empty!</h1>
+</div>
 <div class="Orders" *ngIf="isNewOrder">
   <h1>New Orders</h1>
 
@@ -17,9 +22,10 @@
 <div class="commonBoxes">
   <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
   <div>
+    <p>cancel this order within {{OrderItems.deliveryDate[0]}},  {{cancelTime[indexNumber]}}</p>
     <h2>{{OrderItems.hotelName}}</h2>
     <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
-    <a >VIEW DETAILS</a>
+    <a (click)="ViewDetails(indexNumber,indexNumber+1)">VIEW DETAILS</a>
     <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
   </div>
 </div>
@@ -28,7 +34,7 @@
 </div>
 <div class="OrderButton">
   <div class="button">
-    <button>CANCEL</button>
+    <button (click)="OrderCancel(indexNumber)">CANCEL</button>
   </div>
   <div class="button">
   <button>Help</button>
@@ -54,7 +60,7 @@
     <p style="margin-left: 400px;">Yet to be Deliver <i class="fa-solid fa-circle-xmark" style="color: red;"></i></p>
     <h2>{{OrderItems.hotelName}}</h2>
     <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
-    <a>VIEW DETAILS</a>
+    <a (click)="ViewDetails(indexNumber,indexNumber+2)">VIEW DETAILS</a>
     <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
   </div>
 </div>
@@ -63,7 +69,7 @@
 </div>
 <div class="OrderButton">
   <div class="button">
-    <button>REORDER</button>
+    <button (click)="reOrder(indexNumber,indexNumber+1)">REORDER</button>
   </div>
   <div class="button">
   <button>Help</button>
@@ -87,7 +93,7 @@
     <p>Delivered on {{OrderItems.deliveryDate[0]}},  {{OrderItems.deliveryDate[1]}} <i class="fa-solid fa-circle-check"></i></p>
     <h2>{{OrderItems.hotelName}}</h2>
     <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
-    <a (click)="ViewDetails(indexNumber)">VIEW DETAILS</a>
+    <a (click)="ViewDetails(indexNumber,indexNumber+3)">VIEW DETAILS</a>
     <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
   </div>
 </div>
@@ -96,7 +102,7 @@
 </div>
 <div class="OrderButton">
   <div class="button">
-    <button (click)="reOrder(indexNumber)">REORDER</button>
+    <button (click)="reOrder(indexNumber,indexNumber+2)">REORDER</button>
   </div>
   <div class="button">
   <button>Help</button>

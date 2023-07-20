@@ -41,6 +41,7 @@ export class OrderDeliveredService{
   getDeliveredDate:any=[];
   deliveryDateFormat:any=[];
   deliveryDetails:any=[];
+  orderMail:any;
   constructor(private http:HttpClient) {
 
   }
@@ -176,20 +177,39 @@ getDeliveredInfo(deliveredInfo:any){
     this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.deliveryDetails=this.customerDetails.deliveredOrders;
-
+      this.orderMail={
+        userName:this.customerDetails.username,
+        email:this.customerDetails.email,
+        orderId:deliveredInfo.orderId,
+        hotelName:deliveredInfo.hotelName,
+        totalPrice:deliveredInfo.totalPrice,
+        orderDate:deliveredInfo.orderedDate,
+        deliveryDate:deliveredInfo.deliveryDate
+      }
       if(this.deliveryDetails==null || this.deliveryDetails.length==0){
          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredOrders:[deliveredInfo]}).subscribe(x=>{
           console.log(x);
          });
+         this.sendEmail("http://localhost:2300/deliveredOrders",this.orderMail).subscribe(mailinfo=>{
+          console.log(mailinfo);
+        });
       }
       else{
         this.deliveryDetails.push(deliveredInfo);
         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredOrders:this.deliveryDetails}).subscribe(x=>{
           console.log(x);
          });;
+         this.sendEmail("http://localhost:2300/deliveredOrders",this.orderMail).subscribe(mailinfo=>{
+          console.log(mailinfo);
+        });
       }
 
     })
+  }
+
+
+  sendEmail(url:any,body:any){
+    return this.http.post(url,body);
   }
 
 }

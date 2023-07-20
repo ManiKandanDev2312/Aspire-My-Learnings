@@ -23,6 +23,7 @@ import { LowToHighComponent } from './low-to-high/low-to-high.component';
 import { NewOrdersComponent } from './new-orders/new-orders.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 import { OffersComponent } from './offers/offers.component';
+import { OrderFeedbackComponent } from './order-feedback/order-feedback.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PastOrdersComponent } from './past-orders/past-orders.component';
 import { PayOffersComponent } from './pay-offers/pay-offers.component';
@@ -207,6 +208,11 @@ const routes: Routes = [
 {
   path:"DeliveredOrders",
   component:DeliveredOrdersComponent
+}
+,
+{
+  path:"FeedBack",
+  component:OrderFeedbackComponent
 }
 ];
 
