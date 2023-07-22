@@ -11,7 +11,7 @@
 
  <!-- -------------------------------------NAV BAR  Component----------------------------------->
 
- <app-navbar></app-navbar>
+ <app-navbar *ngIf="navBar"></app-navbar>
 
  <!-- ---------------------------------Routed Components---------------------------------------->
 
@@ -23,4 +23,4 @@
 
 <!-- --------------------------------------Footer Component--------------------------------- -->
 
-    <app-footer></app-footer>
+    <app-footer *ngIf="Footer"></app-footer>

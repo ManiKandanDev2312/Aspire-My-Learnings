@@ -9,6 +9,12 @@
  -->
 
 <!-- -----------------------------Display Login Form --------------------------------->
+<div class="HomeSlideShow">
+  <img src="{{slideImage}}" alt="image">
+  <div class="HomeSlideContainer">
+   <div *ngFor="let rounds of slideImageUrl; let ind=index" class="HomeSlideRounds" (click)="SlideImages(ind)"></div>
+  </div>
+</div>
 <div class="background">
   <div class="signin" *ngIf="signInPage">
     <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>

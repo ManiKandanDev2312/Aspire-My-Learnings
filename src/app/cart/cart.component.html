@@ -99,7 +99,7 @@
       </div>
 
       <div class="coupon">
-        <button>
+        <button (click)="showOffer()">
           <i class="fa-solid fa-percent"></i> ADD COUPONS
         </button>
       </div>
@@ -108,13 +108,15 @@
       <hr>
       <h2>item Total</h2>
       <h2>Delivery Partner Fee</h2>
+      <h2>offer Price</h2>
 
-      <h2 class="itemfee">₹{{itemTotal}}</h2>
-      <h2 class="deliverfee">₹43</h2>
+      <h2 class="itemfee">&nbsp;₹{{itemTotal}}</h2>
+      <h2 class="deliverfee">&nbsp;₹43</h2>
+      <h2 class="offerfee">-₹{{offerTotal}}</h2>
       <hr>
 
       <h3>To Pay</h3>
-      <h2 class="totalfee">₹{{totalPrice}}</h2>
+      <h2 class="totalfee">&nbsp;₹{{totalPrice}}</h2>
     </div>
 
     </div>
@@ -176,6 +178,29 @@
     </div>
   </div>
   </div>
+
+  <!-- -------------------------------------Offer Form------------------------------- -->
+  <div class="background" *ngIf="isAddOffer">
+    <div class="editProfile">
+      <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+      <h1>COUPON ID</h1>
+      <img src="./assets/img9.webp" alt="image" class="image">
+
+      <div class="editForm">
+        <form [formGroup]="addOffer">
+          <div class="forms">
+            <label for="editProfileUsername"*ngIf="!addOffer.controls['addOfferCouponId'].errors?.['required'] && !addOffer.controls['addOfferCouponId'].errors?.['pattern'] || !addOffer.controls['addOfferCouponId'].dirty">Coupon Id</label>
+            <label *ngIf="addOffer.controls['addOfferCouponId'].errors?.['required'] && addOffer.controls['addOfferCouponId'].invalid && addOffer.controls['addOfferCouponId'].dirty" class="invalid">Please enter Coupon Id</label>
+            <label *ngIf="addOffer.controls['addOfferCouponId'].errors?.['pattern'] && (addOffer.controls['addOfferCouponId'].invalid || addOffer.controls['addOfferCouponId'].dirty)" class="invalid">invalid Coupon Id</label>
+            <input type="text" placeholder=" " name="addOfferCouponId"  formControlName="addOfferCouponId" >
+          </div>
+
+          <button class="edit" type="submit" [disabled]="!addOffer.valid" (click)="addOfferCoupon(addOffer.value)">ADD COUPON</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
 
 </body>

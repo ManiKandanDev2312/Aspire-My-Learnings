@@ -224,42 +224,37 @@
       },
       "AddToCartDetails": [],
       "CurrentOrderAddress": {
-        "adress": "JaisuryasSanjeevara",
-        "doorNo": "415",
-        "landmark": "DBSbank",
-        "district": "madurai",
-        "addressType": "Others",
-        "iconType": "fa-location-dot"
+        "adress": "kondalamPattyByepass",
+        "doorNo": "546",
+        "landmark": "nearByePass",
+        "district": "salem",
+        "addressType": "Work",
+        "iconType": "fa-briefcase"
       },
       "cartOrderDetails": {
-        "hotelName": "HMR Hotel",
-        "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
         "orderItems": [
           {
-            "dishName": "Watermelon Juice",
-            "dishQuantity": 2,
-            "dishPrice": 110
+            "dishName": "Mango Juice",
+            "dishQuantity": 11,
+            "dishPrice": 1650
           },
           {
-            "dishName": "Miracle Abc - 100% Juice",
-            "dishQuantity": 4,
-            "dishPrice": 516
-          },
-          {
-            "dishName": "Time For Chocolate Photo Cupcakes - Pack Of 6",
-            "dishQuantity": 4,
-            "dishPrice": 2476
+            "dishName": "Fresh Lime Juice",
+            "dishQuantity": 10,
+            "dishPrice": 380
           }
         ],
         "orderAddress": {
-          "adress": "JaisuryasSanjeevara",
-          "doorNo": "415",
-          "landmark": "DBSbank",
-          "district": "madurai",
-          "addressType": "Others",
-          "iconType": "fa-location-dot"
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Work",
+          "iconType": "fa-briefcase"
         },
-        "totalPrice": 3145
+        "totalPrice": 829
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -342,6 +337,181 @@
           ],
           "paymentMenthod": "Cash On Delivery",
           "amountPaid": "not paid"
+        },
+        {
+          "orderId": 853831,
+          "totalPrice": 1123,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "JaisuryasSanjeevara",
+            "doorNo": "415",
+            "landmark": "DBSbank",
+            "district": "madurai",
+            "addressType": "Others",
+            "iconType": "fa-location-dot"
+          },
+          "orderedDate": [
+            "Fri",
+            "21-Jul-2023 07:06:48 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "21-Jul-2023 07:08:48 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Coconut Sharbat",
+              "dishQuantity": 1,
+              "dishPrice": 200
+            },
+            {
+              "dishName": "Cold Pressed Orange Juice",
+              "dishQuantity": 4,
+              "dishPrice": 880
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 107165,
+          "totalPrice": 1123,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "JaisuryasSanjeevara",
+            "doorNo": "415",
+            "landmark": "DBSbank",
+            "district": "madurai",
+            "addressType": "Others",
+            "iconType": "fa-location-dot"
+          },
+          "orderedDate": [
+            "Fri",
+            "21-Jul-2023 07:09:17 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "21-Jul-2023 07:11:17 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Coconut Sharbat",
+              "dishQuantity": 1,
+              "dishPrice": 200
+            },
+            {
+              "dishName": "Cold Pressed Orange Juice",
+              "dishQuantity": 4,
+              "dishPrice": 880
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 671903,
+          "totalPrice": 1021,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "JaisuryasSanjeevara",
+            "doorNo": "415",
+            "landmark": "DBSbank",
+            "district": "madurai",
+            "addressType": "Others",
+            "iconType": "fa-location-dot"
+          },
+          "orderedDate": [
+            "Fri",
+            "21-Jul-2023 07:11:08 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "21-Jul-2023 07:13:08 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 5,
+              "dishPrice": 750
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 6,
+              "dishPrice": 228
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 721921,
+          "totalPrice": 1021,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "JaisuryasSanjeevara",
+            "doorNo": "415",
+            "landmark": "DBSbank",
+            "district": "madurai",
+            "addressType": "Others",
+            "iconType": "fa-location-dot"
+          },
+          "orderedDate": [
+            "Fri",
+            "21-Jul-2023 07:16:48 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "21-Jul-2023 07:18:48 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 5,
+              "dishPrice": 750
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 6,
+              "dishPrice": 228
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 796829,
+          "totalPrice": 1021,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "JaisuryasSanjeevara",
+            "doorNo": "415",
+            "landmark": "DBSbank",
+            "district": "madurai",
+            "addressType": "Others",
+            "iconType": "fa-location-dot"
+          },
+          "orderedDate": [
+            "Fri",
+            "21-Jul-2023 07:17:07 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "21-Jul-2023 07:19:07 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 5,
+              "dishPrice": 750
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 6,
+              "dishPrice": 228
+            }
+          ],
+          "paymentMenthod": "Card"
         }
       ]
     },

@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -61,6 +62,11 @@ export class CartComponent {
 
   currentOrderDetails:any=[];
 
+  addOffer:FormGroup;
+  isAddOffer:boolean=false;
+  offerPrice:any;
+  offerTotal:any;
+
 constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
   this.Address=fb.group({
@@ -68,6 +74,10 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
     DoorNo:['',[Validators.required,Validators.pattern("^[0-9]+\s*[a-zA-Z]?(\/[0-9]+\s*[a-zA-Z]?)?$")]],
     Landmark:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{2,10}$")]],
     District:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,10}$")]]
+  });
+
+  this.addOffer=fb.group({
+    addOfferCouponId:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,15}$")]],
   });
 
 
@@ -134,6 +144,15 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
     else{
       this.isAddress=true;
     }
+
+    if(sessionStorage.getItem('offerTotal')!=undefined){
+      this.offerTotal=sessionStorage.getItem('offerTotal');
+      this.offerPrice=sessionStorage.getItem('offerPrice');
+    }
+    else{
+      this.offerTotal=0;
+      this.offerPrice=0;
+    }
 }
 
 cartUi(){
@@ -164,12 +183,15 @@ minus(ind:number){
     sessionStorage.setItem('dishes',this.dummy2);
     this.dummyPrice.splice(ind,1);
     this.count.splice(ind,1);
-    console.log(this.count.length);
     if(this.itemsArray.length==1){
-      this.itemTotal=this.itemPrice[0];
+      this.itemTotal=this.itemsArray[0].dishPrice;
+      console.log(this.itemTotal);
     }
     else if(this.itemsArray.length==0){
       this.iscartAdded=true;
+      sessionStorage.removeItem('offerPrice');
+      sessionStorage.removeItem('offerTotal');
+      sessionStorage.removeItem('TotalCartPrice');
     }
     else{
       for(var i=0;i<this.itemsArray.length;i++){
@@ -186,10 +208,10 @@ minus(ind:number){
   if(sessionStorage.getItem('isentered')=="true"){
     this.dish.getAddToCart(this.itemsArray);
   }
-  console.log(this.itemsArray);
   this.setAddtoCart=JSON.stringify(this.itemsArray);
   sessionStorage.setItem('dishes',this.setAddtoCart);
   this.totalPrice=this.itemTotal+this.deliverFee;
+  this.offerValue();
   this.setTotalPrice=JSON.stringify(this.totalPrice);
   sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
 }
@@ -208,8 +230,10 @@ plus(ind:number){
   this.setAddtoCart=JSON.stringify(this.itemsArray);
   sessionStorage.setItem('dishes',this.setAddtoCart);
   this.totalPrice=this.itemTotal+this.deliverFee;
+  this.offerValue();
   this.setTotalPrice=JSON.stringify(this.totalPrice);
   sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
+
 }
 
 
@@ -382,6 +406,7 @@ addAdress(){
 
 close(){
   this.isaddAdress=false;
+  this.isAddOffer=false;
 }
 
 
@@ -401,4 +426,42 @@ hotelRoute(){
   });
 
 }
+
+showOffer(){
+  this.isAddOffer=true
+}
+
+addOfferCoupon(addoffer:any){
+  this.dish.read_hotels().subscribe(x=>{
+    this.hotelDetails=x;
+    for(var i=0;i<this.hotelDetails.length;i++){
+      if(this.hotelDetailsShow.hotelname==this.hotelDetails[i].hotelname){
+        var getOfferValue=this.hotelDetailsShow.offer;
+        if(addoffer.addOfferCouponId==getOfferValue.toString().slice(14,getOfferValue.length)){
+          this.offerPrice=getOfferValue.toString().slice(0,2);
+          this.offerTotal=Math.round((this.totalPrice/100)*this.offerPrice);
+          sessionStorage.setItem('offerTotal',this.offerTotal);
+          sessionStorage.setItem('offerPrice',this.offerPrice);
+          this.totalPrice=this.totalPrice-this.offerTotal;
+        }
+        else{
+          alert("Invalid coupon code!");
+        }
+      }
+
+    }
+  })
+}
+
+// this block is used to calculate the offer
+ offerValue(){
+  if(this.itemsArray.length>=1){
+    this.offerTotal=Math.round((this.totalPrice/100)*this.offerPrice);
+    sessionStorage.setItem('offerTotal',this.offerTotal);
+    this.totalPrice=this.totalPrice-this.offerTotal;
+    this.setTotalPrice=JSON.stringify(this.totalPrice);
+    sessionStorage.setItem('TotalCartPrice',this.setTotalPrice);
+  }
+
+ }
 }

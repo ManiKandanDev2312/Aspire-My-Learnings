@@ -168,3 +168,28 @@ p{
   margin-top: 10%;
   margin-left: 6%;
 }
+
+img{
+  width: 90%;
+  height: 80vh;
+  margin-left: 5%;
+}
+.HomeSlideShow{
+  position: relative;
+  margin: 80px;
+}
+.HomeSlideContainer{
+  display: flex;
+  margin-left: 47%;
+  margin-top: -3%;
+  gap: 3%;
+}
+.HomeSlideRounds{
+  width: 2%;
+  height: 2vh;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.HomeSlideRounds:hover{
+  background-color: white;
+}

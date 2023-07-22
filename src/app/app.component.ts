@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { OrderDeliveredService } from './order-delivered.service';
 
 @Component({
@@ -9,7 +10,25 @@ import { OrderDeliveredService } from './order-delivered.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private ordered:OrderDeliveredService){
+  navBar:boolean=true;
+  Footer:boolean=true;
+
+  constructor(private ordered:OrderDeliveredService, private router:Router){
+
+    router.events.subscribe((urlValue)=>{
+
+      if(urlValue instanceof NavigationEnd){
+        if(urlValue.url=="/login"){
+          this.Footer=false;
+          this.navBar=false;
+        }
+        else if(urlValue.url=="/"){
+          this.Footer=true;
+          this.navBar=true;
+        }
+      }
+
+    });
 
   }
 

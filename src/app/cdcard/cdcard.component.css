@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 .Card h1{
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -153,4 +153,113 @@ form button{
   cursor: pointer;
   font-weight: bold;
   border: 1px solid white;
+}
+
+.banks{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-left: 150px;
+  margin-top: -55px;
+  margin-bottom: 30px;
+}
+
+.bank{
+  margin-left: 20px;
+}
+.bank img{
+  width: 100px;
+  height: 30px;
+  background: black;
+}
+.card{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.card img{
+  width: 80px;
+  height:40px;
+  background: black;
+}
+
+.registeredCard{
+  background: black;
+  /* height: 100px; */
+  width: 650px;
+  padding: 30px;
+  margin-left: 100px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.registeredCard h1{
+  width: 560px;
+  height: 25px;
+  color: white;
+  margin-top: 20px;
+  background: black;
+  outline: none;
+  border: none;
+  font-size: 2vw;
+  letter-spacing: 18px;
+  font-weight: bold;
+}
+.registeredCard h2{
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2vw;
+  margin-left: 30px;
+}
+.registeredCard img{
+  width: 100px;
+  height:50px;
+  margin-left: 520px;
+  margin-top: -25px;
+}
+.addcard{
+  width: 400px;
+  height:50px;
+  margin-left: 270px;
+  margin-top: 60px;
+  border: none;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: bold;
+  background: #60b246;
+  cursor: pointer;
+}
+.registeredCard label{
+  color: white;
+  font-size: 1.1vw;
+  font-weight: lighter;
+  margin-left: 30px;
+}
+
+.cancelCard{
+  width: 600px;
+  height:50px;
+  margin-left: 130px;
+  margin-top: 30px;
+  border: none;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: bold;
+  background: #60b246;
+  cursor: pointer;
+}
+.registeredcardDetails{
+  display: flex;
+  justify-content: space-between;
+}
+.registeredDetails input{
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  height:25px;
+  color: white;
+  background: black;
+  outline: none;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: bold;
 }

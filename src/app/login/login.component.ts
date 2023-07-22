@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators ,FormBuilder} from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
@@ -8,7 +8,7 @@ import { DatabaseService } from '../database.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
 
 
 signInPage:boolean=true;
@@ -28,8 +28,14 @@ register:FormGroup;
 login:FormGroup;
 forgotPassword:FormGroup;
 returl:any;
+slideImageUrl:any=[];
+countingVariable=0;
+slideImage="./assets/BURGER.png";
 
   constructor(fb:FormBuilder, private data_ser:DatabaseService, private router:Router,private route:ActivatedRoute){
+
+    this.slideImageUrl=["./assets/BURGER.png","./assets/FLAT_50.png"
+    ,"./assets/pizza.png","./assets/FOOD COURT.png"];
 
     // guard purpose
     this.route.queryParamMap.subscribe(w=>{
@@ -57,6 +63,7 @@ returl:any;
       password:['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)]],
       ConfirmPassword:['',[Validators.required]]});
   }
+
 
 
 // this block is used to compare the passwords in signup form
@@ -118,6 +125,25 @@ changePassword(forgotValue:any){
 
   this.data_ser.changePassword(forgotValue);
   this.router.navigateByUrl("/");
+}
+
+// this block is used for slide show
+SlideImages(ind:number){
+  this.slideImage=this.slideImageUrl[ind];
+  this.countingVariable=ind;
+}
+
+ngOnInit() {
+  // this block is to initate the silde show
+  setInterval(()=>{
+    if(this.countingVariable==-1){
+      this.countingVariable;
+    }
+    else if(this.countingVariable==4){
+      this.countingVariable=0;
+    }
+    this.slideImage=this.slideImageUrl[this.countingVariable++];
+    },3000)
 }
 
 }
