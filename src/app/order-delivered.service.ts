@@ -2,6 +2,7 @@ import { formatDate } from '@angular/common';
 import { Injectable } from '@angular/core';
 import {  interval, Subscription } from 'rxjs';
 import { HttpClient } from "@angular/common/http";
+import { environment, NodeMailer } from 'src/environment/environment';
 
 
 @Injectable({
@@ -52,19 +53,19 @@ export class OrderDeliveredService{
 getTime(ordereddate:any){
   this.loggedPhonenumber = sessionStorage.getItem('isusername');
   this.userMob = JSON.parse(this.loggedPhonenumber);
-  this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+  this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
     this.customerDetails=x;
     this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
     this.getOrderedDate=this.customerDetails.orderedDate
   if(this.getOrderedDate==null){
     this.dateFormat=[ordereddate];
-    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.dateFormat}).subscribe(x=>{
+    this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{orderedDate:this.dateFormat}).subscribe(x=>{
       console.log(x);
      });;
   }
   else{
     this.getOrderedDate.push(ordereddate);
-    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.getOrderedDate}).subscribe(x=>{
+    this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{orderedDate:this.getOrderedDate}).subscribe(x=>{
       console.log(x);
      });;
   }
@@ -74,19 +75,19 @@ getTime(ordereddate:any){
 getDeliveredTime(deliveredTime:any){
   this.loggedPhonenumber = sessionStorage.getItem('isusername');
   this.userMob = JSON.parse(this.loggedPhonenumber);
-  this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+  this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
     this.customerDetails=x;
     this.pastOrderDetails=this.customerDetails.Orders
     this.getDeliveredDate=this.customerDetails.deliveredDate
   if(this.getDeliveredDate==null){
     this.deliveryDateFormat=[deliveredTime];
-    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredDate:this.deliveryDateFormat}).subscribe(x=>{
+    this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{deliveredDate:this.deliveryDateFormat}).subscribe(x=>{
       console.log(x);
      });;
   }
   else{
     this.getDeliveredDate.push(deliveredTime);
-    this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredDate:this.getDeliveredDate}).subscribe(x=>{
+    this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{deliveredDate:this.getDeliveredDate}).subscribe(x=>{
       console.log(x);
      });;
   }
@@ -98,7 +99,7 @@ startInterval(){
   setInterval(()=>{
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
   this.userMob = JSON.parse(this.loggedPhonenumber);
-  this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+  this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
     this.customerDetails=x;
     this.setOrderedDetails=this.customerDetails.paymentOrderedDetails
     this.pastOrderDetails=this.customerDetails.Orders
@@ -113,12 +114,12 @@ startInterval(){
         this.getOrderedInfo(this.setOrderedDetails[0]);
         this.setOrderedDetails.splice(0,1);
         this.getOrderedDate.splice(0,1);
-          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
+          this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
             console.log(x);
           });
 
         console.log(this.getOrderedDate);
-          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{orderedDate:this.getOrderedDate}).subscribe(x=>{
+          this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{orderedDate:this.getOrderedDate}).subscribe(x=>{
             console.log(x);
            });;
         }
@@ -129,12 +130,12 @@ startInterval(){
           this.getDeliveredInfo(this.pastOrderDetails[0])
           this.pastOrderDetails.splice(0,1);
           this.getDeliveredDate.splice(0,1);
-          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Orders:this.pastOrderDetails}).subscribe(x=>{
+          this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{Orders:this.pastOrderDetails}).subscribe(x=>{
             console.log(x);
           });
 
         console.log(this.getDeliveredDate);
-          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredDate:this.getDeliveredDate}).subscribe(x=>{
+          this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{deliveredDate:this.getDeliveredDate}).subscribe(x=>{
             console.log(x);
            });;
         }
@@ -151,18 +152,18 @@ startInterval(){
 getOrderedInfo(orderedInfo:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+    this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.OrderDetails=this.customerDetails.Orders;
 
       if(this.OrderDetails==null || this.OrderDetails.length==0){
-         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Orders:[orderedInfo]}).subscribe(x=>{
+         this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{Orders:[orderedInfo]}).subscribe(x=>{
           console.log(x);
          });
       }
       else{
         this.OrderDetails.push(orderedInfo);
-        this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Orders:this.OrderDetails}).subscribe(x=>{
+        this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{Orders:this.OrderDetails}).subscribe(x=>{
           console.log(x);
          });;
       }
@@ -174,7 +175,7 @@ getOrderedInfo(orderedInfo:any){
 getDeliveredInfo(deliveredInfo:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+    this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.deliveryDetails=this.customerDetails.deliveredOrders;
       this.orderMail={
@@ -187,25 +188,25 @@ getDeliveredInfo(deliveredInfo:any){
         deliveryDate:deliveredInfo.deliveryDate
       }
       if(this.deliveryDetails==null || this.deliveryDetails.length==0){
-         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredOrders:[deliveredInfo]}).subscribe(x=>{
+         this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{deliveredOrders:[deliveredInfo]}).subscribe(x=>{
           console.log(x);
          });
-         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{FeedBackHotels:[deliveredInfo]}).subscribe(x=>{
+         this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{FeedBackHotels:[deliveredInfo]}).subscribe(x=>{
           console.log(x);
          });
-         this.sendEmail("http://localhost:2300/deliveredOrders",this.orderMail).subscribe(mailinfo=>{
+         this.sendEmail(NodeMailer.DeliveryOrders,this.orderMail).subscribe(mailinfo=>{
           console.log(mailinfo);
         });
       }
       else{
         this.deliveryDetails.push(deliveredInfo);
-        this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredOrders:this.deliveryDetails}).subscribe(x=>{
+        this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{deliveredOrders:this.deliveryDetails}).subscribe(x=>{
           console.log(x);
          });;
-         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{FeedBackHotels:this.deliveryDetails}).subscribe(x=>{
+         this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{FeedBackHotels:this.deliveryDetails}).subscribe(x=>{
           console.log(x);
          });
-         this.sendEmail("http://localhost:2300/deliveredOrders",this.orderMail).subscribe(mailinfo=>{
+         this.sendEmail(NodeMailer.DeliveryOrders,this.orderMail).subscribe(mailinfo=>{
           console.log(mailinfo);
         });
       }

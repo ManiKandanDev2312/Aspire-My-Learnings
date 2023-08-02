@@ -5,7 +5,7 @@ import { LoginGuardGuard } from './login-guard.guard';
 import { formatDate } from '@angular/common';
 import { OrderDeliveredService } from './order-delivered.service';
 
-
+import { environment, NodeMailer } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -103,7 +103,7 @@ export class DatabaseService {
 
     this.userMob=data.phonenumber;
 
-    this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
+    this.http.get<any>(environment.CustomerDetails).subscribe((x)=>{
       const check=x.find((Umob:any)=>{
         return data.phonenumber==Umob.phonenumber;
       })
@@ -112,13 +112,13 @@ export class DatabaseService {
       }
       else{
         alert("registered successfully");
-        return this.http.post("http://localhost:3000/customerDetails",data).subscribe(x=>{
+        return this.http.post(environment.CustomerDetails,data).subscribe(x=>{
           console.log(x);
           let body={
             email:data.email,
             userName: data.username
           };
-          this.sendEmail("http://localhost:2300/email",body).subscribe(x=>{
+          this.sendEmail(NodeMailer.SendMail,body).subscribe(x=>{
             console.log(x);
           });
         });
@@ -132,7 +132,7 @@ export class DatabaseService {
 
   read_data(loginData:any,returl:any){
 
-    this.http.get<any>("http://localhost:3000/customerDetails").subscribe((x)=>{
+    this.http.get<any>(environment.CustomerDetails).subscribe((x)=>{
       const data=x.find((log:any)=>{
         this.name=log;
 
@@ -215,20 +215,20 @@ export class DatabaseService {
   }
 
   read_Offers(){
-    return this.http.get("http://localhost:3000/Offers");
+    return this.http.get(environment.Offers);
   }
 
   get_search(search:any){
    this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{search:search});
+    return this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{search:search});
   }
 
   read_search(){
 
     this.getrecentSearchPhone=sessionStorage.getItem('isusername');
     this.setrecentSearchPhone=JSON.parse(this.getrecentSearchPhone);
-      this.http.get<any>("http://localhost:3000/customerDetails").subscribe(x=>{
+      this.http.get<any>(environment.CustomerDetails).subscribe(x=>{
         this.dummy=x.find((log:any)=>{
           this.dummy1=log.search;
           return this.setrecentSearchPhone.phonenumber==log.phonenumber;
@@ -256,7 +256,7 @@ export class DatabaseService {
   }
   send_variety(){
     var  s=0;
-    this.http.get("http://localhost:3000/hotelDetails").subscribe(x=>{
+    this.http.get(environment.HotelDetails).subscribe(x=>{
       this.demo=x;
       for(var i=0;i<this.demo.length;i++){
         this.variety[i]=this.demo[i].dishvariety;
@@ -301,45 +301,45 @@ export class DatabaseService {
   }
 
   read_hotels(){
-      return this.http.get("http://localhost:3000/hotelDetails");
+      return this.http.get(environment.HotelDetails);
   }
 
   getFavorite(Favorite:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Favorites:Favorite});
+    return this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{Favorites:Favorite});
   }
 
   sendFavorite(){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+    return this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber);
   }
 
   getAddress(Address:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{Address:Address});
+    return this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{Address:Address});
   }
   sendAddress(){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob= JSON.parse(this.loggedPhonenumber);
-    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+    return this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber);
   }
 
 
   getvisaDetails(){
-    return this.http.get("http://Localhost:3000/Visa");
+    return this.http.get(environment.Visa);
   }
   getmasterDetails(){
-    return this.http.get("http://Localhost:3000/Mastercard");
+    return this.http.get(environment.MasterCard);
   }
 
 
   paymentOrdered(paymentType:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+    this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.setorderDetails=this.customerDetails.cartOrderDetails,
       this.setOrderedDetails=this.customerDetails.paymentOrderedDetails,
@@ -440,23 +440,23 @@ export class DatabaseService {
     }
     if(this.setOrderedDetails==null || this.setOrderedDetails.length==0){
 
-      this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails}).subscribe(x=>{
+      this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails}).subscribe(x=>{
     console.log(x);
   });
   this.ordered.getTime(this.orderedDelayTimeFormat);
   this.ordered.getDeliveredTime(this.deliveryDateArray[1]);
-  this.sendEmail("http://localhost:2300/newOrders",this.orderMail).subscribe(mailinfo=>{
+  this.sendEmail(NodeMailer.NewOrders,this.orderMail).subscribe(mailinfo=>{
     console.log(mailinfo);
   });
     }else{
       this.setOrderedDetails.push(this.orderDetails[0]);
 
-      this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
+      this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{paymentOrderedDetails:this.setOrderedDetails}).subscribe(x=>{
     console.log(x);
   });
   this.ordered.getTime(this.orderedDelayTimeFormat);
   this.ordered.getDeliveredTime(this.deliveryDateArray[1]);
-  this.sendEmail("http://localhost:2300/newOrders",this.orderMail).subscribe(mailinfo=>{
+  this.sendEmail(NodeMailer.NewOrders,this.orderMail).subscribe(mailinfo=>{
     console.log(mailinfo);
   });
     }
@@ -468,13 +468,13 @@ export class DatabaseService {
 
 
   UPI(){
-    return this.http.get("http://Localhost:3000/UPI");
+    return this.http.get(environment.UPI);
   }
 
   sendOrderedInfo(){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+    return this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber);
   }
 
 
@@ -495,7 +495,7 @@ export class DatabaseService {
    }
    this.loggedPhonenumber = sessionStorage.getItem('isusername');
    this.userMob = JSON.parse(this.loggedPhonenumber);
-  this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{PaymentCradDetails:this.cardDetailsAfterChange}).subscribe(x=>{
+  this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{PaymentCradDetails:this.cardDetailsAfterChange}).subscribe(x=>{
     console.log(x);
   });
   }
@@ -504,7 +504,7 @@ export class DatabaseService {
   getAddToCart(AddToCart:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
    this.userMob = JSON.parse(this.loggedPhonenumber);
-  this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{AddToCartDetails:AddToCart}).subscribe(x=>{
+  this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{AddToCartDetails:AddToCart}).subscribe(x=>{
     console.log(x);
   });
   }
@@ -512,14 +512,14 @@ export class DatabaseService {
   sendAddToCart(){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+    return this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber);
   }
 
 
   getCurrentOrderAddress(CurrentOrderAddress:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{CurrentOrderAddress:CurrentOrderAddress}).subscribe(x=>{
+   this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{CurrentOrderAddress:CurrentOrderAddress}).subscribe(x=>{
      console.log(x);
    });
   }
@@ -528,7 +528,7 @@ export class DatabaseService {
   getCartOrderDetails(cartOrderDetails:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{cartOrderDetails:cartOrderDetails}).subscribe(x=>{
+   this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{cartOrderDetails:cartOrderDetails}).subscribe(x=>{
      console.log(x);
    });
   }
@@ -537,19 +537,19 @@ export class DatabaseService {
   sendOrders(){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+    return this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber);
   }
 
   changePassword(PasswordDetails:any){
 
-    this.http.get<any>("http://localhost:3000/customerDetails/").subscribe(x=>{
+    this.http.get<any>(environment.PatCustomerDetails).subscribe(x=>{
       this.customerDetails=x.find((log:any)=>{
 
         return log.phonenumber == PasswordDetails.forgotPhone;
       });
 
       if(this.customerDetails){
-        this.http.patch("http://localhost:3000/customerDetails/"+PasswordDetails.forgotPhone,{password:PasswordDetails.forgotPass,ConfirmPassword:PasswordDetails.forgotConfirm}).subscribe(x=>{
+        this.http.patch(environment.PatCustomerDetails+PasswordDetails.forgotPhone,{password:PasswordDetails.forgotPass,ConfirmPassword:PasswordDetails.forgotConfirm}).subscribe(x=>{
           console.log(x);
         });
         alert("your password is successfully changed");
@@ -565,7 +565,7 @@ export class DatabaseService {
   editProfileDetails(editDetails:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-   this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{email:editDetails.editProfileEmail,username:editDetails.editProfileUsername}).subscribe(x=>{
+   this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{email:editDetails.editProfileEmail,username:editDetails.editProfileUsername}).subscribe(x=>{
      console.log(x);
    });
   }
@@ -573,13 +573,13 @@ export class DatabaseService {
   sendEditProfile(){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    return this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber);
+    return this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber);
   }
 
   cancelOrder(indexNumber:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
-    this.http.get("http://localhost:3000/customerDetails/"+this.userMob.phonenumber).subscribe(x=>{
+    this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.orderDetails=this.customerDetails.paymentOrderedDetails;
       this.orderedDate=this.customerDetails.orderedDate
@@ -597,7 +597,7 @@ export class DatabaseService {
       this.orderDetails.splice(indexNumber,1);
       this.orderedDate.splice(indexNumber,1);
       this.deliveredDate.splice(indexNumber,1);
-      this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails,orderedDate:this.orderedDate,deliveredDate:this.deliveredDate}).subscribe(x=>{
+      this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{paymentOrderedDetails:this.orderDetails,orderedDate:this.orderedDate,deliveredDate:this.deliveredDate}).subscribe(x=>{
         console.log(x);
       });
 
