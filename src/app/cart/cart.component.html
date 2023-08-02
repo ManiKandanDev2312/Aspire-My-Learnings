@@ -99,8 +99,11 @@
       </div>
 
       <div class="coupon">
-        <button (click)="showOffer()">
+        <button (click)="showOffer()" [disabled]="!couponButton" *ngIf="couponButton">
           <i class="fa-solid fa-percent"></i> ADD COUPONS
+        </button>
+        <button  *ngIf="!couponButton" style="background-color: #60b246;color:white;font-weight:bold;font-size:1.1vw;">
+          <i class="fa-solid fa-check"></i> {{offerPrice}}% OFFER
         </button>
       </div>
       <div class="billing">

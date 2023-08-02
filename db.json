@@ -25,89 +25,6 @@
       ],
       "Favorites": [
         {
-          "id": 2,
-          "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "hotelname": "SS HYDERABAD BIRYANI",
-          "dishvariety": "Biryani, South Indian, Seafood",
-          "timeDel": "18",
-          "Costfortwo": "₹350",
-          "RatingArray": [],
-          "Rating": "4",
-          "offer": "40% off | Use TRYNEW",
-          "dishes": [
-            {
-              "dishImage": "./assets/dishes/Coconut Sharbat.webp",
-              "dishName": "Coconut Sharbat",
-              "dishPrice": "200",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/Cold Pressed Orange Juice.webp",
-              "dishName": "Cold Pressed Orange Juice",
-              "dishPrice": "220",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/Rasmalai Mini Jar Cake.webp",
-              "dishName": "Rasmalai Mini Jar Cake",
-              "dishPrice": "139",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/Gulab Jamun Vanilla Pastry.webp",
-              "dishName": "Gulab Jamun Vanilla Pastry",
-              "dishPrice": "99",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/Chicken Biryani Half.webp",
-              "dishName": "Chicken Biryani Half",
-              "dishPrice": "278",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Chicken Special Leg.webp",
-              "dishName": "Chicken Special Leg",
-              "dishPrice": "259",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Chicken DUM Exec BIRYANI.webp",
-              "dishName": "Chicken DUM Exec BIRYANI",
-              "dishPrice": "240",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Hyderabadi Mutton Dum Biryrani.webp",
-              "dishName": "Hyderabadi Mutton Dum Biryrani",
-              "dishPrice": "312",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Prawn Biryani.webp",
-              "dishName": "Prawn Biryani",
-              "dishPrice": "350",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Mutton Biriyani.webp",
-              "dishName": "Mutton Biriyani",
-              "dishPrice": "312",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            }
-          ]
-        },
-        {
           "id": 1,
           "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
           "hotelname": "Hotel Maa",
@@ -222,39 +139,50 @@
         "cardHolderName": "MANIKANDAN O",
         "cardType": "visa"
       },
-      "AddToCartDetails": [],
+      "AddToCartDetails": [
+        {
+          "dishName": "Pineapple Juice",
+          "dishQuantity": 4,
+          "dishPrice": 220
+        },
+        {
+          "dishName": "Orange Juice",
+          "dishQuantity": 5,
+          "dishPrice": 750
+        }
+      ],
       "CurrentOrderAddress": {
-        "adress": "kondalamPattyByepass",
-        "doorNo": "546",
-        "landmark": "nearByePass",
-        "district": "salem",
-        "addressType": "Work",
-        "iconType": "fa-briefcase"
+        "adress": "JaisuryasSanjeevara",
+        "doorNo": "415",
+        "landmark": "DBSbank",
+        "district": "madurai",
+        "addressType": "Others",
+        "iconType": "fa-location-dot"
       },
       "cartOrderDetails": {
-        "hotelName": "Barbequeen Restaurant",
-        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "hotelName": "Hotel Maa",
+        "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
         "orderItems": [
           {
-            "dishName": "Mango Juice",
-            "dishQuantity": 11,
-            "dishPrice": 1650
+            "dishName": "Pineapple Juice",
+            "dishQuantity": 4,
+            "dishPrice": 220
           },
           {
-            "dishName": "Fresh Lime Juice",
-            "dishQuantity": 10,
-            "dishPrice": 380
+            "dishName": "Orange Juice",
+            "dishQuantity": 4,
+            "dishPrice": 600
           }
         ],
         "orderAddress": {
-          "adress": "kondalamPattyByepass",
-          "doorNo": "546",
-          "landmark": "nearByePass",
-          "district": "salem",
-          "addressType": "Work",
-          "iconType": "fa-briefcase"
+          "adress": "JaisuryasSanjeevara",
+          "doorNo": "415",
+          "landmark": "DBSbank",
+          "district": "madurai",
+          "addressType": "Others",
+          "iconType": "fa-location-dot"
         },
-        "totalPrice": 829
+        "totalPrice": 863
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -262,253 +190,73 @@
       "deliveredDate": [],
       "deliveredOrders": [
         {
-          "orderId": 671949,
-          "totalPrice": 1123,
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "orderId": 192674,
+          "totalPrice": 863,
+          "hotelName": "Hotel Maa",
+          "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
           "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
           },
           "orderedDate": [
-            "Tue",
-            "18-Jul-2023 08:05:04 PM"
+            "Sun",
+            "23-Jul-2023 11:03:24 AM"
           ],
           "deliveryDate": [
-            "Tue",
-            "18-Jul-2023 08:07:04 PM"
+            "Sun",
+            "23-Jul-2023 11:05:24 AM"
           ],
           "orderedItems": [
             {
-              "dishName": "Coconut Sharbat",
-              "dishQuantity": 1,
-              "dishPrice": 200
+              "dishName": "Pineapple Juice",
+              "dishQuantity": 4,
+              "dishPrice": 220
             },
             {
-              "dishName": "Cold Pressed Orange Juice",
+              "dishName": "Orange Juice",
               "dishQuantity": 4,
-              "dishPrice": 880
-            }
-          ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
-        },
-        {
-          "orderId": 898003,
-          "totalPrice": 3145,
-          "hotelName": "HMR Hotel",
-          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
-          "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
-          },
-          "orderedDate": [
-            "Tue",
-            "18-Jul-2023 08:22:52 PM"
-          ],
-          "deliveryDate": [
-            "Tue",
-            "18-Jul-2023 08:24:52 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Watermelon Juice",
-              "dishQuantity": 2,
-              "dishPrice": 110
-            },
-            {
-              "dishName": "Miracle Abc - 100% Juice",
-              "dishQuantity": 4,
-              "dishPrice": 516
-            },
-            {
-              "dishName": "Time For Chocolate Photo Cupcakes - Pack Of 6",
-              "dishQuantity": 4,
-              "dishPrice": 2476
-            }
-          ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
-        },
-        {
-          "orderId": 853831,
-          "totalPrice": 1123,
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
-          },
-          "orderedDate": [
-            "Fri",
-            "21-Jul-2023 07:06:48 PM"
-          ],
-          "deliveryDate": [
-            "Fri",
-            "21-Jul-2023 07:08:48 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Coconut Sharbat",
-              "dishQuantity": 1,
-              "dishPrice": 200
-            },
-            {
-              "dishName": "Cold Pressed Orange Juice",
-              "dishQuantity": 4,
-              "dishPrice": 880
+              "dishPrice": 600
             }
           ],
           "paymentMenthod": "Card"
-        },
+        }
+      ],
+      "FeedBackHotels": [
         {
-          "orderId": 107165,
-          "totalPrice": 1123,
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "orderId": 192674,
+          "totalPrice": 863,
+          "hotelName": "Hotel Maa",
+          "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
           "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
           },
           "orderedDate": [
-            "Fri",
-            "21-Jul-2023 07:09:17 PM"
+            "Sun",
+            "23-Jul-2023 11:03:24 AM"
           ],
           "deliveryDate": [
-            "Fri",
-            "21-Jul-2023 07:11:17 PM"
+            "Sun",
+            "23-Jul-2023 11:05:24 AM"
           ],
           "orderedItems": [
             {
-              "dishName": "Coconut Sharbat",
-              "dishQuantity": 1,
-              "dishPrice": 200
-            },
-            {
-              "dishName": "Cold Pressed Orange Juice",
+              "dishName": "Pineapple Juice",
               "dishQuantity": 4,
-              "dishPrice": 880
-            }
-          ],
-          "paymentMenthod": "Card"
-        },
-        {
-          "orderId": 671903,
-          "totalPrice": 1021,
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
-          },
-          "orderedDate": [
-            "Fri",
-            "21-Jul-2023 07:11:08 PM"
-          ],
-          "deliveryDate": [
-            "Fri",
-            "21-Jul-2023 07:13:08 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Mango Juice",
-              "dishQuantity": 5,
-              "dishPrice": 750
+              "dishPrice": 220
             },
             {
-              "dishName": "Fresh Lime Juice",
-              "dishQuantity": 6,
-              "dishPrice": 228
-            }
-          ],
-          "paymentMenthod": "Card"
-        },
-        {
-          "orderId": 721921,
-          "totalPrice": 1021,
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
-          },
-          "orderedDate": [
-            "Fri",
-            "21-Jul-2023 07:16:48 PM"
-          ],
-          "deliveryDate": [
-            "Fri",
-            "21-Jul-2023 07:18:48 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Mango Juice",
-              "dishQuantity": 5,
-              "dishPrice": 750
-            },
-            {
-              "dishName": "Fresh Lime Juice",
-              "dishQuantity": 6,
-              "dishPrice": 228
-            }
-          ],
-          "paymentMenthod": "Card"
-        },
-        {
-          "orderId": 796829,
-          "totalPrice": 1021,
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "address": {
-            "adress": "JaisuryasSanjeevara",
-            "doorNo": "415",
-            "landmark": "DBSbank",
-            "district": "madurai",
-            "addressType": "Others",
-            "iconType": "fa-location-dot"
-          },
-          "orderedDate": [
-            "Fri",
-            "21-Jul-2023 07:17:07 PM"
-          ],
-          "deliveryDate": [
-            "Fri",
-            "21-Jul-2023 07:19:07 PM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Mango Juice",
-              "dishQuantity": 5,
-              "dishPrice": 750
-            },
-            {
-              "dishName": "Fresh Lime Juice",
-              "dishQuantity": 6,
-              "dishPrice": 228
+              "dishName": "Orange Juice",
+              "dishQuantity": 4,
+              "dishPrice": 600
             }
           ],
           "paymentMenthod": "Card"
@@ -865,7 +613,6 @@
       "hotelname": "Hotel Maa",
       "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
       "timeDel": "30",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "40% off | Use TRYNEW",
@@ -948,7 +695,6 @@
       "hotelname": "SS HYDERABAD BIRYANI",
       "dishvariety": "Biryani, South Indian, Seafood",
       "timeDel": "18",
-      "Costfortwo": "₹350",
       "RatingArray": [],
       "Rating": "4",
       "offer": "40% off | Use TRYNEW",
@@ -1031,7 +777,6 @@
       "hotelname": "Barbequeen Restaurant",
       "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
       "timeDel": "23",
-      "Costfortwo": "₹350",
       "RatingArray": [],
       "Rating": "4",
       "offer": "60% off | Use TRYNEW",
@@ -1107,7 +852,6 @@
       "hotelname": "HMR Hotel",
       "dishvariety": "Biryani, Indian, chinese, Seafood, Tandoori, Mexican",
       "timeDel": "29",
-      "Costfortwo": "₹300",
       "RatingArray": [],
       "Rating": "4",
       "offer": "40% off | Use TRYNEW",
@@ -1190,7 +934,6 @@
       "hotelname": "Sree Annapoorna",
       "dishvariety": "Indian, South Indian, North Indian, Chinese, Desserts",
       "timeDel": "27",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -1273,7 +1016,6 @@
       "hotelname": "Browse N Joy",
       "dishvariety": "Snacks",
       "timeDel": "32",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "20% off | Use TRYNEW",
@@ -1356,7 +1098,6 @@
       "hotelname": "Chicking",
       "dishvariety": "Indian",
       "timeDel": "33",
-      "Costfortwo": "₹250",
       "RatingArray": [],
       "Rating": "4",
       "offer": "60% off | Use TRYNEW",
@@ -1439,7 +1180,6 @@
       "hotelname": "Sree Annapoorna Sweets & Savouries",
       "dishvariety": "Desserts",
       "timeDel": "28",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -1522,7 +1262,6 @@
       "hotelname": "Flakes Fried Chicken",
       "dishvariety": "Burgers, Desserts",
       "timeDel": "31",
-      "Costfortwo": "₹350",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -1605,7 +1344,6 @@
       "hotelname": "Kaanchan Kitchen's",
       "dishvariety": "North Indian, Thaalis, Chaat, Desserts, Gujarati, South Indian",
       "timeDel": "35",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "10% off | Use TRYNEW",
@@ -1688,7 +1426,6 @@
       "hotelname": "Oven Story Pizza",
       "dishvariety": "Pizzas",
       "timeDel": "29",
-      "Costfortwo": "₹400",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -1771,7 +1508,6 @@
       "hotelname": "Geetha Canteen",
       "dishvariety": "South Indian",
       "timeDel": "23",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "40% off | Use TRYNEW",
@@ -1854,7 +1590,6 @@
       "hotelname": "Shree Anandhaas",
       "dishvariety": "North Indian, South Indian",
       "timeDel": "16",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -1937,7 +1672,6 @@
       "hotelname": "Ramesh Mess",
       "dishvariety": "South Indian",
       "timeDel": "22",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -2020,7 +1754,6 @@
       "hotelname": "Hotel Sri Krishna",
       "dishvariety": "South Indian, Indian, Chinese",
       "timeDel": "27",
-      "Costfortwo": "₹200",
       "RatingArray": [],
       "Rating": "4",
       "offer": "",
@@ -2103,7 +1836,6 @@
       "hotelname": "Chai Kings",
       "dishvariety": "Beverages, Snacks, Bakery",
       "timeDel": "21",
-      "Costfortwo": "₹150",
       "RatingArray": [],
       "Rating": "4.5",
       "offer": "40% off | Use TRYNEW",

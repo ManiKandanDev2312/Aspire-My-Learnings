@@ -1,1 +1,140 @@
-<p>order-feedback works!</p>
+
+  <div class="feedbackForm" *ngIf="isShowHotelDetails">
+    <img src="./assets/LOGO.png" alt="LOGO">
+    <h1>FOOD COURT</h1>
+    <form action="" [formGroup]="feedbackForm">
+      <div class="form-control">
+        <label for="PhoneNumber"*ngIf="!feedbackForm.controls['feedbackPhone'].errors?.['required'] && !feedbackForm.controls['feedbackPhone'].errors?.['pattern'] || !feedbackForm.controls['feedbackPhone'].dirty">Phone Number</label>
+        <label *ngIf="feedbackForm.controls['feedbackPhone'].errors?.['required'] && feedbackForm.controls['feedbackPhone'].invalid && feedbackForm.controls['feedbackPhone'].dirty" class="invalid">Please enter Phone Number</label>
+        <label *ngIf="feedbackForm.controls['feedbackPhone'].errors?.['pattern'] && (feedbackForm.controls['feedbackPhone'].invalid || feedbackForm.controls['feedbackPhone'].dirty)" class="invalid">invalid Phone Number</label>
+        <input type="number" formControlName="feedbackPhone">
+      </div>
+      <button type="submit" [disabled]="!feedbackForm" (click)="findDetails()">FEEDBACK</button>
+    </form>
+  </div>
+
+  <div class="feedBackHotels" *ngIf="!isShowHotelDetails">
+    <div class="Orders">
+      <h1 *ngIf="!isEmpty">{{feedbackHotelDetails.length}} &nbsp;Feedback Orders</h1>
+
+      <div class="orderBox">
+      <div class="commonBox" *ngFor="let OrderItems of feedbackHotelDetails; let indexNumber=index ">
+    <div class="commonBoxes">
+      <div><img src="{{OrderItems.hotelImage}}" alt=""></div>
+      <div>
+        <p>Delivered on {{OrderItems.deliveryDate[0]}},  {{OrderItems.deliveryDate[1]}} <i class="fa-solid fa-circle-check"></i></p>
+        <h2 (click)="hotelRoute(indexNumber)">{{OrderItems.hotelName}}</h2>
+        <h4>Order #{{OrderItems.orderId}} | {{OrderItems.orderedDate[0]}}, {{OrderItems.orderedDate[1]}}</h4>
+        <a (click)="ViewDetails(indexNumber)">VIEW DETAILS</a>
+        <h4>Total Price: ₹ {{OrderItems.totalPrice}}</h4>
+      </div>
+    </div>
+    <div class="commonBoxes" *ngFor="let orderedItems of feedbackHotelDetails[indexNumber].orderedItems;">
+      <p>{{orderedItems.dishName}} x {{orderedItems.dishQuantity}}</p>
+    </div>
+    <div class="OrderButton">
+      <div class="button">
+        <button (click)="FeedbackFormShow(indexNumber)">FEEDBACK</button>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <!-- ----------------------Display order Details---------------------- -->
+    <div class="viewDetails" *ngIf="isViewDetails">
+
+      <div class="innerviewDetails">
+        <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+        <p>Order #{{viewDetailsInfo.orderId}}</p>
+
+        <div class="innerItemDetail">
+          <div class="innerItemDetails">
+
+            <div class="innerItemDetails1">
+              <h1><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;{{viewDetailsInfo.hotelName}}</h1>
+            </div>
+            <div class="innerItemDetails1">
+              <h1><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;{{viewDetailsInfo.address.addressType}}</h1>
+              <h2>{{viewDetailsInfo.address.doorNo}}, {{viewDetailsInfo.address.landmark}},{{viewDetailsInfo.address.adress}} <br> {{viewDetailsInfo.address.district}}</h2>
+            </div>
+            <div class="innerItemDetails1" style="margin-bottom: 10px;" *ngIf="isDeliverTime">
+              <h2><i class="fa-solid fa-circle-check" style="color:green"></i>&nbsp;&nbsp;Delivered on {{viewDetailsInfo.deliveryDate[0]}},  {{viewDetailsInfo.deliveryDate[1]}}</h2>
+            </div>
+
+          </div>
+          <div class="innerItemDetails">
+            <h2> {{viewDetailsInfo.orderedItems.length}} ITEM</h2>
+
+            <div class="innerDishDetail">
+              <div class="innerDishDetails">
+                <div class="innerDivDishDetails" *ngFor="let orderDishes of viewDetailsInfo.orderedItems">
+                  <div> <p>{{orderDishes.dishName}} x {{orderDishes.dishQuantity}}</p></div>
+                  <div> <h2>₹ {{orderDishes.dishPrice}}</h2></div>
+                </div>
+                <div class="innerDivDishDetails">
+                  <div> <p>Item Total</p></div>
+                  <div> <h2>₹ {{viewDetailsInfo.totalPrice-43}}</h2></div>
+                </div>
+                <div class="innerDivDishDetails" style="margin-bottom: 10px;">
+                  <div> <p>Delivery Fee</p></div>
+                  <div> <h2>₹ 43</h2></div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="innerItemDetails" *ngIf="!isFeedbackForm">
+            <div class="paymentType">
+              <div>
+                <p>{{viewDetailsInfo.paymentMenthod}}</p>
+              </div>
+              <div>
+                <h2>Bill Total</h2>
+              </div>
+              <div>
+                <h2>₹ {{viewDetailsInfo.totalPrice}}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="paymentButton" *ngIf="isPaymentButton">PAYMENT</button>
+      </div>
+
+    </div>
+
+
+    <div class="viewDetails" *ngIf="!isFeedbackForm">
+
+      <div class="feedbackFromCustomer">
+        <button class="exit" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+        <p>FEEDBACK FORM</p>
+        <form action="" [formGroup]="feedbackCustomer">
+          <div class="feedback-contols">
+            <label for="PhoneNumber"*ngIf="!feedbackCustomer.controls['feedbackRating'].errors?.['required'] && !feedbackCustomer.controls['feedbackRating'].errors?.['pattern'] || !feedbackCustomer.controls['feedbackRating'].dirty">Rating</label>
+        <label *ngIf="feedbackCustomer.controls['feedbackRating'].errors?.['required'] && feedbackCustomer.controls['feedbackRating'].invalid && feedbackCustomer.controls['feedbackRating'].dirty" class="invalid">Please enter Rating</label>
+        <label *ngIf="feedbackCustomer.controls['feedbackRating'].errors?.['pattern'] && (feedbackCustomer.controls['feedbackRating'].invalid || feedbackCustomer.controls['feedbackRating'].dirty)" class="invalid">invalid Rating</label>
+
+            <input type="tel" formControlName="feedbackRating">
+          </div>
+          <div class="feedback-contols">
+            <label for="">Feedback</label>
+            <input type="text">
+          </div>
+          <div class="feedback-contols">
+            <label for="">Query</label>
+            <input type="text">
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+

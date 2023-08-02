@@ -66,6 +66,7 @@ export class CartComponent {
   isAddOffer:boolean=false;
   offerPrice:any;
   offerTotal:any;
+  couponButton:any;
 
 constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
 
@@ -153,6 +154,13 @@ constructor(fb:FormBuilder,private router:Router, private dish:DatabaseService){
       this.offerTotal=0;
       this.offerPrice=0;
     }
+
+    if(sessionStorage.getItem('couponAdded')=="true"){
+      this.couponButton=false;
+    }
+    else{
+      this.couponButton=true;
+    }
 }
 
 cartUi(){
@@ -192,6 +200,7 @@ minus(ind:number){
       sessionStorage.removeItem('offerPrice');
       sessionStorage.removeItem('offerTotal');
       sessionStorage.removeItem('TotalCartPrice');
+      sessionStorage.setItem('couponAdded',"false");
     }
     else{
       for(var i=0;i<this.itemsArray.length;i++){
@@ -443,6 +452,9 @@ addOfferCoupon(addoffer:any){
           sessionStorage.setItem('offerTotal',this.offerTotal);
           sessionStorage.setItem('offerPrice',this.offerPrice);
           this.totalPrice=this.totalPrice-this.offerTotal;
+          this.isAddOffer=false;
+          this.couponButton=false;
+          sessionStorage.setItem('couponAdded',"true");
         }
         else{
           alert("Invalid coupon code!");

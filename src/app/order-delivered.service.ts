@@ -190,6 +190,9 @@ getDeliveredInfo(deliveredInfo:any){
          this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredOrders:[deliveredInfo]}).subscribe(x=>{
           console.log(x);
          });
+         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{FeedBackHotels:[deliveredInfo]}).subscribe(x=>{
+          console.log(x);
+         });
          this.sendEmail("http://localhost:2300/deliveredOrders",this.orderMail).subscribe(mailinfo=>{
           console.log(mailinfo);
         });
@@ -199,6 +202,9 @@ getDeliveredInfo(deliveredInfo:any){
         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{deliveredOrders:this.deliveryDetails}).subscribe(x=>{
           console.log(x);
          });;
+         this.http.patch("http://localhost:3000/customerDetails/"+this.userMob.phonenumber,{FeedBackHotels:this.deliveryDetails}).subscribe(x=>{
+          console.log(x);
+         });
          this.sendEmail("http://localhost:2300/deliveredOrders",this.orderMail).subscribe(mailinfo=>{
           console.log(mailinfo);
         });

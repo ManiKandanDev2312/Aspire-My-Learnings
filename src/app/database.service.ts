@@ -152,7 +152,6 @@ export class DatabaseService {
           });
         }
         else{
-          console.log(returl);
           this.router.navigate([returl]).then(()=>{
             location.reload()
           });

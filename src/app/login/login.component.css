@@ -104,7 +104,6 @@ label{
   left: 10%;
   font-weight: bold;
   font-size: 1.2vw;
-  transition: top 200ms ease-in-out,left 200ms ease-in-out,font-size 200ms ease-in-out;
 }
 input{
   margin-left: 6%;

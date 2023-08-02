@@ -15,20 +15,45 @@ export class AppComponent implements OnInit {
 
   constructor(private ordered:OrderDeliveredService, private router:Router){
 
-    router.events.subscribe((urlValue)=>{
+    // router.events.subscribe((urlValue)=>{
 
-      if(urlValue instanceof NavigationEnd){
-        if(urlValue.url=="/login"){
-          this.Footer=false;
-          this.navBar=false;
-        }
-        else if(urlValue.url=="/"){
-          this.Footer=true;
-          this.navBar=true;
-        }
-      }
+    //   if(urlValue instanceof NavigationEnd){
+    //     if(urlValue.url=="/login"){
+    //       this.Footer=false;
+    //       this.navBar=false;
+    //     }
+    //     else if(urlValue.url=="/"){
+    //       this.Footer=true;
+    //       this.navBar=true;
+    //     }
+    //     else if(urlValue.url=="/profile"){
+    //       this.Footer=true;
+    //       this.navBar=true;
+    //     }
+    //     else if(urlValue.url=="/dishPage"){
+    //       this.Footer=true;
+    //       this.navBar=true;
+    //     }
+    //     else if(urlValue.url=="/cart"){
+    //       this.Footer=true;
+    //       this.navBar=true;
+    //     }
+    //     else if(urlValue.url=="/finalPayment/Wallets"){
+    //       this.Footer=true;
+    //       this.navBar=true;
+    //     }
+    //     else if(urlValue.url="/FeedBack"){
+    //       this.Footer=false;
+    //       this.navBar=false;
+    //     }
+    //     else{
+    //       this.Footer=true;
+    //       this.navBar=true;
+    //     }
 
-    });
+    //   }
+
+    // });
 
   }
 
