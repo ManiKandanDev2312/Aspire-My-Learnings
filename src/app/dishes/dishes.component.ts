@@ -108,8 +108,11 @@ constructor( private hotelName:DatabaseService, dishSearch:FormBuilder){
       this.finalDishArray=[];
     }
   });
-  this.value=this.hotelName.sendHotelName();
-  this.dishArray=this.value.dishes;
+  if(sessionStorage.getItem('hotelDetails')!=null){
+    this.value=this.hotelName.sendHotelName();
+    this.dishArray=this.value.dishes;
+  }
+
 }
 
 // this block is used to display the searched dishes and added to the cart

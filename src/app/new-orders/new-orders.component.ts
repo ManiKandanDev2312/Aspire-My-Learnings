@@ -23,13 +23,16 @@ export class NewOrdersComponent {
 
   constructor(private PastOrder:DatabaseService, private router:Router){
 // get details about past orders
-    this.PastOrder.sendOrders().subscribe(x=>{
-      this.customerDetails=x;
-      this.newOrderDetails=this.customerDetails.paymentOrderedDetails
-      if(this.newOrderDetails.length==0){
-        this.isEmpty=true;
-      }
-    });
+if(sessionStorage.getItem('isentered')=="true"){
+  this.PastOrder.sendOrders().subscribe(x=>{
+    this.customerDetails=x;
+    this.newOrderDetails=this.customerDetails.paymentOrderedDetails
+    if(this.newOrderDetails.length==0){
+      this.isEmpty=true;
+    }
+  });
+}
+
   }
 
   // this block is used to route the dishcomponent for the particular hotel

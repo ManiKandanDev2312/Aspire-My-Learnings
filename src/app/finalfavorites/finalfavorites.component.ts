@@ -15,11 +15,13 @@ export class FinalfavoritesComponent {
 
   constructor(private Favorite:DatabaseService, private router:Router){
     // get details about favorite hotel list
+    if(sessionStorage.getItem('isentered')=="true"){
     this.Favorite.sendFavorite().subscribe(x=>{
       this.totalDetails=x;
       this.FavoritesArray=this.totalDetails.Favorites;
     })
   }
+}
 
   //  this block is used to route dishcomponent for the particular hotel
   sendHotel(index:any){

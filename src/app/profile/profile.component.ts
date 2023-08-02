@@ -9,7 +9,7 @@ import { DatabaseService } from '../database.service';
 })
 export class ProfileComponent {
 
-  userDetails:any;
+  userDetails:any=[];
 
   editProfile:FormGroup;
 
@@ -30,10 +30,13 @@ export class ProfileComponent {
 
 
 // get details about the customer
-    this.edit.sendEditProfile().subscribe(x=>{
-      this.userDetails=x;
-      console.log(this.userDetails);
-    });
+if(sessionStorage.getItem('isentered')=="true"){
+  this.edit.sendEditProfile().subscribe(x=>{
+    this.userDetails=x;
+    console.log(this.userDetails);
+  });
+}
+
 
     // validation of edit profile form
     this.editProfile=fb.group({

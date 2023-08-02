@@ -9,7 +9,6 @@ import { DatabaseService } from '../database.service';
 })
 export class FilterComponent {
   exit:boolean=true;
-  link:string="";
   first:any=[];
   variety:any=[];
   varietyDishes:any=[];

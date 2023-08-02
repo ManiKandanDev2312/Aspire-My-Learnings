@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from '../database.service';
-import { OrderDeliveredService } from '../order-delivered.service';
 
 @Component({
   selector: 'app-home',
@@ -30,7 +29,7 @@ emptyArray:any=[];
 
 dishArray:any=[];
 setAddtoCart:any=[];
-constructor(private hotel:DatabaseService, private ordered:OrderDeliveredService){
+constructor(private hotel:DatabaseService){
   this.slideImageUrl=["./assets/BURGER.png","./assets/FLAT_50.png"
 ,"./assets/pizza.png","./assets/FOOD COURT.png"];
 

@@ -24,6 +24,7 @@ export class PastOrdersComponent {
 
   constructor(private PastOrder:DatabaseService, private router:Router){
 // get details about past orders
+if(sessionStorage.getItem('isentered')=="true"){
     this.PastOrder.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.pastOrderDetails=this.customerDetails.Orders
@@ -33,6 +34,7 @@ export class PastOrdersComponent {
       }
     });
   }
+}
 
   // this block is used to route the dishcomponent for the particular hotel
   hotelRoute(indexNumber:any){

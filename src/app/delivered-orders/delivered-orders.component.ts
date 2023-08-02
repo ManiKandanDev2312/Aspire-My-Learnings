@@ -26,6 +26,7 @@ export class DeliveredOrdersComponent {
   constructor(private Delivered:DatabaseService, private router:Router){
 
     // get details of Delivered orders of the customer
+    if(sessionStorage.getItem('isentered')=="true"){
     this.Delivered.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.deliveredOrderDetails=this.customerDetails.deliveredOrders
@@ -34,6 +35,7 @@ export class DeliveredOrdersComponent {
       }
     });
   }
+}
 
   // this block is  used to route the particular hotel of the order
   hotelRoute(indexNumber:any){

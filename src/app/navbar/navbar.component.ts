@@ -7,14 +7,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class NavbarComponent{
 
-home:string="";
-Help:string="Help";
-offers:string="offers";
-cart:string="cart";
-search:string="search";
-profile:string="profile";
-loginUser:string="login";
-
 
 
 

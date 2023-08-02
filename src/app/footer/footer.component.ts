@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-  HelpPage:string="Help";
-  TermsPage:string="Terms";
-  AboutPage:string="About";
-  CancelPage:string="Cancel";
-  PrivacyPage:string="Privacy";
+  // HelpPage:string="Help";
+  // TermsPage:string="Terms";
+  // AboutPage:string="About";
+  // CancelPage:string="Cancel";
+  // PrivacyPage:string="Privacy";
 }

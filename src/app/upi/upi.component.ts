@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
-import { OrderDeliveredService } from '../order-delivered.service';
+
 
 @Component({
   selector: 'app-upi',
@@ -13,7 +13,7 @@ cartTotalPrice:any;
 
 UPIArray:any=[];
 
-constructor(private upi:DatabaseService, private ordered:OrderDeliveredService,private router:Router){
+constructor(private upi:DatabaseService,private router:Router){
   this.cartTotalPrice=sessionStorage.getItem("TotalCartPrice");
 
 

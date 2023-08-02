@@ -24,7 +24,7 @@ export class CDCardComponent {
   isCityUnionBank:boolean=false;
 
   customerDetails:any=[];
-  registeredCardDetails:any;
+  registeredCardDetails:any=[];
   cardTypeDetails="";
 
   CardDetails:any;
@@ -43,20 +43,22 @@ export class CDCardComponent {
     })
 
     //get card Details
+    if(sessionStorage.getItem('isentered')=="true"){
+      this.cardType.sendEditProfile().subscribe(x=>{
+        this.customerDetails=x;
+        this.registeredCardDetails=this.customerDetails.PaymentCradDetails
 
-    this.cardType.sendEditProfile().subscribe(x=>{
-      this.customerDetails=x;
-      this.registeredCardDetails=this.customerDetails.PaymentCradDetails
+        if(this.registeredCardDetails.cardType=="visa"){
+          this.cardTypeDetails="./assets/VisaLogo.png";
+          this.isAddCard=false;
+        }
+        else{
+          this.cardTypeDetails="./assets/MasterCardLogo.png";
+          this.isAddCard=false;
+        }
+      });
+    }
 
-      if(this.registeredCardDetails.cardType=="visa"){
-        this.cardTypeDetails="./assets/VisaLogo.png";
-        this.isAddCard=false;
-      }
-      else{
-        this.cardTypeDetails="./assets/MasterCardLogo.png";
-        this.isAddCard=false;
-      }
-    });
 
     //get details of mastercard
     this.cardType.getmasterDetails().subscribe(y=>{

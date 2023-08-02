@@ -9,7 +9,7 @@ import { OrderDeliveredService } from './order-delivered.service';
 
 })
 export class AppComponent implements OnInit {
-
+  title:any="FoodCourt";
   navBar:boolean=true;
   Footer:boolean=true;
 

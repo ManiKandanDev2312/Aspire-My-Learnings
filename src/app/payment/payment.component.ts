@@ -15,18 +15,21 @@ export class PaymentComponent {
   constructor(private payment:DatabaseService){
 
 // get details about registered bank card
-    this.payment.sendOrders().subscribe(x=>{
+    if(sessionStorage.getItem('isentered')=="true"){
+      this.payment.sendOrders().subscribe(x=>{
 
-      this.customerDetails=x;
-      this.cardDetails=this.customerDetails.PaymentCradDetails
+        this.customerDetails=x;
+        this.cardDetails=this.customerDetails.PaymentCradDetails
 
-      if(this.cardDetails.cardType=="visa"){
-        this.cardTypeImage="./assets/VisaLogo.png";
-      }
-      else{
-        this.cardTypeImage="./assets/MasterCardLogo.png";
-      }
-      console.log(this.cardDetails);
-    });
+        if(this.cardDetails.cardType=="visa"){
+          this.cardTypeImage="./assets/VisaLogo.png";
+        }
+        else{
+          this.cardTypeImage="./assets/MasterCardLogo.png";
+        }
+        console.log(this.cardDetails);
+      });
+    }
+
   }
 }

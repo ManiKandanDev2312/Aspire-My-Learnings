@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-final-payment',
@@ -19,7 +19,7 @@ export class FinalPaymentComponent {
 
 
 
-  constructor(private router:Router){
+  constructor(){
 
   }
 
