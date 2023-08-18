@@ -14,14 +14,6 @@ export class DatabaseService {
   Array:any=[];
   name:string="";
   username:string="";
-
-
-
-
-
-
-
-
   userMob:any=[];
   filter:any=[];
   filteredHotel:any=[];

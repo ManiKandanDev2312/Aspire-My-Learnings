@@ -141,48 +141,41 @@
       },
       "AddToCartDetails": [
         {
-          "dishName": "Pineapple Juice",
-          "dishQuantity": 4,
-          "dishPrice": 220
-        },
-        {
-          "dishName": "Orange Juice",
-          "dishQuantity": 5,
-          "dishPrice": 750
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "dishName": "Coconut Sharbat",
+          "dishQuantity": 3,
+          "dishPrice": 600,
+          "dishType": "veg"
         }
       ],
       "CurrentOrderAddress": {
-        "adress": "JaisuryasSanjeevara",
-        "doorNo": "415",
-        "landmark": "DBSbank",
-        "district": "madurai",
-        "addressType": "Others",
-        "iconType": "fa-location-dot"
+        "adress": "kondalamPattyByepass",
+        "doorNo": "546",
+        "landmark": "nearByePass",
+        "district": "salem",
+        "addressType": "Work",
+        "iconType": "fa-briefcase"
       },
       "cartOrderDetails": {
-        "hotelName": "Hotel Maa",
-        "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
+        "hotelName": "SS HYDERABAD BIRYANI",
+        "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
         "orderItems": [
           {
-            "dishName": "Pineapple Juice",
-            "dishQuantity": 4,
-            "dishPrice": 220
-          },
-          {
-            "dishName": "Orange Juice",
-            "dishQuantity": 4,
+            "dishName": "Coconut Sharbat",
+            "dishQuantity": 3,
             "dishPrice": 600
           }
         ],
         "orderAddress": {
-          "adress": "JaisuryasSanjeevara",
-          "doorNo": "415",
-          "landmark": "DBSbank",
-          "district": "madurai",
-          "addressType": "Others",
-          "iconType": "fa-location-dot"
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Work",
+          "iconType": "fa-briefcase"
         },
-        "totalPrice": 863
+        "totalPrice": 643
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],

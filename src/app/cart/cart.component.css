@@ -465,19 +465,6 @@ input:focus{
 }
 
 
-
-/* .background{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(6, 76, 240, 0.233);
-  z-index: 1;
-} */
-
 .editProfile{
   height: 100%;
   width: 37%;
@@ -531,13 +518,6 @@ to{
   background-color: white;
   border: 0.05vw solid rgb(114, 110, 110);
 }
-label{
-  position: absolute;
-  left: 10%;
-  font-weight: bold;
-  font-size: 1.2vw;
-  transition: top 200ms ease-in-out,left 200ms ease-in-out,font-size 200ms ease-in-out;
-}
 input{
   margin-left: 6%;
   margin-top: 5%;
@@ -568,4 +548,11 @@ p{
   font-size:1vw;
   color: gray;
   width: 70%;
+}
+.editForm label{
+  position: absolute;
+  left: 10%;
+  font-weight: bold;
+  font-size: 1.2vw;
+  transition: top 200ms ease-in-out,left 200ms ease-in-out,font-size 200ms ease-in-out;
 }

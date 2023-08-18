@@ -18,7 +18,8 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports:[HttpClientModule,HttpClientTestingModule,BrowserModule,RouterModule.forRoot([{
+      imports:[HttpClientModule,HttpClientTestingModule,BrowserModule,RouterModule.forRoot([
+        {
         path:"",
         component:RelevanceComponent
       },
