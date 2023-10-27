@@ -17,15 +17,19 @@
   </div>
 <!-- ---------------------Child Routing Navbar--------------------------------- -->
   <div class="HomeNavBar">
-    <h2>{{hotelCount}}&nbsp;&nbsp;restaurants</h2>
+    <div> <h2>{{hotelCount}}&nbsp;&nbsp;restaurants</h2></div>
+    <div>
+
     <nav class="HomeNav">
-      <div><a [routerLink]="Relevance" routerLinkActive="activeLink"><li>Hotels</li></a></div>
-      <div><a [routerLink]="Delivery_Time" routerLinkActive="activeLink"><li>Delivery&nbsp;Time</li></a></div>
-      <div><a [routerLink]="rating" routerLinkActive="activeLink"><li>Rating</li></a></div>
-      <div><a [routerLink]="low_to_high" routerLinkActive="activeLink"><li>Cost:Low&nbsp;to&nbsp;High</li></a></div>
-      <div><a [routerLink]="high_to_low" routerLinkActive="activeLink"><li>Cost:High&nbsp;to&nbsp;Low</li></a></div>
-      <div><a [routerLink]="filter" routerLinkActive="activeLink"><li><i class="fa-sharp fa-solid fa-sort"></i>&nbsp;&nbsp;Filters</li></a></div>
+      <div><a [routerLink]="Relevance" routerLinkActive="activeLink" class="anchor"><li>Hotels</li></a></div>
+      <div><a [routerLink]="Delivery_Time" routerLinkActive="activeLink" class="anchor"><li>Delivery&nbsp;Time</li></a></div>
+      <div><a [routerLink]="rating" routerLinkActive="activeLink" class="anchor"><li>Rating</li></a></div>
+      <div><a [routerLink]="low_to_high" routerLinkActive="activeLink" class="anchor"><li>Cost:Low&nbsp;to&nbsp;High</li></a></div>
+      <div><a [routerLink]="high_to_low" routerLinkActive="activeLink" class="anchor"><li>Cost:High&nbsp;to&nbsp;Low</li></a></div>
+      <!-- <div><a [routerLink]="filter" routerLinkActive="activeLink" class="anchor"><li><i class="fa-sharp fa-solid fa-sort"></i>&nbsp;&nbsp;Filters</li></a></div> -->
  </nav>
+    </div>
+
   </div>
   <!-- -------------------child routing components------------------ -->
 <div class="HomeContents">

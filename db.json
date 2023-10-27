@@ -21,16 +21,99 @@
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "search": [
-        "Geetha Canteen"
+        "Chicking",
+        "Flakes Fried Chicken",
+        "Barbequeen Restaurant"
       ],
       "Favorites": [
+        {
+          "id": 7,
+          "hotelimage": "./assets/hotelpage/Chicking.webp",
+          "hotelname": "Chicking",
+          "dishvariety": "Indian",
+          "timeDel": "33",
+          "RatingArray": [],
+          "Rating": "4",
+          "offer": "60% off | Use TRYNEW",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/Pomegranate Juice.webp",
+              "dishName": "Pomegranate Juice",
+              "dishPrice": "90",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Lime Mint Cooler.webp",
+              "dishName": "Lime Mint Cooler",
+              "dishPrice": "90",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Thiruenelveli Halwa (250 gms).webp",
+              "dishName": "Thiruenelveli Halwa (250 gms)",
+              "dishPrice": "120",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Red Velvet Roll Cake Slice.webp",
+              "dishName": "Red Velvet Roll Cake Slice",
+              "dishPrice": "125",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/15 Pcs Hot Wings.webp",
+              "dishName": "15 Pcs Hot Wings",
+              "dishPrice": "399",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/5 Pcs Crispy Chicken + 2 Mayo Dips.webp",
+              "dishName": "5 Pcs Crispy Chicken + 2 Mayo Dips",
+              "dishPrice": "499",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Burger Box.webp",
+              "dishName": "Burger Box",
+              "dishPrice": "288",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/10 Pcs Crispy Chicken + 3 Mayo Dips.webp",
+              "dishName": "10 Pcs Crispy Chicken + 3 Mayo Dips",
+              "dishPrice": "888",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Mexicano Pizza [medium].webp",
+              "dishName": "Mexicano Pizza [medium]",
+              "dishPrice": "519",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Veg Royal Wrap.webp",
+              "dishName": "Veg Royal Wrap",
+              "dishPrice": "179",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
+        },
         {
           "id": 1,
           "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
           "hotelname": "Hotel Maa",
           "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
           "timeDel": "30",
-          "Costfortwo": "₹200",
           "RatingArray": [],
           "Rating": "4",
           "offer": "40% off | Use TRYNEW",
@@ -135,16 +218,16 @@
         }
       ],
       "PaymentCradDetails": {
-        "cardNumber": "XXXXXXXXXXXX5661",
+        "cardNumber": "XXXXXXXXXXXX9665",
         "cardHolderName": "MANIKANDAN O",
         "cardType": "visa"
       },
       "AddToCartDetails": [
         {
-          "hotelName": "SS HYDERABAD BIRYANI",
-          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "dishName": "Coconut Sharbat",
-          "dishQuantity": 3,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "dishName": "Mango Juice",
+          "dishQuantity": 4,
           "dishPrice": 600,
           "dishType": "veg"
         }
@@ -154,16 +237,16 @@
         "doorNo": "546",
         "landmark": "nearByePass",
         "district": "salem",
-        "addressType": "Work",
-        "iconType": "fa-briefcase"
+        "addressType": "Home",
+        "iconType": "fa-house"
       },
       "cartOrderDetails": {
-        "hotelName": "SS HYDERABAD BIRYANI",
-        "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
         "orderItems": [
           {
-            "dishName": "Coconut Sharbat",
-            "dishQuantity": 3,
+            "dishName": "Mango Juice",
+            "dishQuantity": 4,
             "dishPrice": 600
           }
         ],
@@ -172,8 +255,8 @@
           "doorNo": "546",
           "landmark": "nearByePass",
           "district": "salem",
-          "addressType": "Work",
-          "iconType": "fa-briefcase"
+          "addressType": "Home",
+          "iconType": "fa-house"
         },
         "totalPrice": 643
       },
@@ -216,6 +299,194 @@
             }
           ],
           "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 305433,
+          "totalPrice": 863,
+          "hotelName": "Hotel Maa",
+          "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Tue",
+            "29-Aug-2023 05:36:36 PM"
+          ],
+          "deliveryDate": [
+            "Tue",
+            "29-Aug-2023 05:38:36 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Pineapple Juice",
+              "dishQuantity": 4,
+              "dishPrice": 220
+            },
+            {
+              "dishName": "Orange Juice",
+              "dishQuantity": 4,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 111262,
+          "totalPrice": 643,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:42:20 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:44:20 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Coconut Sharbat",
+              "dishQuantity": 3,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 655837,
+          "totalPrice": 643,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:44:57 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:46:57 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Coconut Sharbat",
+              "dishQuantity": 3,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 234875,
+          "totalPrice": 157,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:55:07 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:57:07 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 3,
+              "dishPrice": 114
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 264783,
+          "totalPrice": 157,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:57:25 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:59:25 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 3,
+              "dishPrice": 114
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 651298,
+          "totalPrice": 643,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Thu",
+            "12-Oct-2023 05:29:03 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "12-Oct-2023 05:31:03 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 4,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
         }
       ],
       "FeedBackHotels": [
@@ -253,6 +524,194 @@
             }
           ],
           "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 305433,
+          "totalPrice": 863,
+          "hotelName": "Hotel Maa",
+          "hotelImage": "./assets/hotelpage/Hotel Maa.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Tue",
+            "29-Aug-2023 05:36:36 PM"
+          ],
+          "deliveryDate": [
+            "Tue",
+            "29-Aug-2023 05:38:36 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Pineapple Juice",
+              "dishQuantity": 4,
+              "dishPrice": 220
+            },
+            {
+              "dishName": "Orange Juice",
+              "dishQuantity": 4,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 111262,
+          "totalPrice": 643,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:42:20 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:44:20 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Coconut Sharbat",
+              "dishQuantity": 3,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 655837,
+          "totalPrice": 643,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:44:57 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:46:57 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Coconut Sharbat",
+              "dishQuantity": 3,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 234875,
+          "totalPrice": 157,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:55:07 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:57:07 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 3,
+              "dishPrice": 114
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 264783,
+          "totalPrice": 157,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Work",
+            "iconType": "fa-briefcase"
+          },
+          "orderedDate": [
+            "Thu",
+            "07-Sep-2023 06:57:25 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "07-Sep-2023 06:59:25 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 3,
+              "dishPrice": 114
+            }
+          ],
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 651298,
+          "totalPrice": 643,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Thu",
+            "12-Oct-2023 05:29:03 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "12-Oct-2023 05:31:03 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 4,
+              "dishPrice": 600
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
         }
       ]
     },

@@ -99,3 +99,53 @@ margin-top: 10%;
   margin-left: 5%;
   color: white;
 }
+@media screen and (max-width:500px) and (min-width:360px) {
+  .hotel{
+    flex-direction: column;
+  }
+  .hotels{
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    gap: 20px;
+ }
+ .hotels-contents img{
+  width: 120px;
+  height:140px;
+  margin: 5%;
+}
+.hotels-contents h4{
+  margin-top: 5%;
+  width: 200px;
+  font-size: 4vw;
+}
+.hotels-contents h5{
+  font-weight: lighter;
+  color: gray;
+  font-size: 3vw;
+  margin-left: 4%;
+  margin-top: 10%;
+  width: 200px;
+}
+.offer h5{
+  width: 100px;
+}
+.rating i{
+  font-size: 4vw;
+  margin-left: 12%;
+}
+.rating{
+  font-size: 4vw;
+}
+.offer_1{
+  border: none;
+}
+.offer_1 h4{
+  margin-left: 15%;
+  margin-top: -10%;
+  width: 100%;
+  font-size: 3.5vw;
+}
+}
+
+

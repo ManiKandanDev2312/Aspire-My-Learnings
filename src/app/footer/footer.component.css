@@ -72,3 +72,68 @@
 .end1 i:hover{
   font-weight: bold;
 }
+.mobile-footer{
+  display: none;
+}
+
+.activelink{
+  color: black;
+}
+
+@media screen and (max-width:500px) and (min-width:360px) {
+  footer{
+    display: none;
+  }
+  .mobile-footer{
+    display: block;
+  }
+  .mobile-footer-flex{
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    gap: 19px;
+    padding: 2%;
+    box-shadow: 1.5px 0.5px 5px 2px rgba(0,0,0,0.2);
+    background: white;
+  }
+  .mobile-icons{
+    cursor: pointer;
+    width: 80px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-icons i{
+    font-size: 8vw;
+    color: rgb(221, 221, 221);
+  }
+  .mobile-icons  .fa-f{
+    margin-left: 30%;
+  }
+  .mobile-icons  .fa-magnifying-glass{
+    margin-left: 20%;
+  }
+  .mobile-icons  .fa-cart-shopping{
+    margin-left: 0%;
+  }
+  .mobile-icons  .fa-user{
+    margin-left: 30%;
+  }
+  .mobile-icons:hover  i,.mobile-icons:hover  li{
+    color: black;
+  }
+  .mobile-icons li{
+    list-style: none;
+    margin-top: 20%;
+  }
+  .anchor{
+    text-decoration: none;
+    font-size: 5vw;
+    color: rgb(205, 202, 202);
+    font-weight: lighter;
+  }
+}

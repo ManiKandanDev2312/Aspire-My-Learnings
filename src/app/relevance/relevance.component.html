@@ -14,9 +14,12 @@
 <!-- -------------------------------------display the hotels--------------------- -->
 <div class="hotel">
   <div class="hotels" *ngFor="let values of val; let ind=index" (click)="hotelList(ind)">
-    <img src="{{values.hotelimage}}" alt="">
-    <h4>{{values.hotelname}}</h4>
-    <h5>{{values.dishvariety}}</h5>
+    <div class="hotels-contents">
+      <img src="{{values.hotelimage}}" alt="">
+    </div>
+    <div class="hotels-contents">
+      <h4>{{values.hotelname}}</h4>
+      <h5>{{values.dishvariety}}</h5>
     <div class="offer">
       <div class="rating"><i class="fa-solid fa-star"></i> {{values.Rating}}</div>
       <div class="time"><h5>{{values.timeDel}}&nbsp;MINS</h5></div>
@@ -28,4 +31,4 @@
     <h4 class="view">QUICK VIEW</h4>
   </div>
 </div>
-
+</div>

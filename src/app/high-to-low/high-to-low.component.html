@@ -14,17 +14,23 @@
 <!-- ---------------------------------Display the hotels----------------- -->
 <div class="hotel">
   <div class="hotels" *ngFor="let realTimes of realTime;let ind=index" (click)="sendHotel(ind)">
-    <img src="{{realTimes.hotelimage}}" alt="">
-    <h4>{{realTimes.hotelname}}</h4>
-    <h5>{{realTimes.dishvariety}}</h5>
-    <div class="offer">
-      <div class="rating"><i class="fa-solid fa-star"></i> {{realTimes.Rating}}</div>
-      <div class="time"><h5>{{realTimes.timeDel}}&nbsp;MINS</h5></div>
-     </div>
-    <div class="offer_1" *ngIf="realTimes.offer.length>=1">
-      <i class="fa-solid fa-percent"></i>
-      <h4>{{realTimes.offer}}</h4>
+    <div class="hotels-contents">
+      <img src="{{realTimes.hotelimage}}" alt="">
     </div>
-    <h4 class="view">QUICK VIEW</h4>
-  </div>
+    <div class="hotels-contents">
+      <h4>{{realTimes.hotelname}}</h4>
+      <h5>{{realTimes.dishvariety}}</h5>
+      <div class="offer">
+        <div class="rating"><i class="fa-solid fa-star"></i> {{realTimes.Rating}}</div>
+        <div class="time"><h5>{{realTimes.timeDel}}&nbsp;MINS</h5></div>
+       </div>
+      <div class="offer_1" *ngIf="realTimes.offer.length>=1">
+        <i class="fa-solid fa-percent"></i>
+        <h4>{{realTimes.offer}}</h4>
+      </div>
+      <h4 class="view">QUICK VIEW</h4>
+    </div>
+    </div>
+
+
 </div>
