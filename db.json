@@ -21,9 +21,7 @@
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "search": [
-        "Chicking",
-        "Flakes Fried Chicken",
-        "Barbequeen Restaurant"
+        "Geetha Canteen"
       ],
       "Favorites": [
         {
@@ -241,8 +239,8 @@
         "iconType": "fa-house"
       },
       "cartOrderDetails": {
-        "hotelName": "Barbequeen Restaurant",
-        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "hotelName": "Hotel Sri Krishna",
+        "hotelImage": "./assets/hotelpage/Hotel Sri Krishna.jpeg",
         "orderItems": [
           {
             "dishName": "Mango Juice",
@@ -816,6 +814,122 @@
               "dishDescription": "Serves 1"
             }
           ]
+        }
+      ]
+    },
+    {
+      "username": "hari",
+      "phonenumber": 9487142487,
+      "email": "haridiablo72@gmail.com",
+      "password": "Hari@2004",
+      "ConfirmPassword": "Hari@2004",
+      "AddToCartDetails": [],
+      "Address": [
+        {
+          "adress": "MSNagarerumapalayam",
+          "doorNo": "4/399",
+          "landmark": "ALC",
+          "district": "Salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        }
+      ],
+      "CurrentOrderAddress": {
+        "adress": "MSNagarerumapalayam",
+        "doorNo": "4/399",
+        "landmark": "ALC",
+        "district": "Salem",
+        "addressType": "Home",
+        "iconType": "fa-house"
+      },
+      "cartOrderDetails": {
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "orderItems": [
+          {
+            "dishName": "Mango Juice",
+            "dishQuantity": 15,
+            "dishPrice": 2250
+          }
+        ],
+        "orderAddress": {
+          "adress": "MSNagarerumapalayam",
+          "doorNo": "4/399",
+          "landmark": "ALC",
+          "district": "Salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        },
+        "totalPrice": 2293
+      },
+      "paymentOrderedDetails": [],
+      "orderedDate": [],
+      "deliveredDate": [],
+      "Orders": [],
+      "deliveredOrders": [
+        {
+          "orderId": 253682,
+          "totalPrice": 437,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "MSNagarerumapalayam",
+            "doorNo": "4/399",
+            "landmark": "ALC",
+            "district": "Salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Tue",
+            "12-Dec-2023 11:12:33 AM"
+          ],
+          "deliveryDate": [
+            "Tue",
+            "12-Dec-2023 11:14:33 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 7,
+              "dishPrice": 1050
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        }
+      ],
+      "FeedBackHotels": [
+        {
+          "orderId": 253682,
+          "totalPrice": 437,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "MSNagarerumapalayam",
+            "doorNo": "4/399",
+            "landmark": "ALC",
+            "district": "Salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Tue",
+            "12-Dec-2023 11:12:33 AM"
+          ],
+          "deliveryDate": [
+            "Tue",
+            "12-Dec-2023 11:14:33 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Mango Juice",
+              "dishQuantity": 7,
+              "dishPrice": 1050
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
         }
       ]
     }

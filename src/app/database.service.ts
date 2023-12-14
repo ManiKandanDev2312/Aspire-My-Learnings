@@ -45,7 +45,7 @@ export class DatabaseService {
   getsessionHotelDetails:any;
   setsessionHotelDetails:any=[];
 
-
+  editCartDetails:any=[];
 
   checkdate:any;
   orderDate:any;
@@ -331,11 +331,13 @@ export class DatabaseService {
   paymentOrdered(paymentType:any){
     this.loggedPhonenumber = sessionStorage.getItem('isusername');
     this.userMob = JSON.parse(this.loggedPhonenumber);
+    // this.editCartDetails=environment.PatCustomerDetails;
     this.http.get(environment.PatCustomerDetails+this.userMob.phonenumber).subscribe(x=>{
       this.customerDetails=x;
       this.setorderDetails=this.customerDetails.cartOrderDetails,
       this.setOrderedDetails=this.customerDetails.paymentOrderedDetails,
       this.setAddressDetails=this.customerDetails.CurrentOrderAddress,
+      this.editCartDetails=this.customerDetails.AddToCartDetails
 
       this.orderId=Math.floor((Math.random()*1000000)+1);
     this.checkdate=new Date();
@@ -452,8 +454,14 @@ export class DatabaseService {
     console.log(mailinfo);
   });
     }
-
+    this.editCartDetails.pop();
+    this.http.patch(environment.PatCustomerDetails+this.userMob.phonenumber,{AddToCartDetails:this.editCartDetails}).subscribe(x=>{
+      console.log(x);
     });
+    });
+
+
+
 
   }
 
