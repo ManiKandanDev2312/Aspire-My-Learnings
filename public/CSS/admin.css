@@ -1,0 +1,81 @@
+
+body{
+    background-image: linear-gradient(orange,orange,orange,yellow);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 97vh;
+    display: flex;
+    position: relative;
+}
+h1{
+    font-size: 2cm;
+    color: black;
+    margin-left: 42%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.hotel{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.hotel  img{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+
+    top: 50px;
+    left: 50px;
+}
+
+.hname a{
+    color: black;
+    position: absolute;
+    top: 300px;
+    left:100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hname a:hover{
+    color: orange;
+}
+.customer{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+}
+
+.customer img{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+
+    top: 50px;
+    left: 50px;
+}
+
+.Cname a{
+    color: black;
+    position: absolute;
+    top: 300px;
+    left:80px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Cname a:hover{
+    color: orange;
+}
+.customer{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+}

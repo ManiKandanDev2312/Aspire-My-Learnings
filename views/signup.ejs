@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="/CSS/signup.css">
+</head>
+<body>
+  
+
+     <!-- ----------------------------forgot Password form---------------------------- -->
+   
+    <div class="form">
+        <h1>REGISTER</h1>
+        <a href="/login" class="login">BACK TO LOGIN</a>
+        <% if(msg){%>
+            <h3 class="msg"><%=msg%></h3><%}%>
+        <img src="/images/img9.webp" alt="image">
+        <form action="/value" method="post" onsubmit="return validate()">
+            <div class="form-control">
+                <input type="text" placeholder="ENTER YOUR USERNAME" id="username" name="name" onkeyup="validName()">
+                <small id="error1">error message</small>
+            </div>
+            <div class="form-control">
+            <input type="text" name="mob" placeholder="ENTER YOUR MOBILE NUMBER" onkeyup="validateMobile()" id="mobile">
+            <small id="error2">error message</small>
+            </div>
+            <div class="form-control">
+            <input type="email" name="email" placeholder="ENTER YOUR EMAIL" onkeyup="validateEmail()" id="email">
+            <small id="error5">error message</small>
+            </div>
+            <div class="form-control">
+            <input type="password" id="password" name="pass" placeholder="ENTER YOUR PASSWORD" onkeyup="validatePassword()">
+            <small id="error3">error message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="confirm_pass" placeholder="ENTER YOUR CONFI PASSWORD" onkeyup="validPass()" >
+                <small id="error4">error message</small>
+            </div>
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+
+    <!-- --------------------------------------------------------- -->
+</body>
+
+<script>
+
+     // --------------------------getting values--------------------------
+    
+    const username=document.getElementById('username');
+    const password=document.getElementById('password');
+    const confi_password=document.getElementById('confirm_pass');
+    const mobile=document.getElementById('mobile');
+    const emai=document.getElementById('email');
+    var count=0;
+
+    //-------------------------------------------------------------
+
+    //-----------------------username validation-----------------------------
+    
+    function validName(){
+        const user=username.value;
+        if(user==" "){
+           username.style.border="2px solid red";
+            error1.style.color="red";
+            error1.innerHTML="do not blank";
+            error1.style.visibility="visible";
+           
+        }
+        else if(user.length<6){
+           username.style.border="2px solid red";
+            error1.style.color="red";
+           error1.innerHTML="Username must contains 6 letters";
+            error1.style.visibility="visible";
+         }
+         else if(!namecheck(username)){
+           username.style.border="2px solid red";
+            error1.style.color="red";
+           error1.innerHTML="Username only characters";
+            error1.style.visibility="visible";
+         }
+         else{
+            username.style.border="2px solid green";
+            error1.style.color="green";
+            error1.innerHTML="success";
+            error1.style.visibility="visible";
+            return count++;
+        }
+    }
+
+    function namecheck(){
+                var namvalue=username.value.trim();
+                var count5=0,count6=0;
+                for( i=0;i<namvalue.length;i++){
+                    const nam=namvalue.charCodeAt(i);
+                    if(nam>=65 && nam<=90)
+                    {
+                        count5++;
+                    }
+                    else if(nam>=97 && nam<=122)
+                    {
+                        count6++;
+                    }
+                }
+                if(count5>0 || count6>0)
+                {
+                    return true;
+                }
+                else {
+                    
+                }return false;
+                }
+
+    //------------------------------------------------------------
+
+    //-----------------------password validation-----------------------------
+    
+    function validatePassword(){
+        const pass=password.value;
+        const pass2value=confi_password.value;
+        if(pass==" "){
+            password.style.border="2px solid red";
+            error3.style.color="red";
+            error3.innerHTML="do not blank";
+            error3.style.visibility="visible";
+        }
+        else if(!passcheck(password)){
+            password.style.border="2px solid red";
+            error3.style.color="red";
+            error3.innerHTML="kindly use caps,number,symbols";
+            error3.style.visibility="visible";
+        }
+        else if(pass.length<8){
+           password.style.border="2px solid red";
+            error3.style.color="red";
+           error3.innerHTML="password must contains 8 letters";
+            error3.style.visibility="visible";
+            
+         }
+         else{
+            password.style.border="2px solid green";
+            error3.style.color="green";
+            error3.innerHTML="success";
+            error3.style.visibility="visible";
+            return count++;
+        }
+       
+    }
+    function validPass(){
+        const pass=password.value;
+        const pass2value=confi_password.value;
+        if(pass2value==" "){
+            confi_password.style.border="2px solid red";
+            error4.style.color="red";
+            error4.innerHTML="password does not match";
+            error4.style.visibility="visible";
+        }
+         else if(pass!=pass2value){
+           confi_password.style.border="2px solid red";
+            error4.style.color="red";
+            error4.innerHTML="password does not match";
+            error4.style.visibility="visible";
+        }
+        else{
+           confi_password.style.border="2px solid green";
+            error4.style.color="green";
+            error4.innerHTML="password matched";
+            error4.style.visibility="visible";
+            return count++;
+        }
+       
+    }
+    function passcheck(){
+                const pass1value=password.value.trim();
+                
+                var count=0,count1=0,count2=0,count3=0;
+                for(i=0;i<pass1value.length;i++){
+                    const check=pass1value.charCodeAt(i);
+                    if(check>=65 && check<=90)
+                    {
+                        count++;
+                    }
+                    else if(check>=97 && check<=122)
+                    {
+                        count1++;
+                    }
+                    else if(check>=48 && check<=57) {
+                        count2++;
+                    }
+                    else if((check>=32 && check<=47) || (check>=58 && check<=64) || (check>=91 && check<=96) || (check>=123 && check<=126))
+                    {
+                        count3++;
+                    }
+                }
+                if(count>0 && count1>0 && count2>0 && count3>0)
+                {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+        //--------------------------------------------------------------
+
+        //-----------------------mobile validation-----------------------------
+    
+
+            function validateMobile(){
+                const mob=mobile.value;
+                if(mob==" "){
+                 mobile.style.border="2px solid red";
+                 error2.style.color="red";
+                 error2.innerHTML="do not blank";
+                 error2.style.visibility="visible";
+                 
+                }
+                else if(!mobilecheck(mobile)){
+            mobile.style.border="2px solid red";
+            error2.style.color="red";
+            error2.innerHTML="mobile number should contains only numbers";
+            error2.style.visibility="visible";
+          
+        }
+        else{
+            mobile.style.border="2px solid green";
+            error2.style.color="green";
+            error2.innerHTML="success";
+            error2.style.visibility="visible";
+            return count++;
+        }
+       
+    }
+
+    
+
+    function mobilecheck(){
+                var mobvalue=mobile.value.trim();
+                var count4=0;
+                for( i=0;i<mobvalue.length;i++)
+		{
+			const first=mobvalue.charCodeAt(i);
+			if(first>=48 && first<=57)
+			{
+				count4++;
+			}
+		}
+		if(count4==10)
+		{
+			return true;
+		}
+		else {
+			return false;
+		}
+            }
+
+    //---------------------------------------------------------------
+
+    //-----------------------Email validation-----------------------------
+    
+            function validateEmail(){
+                const emaiValue=emai.value;
+                console.log(emaiValue);
+                if(emaiValue==""){
+                    emai.style.border="2px solid red";
+            error5.style.color="red";
+            error5.innerHTML="do not blank";
+            error5.style.visibility="visible";
+                }
+                else if(!emailcheck(emai)){
+                    emai.style.border="2px solid red";
+            error5.style.color="red";
+            error5.innerHTML="email contains @,.com or .in";
+            error5.style.visibility="visible";
+                }
+                else{
+                    emai.style.border="2px solid green";
+            error5.style.color="green";
+            error5.innerHTML="success";
+            error5.style.visibility="visible";
+            return count++;
+                }
+            }
+
+            
+
+    function emailcheck(){
+        const emaiValue=emai.value;
+        if(emaiValue.includes('@') && (emaiValue.includes('.com') || emaiValue.includes('.in'))){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    //---------------------------------------------------------------
+
+
+    //-----------------------form validation-----------------------------
+    
+
+            function validate(){
+                const user=username.value; 
+                const mob=mobile.value;
+                const pass=password.value;
+                const pass2value=confi_password.value;
+                const emai1=emai.value;
+                const val=count;
+                const msg="mobile is already taken";
+                if(count>5){
+                    return true;
+                }
+                else if(user==="" && mob==="" && pass==="" && pass2value==="" && emai1===""){
+                    alert("do not blank");
+                    return false;
+                }
+                else if(user===""){
+                    alert("name do not blank");
+                    return false;
+                }
+                else if(mob===""){
+                    alert("mobile do not blank");
+                    return false;
+                }
+               
+                else if(pass===""){
+                    alert("password do not blank");
+                    return false;
+                }
+                else if(pass2value===""){
+                    alert("confirm password do not blank");
+                    return false;
+                }
+                else if(emai1===""){
+                    alert("email do not blank");
+                    return false;
+                }
+                else{
+                    return false;
+                }
+            }
+
+    //----------------------------------------------------
+
+</script>
+</html>

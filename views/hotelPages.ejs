@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel dishes</title>
+    <link rel="stylesheet" href="/CSS/hotelPages.css">
+    <script src="https://kit.fontawesome.com/750b690b8c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <!-- ---------------header for hotel page---------------------------------- -->
+   <header>
+    <img src="./images/LOGO.png" alt="image">
+    <nav>
+        <ul class="nav">
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+            <li><a href="#"><i class="fa-solid fa-tag"></i>Offers</a></li>
+            <li><a href="#"><i class="fa-regular fa-user"></i>Account</a>
+            <ul class="nav1">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="/hotel">Logout</a></li>
+            </ul></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+        </ul>
+    </nav>
+   </header>
+<!-- ------------------------------------------------------------- -->
+<!-- --------------box-------------------------------------------- -->
+<div class="box">
+    <img src="<%=hotelPage.hotel_image%>" alt="image">
+    <h2><%=hotelPage.hotel_name%></h2>
+    <h4><%=hotelPage.variety%></h4>
+    <div class="flexbox">
+        <div class="flexboxes">
+            <h3><i class="fa-solid fa-star"></i> 4.0</h3>
+            <h6>500+ Ratings</h6>
+        </div>
+        <div class="flexboxes">
+            <h3><%=hotelPage.time_del%></h3>
+            <h6>Delivery Time</h6>
+        </div>
+        <div class="flexboxes">
+            <h3><%=hotelPage.amount%></h3>
+            <h6>Cost for two</h6>
+        </div>
+     </div>
+     <button class="offerButton">OFFER</button>
+     <div class="offer">
+        <p> <i class="fa-solid fa-tag"></i> <%=hotelPage.offfer%></p>
+     </div>
+     <div class="input scroll">
+        <div class="inputs">
+            <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="search for dishes...." id="dish"> <i class="fa-solid fa-xmark" onclick="erase()"></i>
+        </div>
+        <div class="input1">
+            <input type="checkbox" onclick="vege()" id="check"><span class="checkmark"></span><p class="Veg" id="veg"  onclick="veg()">Veg Only</p>
+        </div>
+        <div class="input1">
+            <i class="fa-regular fa-heart" onclick="fav()" id="heart"></i><p id="fav" onclick="fav()">Favorites</p>
+        </div>
+    
+    </div>
+   </div>
+<!-- ----------------------------------------------------------------- -->
+
+<!-- ------------------------------left side div----------------------- -->
+
+<div class="middle">
+    <div class="left">
+        <% for(i=0;i< Dcount;i++){%>
+        <div class="itemNames">
+            <label for=""><%=dishVariety[i].dish_variety%></label>
+        </div>
+        <%}%>
+    </div>
+    <div class="mid">
+        <% for(i=0;i< HotelDishCount;i++){%>
+        <div class="midItems">
+           <div class="icon"></div>
+            <label><%=HotelDish[i].dishName%></label>
+            <small>₹<%=HotelDish[i].dishCost%></small>
+            <p><%=HotelDish[i].dishDescription%></p>
+            <img src="<%=HotelDish[i].dishImage%>" alt="">
+            <button onclick="dishValue(this)" value="<%=HotelDish[i].dishName%>,<%=HotelDish[i].dishCost%>,<%=HotelDish[i].dishDescription%>">ADD</button>
+        </div>
+        <%}%>
+    </div>
+    <div class="right" id="right">
+        <div class="rightItems">
+            <label>CART IS EMPTY!</label>
+        </div>
+        <div class="rightItems">
+            <img src="./images/cart_empty.webp" alt="">
+        </div>
+        <div class="rightItems">
+            <p>Good food is always cooking! Go ahead, order some yummy items from the menu.</p>
+        </div>
+    </div>
+    <div class="rightCart" id="rightCart">
+        <div class="rightCartItems">
+            <label class="cart">Cart</label>
+        </div>
+        <div class="rightCartItems">
+                   <table  class="tab" id="tab" cellspacing="5px">
+                   </table>
+            </div>
+            <div class="rightCartItems">
+                <label class="subTotal">Subtotal</label>
+                    <h5 id="dishTotal" class="dishTotal">₹ 0</h5>
+                    <p class="ref">Extra Charges may apply</p>
+            </div>
+       
+        <div class="CHECK">
+            <form action="/payment" method="post">
+                <button class="checkout">checkout</button>  
+            </form>
+                
+        </div>
+    </div>
+    
+<!-- ------------------------------------------------------------------ -->
+
+<script>
+    const favorite=document.getElementById('fav');
+const vegetarian=document.getElementById('veg');
+const heart=document.getElementById('heart');
+const dish=document.getElementById('dish');
+const dishName=document.getElementById('dishName');
+const dishCost=document.getElementById('dishCost');
+const dishTotal=document.getElementById('dishTotal');
+
+const Table=document.getElementById('tab');  
+
+function erase(){
+    dish.value="";
+}
+     var arrayName=[];
+     var i=0;
+    //  var m=1;
+function dishValue(x){
+        right.style.display='none';
+        rightCart.style.display='block';
+        addRow(x);
+     }
+     var DishCost=0;
+     function addRow(x){ 
+        var hotel=x.value;
+        var Array=hotel.split(","); 
+        console.log(DishCost);
+        var countbox=' <h5 id="count" style="cursor: text;color: green; margin-top:3px;font-size: 0.5cm;font-weight: bold;">1</h5>';
+        if(arrayName.includes(Array[0])){
+            alert("you already add this item to cart");
+        }
+        else{
+             var tab=Table.insertRow();
+            tab.onclick=(function row(){
+                var ind=tab.rowIndex;
+                  c4.onclick=(function inc(){
+                var c=Table.rows[ind].cells;
+                 var c1=c[2].innerText;
+                 c[2].innerHTML=++c1;
+                 DishCost=DishCost+(1*Math.round(Array[1]));
+                 dishTotal.innerText="₹ "+DishCost;
+                 });
+                  c2.onclick=(function dec(){
+                var c=Table.rows[ind].cells;
+                 var c1=c[2].innerText;
+                 c[2].innerHTML=--c1;
+                 DishCost=DishCost-(1*Math.round(Array[1]));
+                 dishTotal.innerText="₹ "+DishCost;
+                 var val=c[2].innerHTML;
+         if(val<=0){ 
+             deleteRow(ind);
+         }
+                 });
+            });
+            var c1=tab.insertCell(0);
+            var c2=tab.insertCell(1);
+            var c3=tab.insertCell(2);
+            var c4=tab.insertCell(3);
+            var c5=tab.insertCell(4);
+            c3.style="color:green;font-size:0.5cm;";
+            c1.innerHTML=Array[0];
+            c2.innerHTML= '<button id="dec" style="width: 30px; height: 30px;cursor: pointer;background-color: white;color: green;font-size:0.5cm; font-weight: bold;">--</button>';
+            c3.innerHTML= 1;
+            c4.innerHTML= '<button  id="dec" style="width: 30px; height: 30px;cursor: pointer;background-color: white;color: green;font-size:0.5cm; font-weight: bold;">+</button>';
+            c5.innerHTML="₹ "+Array[1];
+            DishCost=DishCost+parseInt(Array[1]);
+            dishTotal.innerText="₹ "+DishCost;
+            arrayName[i++]=Array[0];
+                }
+     }
+     function deleteRow(z){
+        var row=Table.rows.length;
+        var tab=Table.deleteRow(z);
+       Name=arrayName.splice(z,1);
+        i--;
+        console.log(row);
+        if(row<=1){
+                 right.style.display='block';
+                 rightCart.style.display='none';
+         }
+         else{
+             
+             c[2].innerHTML=val;
+         }
+     }
+     var count=1;
+function veg(){
+    
+    if(check.checked==true){
+        check.checked=false;
+        vegetarian.classList.toggle("vegetarian");
+    }else{
+        check.checked=true;
+        vegetarian.classList.toggle("vegetarian");
+    }
+    
+}
+
+function vege(){
+    vegetarian.classList.toggle("vegetarian");
+}
+
+function fav(){
+    
+    heart.classList.toggle("hearted");
+    favorite.classList.toggle("favorite");
+    if(favorite.innerText=="Favorites"){
+        favorite.innerText="Favorited";
+    }
+    else{
+        favorite.innerText="Favorites"; 
+    }
+
+    
+}
+
+</script>
+</body>
+</html>

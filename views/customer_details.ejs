@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="/CSS/customer_details.css">
+</head>
+<body>
+    <!-- --------------------Customer_details---------------------------------- -->
+    <div class="container">
+        <h1>CUSTOMER PAGE</h1>
+        <div class="form">
+            <form action="/Customervalue" method="post" onsubmit="return validate()">
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER YOUR NAME" id="CNAME" name="CNAME" onkeyup="validateCNAME()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER YOUR EMAIL" id="CEMAIL" name="CEMAIL" onkeyup="validateCEMAIL()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER YOUR MOBILE NUMBER" id="CNUM" name="CNUM" onkeyup="validateCNUM()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER YOUR PASSWORD" id="CPASS" name="CPASS" onkeyup="validateCPASS()">
+                </div> 
+                <button type="submit" value="save" name="action">save</button>
+                <button type="submit" value="update" name="action">update</button>
+                <button type="submit" value="delete" name="action">delete</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- ------------------------------------------------------------------------------- -->
+
+    <!-- -------------------hotel_details_table----------------------------------- -->
+
+    <table border="1" class="table">
+        <tr>
+            <th>USER NAME</th>
+            <th>EMAIL</th>
+            <th>MOBILE NUMBER</th>
+            <th>PASSWORD</th>
+        </tr>
+        <% for(var i=0;i< Ccount;i++){%>
+
+            <tr>
+                <td><%=Customer[i].user_name%></td>
+                <td><%=Customer[i].email%></td>
+                <td><%=Customer[i].mobile%></td>
+                <td><%=Customer[i].pass%></td>
+              </tr>
+
+        <%}%>
+    </table>
+    <!-- ------------------------------------------------- -->
+
+
+
+    <script>
+        // -----------------fetching_datas-----------------------------
+        const cname=document.getElementById('CNAME');
+        const cnum=document.getElementById('CNUM');
+        const cemail=document.getElementById('CEMAIL');
+        const cpass=document.getElementById('CPASS');
+        // ----------------------------------------------------------
+
+        //---------------------declaraing the variable for form purpose----------------
+        var count=0;
+        // ---------------------------------------------
+
+        //-------------------------validation section------------------------------------
+
+        //-----------------------validate the hotelID--------------------------
+
+        function validateCNAME(){
+            const username=cname.value;
+
+            if(username=="" || username==" "){
+                cname.style.border="2px solid red";
+            }
+
+            else{
+                cname.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // ---------------------------------------------------------
+
+        // ---------------validate hotel image-----------------------
+        function validateCNUM(){
+            const mobile=cnum.value;
+
+            if(mobile=="" || mobile==" "){
+                cnum.style.border="2px solid red";
+            }
+
+            else{
+                cnum.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // -----------------------------------------------
+
+        // ------------------validate hotel name--------------------------
+        function validateCPASS(){
+
+            const pass=cpass.value;
+
+            if(pass=="" || pass==" "){
+                cpass.style.border="2px solid red";
+            }
+
+            else{
+                cpass.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // --------------------------------------------------------------
+
+        //-----------------------validate the hotel variety-------------------
+        function validateCEMAIL(){
+
+            const email=cemail.value;
+
+            if(email=="" || email==" "){
+                cemail.style.border="2px solid red";
+            }
+
+            else{
+                cemail.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // ----------------------------------------------------
+
+         // ------------validation for the onsubmit purpose--------------
+
+         function validate(){
+            var val=count;
+
+            if(val>1){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        // -------------------------------------------
+    </script>
+    </body>
+</html>

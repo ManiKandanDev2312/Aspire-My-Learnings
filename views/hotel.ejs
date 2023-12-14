@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="/css/hotel.css">
+    <script src="https://kit.fontawesome.com/750b690b8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ---------------header for hotel page---------------------------------- -->
+   <header>
+    <img src="./images/LOGO.png" alt="image">
+    <nav>
+        <ul class="nav">
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+            <li><a href="#"><i class="fa-solid fa-tag"></i>Offers</a></li>
+            <li><a href="#"><i class="fa-regular fa-user"></i><% if(man){
+                %><h4><%=man%></h4><%
+            }
+            else{%>Account<%
+
+            }%></a>
+            <ul class="nav1">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="/hotel">Logout</a></li>
+            </ul></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+        </ul>
+    </nav>
+   </header>
+
+   <!-- ----------------------------------------------------------- -->
+
+   <!---------------------------- black box images----------------------------- -->
+   <div class="box">
+    <img src="./images/page1.webp" alt="image">
+    <img src="./images/page2.jpg" alt="image">
+    <img src="./images/page3.webp" alt="image">
+    <img src="./images/page4.webp" alt="image">
+   </div>
+
+   <!-- ------------------------------------------------------ -->
+
+   <!-- -------------------------hotel page details---------------------------------- -->
+   <h2 class="count"><%=Hcount%> RESTAURANTS </h2>
+   <hr class="bod">
+   <div class="flex" id="name">
+    <% for(var i=0 ;i< Hcount ;i++){%>
+        <div class="flex1">
+        <img src="<%=hotel[i].hotel_image%>" alt="image" >
+        <form action="/hotelName" method="post">
+            <button type="submit" name="hotelName" onclick="mani(this)" value="<%=hotel[i].hotel_name%>"><%=hotel[i].hotel_name%></button>
+        </form>
+        <h5><%=hotel[i].variety%></h5>
+        <div class="box1">
+            <button><i class="fa-solid fa-star"></i>3.4</button>
+            <li><%=hotel[i].time_del%></li>
+            <li><%=hotel[i].amount%></li>
+        </div>
+        <div class="box2">
+            <i class="fa-solid fa-tag"></i>
+            <h5><%=hotel[i].offfer%></h5>
+        </div>
+        <div class="box3">
+            <h3>Quick view</h3>
+        </div>
+    </div>
+    <%} %>
+    
+
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+
+    <!-- ------------------footer of hotel page----------------------- -->
+    <footer>
+            <div class="box5">
+                <div class="end">
+                    <ul class="list">
+                        <li>COMPANY <ul class="list1">
+                            <li>About us</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                        </ul></li>
+                        </ul>
+                </div>
+                <div class="end">
+                    <ul class="list">
+                        <li>CONTACT <ul class="list1">
+                            <li>Help & Support</li>
+                            <li>Partner with us</li>
+                            <li>Ride with us</li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <div class="end">
+                    <ul class="list">
+                    <li>LEGAL <ul class="list1">
+                        <li>Terms & Conditions</li>
+                        <li>Refund & Cancellation</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Offer Terms</li>
+                    </ul></li>
+                </ul>
+                </div>
+                <div class="end">
+                    <img src="./images/img10.png" alt="image" title="logo">
+                </div>
+                </div>
+                <hr>
+                <div class="box6">
+                    <div class="end1">
+                        <img src="./images/img10.png" alt="">
+                    </div>
+                    <div class="end1">
+                        <p>@Created by Manikandan 2022</p>
+                    </div>
+                    <div class="end1">
+                        <a href="https://www.facebook.com/profile.php?id=100090056535431&sk=" target="_blank"><i class="fa-brands fa-facebook-f" id="icon1"></i></a>
+                        <a href="https://instagram.com/food_court_online_websit?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram" id="icon2"></i></a>
+                        <a href="https://twitter.com/FOODCOURT023" target="_blank"><i class="fa-brands fa-twitter" id="icon3"></i></a>
+                        </div>
+                </div>
+        </footer>
+
+        <!-- -------------------------------------------------------------------- -->
+
+        <script>
+        //    const name=document.getElementById('padma');
+           const anchor=document.getElementById('anchor');
+           
+            function mani(x){
+                const name=x.innerHTML;
+                console.log(name);
+                // if(name=="Geetha Canteen"){
+                //     anchor.href="/Geetha_Canteen";
+                // }
+                // else{
+                    
+                //     console.log(name);
+                // }
+            }
+        </script>
+</body>
+</html>

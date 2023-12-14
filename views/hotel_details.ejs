@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="/CSS/hotel_details.css">
+</head>
+<body>
+    <!-- --------------------hotel_details---------------------------------- -->
+    <div class="container">
+        <h1>HOTEL PAGE</h1>
+        <div class="form">
+            <form action="/hotelvalue" method="post" onsubmit="return validate()">
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL ID" id="HID" name="HID" onkeyup="validateHID()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL IMAGE URL" id="Himage" name="Himage" onkeyup="validateHimage()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL NAME" id="Hname" name="Hname" onkeyup="validateHname()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL VARIETY" id="Hvariety" name="Hvariety" onkeyup="validateHvariety()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL TIME_DEL" id="Htime" name="Htime" onkeyup="validateHtime()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL AMOUNT" id="Hamount" name="Hamount" onkeyup="validateHamount()">
+                </div>
+                <div class="form_control">
+                    <input type="text" placeholder="ENTER HOTEL OFFER" id="Hoffer" name="Hoffer" onkeyup="validateHoffer()">
+                </div>
+                
+                <button type="submit" value="save" name="action">save</button>
+                <button type="submit" value="update" name="action">update</button>
+                <button type="submit" value="delete" name="action">delete</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- ------------------------------------------------------------------------------- -->
+
+    <!-- -------------------hotel_details_table----------------------------------- -->
+    <table border="1" class="table" id="table">
+        <tr>
+            <th>ID</th>
+            <th>hotel_image</th>
+            <th>hotel_name</th>
+            <th>variety</th>
+            <th>delivery time</th>
+            <th>amount for combos</th>
+            <th>offers</th>
+        </tr>
+        <% for(var i=0;i< Hcount;i++){%>
+
+            
+
+            <tr onclick="pick(this)" id="row">
+                <td  id="id" style="cursor:pointer;" value="<%=hotel[i].ID%>"><%=hotel[i].ID%></td>
+                <td id="image" value="<%=hotel[i].hotel_image%>"><%=hotel[i].hotel_image%></td>
+                <td id="name" value="<%=hotel[i].hotel_name%>"><%=hotel[i].hotel_name%></td>
+                <td id="variety" value="<%=hotel[i].variety%>"><%=hotel[i].variety%></td>
+                <td id="time" value="<%=hotel[i].time_del%>"><%=hotel[i].time_del%></td>
+                <td id="amount" value="<%=hotel[i].amount%>"><%=hotel[i].amount%></td>
+                <td id="offer" value="<%=hotel[i].offfer%>"><%=hotel[i].offfer%></td>
+            </tr>
+
+        <%}%>
+    </table>
+
+    <!-- ------------------------------------------------- -->
+
+
+
+    <script>
+        // -----------------fetching_datas-----------------------------
+        const HID=document.getElementById('HID');
+        const Himage=document.getElementById('Himage');
+        const Hname=document.getElementById('Hname');
+        const Hvariety=document.getElementById('Hvariety');
+        const Htime=document.getElementById('Htime');
+        const Hamount=document.getElementById('Hamount');
+        const Hoffer=document.getElementById('Hoffer');
+        const id=document.getElementById('id');
+        const image=document.getElementById('image');
+        const nam=document.getElementById('name');
+        const variety=document.getElementById('variety');
+        const time=document.getElementById('time');
+        const amount=document.getElementById('amount');
+        const offer=document.getElementById('offer');
+
+        // ----------------------------------------------------------
+
+        //---------------------declaraing the variable for form purpose----------------
+        var count=0;
+        // ---------------------------------------------
+
+        //-------------------------validation section------------------------------------
+
+        //-----------------------validate the hotelID--------------------------
+
+        function validateHID(){
+            const hotelid=HID.value;
+
+            if(hotelid=="" || hotelid==" "){
+                HID.style.border="2px solid red";
+            }
+
+            else{
+                HID.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // ---------------------------------------------------------
+
+        // ---------------validate hotel image-----------------------
+        function validateHimage(){
+            const hotelimage=Himage.value;
+
+            if(hotelimage=="" || hotelimage==" "){
+                Himage.style.border="2px solid red";
+            }
+
+            else{
+                Himage.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // -----------------------------------------------
+
+        // ------------------validate hotel name--------------------------
+        function validateHname(){
+
+            const hotelname=Hname.value;
+
+            if(hotelname=="" || hotelname==" "){
+                Hname.style.border="2px solid red";
+            }
+
+            else{
+                Hname.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // --------------------------------------------------------------
+
+        //-----------------------validate the hotel variety-------------------
+        function validateHvariety(){
+
+            const hotelvariety=Hvariety.value;
+
+            if(hotelvariety=="" || hotelvariety==" "){
+                Hvariety.style.border="2px solid red";
+            }
+
+            else{
+                Hvariety.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // ----------------------------------------------------
+
+        //------------------------validate hotel time----------------------------
+        function validateHtime(){
+
+            const hoteltime=Htime.value;
+
+            if(hoteltime=="" || hoteltime==" "){
+                Htime.style.border="2px solid red";
+            }
+
+            else{
+                Htime.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // ----------------------------------------------------------
+
+        //------------------validate hotel amount----------------------
+        function validateHamount(){
+
+            const hotelamount=Hamount.value;
+
+            if(hotelamount=="" || hotelamount==" "){
+                Hamount.style.border="2px solid red";
+            }
+
+            else{
+                Hamount.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // ----------------------------------------------------
+
+        // ----------------validate the hotel offer--------------------
+        function validateHoffer(){
+
+            const hoteloffer=Hoffer.value;
+
+            if(hoteloffer=="" || hoteloffer==" "){
+                Hoffer.style.border="2px solid red";
+            }
+
+            else{
+                Hoffer.style.border="2px solid green";
+                return count++;
+            }
+
+        }
+
+        // -----------------------------------------------
+
+        // ------------validation for the onsubmit purpose--------------
+
+        function validate(){
+            var val=count;
+
+            if(val>1){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        // -------------------------------------------
+
+        //-------------------auto fill value-----------------------
+
+        function pick(mani){
+            
+            
+           
+            const tab=document.getElementById('table');
+            const ind=mani.rowIndex;
+
+            const c=tab.rows[ind].cells;
+
+            const c1=c[0].innerHTML;
+            const c2=c[1].innerHTML;
+            const c3=c[2].innerHTML;
+            const c4=c[3].innerHTML;
+            const c5=c[4].innerHTML;
+            const c6=c[5].innerHTML;
+            const c7=c[6].innerHTML;
+          
+            
+                    HID.value= c1;
+                    Himage.value=c2;
+                    Hname.value=c3;
+                    Hvariety.value=c4;
+                    Htime.value=c5;
+                    Hamount.value=c6;
+                    Hoffer.value=c7;
+
+        }
+
+        //----------------------------------------------------------
+    </script>
+    </body>
+</html>

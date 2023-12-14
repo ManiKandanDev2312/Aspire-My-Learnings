@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD COURT</title>
+    <link rel="stylesheet" href="/CSS/homepage.css">
+    <script src="https://kit.fontawesome.com/750b690b8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-----------------------------homepage------------------------------ -->
+        <header class="header">
+            <div class="header1">
+                <img src="/images/LOGO.png" alt="LOGO" title="LOGO" id="logo">
+            </div>
+            <div class="header2">
+                <button id="login" >
+                   <a href="/login"> <i class="fa-solid fa-right-to-bracket"></i> Login
+                </a></button>
+            </div>
+        </header>
+        <div class="box">
+            <img src="/images/img1.jpg" alt="image" title="food">
+        </div>
+        <div class="box1">
+            <div class="box2">
+                <img src="/images/img2.webp" alt="image">
+                <p class="line1">No Minimum Order</p>
+                <p class="line2">Order in for yourself or for the group, with no restrictions on order value</p>
+            </div>
+            <div class="box2">
+                <img src="/images/img3.png" alt="image">
+                <p class="line1">Live Order Tracking</p>
+                <p class="line2">Know where your order is at all times, from the restaurant to your door step</p>
+            </div>
+            <div class="box2">
+                <img src="/images/img4.png" alt="image">
+                <p class="line1">Lightning-Fast Delivery</p>
+            <p class="line2">Experience Foodcourt's superfast delivery for food delivered fresh & on time</p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box4">
+                <p class="line3">
+                    restaurants in your pocket
+                </p>
+                <p class="line4">Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
+            <a href="https://www.facebook.com/profile.php?id=100090056535431&sk=" target="_blank"><i class="fa-brands fa-facebook-f" id="icon1"></i></a>
+            <a href="https://instagram.com/food_court_online_websit?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram" id="icon2"></i></a>
+            <a href="https://twitter.com/FOODCOURT023" target="_blank"><i class="fa-brands fa-twitter" id="icon3"></i></a>
+            </div>
+            <div class="box4">
+                <img src="./images/img13.jpg" alt="image" id="show">
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------- -->
+
+
+        <!-- ------------------------footer--------------------------------- -->
+        <footer>
+            <div class="box5">
+                <div class="end">
+                    <ul class="list">
+                        <li>COMPANY <ul class="list1">
+                            <li>About us</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                        </ul></li>
+                        </ul>
+                </div>
+                <div class="end">
+                    <ul class="list">
+                        <li>CONTACT <ul class="list1">
+                            <li>Help & Support</li>
+                            <li>Partner with us</li>
+                            <li>Ride with us</li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <div class="end">
+                    <ul class="list">
+                    <li>LEGAL <ul class="list1">
+                        <li>Terms & Conditions</li>
+                        <li>Refund & Cancellation</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Offer Terms</li>
+                    </ul></li>
+                </ul>
+                </div>
+                <div class="end">
+                    <img src="./images/img10.png" alt="image" title="logo">
+                </div>
+                </div>
+                <hr>
+                <div class="box6">
+                    <div class="end1">
+                        <img src="./images/img10.png" alt="">
+                    </div>
+                    <div class="end1">
+                        <p>@Created by Manikandan 2022</p>
+                    </div>
+                    <div class="end1">
+                        <a href="https://www.facebook.com/profile.php?id=100090056535431&sk=" target="_blank"><i class="fa-brands fa-facebook-f" id="icon1"></i></a>
+                        <a href="https://instagram.com/food_court_online_websit?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram" id="icon2"></i></a>
+                        <a href="https://twitter.com/FOODCOURT023" target="_blank"><i class="fa-brands fa-twitter" id="icon3"></i></a>
+                         </div>
+                </div>
+        </footer>
+        <!-- ------------------------------------------------------------------------------------------- -->
+   
+    <script>
+
+    //-------------------------------slide show--------------------------------------
+    slides = ['./images/img13.jpg','./images/img14.jpg','./images/img11.jpeg','./images/img12.jpg']
+    slide = document.getElementById('show');
+    count = -1;
+    function image(){
+        count+=1;
+        if(count<=slides.length)
+        {
+            if(count==slides.length)
+            {
+                count=0;
+            }
+            slide.src = slides[count];
+        }
+        console.log(count);
+    }
+    setInterval(image, 3000);
+    
+    // ---------------------------------------------------------------
+    </script>
+      </form>
+</body>
+</html>

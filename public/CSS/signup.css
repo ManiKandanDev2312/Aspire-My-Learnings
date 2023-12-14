@@ -1,0 +1,95 @@
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form{
+    border: 2px solid black;
+    width: 430px;
+    height: 600px;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    animation: slide 350ms linear 1; 
+}
+@keyframes slide {
+    0%{
+        transform: translateY(-600px);
+    }
+    100%{
+        
+        transform: translateY(0px);
+        
+    }
+}
+.form img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    top: 10px;
+}
+.form h1{
+    position: absolute;
+    color: orange;
+   top: 10px;
+   left: 60px;
+}
+.form-control{
+    width: 400px;
+    position: relative;
+    top: 120px;
+    padding: 0px 40px;
+}
+.form-control input{
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 310px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 5px;
+    font-size: 0.5cm;
+}
+.form button{
+    width: 380px;
+    height: 50px;
+    background-color: orange;
+    position: relative;
+    top: 160px;
+    left: 25px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.4cm;
+    border: none;
+    border-radius: 30px;
+}
+.form-control small{
+    font-size: 0.5cm;
+    font-weight: bold;
+    visibility: hidden;
+}
+.login{
+    font-size: 0.4cm;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.login:hover{
+    color: orange;
+}
+.msg{
+    position: absolute;
+    top: 75px;
+    left: 60px;
+    color: red;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgotPass</title>
+    <link rel="stylesheet" href="/CSS/forgotPass.css">
+    <script src="https://kit.fontawesome.com/750b690b8c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+     <!-- ----------------------------forgot Pass form---------------------------- -->
+   
+    <div>
+        <% if(msg){%>
+            <h3 class="msg"><%=msg%></h3>
+            <%}%>
+        <a href="/login"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+        <h1>FORGOT PASS</h1>
+        <img src="/images/img9.webp" alt="image">
+        <form action="/forgotvalue" method="post">
+            <input type="text" id="mobile" name="mob" onkeyup="validate()" placeholder="ENTER YOUR MOBILE NUMBER"><br>
+            <small id="error" class="error">error message</small><br>
+            <input type="password" id="password" name="newpass" onkeyup="validate1()" placeholder="ENTER YOUR NEW PASSWORD"><br>
+            <small id="error1" class="error1">error message</small><br>
+           <button type="submit">CHANGE</button>
+            
+        </form>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+
+
+
+    <script>
+
+         // --------------------------getting values--------------------------
+    
+        const mobile=document.getElementById('mobile');
+        const password=document.getElementById('password');
+
+        //-------------------------------------------------------------
+
+        //-----------------------mobile validation-----------------------------
+        function validate(){
+        const mobileValue=mobile.value;
+        var count=0;
+        if(mobileValue===""){
+            mobile.style.border="2px solid red";
+            error.style.color="red";
+            error.innerHTML="do not blank";
+            error.style.visibility="visible";
+            // error1.innerHTML="hi";
+        }
+        // else if(mobileValue.length<10){
+        //     mobile.style.border="2px solid red";
+        //     error.style.color="red";
+        //     error.innerHTML="mobile number must have 10 digits";
+        //     error.style.visibility="visible";
+        // }
+        else if(!mobilecheck(mobile)){
+            mobile.style.border="2px solid red";
+            error.style.color="red";
+            error.innerHTML="mobile number should contains only numbers";
+            error.style.visibility="visible";
+        }
+        else{
+            mobile.style.border="2px solid green";
+            error.style.color="green";
+            error.innerHTML="success";
+            error.style.visibility="visible";
+            return count++;
+        }
+       
+    }
+
+    function mobilecheck(){
+                var mobvalue=mobile.value.trim();
+                var count4=0;
+                for( i=0;i<mobvalue.length;i++)
+		{
+			const first=mobvalue.charCodeAt(i);
+			if(first>=48 && first<=57)
+			{
+				count4++;
+			}
+		}
+		if(count4==10)
+		{
+			return true;
+		}
+		else {
+			return false;
+		}
+    }
+
+    //-----------------------------------------------------------
+
+    //--------------------------password validation----------------------------
+
+    function validate1(){
+        const passValue=password.value;
+        if(passValue===""){
+            password.style.border="2px solid red";
+            error1.style.color="red";
+            error1.innerHTML="do not blank";
+            error1.style.visibility="visible";
+        }
+        else if(passValue.length<=8){
+            password.style.border="2px solid red";
+            error1.style.color="red";
+            error1.innerHTML="password should contains minimum 8 characters";
+            error1.style.visibility="visible";
+        }
+        else{
+            password.style.border="2px solid green";
+            error1.style.color="green";
+            error1.innerHTML="success";
+            error1.style.visibility="visible";
+            return count++;
+        }
+    }
+
+   //--------------------------------------------------------- 
+
+    
+
+    </script>
+</body>
+</html>
