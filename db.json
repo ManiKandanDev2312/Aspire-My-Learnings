@@ -823,7 +823,32 @@
       "email": "haridiablo72@gmail.com",
       "password": "Hari@2004",
       "ConfirmPassword": "Hari@2004",
-      "AddToCartDetails": [],
+      "AddToCartDetails": [
+        {
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "dishName": "5 Pcs Crispy Chicken + 2 Mayo Dips",
+          "dishQuantity": 1,
+          "dishPrice": 499,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "dishName": "Burger Box",
+          "dishQuantity": 1,
+          "dishPrice": 288,
+          "dishType": "veg"
+        },
+        {
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "dishName": "10 Pcs Crispy Chicken + 3 Mayo Dips",
+          "dishQuantity": 1,
+          "dishPrice": 888,
+          "dishType": "veg"
+        }
+      ],
       "Address": [
         {
           "adress": "MSNagarerumapalayam",
@@ -843,13 +868,28 @@
         "iconType": "fa-house"
       },
       "cartOrderDetails": {
-        "hotelName": "Barbequeen Restaurant",
-        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "hotelName": "Chicking",
+        "hotelImage": "./assets/hotelpage/Chicking.webp",
         "orderItems": [
           {
-            "dishName": "Mango Juice",
-            "dishQuantity": 15,
-            "dishPrice": 2250
+            "dishName": "5 Pcs Crispy Chicken + 2 Mayo Dips",
+            "dishQuantity": 1,
+            "dishPrice": 499
+          },
+          {
+            "dishName": "Burger Box",
+            "dishQuantity": 1,
+            "dishPrice": 288
+          },
+          {
+            "dishName": "10 Pcs Crispy Chicken + 3 Mayo Dips",
+            "dishQuantity": 1,
+            "dishPrice": 888
+          },
+          {
+            "dishName": "Veg Royal Wrap",
+            "dishQuantity": 1,
+            "dishPrice": 179
           }
         ],
         "orderAddress": {
@@ -860,7 +900,7 @@
           "addressType": "Home",
           "iconType": "fa-house"
         },
-        "totalPrice": 2293
+        "totalPrice": 759
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -930,6 +970,93 @@
           ],
           "paymentMenthod": "Cash On Delivery",
           "amountPaid": "not paid"
+        }
+      ],
+      "search": [
+        "Ramesh Mess"
+      ],
+      "Favorites": [
+        {
+          "id": 14,
+          "hotelimage": "./assets/hotelpage/Ramesh Mess.webp",
+          "hotelname": "Ramesh Mess",
+          "dishvariety": "South Indian",
+          "timeDel": "22",
+          "RatingArray": [],
+          "Rating": "4",
+          "offer": "",
+          "dishes": [
+            {
+              "dishImage": "./assets/dishes/Blue Mint Juice.jpg",
+              "dishName": "Blue Mint Juice",
+              "dishPrice": "55",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Italian Grape Juice.webp",
+              "dishName": "Italian Grape Juice",
+              "dishPrice": "78",
+              "dishType": "veg",
+              "dishDescription": "Healthy Juice"
+            },
+            {
+              "dishImage": "./assets/dishes/Banana Gulkand Milkshake.webp",
+              "dishName": "Banana Gulkand Milkshake",
+              "dishPrice": "150",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Rasmalai.webp",
+              "dishName": "Rasmalai",
+              "dishPrice": "60",
+              "dishType": "veg",
+              "dishDescription": ""
+            },
+            {
+              "dishImage": "./assets/dishes/Idli (1 Set).webp",
+              "dishName": "Idli (1 Set)",
+              "dishPrice": "27",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Egg Roast Dosa.webp",
+              "dishName": "Egg Roast Dosa",
+              "dishPrice": "86",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Onion Uttapam.webp",
+              "dishName": "Onion Uttapam",
+              "dishPrice": "87",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Paniyaram 7pc (2 Chutneys).webp",
+              "dishName": "Paniyaram 7pc (2 Chutneys)",
+              "dishPrice": "76",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Chola Poori.webp",
+              "dishName": "Chola Poori",
+              "dishPrice": "79",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            },
+            {
+              "dishImage": "./assets/dishes/Chapati 1 set.webp",
+              "dishName": "Chapati 1 set",
+              "dishPrice": "70",
+              "dishType": "veg",
+              "dishDescription": "Serves 1"
+            }
+          ]
         }
       ]
     }

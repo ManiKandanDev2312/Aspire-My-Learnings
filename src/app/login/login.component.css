@@ -98,12 +98,20 @@ input::-webkit-inner-spin-button {
   width: 70%;
   background-color: white;
   border: 0.05vw solid rgb(114, 110, 110);
+  position: relative;
+}
+.pass-eye{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.2vw;
+  cursor: pointer;
 }
 label{
   position: absolute;
   left: 10%;
   font-weight: bold;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 input{
   margin-left: 6%;

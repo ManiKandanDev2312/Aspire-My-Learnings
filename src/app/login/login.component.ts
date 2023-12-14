@@ -23,6 +23,8 @@ ForgotpasswordCheck:any;
 isPasswordChecked:boolean=true;
 isForgotPasswordChecked:boolean=true;
 
+eyeIcon:boolean=true;
+passType="password";
 
 register:FormGroup;
 login:FormGroup;
@@ -146,4 +148,18 @@ ngOnInit() {
     },3000)
 }
 
+
+// this icon is used to view the password
+
+showPassword(){
+
+  if(this.eyeIcon==true){
+    this.eyeIcon=false;
+    this.passType="text";
+  }
+  else{
+    this.eyeIcon=true;
+    this.passType="password";
+  }
+}
 }
