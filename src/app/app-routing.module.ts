@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddressComponent } from './address/address.component';
+import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-deatils.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { CancelComponent } from './cancel/cancel.component';
 import { CartComponent } from './cart/cart.component';
 import { CDCardComponent } from './cdcard/cdcard.component';
@@ -213,7 +215,23 @@ const routes: Routes = [
 {
   path:"FeedBack",
   component:OrderFeedbackComponent
-}
+},
+{
+  path:"admin",
+  component:AdmindashboardComponent,
+  children:[
+    {
+      path:'',
+      redirectTo:'admindishpage',
+      pathMatch: 'full'
+    },
+    {
+      path:"adminhotel",
+      component:AdminHotelDeatilsComponent
+    }
+  ]
+},
+
 ];
 
 @NgModule({

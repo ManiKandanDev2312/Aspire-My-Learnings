@@ -41,6 +41,8 @@ import { NewOrdersComponent } from './new-orders/new-orders.component';
 import { PastOrdersComponent } from './past-orders/past-orders.component';
 import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.component';
 import { OrderFeedbackComponent } from './order-feedback/order-feedback.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-deatils.component';
 // import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
@@ -82,7 +84,9 @@ import { OrderFeedbackComponent } from './order-feedback/order-feedback.componen
     NewOrdersComponent,
     PastOrdersComponent,
     DeliveredOrdersComponent,
-    OrderFeedbackComponent
+    OrderFeedbackComponent,
+    AdmindashboardComponent,
+    AdminHotelDeatilsComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { LoginGuardGuard } from './login-guard.guard';
 import { formatDate } from '@angular/common';
 import { OrderDeliveredService } from './order-delivered.service';
 
-import { environment, NodeMailer } from 'src/environment/environment';
+import { environment, NodeMailer, Admin } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -149,6 +149,9 @@ export class DatabaseService {
           });
         }
         return alert("login successfull");
+      }
+      else if(Admin.Phonenumber==loginData.loginPhoneNumber && Admin.Password==loginData.loginPassword){
+        this.router.navigateByUrl("admin");
       }
       else{
         return alert("invalid details");

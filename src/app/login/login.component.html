@@ -47,7 +47,7 @@
 <!-- -----------------------------Display ForgotPassword Form --------------------------------->
   <div class="signin" *ngIf="forgotPasswordPage">
     <button class="exit" (click)="Close()"><i class="fa-solid fa-xmark"></i></button>
-    <h1>Forgort Password</h1>
+    <h1>Forgot Password</h1>
     <button class="createAccount" (click)="SignIn()"><span>or</span>Login to Your Account</button>
     <img src="./assets/img9.webp" alt="image" class="image">
 
@@ -74,7 +74,6 @@
         </div>
         <button class="login" type="submit" [disabled]="!forgotPassword.valid" (click)="changePassword(forgotPassword.value)">CHANGE PASSWORD</button>
       </form>
-      <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
     </div>
     </div>
 
@@ -121,7 +120,7 @@
             </div>
             <button class="login" type="submit" [disabled]="!register.valid && isPasswordChecked" (click)="SaveData()">REGISTER</button>
           </form>
-          <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+          <p>By clicking on Register, I accept the Terms & Conditions & Privacy Policy</p>
         </div>
       </div>
     </div>

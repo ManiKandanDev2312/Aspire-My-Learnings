@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -26,7 +27,7 @@ islogged:any;
 user:boolean=false;
 
 
-constructor(){
+constructor(private router:Router){
 
     this.islogged=sessionStorage.getItem('isentered');
 
@@ -60,7 +61,10 @@ LogOut(){
   sessionStorage.setItem('isentered','false');
   sessionStorage.setItem('isusername','');
   sessionStorage.setItem('isAddressAdded','false');
-  window.location.reload();
+  this.router.navigateByUrl("").then(()=>{
+    window.location.reload();
+  });
+
 }
 
 

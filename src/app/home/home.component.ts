@@ -43,6 +43,7 @@ if(this.dishArray=="undefined"){
 this.HotelList();
 }
 
+
 // this block is used to find the number of hotels
 HotelList(){
   this.hotel.read_hotels().subscribe(x=>{
@@ -70,5 +71,7 @@ ngOnInit(){
     this.slideImage=this.slideImageUrl[this.countingVariable++];
     },3000)
 }
+
+
 
 }

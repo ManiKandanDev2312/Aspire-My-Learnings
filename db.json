@@ -21,7 +21,8 @@
       "password": "@Mani2001",
       "ConfirmPassword": "@Mani2001",
       "search": [
-        "Geetha Canteen"
+        "Geetha Canteen",
+        "SS HYDERABAD BIRYANI"
       ],
       "Favorites": [
         {
@@ -224,9 +225,9 @@
         {
           "hotelName": "Barbequeen Restaurant",
           "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "dishName": "Mango Juice",
-          "dishQuantity": 4,
-          "dishPrice": 600,
+          "dishName": "Fresh Lime Juice",
+          "dishQuantity": 1,
+          "dishPrice": 38,
           "dishType": "veg"
         }
       ],
@@ -239,13 +240,13 @@
         "iconType": "fa-house"
       },
       "cartOrderDetails": {
-        "hotelName": "Hotel Sri Krishna",
-        "hotelImage": "./assets/hotelpage/Hotel Sri Krishna.jpeg",
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
         "orderItems": [
           {
-            "dishName": "Mango Juice",
-            "dishQuantity": 4,
-            "dishPrice": 600
+            "dishName": "Fresh Lime Juice",
+            "dishQuantity": 1,
+            "dishPrice": 38
           }
         ],
         "orderAddress": {
@@ -256,7 +257,7 @@
           "addressType": "Home",
           "iconType": "fa-house"
         },
-        "totalPrice": 643
+        "totalPrice": 81
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -710,110 +711,6 @@
           ],
           "paymentMenthod": "Cash On Delivery",
           "amountPaid": "not paid"
-        }
-      ]
-    },
-    {
-      "username": "Jeevaarav",
-      "phonenumber": 7904925991,
-      "email": "2k19me070@kiot.ac.in",
-      "password": "Jeeva@2001",
-      "ConfirmPassword": "Jeeva@2001",
-      "AddToCartDetails": [],
-      "search": [
-        "Chicking"
-      ],
-      "Address": [
-        {
-          "adress": "JaisuryasSanjeevara",
-          "doorNo": "586B",
-          "landmark": "DBSbank",
-          "district": "Salem",
-          "addressType": "Home",
-          "iconType": "fa-house"
-        }
-      ],
-      "Favorites": [
-        {
-          "id": 2,
-          "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
-          "hotelname": "SS HYDERABAD BIRYANI",
-          "dishvariety": "Biryani, South Indian, Seafood",
-          "timeDel": "18",
-          "Costfortwo": "₹350",
-          "offer": "40% off | Use TRYNEW",
-          "dishes": [
-            {
-              "dishImage": "./assets/dishes/Coconut Sharbat.webp",
-              "dishName": "Coconut Sharbat",
-              "dishPrice": "200",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/Cold Pressed Orange Juice.webp",
-              "dishName": "Cold Pressed Orange Juice",
-              "dishPrice": "220",
-              "dishType": "veg",
-              "dishDescription": "Healthy Juice"
-            },
-            {
-              "dishImage": "./assets/dishes/Rasmalai Mini Jar Cake.webp",
-              "dishName": "Rasmalai Mini Jar Cake",
-              "dishPrice": "139",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/Gulab Jamun Vanilla Pastry.webp",
-              "dishName": "Gulab Jamun Vanilla Pastry",
-              "dishPrice": "99",
-              "dishType": "veg",
-              "dishDescription": ""
-            },
-            {
-              "dishImage": "./assets/dishes/Chicken Biryani Half.webp",
-              "dishName": "Chicken Biryani Half",
-              "dishPrice": "278",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Chicken Special Leg.webp",
-              "dishName": "Chicken Special Leg",
-              "dishPrice": "259",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Chicken DUM Exec BIRYANI.webp",
-              "dishName": "Chicken DUM Exec BIRYANI",
-              "dishPrice": "240",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Hyderabadi Mutton Dum Biryrani.webp",
-              "dishName": "Hyderabadi Mutton Dum Biryrani",
-              "dishPrice": "312",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Prawn Biryani.webp",
-              "dishName": "Prawn Biryani",
-              "dishPrice": "350",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            },
-            {
-              "dishImage": "./assets/dishes/Mutton Biriyani.webp",
-              "dishName": "Mutton Biriyani",
-              "dishPrice": "312",
-              "dishType": "veg",
-              "dishDescription": "Serves 1"
-            }
-          ]
         }
       ]
     },
@@ -1059,6 +956,153 @@
           ]
         }
       ]
+    },
+    {
+      "username": "Gopal",
+      "phonenumber": 8525876050,
+      "email": "2k19ece050@kiot.ac.in",
+      "password": "Gopal@2001",
+      "ConfirmPassword": "Gopal@2001"
+    },
+    {
+      "username": "jeeva",
+      "phonenumber": 7904925991,
+      "email": "jeevaaravinth2001@gmail.com",
+      "password": "Jeeva@2001",
+      "ConfirmPassword": "Jeeva@2001",
+      "AddToCartDetails": [
+        {
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "dishName": "Choco Truffle Pastry",
+          "dishQuantity": 1,
+          "dishPrice": 89,
+          "dishType": "veg"
+        }
+      ],
+      "Address": [
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        }
+      ],
+      "CurrentOrderAddress": {
+        "adress": "kondalamPattyByepass",
+        "doorNo": "546",
+        "landmark": "nearByePass",
+        "district": "salem",
+        "addressType": "Home",
+        "iconType": "fa-house"
+      },
+      "cartOrderDetails": {
+        "hotelName": "Barbequeen Restaurant",
+        "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+        "orderItems": [
+          {
+            "dishName": "Choco Truffle Pastry",
+            "dishQuantity": 1,
+            "dishPrice": 89
+          },
+          {
+            "dishName": "Fresh Lime Juice",
+            "dishQuantity": 1,
+            "dishPrice": 38
+          }
+        ],
+        "orderAddress": {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "nearByePass",
+          "district": "salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        },
+        "totalPrice": 170
+      },
+      "paymentOrderedDetails": [],
+      "orderedDate": [],
+      "deliveredDate": [],
+      "Orders": [],
+      "deliveredOrders": [
+        {
+          "orderId": 577414,
+          "totalPrice": 170,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Fri",
+            "15-Dec-2023 02:10:00 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "15-Dec-2023 02:12:00 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Choco Truffle Pastry",
+              "dishQuantity": 1,
+              "dishPrice": 89
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 1,
+              "dishPrice": 38
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        }
+      ],
+      "FeedBackHotels": [
+        {
+          "orderId": 577414,
+          "totalPrice": 170,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "nearByePass",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Fri",
+            "15-Dec-2023 02:10:00 PM"
+          ],
+          "deliveryDate": [
+            "Fri",
+            "15-Dec-2023 02:12:00 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Choco Truffle Pastry",
+              "dishQuantity": 1,
+              "dishPrice": 89
+            },
+            {
+              "dishName": "Fresh Lime Juice",
+              "dishQuantity": 1,
+              "dishPrice": 38
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        }
+      ]
     }
   ],
   "Offers": [
@@ -1301,14 +1345,14 @@
   ],
   "hotelDetails": [
     {
-      "id": 1,
+      "phonenumber": 1,
       "hotelimage": "./assets/hotelpage/Hotel Maa.webp",
       "hotelname": "Hotel Maa",
       "dishvariety": "South Indian, Chinese, Icecream, Indian, Beverages",
       "timeDel": "30",
       "RatingArray": [],
       "Rating": "4",
-      "offer": "40% off | Use TRYNEW",
+      "offer": "40% off | use TRYNEW",
       "dishes": [
         {
           "dishImage": "./assets/dishes/mosambii juice.webp",
@@ -1383,7 +1427,7 @@
       ]
     },
     {
-      "id": 2,
+      "phonenumber": 2,
       "hotelimage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
       "hotelname": "SS HYDERABAD BIRYANI",
       "dishvariety": "Biryani, South Indian, Seafood",
@@ -1465,7 +1509,7 @@
       ]
     },
     {
-      "id": 3,
+      "phonenumber": 3,
       "hotelimage": "./assets/hotelpage/Barbequeen Restaurant.webp",
       "hotelname": "Barbequeen Restaurant",
       "dishvariety": "Barbeque, Biryani, Indian, Tandoor",
@@ -1540,7 +1584,7 @@
       ]
     },
     {
-      "id": 4,
+      "phonenumber": 4,
       "hotelimage": "./assets/hotelpage/HMR Hotel.webp",
       "hotelname": "HMR Hotel",
       "dishvariety": "Biryani, Indian, chinese, Seafood, Tandoori, Mexican",
@@ -1622,7 +1666,7 @@
       ]
     },
     {
-      "id": 5,
+      "phonenumber": 5,
       "hotelimage": "./assets/hotelpage/Sree Annapoorna.webp",
       "hotelname": "Sree Annapoorna",
       "dishvariety": "Indian, South Indian, North Indian, Chinese, Desserts",
@@ -1704,7 +1748,7 @@
       ]
     },
     {
-      "id": 6,
+      "phonenumber": 6,
       "hotelimage": "./assets/hotelpage/Browse N Joy.webp",
       "hotelname": "Browse N Joy",
       "dishvariety": "Snacks",
@@ -1786,7 +1830,7 @@
       ]
     },
     {
-      "id": 7,
+      "phonenumber": 7,
       "hotelimage": "./assets/hotelpage/Chicking.webp",
       "hotelname": "Chicking",
       "dishvariety": "Indian",
@@ -1868,7 +1912,7 @@
       ]
     },
     {
-      "id": 8,
+      "phonenumber": 8,
       "hotelimage": "./assets/hotelpage/Sree Annapoorna Sweets & Savouries.webp",
       "hotelname": "Sree Annapoorna Sweets & Savouries",
       "dishvariety": "Desserts",
@@ -1950,7 +1994,7 @@
       ]
     },
     {
-      "id": 9,
+      "phonenumber": 9,
       "hotelimage": "./assets/hotelpage/Flakes Fried Chicken.webp",
       "hotelname": "Flakes Fried Chicken",
       "dishvariety": "Burgers, Desserts",
@@ -2032,7 +2076,7 @@
       ]
     },
     {
-      "id": 10,
+      "phonenumber": 10,
       "hotelimage": "./assets/hotelpage/Kaanchan Kitchen's.webp",
       "hotelname": "Kaanchan Kitchen's",
       "dishvariety": "North Indian, Thaalis, Chaat, Desserts, Gujarati, South Indian",
@@ -2114,7 +2158,7 @@
       ]
     },
     {
-      "id": 11,
+      "phonenumber": 11,
       "hotelimage": "./assets/hotelpage/Oven Story Pizza.jpeg",
       "hotelname": "Oven Story Pizza",
       "dishvariety": "Pizzas",
@@ -2196,7 +2240,7 @@
       ]
     },
     {
-      "id": 12,
+      "phonenumber": 12,
       "hotelimage": "./assets/hotelpage/Geetha Canteen.webp",
       "hotelname": "Geetha Canteen",
       "dishvariety": "South Indian",
@@ -2278,7 +2322,7 @@
       ]
     },
     {
-      "id": 13,
+      "phonenumber": 13,
       "hotelimage": "./assets/hotelpage/Shree Anandhaas.webp",
       "hotelname": "Shree Anandhaas",
       "dishvariety": "North Indian, South Indian",
@@ -2360,7 +2404,7 @@
       ]
     },
     {
-      "id": 14,
+      "phonenumber": 14,
       "hotelimage": "./assets/hotelpage/Ramesh Mess.webp",
       "hotelname": "Ramesh Mess",
       "dishvariety": "South Indian",
@@ -2442,7 +2486,7 @@
       ]
     },
     {
-      "id": 15,
+      "phonenumber": 15,
       "hotelimage": "./assets/hotelpage/Hotel Sri Krishna.jpeg",
       "hotelname": "Hotel Sri Krishna",
       "dishvariety": "South Indian, Indian, Chinese",
@@ -2524,7 +2568,7 @@
       ]
     },
     {
-      "id": 16,
+      "phonenumber": 16,
       "hotelimage": "./assets/hotelpage/Chai Kings.webp",
       "hotelname": "Chai Kings",
       "dishvariety": "Beverages, Snacks, Bakery",

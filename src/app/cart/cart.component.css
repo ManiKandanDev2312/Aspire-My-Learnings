@@ -377,7 +377,7 @@ to{
   color: rgb(255, 128, 0);
 }
 .Address h1{
-  margin-left: 30%;
+  margin-left: 22%;
   margin-top: 5%;
   font-weight: bold;
   font-size: 2vw;
@@ -387,7 +387,9 @@ to{
   width: 15%;
   height: 15%;
   margin-top: -15%;
-  margin-left: 7%;
+}
+.Address img{
+  margin-left: 400px;
 }
 .AddressForm{
   display: flex;

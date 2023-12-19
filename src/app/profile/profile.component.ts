@@ -24,6 +24,8 @@ export class ProfileComponent {
   paymentbgcolor="";
   paymentcolor="";
 
+  userValue:any;
+  setUserValue:any;
 
   constructor(private fb:FormBuilder, private edit:DatabaseService){
 
@@ -36,12 +38,13 @@ if(sessionStorage.getItem('isentered')=="true"){
     console.log(this.userDetails);
   });
 }
-
+this.userValue=sessionStorage.getItem('isusername');
+this.setUserValue=JSON.parse(this.userValue);
 
     // validation of edit profile form
     this.editProfile=fb.group({
-      editProfileUsername:['',[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,15}$")]],
-      editProfileEmail:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$")]]
+      editProfileUsername:[this.setUserValue.username,[Validators.required,Validators.pattern("^(?!.(.).\\1)[a-zA-Z][a-zA-Z0-9_-]{3,15}$")]],
+      editProfileEmail:[this.setUserValue.email,[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$")]]
     });
   }
 

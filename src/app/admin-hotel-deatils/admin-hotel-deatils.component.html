@@ -1,0 +1,205 @@
+<div class="hotel" *ngIf="!adminDishPage">
+  <div class="hotels addhotels" (click)="AddHotels()">
+    <i class="fa-solid fa-plus"></i>
+  </div>
+  <div class="hotels" *ngFor="let values of val; let ind=index" >
+    <div class="hotels-contents">
+      <img src="{{values.hotelimage}}" alt="" (click)="hotelList(ind)">
+    </div>
+    <div class="hotels-contents">
+      <h4>{{values.hotelname}}</h4>
+      <h5>{{values.dishvariety}}</h5>
+    <div class="offer">
+      <div class="rating"><i class="fa-solid fa-star"></i> {{values.Rating}}</div>
+      <div class="time"><h5>{{values.timeDel}}&nbsp;MINS</h5></div>
+    </div>
+    <div class="offer_1" *ngIf="values.offer.length>=1">
+      <i class="fa-solid fa-percent"></i>
+      <h4>{{values.offer}}</h4>
+    </div>
+    <div class="buttons">
+      <button (click)="UpdateHotels(ind)">Update</button>
+      <button (click)="DeleteHotel(ind)">Delete</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="AddHotelForm"  *ngIf="showHotelForm">
+  <div class="inner-box">
+    <div class="inner-contents">
+      <div class="inner-box-contents">
+        <i class="fa-solid fa-xmark" (click)="AddHotels()"></i>
+      </div>
+      <div class="inner-box-contents">
+        <h1>Add Hotels</h1>
+
+      </div>
+      <div class="inner-box-contents">
+
+      </div>
+    </div>
+    <div class="inner-contents">
+      <form action="" [formGroup]="AddHotel">
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel Name" formControlName="hotelname">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel image" formControlName="hotelimage">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel Description" formControlName="dishvariety">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel Delivery time" formControlName="timeDel">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel offer" formControlName="offer">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter CouponCode" formControlName="CouponCode">
+        </div>
+        <div class="inner-form-contents">
+          <button [disabled]="!AddHotel.valid" (click)="AddHotelDB(AddHotel.value)">ADD</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="AddHotelForm"  *ngIf="showUpdate">
+  <div class="inner-box">
+    <div class="inner-contents">
+      <div class="inner-box-contents">
+        <i class="fa-solid fa-xmark" (click)="UpdateHotels(0)"></i>
+      </div>
+      <div class="inner-box-contents">
+        <h1>Update Hotel</h1>
+      </div>
+      <div class="inner-box-contents">
+
+      </div>
+    </div>
+    <div class="inner-contents">
+      <form action="" [formGroup]="UpdateHotelForm">
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel Name" formControlName="hotelname">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel image" formControlName="hotelimage">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel Description" formControlName="dishvariety">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel Delivery time" formControlName="timeDel">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Hotel offer" formControlName="offer">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter CouponCode" formControlName="CouponCode">
+        </div>
+        <div class="inner-form-contents">
+          <button [disabled]="!UpdateHotelForm.valid" (click)="UpdateHotelDetails(UpdateHotelForm.value)">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="dishPage" *ngIf="adminDishPage">
+  <div class="dishes">
+    <div class="dishes-details">
+      <h1>{{dishList.hotelname}}</h1>
+      <h2>Adding Dishes</h2>
+      <button class="back" (click)="hotelList(0)">Back</button>
+    </div>
+    <div class="dishes-details">
+      <button class="add" (click)="showDish()">+</button>
+    </div>
+  </div>
+  <div class="dishes" *ngFor="let dish of dishList.dishes;let ind=index">
+    <div class="dishes-details">
+      <h1>{{dish.dishName}}</h1>
+      <h2>₹ {{dish.dishPrice}}</h2>
+      <h3>{{dish.dishDescription}}</h3>
+      <div class="dishbuttons">
+        <button (click)="updateDish(ind)">Update</button>
+        <button (click)="DeleteDishDetails(ind)">Delete</button>
+      </div>
+    </div>
+    <div class="dishes-details">
+      <img src="{{dish.dishImage}}" alt="image">
+    </div>
+  </div>
+</div>
+
+<div class="AddHotelForm"  *ngIf="showDishForm">
+  <div class="inner-box">
+    <div class="inner-contents">
+      <div class="inner-box-contents">
+        <i class="fa-solid fa-xmark" (click)="showDish()"></i>
+      </div>
+      <div class="inner-box-contents">
+        <h1>Add Dish</h1>
+      </div>
+      <div class="inner-box-contents">
+
+      </div>
+    </div>
+    <div class="inner-contents">
+      <form action="" [formGroup]="AddDishForm">
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish Name" formControlName="dishName">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish image" formControlName="dishImage">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish Description" formControlName="dishDescription">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish Price" formControlName="dishPrice">
+        </div>
+        <div class="inner-form-contents">
+          <button [disabled]="!AddDishForm.valid" (click)="AddDishDetails(AddDishForm.value)">ADD</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="AddHotelForm"  *ngIf="showUpdateDish">
+  <div class="inner-box">
+    <div class="inner-contents">
+      <div class="inner-box-contents">
+        <i class="fa-solid fa-xmark" (click)="updateDish(0)"></i>
+      </div>
+      <div class="inner-box-contents">
+        <h1>Update Dish</h1>
+      </div>
+      <div class="inner-box-contents">
+
+      </div>
+    </div>
+    <div class="inner-contents">
+      <form action="" [formGroup]="UpdateDishForm">
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish Name" formControlName="dishName">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish image" formControlName="dishImage">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish Description" formControlName="dishDescription">
+        </div>
+        <div class="inner-form-contents">
+          <input type="text"placeholder="Enter Dish Price" formControlName="dishPrice">
+        </div>
+        <div class="inner-form-contents">
+          <button [disabled]="!UpdateDishForm.valid" (click)="UpdateDishDetails(UpdateDishForm.value)">UPDATE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

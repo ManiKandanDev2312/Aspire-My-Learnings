@@ -60,7 +60,7 @@
           <label for="editProfileUsername"*ngIf="!editProfile.controls['editProfileUsername'].errors?.['required'] && !editProfile.controls['editProfileUsername'].errors?.['pattern'] || !editProfile.controls['editProfileUsername'].dirty">Username</label>
           <label *ngIf="editProfile.controls['editProfileUsername'].errors?.['required'] && editProfile.controls['editProfileUsername'].invalid && editProfile.controls['editProfileUsername'].dirty" class="invalid">Please enter Username</label>
           <label *ngIf="editProfile.controls['editProfileUsername'].errors?.['pattern'] && (editProfile.controls['editProfileUsername'].invalid || editProfile.controls['editProfileUsername'].dirty)" class="invalid">invalid Username</label>
-          <input type="text" placeholder=" " name="editProfileUsername"  formControlName="editProfileUsername" >
+          <input type="text" placeholder=" " name="editProfileUsername"  formControlName="editProfileUsername" value="Mani">
         </div>
         <div class="forms">
           <label for="editProfileEmail"*ngIf="!editProfile.controls['editProfileEmail'].errors?.['required'] && !editProfile.controls['editProfileEmail'].errors?.['pattern'] || !editProfile.controls['editProfileEmail'].dirty">Email</label>

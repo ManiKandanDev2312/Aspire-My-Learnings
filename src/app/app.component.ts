@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component, OnInit} from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { OrderDeliveredService } from './order-delivered.service';
 
@@ -8,16 +8,17 @@ import { OrderDeliveredService } from './order-delivered.service';
   styleUrls: ['./app.component.css'],
 
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit,AfterViewInit,AfterContentInit {
   title:any="FoodCourt";
   navBar:boolean=true;
   Footer:boolean=true;
+  Preloader:boolean=true;
 
   constructor(private ordered:OrderDeliveredService, private router:Router){
 
-    // router.events.subscribe((urlValue)=>{
+    router.events.subscribe((urlValue)=>{
 
-    //   if(urlValue instanceof NavigationEnd){
+      if(urlValue instanceof NavigationEnd){
     //     if(urlValue.url=="/login"){
     //       this.Footer=false;
     //       this.navBar=false;
@@ -50,11 +51,25 @@ export class AppComponent implements OnInit {
     //       this.Footer=true;
     //       this.navBar=true;
     //     }
+    if(urlValue.url=="/admin"){
+      this.Footer=false;
+      this.navBar=false;
+    }
+    else if(urlValue.url=="/admin/adminhotel"){
+      this.Footer=false;
+      this.navBar=false;
+    }
+    else{
+      this.Footer=true;
+      this.navBar=true;
+    }
+      }
 
-    //   }
+    });
 
-    // });
-
+  }
+  ngAfterContentInit(): void {
+    console.log("jeeva Aravinth");
   }
 
   ngOnInit(): void {
@@ -66,6 +81,12 @@ export class AppComponent implements OnInit {
       this.ordered.startInterval();
     }
 
+  }
+  ngAfterViewInit(): void {
+    console.log("content is fully loaded");
+    window.onload=()=>{
+      this.Preloader=false;
+    }
   }
 
 }
