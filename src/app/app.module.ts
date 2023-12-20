@@ -43,6 +43,7 @@ import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.co
 import { OrderFeedbackComponent } from './order-feedback/order-feedback.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-deatils.component';
+import { AdminCustomerDetailsComponent } from './admin-customer-details/admin-customer-details.component';
 // import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
@@ -86,7 +87,8 @@ import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-de
     DeliveredOrdersComponent,
     OrderFeedbackComponent,
     AdmindashboardComponent,
-    AdminHotelDeatilsComponent
+    AdminHotelDeatilsComponent,
+    AdminCustomerDetailsComponent
   ],
   imports: [
     BrowserModule,

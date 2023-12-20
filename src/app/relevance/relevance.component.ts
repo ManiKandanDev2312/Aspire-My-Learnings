@@ -34,7 +34,6 @@ readhotels(){
 // this block is used to route the dishcomponent for the paricular hotel
 hotelList(ind:number){
   this.value=JSON.stringify(this.val[ind]);
-
   sessionStorage.setItem('hotelDetails',this.value);
   this.router.navigateByUrl("/dishPage");
 }

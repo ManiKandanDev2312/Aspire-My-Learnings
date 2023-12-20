@@ -59,6 +59,10 @@ export class AppComponent implements OnInit,AfterViewInit,AfterContentInit {
       this.Footer=false;
       this.navBar=false;
     }
+    else if(urlValue.url=="/admin/admincustomerdetails"){
+      this.Footer=false;
+      this.navBar=false;
+    }
     else{
       this.Footer=true;
       this.navBar=true;

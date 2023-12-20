@@ -463,8 +463,8 @@ export class DatabaseService {
     });
     });
 
-
-
+    sessionStorage.removeItem('dishes');
+    sessionStorage.setItem('couponAdded','false');
 
   }
 

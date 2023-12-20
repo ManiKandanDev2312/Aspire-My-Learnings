@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddressComponent } from './address/address.component';
+import { AdminCustomerDetailsComponent } from './admin-customer-details/admin-customer-details.component';
 import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-deatils.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { CancelComponent } from './cancel/cancel.component';
@@ -228,6 +229,10 @@ const routes: Routes = [
     {
       path:"adminhotel",
       component:AdminHotelDeatilsComponent
+    },
+    {
+      path:"admincustomerdetails",
+      component:AdminCustomerDetailsComponent
     }
   ]
 },

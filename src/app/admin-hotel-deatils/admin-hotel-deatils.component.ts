@@ -98,7 +98,7 @@ export class AdminHotelDeatilsComponent {
       hotelimage:data.hotelimage,
       dishvariety:data.dishvariety,
       timeDel:data.timeDel,
-      offer:data.offer+"% off | use "+data.CouponCode,
+      offer:data.offer+"% off | Use "+data.CouponCode,
       Rating:"4",
       dishes:[]
     }
@@ -115,7 +115,7 @@ export class AdminHotelDeatilsComponent {
       hotelimage:hotelDeatils.hotelimage,
       dishvariety:hotelDeatils.dishvariety,
       timeDel:hotelDeatils.timeDel,
-      offer:hotelDeatils.offer+" off | use "+hotelDeatils.CouponCode
+      offer:hotelDeatils.offer+" off | Use "+hotelDeatils.CouponCode
     }
     this.adData.UpdateHotels(hotelData,hotelDeatils.index);
   }

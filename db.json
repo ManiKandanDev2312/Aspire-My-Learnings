@@ -962,7 +962,240 @@
       "phonenumber": 8525876050,
       "email": "2k19ece050@kiot.ac.in",
       "password": "Gopal@2001",
-      "ConfirmPassword": "Gopal@2001"
+      "ConfirmPassword": "Gopal@2001",
+      "AddToCartDetails": [],
+      "Address": [
+        {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "near",
+          "district": "salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        }
+      ],
+      "CurrentOrderAddress": {
+        "adress": "kondalamPattyByepass",
+        "doorNo": "546",
+        "landmark": "near",
+        "district": "salem",
+        "addressType": "Home",
+        "iconType": "fa-house"
+      },
+      "cartOrderDetails": {
+        "hotelName": "HMR Hotel",
+        "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+        "orderItems": [
+          {
+            "dishName": "Assorted Sweets [250 Gms]",
+            "dishQuantity": 3,
+            "dishPrice": 594
+          }
+        ],
+        "orderAddress": {
+          "adress": "kondalamPattyByepass",
+          "doorNo": "546",
+          "landmark": "near",
+          "district": "salem",
+          "addressType": "Home",
+          "iconType": "fa-house"
+        },
+        "totalPrice": 637
+      },
+      "paymentOrderedDetails": [],
+      "orderedDate": [],
+      "deliveredDate": [],
+      "Orders": [],
+      "deliveredOrders": [
+        {
+          "orderId": 886129,
+          "totalPrice": 310,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Wed",
+            "20-Dec-2023 10:46:52 AM"
+          ],
+          "deliveryDate": [
+            "Wed",
+            "20-Dec-2023 10:48:52 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Choco Truffle Pastry",
+              "dishQuantity": 3,
+              "dishPrice": 267
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 678127,
+          "totalPrice": 263,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Wed",
+            "20-Dec-2023 10:52:43 AM"
+          ],
+          "deliveryDate": [
+            "Wed",
+            "20-Dec-2023 10:54:43 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Cold Pressed Orange Juice",
+              "dishQuantity": 1,
+              "dishPrice": 220
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 694887,
+          "totalPrice": 637,
+          "hotelName": "HMR Hotel",
+          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Wed",
+            "20-Dec-2023 02:39:24 PM"
+          ],
+          "deliveryDate": [
+            "Wed",
+            "20-Dec-2023 02:41:24 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Assorted Sweets [250 Gms]",
+              "dishQuantity": 3,
+              "dishPrice": 594
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        }
+      ],
+      "FeedBackHotels": [
+        {
+          "orderId": 886129,
+          "totalPrice": 310,
+          "hotelName": "Barbequeen Restaurant",
+          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Wed",
+            "20-Dec-2023 10:46:52 AM"
+          ],
+          "deliveryDate": [
+            "Wed",
+            "20-Dec-2023 10:48:52 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Choco Truffle Pastry",
+              "dishQuantity": 3,
+              "dishPrice": 267
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 678127,
+          "totalPrice": 263,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Wed",
+            "20-Dec-2023 10:52:43 AM"
+          ],
+          "deliveryDate": [
+            "Wed",
+            "20-Dec-2023 10:54:43 AM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Cold Pressed Orange Juice",
+              "dishQuantity": 1,
+              "dishPrice": 220
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        },
+        {
+          "orderId": 694887,
+          "totalPrice": 637,
+          "hotelName": "HMR Hotel",
+          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Wed",
+            "20-Dec-2023 02:39:24 PM"
+          ],
+          "deliveryDate": [
+            "Wed",
+            "20-Dec-2023 02:41:24 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Assorted Sweets [250 Gms]",
+              "dishQuantity": 3,
+              "dishPrice": 594
+            }
+          ],
+          "paymentMenthod": "Cash On Delivery",
+          "amountPaid": "not paid"
+        }
+      ]
     },
     {
       "username": "jeeva",

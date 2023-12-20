@@ -8,6 +8,7 @@ import { environment } from "src/environment/environment";
 export class AdminDatasService {
 
   hotelDetailsArray:any=[];
+  customerDetailsArray:any=[];
 
   constructor(private http:HttpClient) {
 
@@ -98,5 +99,9 @@ export class AdminDatasService {
         }
       })
     })
+   }
+
+   fetchCustomers(){
+    return this.http.get(environment.CustomerDetails);
    }
 }
