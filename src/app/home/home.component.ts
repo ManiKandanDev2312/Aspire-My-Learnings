@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
 // -------------------------------- Routing Modules--------------------
 
-Relevance:string="";
+Relevance:string="relevance";
 rating:string="rating";
 Delivery_Time:string="Delivery_Time";
 low_to_high:string="low_to_high";

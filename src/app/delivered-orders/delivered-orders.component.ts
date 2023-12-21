@@ -30,7 +30,7 @@ export class DeliveredOrdersComponent {
     this.Delivered.sendOrders().subscribe(x=>{
       this.customerDetails=x;
       this.deliveredOrderDetails=this.customerDetails.deliveredOrders
-      if(this.deliveredOrderDetails.length==0){
+      if(this.deliveredOrderDetails.length==0 || this.deliveredOrderDetails == undefined){
         this.isEmpty=true;
       }
     });

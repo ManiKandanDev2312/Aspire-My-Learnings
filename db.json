@@ -221,16 +221,7 @@
         "cardHolderName": "MANIKANDAN O",
         "cardType": "visa"
       },
-      "AddToCartDetails": [
-        {
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "dishName": "Fresh Lime Juice",
-          "dishQuantity": 1,
-          "dishPrice": 38,
-          "dishType": "veg"
-        }
-      ],
+      "AddToCartDetails": [],
       "CurrentOrderAddress": {
         "adress": "kondalamPattyByepass",
         "doorNo": "546",
@@ -243,6 +234,11 @@
         "hotelName": "Barbequeen Restaurant",
         "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
         "orderItems": [
+          {
+            "dishName": "Mango Juice",
+            "dishQuantity": 1,
+            "dishPrice": 150
+          },
           {
             "dishName": "Fresh Lime Juice",
             "dishQuantity": 1,
@@ -257,7 +253,7 @@
           "addressType": "Home",
           "iconType": "fa-house"
         },
-        "totalPrice": 81
+        "totalPrice": 231
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -983,13 +979,13 @@
         "iconType": "fa-house"
       },
       "cartOrderDetails": {
-        "hotelName": "HMR Hotel",
-        "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+        "hotelName": "Chicking",
+        "hotelImage": "./assets/hotelpage/Chicking.webp",
         "orderItems": [
           {
-            "dishName": "Assorted Sweets [250 Gms]",
-            "dishQuantity": 3,
-            "dishPrice": 594
+            "dishName": "Burger Box",
+            "dishQuantity": 1,
+            "dishPrice": 288
           }
         ],
         "orderAddress": {
@@ -1000,7 +996,7 @@
           "addressType": "Home",
           "iconType": "fa-house"
         },
-        "totalPrice": 637
+        "totalPrice": 331
       },
       "paymentOrderedDetails": [],
       "orderedDate": [],
@@ -1008,38 +1004,7 @@
       "Orders": [],
       "deliveredOrders": [
         {
-          "orderId": 886129,
-          "totalPrice": 310,
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "address": {
-            "adress": "kondalamPattyByepass",
-            "doorNo": "546",
-            "landmark": "near",
-            "district": "salem",
-            "addressType": "Home",
-            "iconType": "fa-house"
-          },
-          "orderedDate": [
-            "Wed",
-            "20-Dec-2023 10:46:52 AM"
-          ],
-          "deliveryDate": [
-            "Wed",
-            "20-Dec-2023 10:48:52 AM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Choco Truffle Pastry",
-              "dishQuantity": 3,
-              "dishPrice": 267
-            }
-          ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
-        },
-        {
-          "orderId": 678127,
+          "orderId": 270122,
           "totalPrice": 263,
           "hotelName": "SS HYDERABAD BIRYANI",
           "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
@@ -1053,11 +1018,11 @@
           },
           "orderedDate": [
             "Wed",
-            "20-Dec-2023 10:52:43 AM"
+            "20-Dec-2023 04:16:10 PM"
           ],
           "deliveryDate": [
             "Wed",
-            "20-Dec-2023 10:54:43 AM"
+            "20-Dec-2023 04:18:10 PM"
           ],
           "orderedItems": [
             {
@@ -1070,10 +1035,10 @@
           "amountPaid": "not paid"
         },
         {
-          "orderId": 694887,
-          "totalPrice": 637,
-          "hotelName": "HMR Hotel",
-          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "orderId": 300546,
+          "totalPrice": 460,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
           "address": {
             "adress": "kondalamPattyByepass",
             "doorNo": "546",
@@ -1083,58 +1048,56 @@
             "iconType": "fa-house"
           },
           "orderedDate": [
-            "Wed",
-            "20-Dec-2023 02:39:24 PM"
+            "Thu",
+            "21-Dec-2023 01:21:05 PM"
           ],
           "deliveryDate": [
-            "Wed",
-            "20-Dec-2023 02:41:24 PM"
+            "Thu",
+            "21-Dec-2023 01:23:05 PM"
           ],
           "orderedItems": [
             {
-              "dishName": "Assorted Sweets [250 Gms]",
+              "dishName": "Rasmalai Mini Jar Cake",
               "dishQuantity": 3,
-              "dishPrice": 594
+              "dishPrice": 417
             }
           ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 190823,
+          "totalPrice": 331,
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Thu",
+            "21-Dec-2023 01:42:08 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "21-Dec-2023 01:44:08 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Burger Box",
+              "dishQuantity": 1,
+              "dishPrice": 288
+            }
+          ],
+          "paymentMenthod": "Card"
         }
       ],
       "FeedBackHotels": [
         {
-          "orderId": 886129,
-          "totalPrice": 310,
-          "hotelName": "Barbequeen Restaurant",
-          "hotelImage": "./assets/hotelpage/Barbequeen Restaurant.webp",
-          "address": {
-            "adress": "kondalamPattyByepass",
-            "doorNo": "546",
-            "landmark": "near",
-            "district": "salem",
-            "addressType": "Home",
-            "iconType": "fa-house"
-          },
-          "orderedDate": [
-            "Wed",
-            "20-Dec-2023 10:46:52 AM"
-          ],
-          "deliveryDate": [
-            "Wed",
-            "20-Dec-2023 10:48:52 AM"
-          ],
-          "orderedItems": [
-            {
-              "dishName": "Choco Truffle Pastry",
-              "dishQuantity": 3,
-              "dishPrice": 267
-            }
-          ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
-        },
-        {
-          "orderId": 678127,
+          "orderId": 270122,
           "totalPrice": 263,
           "hotelName": "SS HYDERABAD BIRYANI",
           "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
@@ -1148,11 +1111,11 @@
           },
           "orderedDate": [
             "Wed",
-            "20-Dec-2023 10:52:43 AM"
+            "20-Dec-2023 04:16:10 PM"
           ],
           "deliveryDate": [
             "Wed",
-            "20-Dec-2023 10:54:43 AM"
+            "20-Dec-2023 04:18:10 PM"
           ],
           "orderedItems": [
             {
@@ -1165,10 +1128,10 @@
           "amountPaid": "not paid"
         },
         {
-          "orderId": 694887,
-          "totalPrice": 637,
-          "hotelName": "HMR Hotel",
-          "hotelImage": "./assets/hotelpage/HMR Hotel.webp",
+          "orderId": 300546,
+          "totalPrice": 460,
+          "hotelName": "SS HYDERABAD BIRYANI",
+          "hotelImage": "./assets/hotelpage/SS HYDERABAD BIRYANI.webp",
           "address": {
             "adress": "kondalamPattyByepass",
             "doorNo": "546",
@@ -1178,24 +1141,61 @@
             "iconType": "fa-house"
           },
           "orderedDate": [
-            "Wed",
-            "20-Dec-2023 02:39:24 PM"
+            "Thu",
+            "21-Dec-2023 01:21:05 PM"
           ],
           "deliveryDate": [
-            "Wed",
-            "20-Dec-2023 02:41:24 PM"
+            "Thu",
+            "21-Dec-2023 01:23:05 PM"
           ],
           "orderedItems": [
             {
-              "dishName": "Assorted Sweets [250 Gms]",
+              "dishName": "Rasmalai Mini Jar Cake",
               "dishQuantity": 3,
-              "dishPrice": 594
+              "dishPrice": 417
             }
           ],
-          "paymentMenthod": "Cash On Delivery",
-          "amountPaid": "not paid"
+          "paymentMenthod": "Card"
+        },
+        {
+          "orderId": 190823,
+          "totalPrice": 331,
+          "hotelName": "Chicking",
+          "hotelImage": "./assets/hotelpage/Chicking.webp",
+          "address": {
+            "adress": "kondalamPattyByepass",
+            "doorNo": "546",
+            "landmark": "near",
+            "district": "salem",
+            "addressType": "Home",
+            "iconType": "fa-house"
+          },
+          "orderedDate": [
+            "Thu",
+            "21-Dec-2023 01:42:08 PM"
+          ],
+          "deliveryDate": [
+            "Thu",
+            "21-Dec-2023 01:44:08 PM"
+          ],
+          "orderedItems": [
+            {
+              "dishName": "Burger Box",
+              "dishQuantity": 1,
+              "dishPrice": 288
+            }
+          ],
+          "paymentMenthod": "Card"
         }
-      ]
+      ],
+      "search": [
+        "Geetha Canteen"
+      ],
+      "PaymentCradDetails": {
+        "cardNumber": "XXXXXXXXXXXX1234",
+        "cardHolderName": "NANDHAGOPAL",
+        "cardType": "visa"
+      }
     },
     {
       "username": "jeeva",

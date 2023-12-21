@@ -49,7 +49,7 @@ export class OrdersComponent {
         this.pastOrderDetailsArray=this.customerDetails.Orders;
         this.deliveredOrderDetailsArray=this.customerDetails.deliveredOrders;
         this.cancelTime=this.customerDetails.orderedDate
-        if(this.newOrderDetailsArray.length==0 && this.pastOrderDetailsArray.length==0 && this.deliveredOrderDetailsArray.length==0){
+        if((this.newOrderDetailsArray==undefined && this.pastOrderDetailsArray==undefined && this.deliveredOrderDetailsArray==undefined) ||(this.newOrderDetailsArray.length==0 && this.pastOrderDetailsArray.length==0 && this.deliveredOrderDetailsArray.length==0)){
           this.isPastOrder=false;
           this.isDeliveredOrder=false;
           this.isNewOrder=false;

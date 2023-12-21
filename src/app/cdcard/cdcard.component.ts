@@ -28,7 +28,7 @@ export class CDCardComponent {
   cardTypeDetails="";
 
   CardDetails:any;
-
+  isNewCard:any;
   isAddCard:any;
   registeredCard:FormGroup;
   currentYear:any;
@@ -46,14 +46,23 @@ export class CDCardComponent {
     if(sessionStorage.getItem('isentered')=="true"){
       this.cardType.sendEditProfile().subscribe(x=>{
         this.customerDetails=x;
-        this.registeredCardDetails=this.customerDetails.PaymentCradDetails
+        this.registeredCardDetails=this.customerDetails.PaymentCradDetails;
+        console.log("Card Details : ",this.registeredCardDetails);
 
-        if(this.registeredCardDetails.cardType=="visa"){
+        if(this.registeredCardDetails==undefined){
+          this.isNewCard=false;
+          this.registeredCardDetails="";
+          console.log("mani");
+        }
+
+       else if(this.registeredCardDetails.cardType=="visa"){
           this.cardTypeDetails="./assets/VisaLogo.png";
+          this.isNewCard=true;
           this.isAddCard=false;
         }
         else{
           this.cardTypeDetails="./assets/MasterCardLogo.png";
+          this.isNewCard=true;
           this.isAddCard=false;
         }
       });
@@ -218,15 +227,20 @@ export class CDCardComponent {
     }
     this.cardType.cardDetails(this.CardDetails);
 
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("finalorder");
   }
 
   showCard(){
 
-    if(this.isAddCard==false)
-    this.isAddCard=true;
-    else
-    this.isAddCard=false;
+    if(this.isAddCard==false){
+      this.isAddCard=true;
+      // this.isNewCard=false;
+    }
+    else{
+      this.isAddCard=false;
+      // this.isNewCard=true;
+    }
+
   }
 
 
@@ -254,6 +268,6 @@ export class CDCardComponent {
 
   cardRegisteredPaid(){
     this.cardType.paymentOrdered("Card");
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("finalorder");
   }
 }

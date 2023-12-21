@@ -32,6 +32,6 @@ SendPaymentUPI(paymentMethod:any){
 //this block is used to send the paymenttype of Cash on delivery
 SendPaymentCashOnDelivery(){
   this.upi.paymentOrdered("Cash On Delivery");
-  this.router.navigateByUrl("");
+  this.router.navigateByUrl("finalorder");
 }
 }

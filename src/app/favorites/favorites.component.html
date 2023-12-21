@@ -13,6 +13,10 @@
 <div class="Favorites">
   <h1>Favorites</h1>
 <!-- ------------------display the favorite hotel details------------- -->
+<div class="commonBox" *ngIf="!isshow">
+  <img src="./assets/emptycart.gif" alt="" class="emptyImage">
+  <h2>Favorites are Empty!</h2>
+</div>
   <div class="commonBox" *ngIf="isshow">
     <div class="hotel">
       <div class="hotels" *ngFor="let FavoriteArrays of limitedFavorite; let ind=index" (click)="sendHotel(ind)">

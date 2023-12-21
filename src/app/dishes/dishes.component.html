@@ -44,7 +44,7 @@
     <h4>₹ {{dishes.dishPrice}}</h4>
     <h5>{{dishes.dishDescription}}</h5>
     <img src="{{dishes.dishImage}}" alt="juice">
-    <button class="add" (click)="cartItems(ind)" [ngClass]="{'addedButton': indexNumber === ind}" id="{{ind}}">ADD</button>
+    <button class="add" (click)="cartItems(ind)" #button>ADD</button>
   </div>
 </div>
 
@@ -61,7 +61,7 @@
       <h4>₹ {{dishes.dishPrice}}</h4>
       <h5>{{dishes.dishDescription}}</h5>
       <img src="{{dishes.dishImage}}" alt="juice">
-      <button class="add" (click)="searchcartItems(ind)" [ngClass]="{'addedButton': indexNumber === ind}" id="{{ind}}">ADD</button>
+      <button class="add" (click)="searchcartItems(ind)" #button>ADD</button>
     </div>
 </div>
 </div>

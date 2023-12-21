@@ -95,7 +95,7 @@
   </div>
 
   <button (click)="showCard()" class="cancelCard" *ngIf="isAddCard">CANCEL</button>
-  <div class="registeredCard" *ngIf="!isAddCard">
+  <div class="registeredCard" *ngIf="isNewCard && !isAddCard">
     <label >CARD NUMBER</label>
     <h1>{{registeredCardDetails.cardNumber}}</h1>
 
@@ -124,5 +124,6 @@
 
 
   </div>
-  <button (click)="showCard()" *ngIf="!isAddCard" class="addcard">ADD NEW CARD</button>
+
 </div>
+<button (click)="showCard()" *ngIf="!isAddCard" class="addcard">ADD NEW CARD</button>

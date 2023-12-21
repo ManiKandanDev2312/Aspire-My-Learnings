@@ -12,6 +12,7 @@ export class PaymentComponent {
   customerDetails:any=[];
   cardDetails:any=[];
   cardTypeImage:any;
+  isshow:boolean=false;
   constructor(private payment:DatabaseService){
 
 // get details about registered bank card
@@ -19,14 +20,24 @@ export class PaymentComponent {
       this.payment.sendOrders().subscribe(x=>{
 
         this.customerDetails=x;
-        this.cardDetails=this.customerDetails.PaymentCradDetails
+        this.cardDetails=this.customerDetails.PaymentCradDetails;
 
-        if(this.cardDetails.cardType=="visa"){
-          this.cardTypeImage="./assets/VisaLogo.png";
+        console.log(this.cardDetails);
+
+        if(this.cardDetails==undefined){
+          this.isshow=true;
         }
         else{
-          this.cardTypeImage="./assets/MasterCardLogo.png";
+          if(this.cardDetails.cardType=="visa"){
+            this.cardTypeImage="./assets/VisaLogo.png";
+          }
+          else{
+            this.cardTypeImage="./assets/MasterCardLogo.png";
+          }
+          this.isshow=false
         }
+
+
         console.log(this.cardDetails);
       });
     }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddressComponent } from './address/address.component';
+import { AdminAnalyticsComponent } from './admin-analytics/admin-analytics.component';
 import { AdminCustomerDetailsComponent } from './admin-customer-details/admin-customer-details.component';
 import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-deatils.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
@@ -11,9 +12,11 @@ import { CDCardComponent } from './cdcard/cdcard.component';
 import { DeliveredOrdersComponent } from './delivered-orders/delivered-orders.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { DishesComponent } from './dishes/dishes.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { FAQsComponent } from './faqs/faqs.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { FilterComponent } from './filter/filter.component';
+import { FinalOrderComponent } from './final-order/final-order.component';
 import { FinalPaymentComponent } from './final-payment/final-payment.component';
 import { FinalfavoritesComponent } from './finalfavorites/finalfavorites.component';
 import { HelpComponent } from './help/help.component';
@@ -43,16 +46,16 @@ import { UPIComponent } from './upi/upi.component';
 import { WalletComponent } from './wallet/wallet.component';
 
 const routes: Routes = [
-  {path:' ',
-  redirectTo:'/home',
-  pathMatch: 'full'
-},
 {
   path:"",
   component:HomeComponent,
   children:[
+    {path:"",
+    redirectTo:'/relevance',
+    pathMatch: 'full'
+  },
     {
-      path:"",
+      path:"relevance",
       component:RelevanceComponent
     },
     {
@@ -223,8 +226,12 @@ const routes: Routes = [
   children:[
     {
       path:'',
-      redirectTo:'admindishpage',
+      redirectTo:'adminAnalytics',
       pathMatch: 'full'
+    },
+    {
+      path:"adminAnalytics",
+      component:AdminAnalyticsComponent
     },
     {
       path:"adminhotel",
@@ -236,7 +243,14 @@ const routes: Routes = [
     }
   ]
 },
-
+{
+  path:"finalorder",
+  component:FinalOrderComponent
+},
+{
+  path:"**",
+  component:ErrorPageComponent
+}
 ];
 
 @NgModule({

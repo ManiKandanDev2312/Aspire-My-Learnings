@@ -44,6 +44,9 @@ import { OrderFeedbackComponent } from './order-feedback/order-feedback.componen
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AdminHotelDeatilsComponent } from './admin-hotel-deatils/admin-hotel-deatils.component';
 import { AdminCustomerDetailsComponent } from './admin-customer-details/admin-customer-details.component';
+import { AdminAnalyticsComponent } from './admin-analytics/admin-analytics.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { FinalOrderComponent } from './final-order/final-order.component';
 // import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
@@ -88,7 +91,10 @@ import { AdminCustomerDetailsComponent } from './admin-customer-details/admin-cu
     OrderFeedbackComponent,
     AdmindashboardComponent,
     AdminHotelDeatilsComponent,
-    AdminCustomerDetailsComponent
+    AdminCustomerDetailsComponent,
+    AdminAnalyticsComponent,
+    ErrorPageComponent,
+    FinalOrderComponent
   ],
   imports: [
     BrowserModule,

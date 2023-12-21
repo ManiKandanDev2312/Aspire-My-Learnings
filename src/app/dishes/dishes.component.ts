@@ -1,4 +1,4 @@
-import { ThisReceiver } from '@angular/compiler';
+
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { DatabaseService } from '../database.service';
@@ -17,7 +17,6 @@ export class DishesComponent {
   dummy:any;
   dummy1:any;
   ind:number=0;
-  indexNumber:any;
 
   favorite:string="";
 
@@ -144,7 +143,6 @@ searchdishname(dish:string){
 // this block is used added the items in cart
 searchcartItems(ind:any){
 
-  this.indexNumber=ind;
   this.itemArray=this.array;
   this.ind=this.array.length;
   if(this.hotelName.sendCartHotelDetails())
@@ -202,8 +200,6 @@ searchcartItems(ind:any){
 
 // this block is used store the hotel details of the order
 cartItems(ind:number){
-
-  this.indexNumber=ind;
   this.itemArray=this.array;
   this.ind=this.array.length;
   if(this.hotelName.sendCartHotelDetails())
