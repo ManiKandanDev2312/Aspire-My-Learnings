@@ -1,0 +1,9 @@
+.outter{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.outter-contents:nth-child(1){
+  width: 100%;
+}

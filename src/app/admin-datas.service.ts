@@ -104,4 +104,7 @@ export class AdminDatasService {
    fetchCustomers(){
     return this.http.get(environment.CustomerDetails);
    }
+   fetchHotels(){
+    return this.http.get(environment.HotelDetails);
+   }
 }

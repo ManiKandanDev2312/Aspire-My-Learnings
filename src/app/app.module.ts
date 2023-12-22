@@ -47,6 +47,7 @@ import { AdminCustomerDetailsComponent } from './admin-customer-details/admin-cu
 import { AdminAnalyticsComponent } from './admin-analytics/admin-analytics.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { FinalOrderComponent } from './final-order/final-order.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
 // import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
@@ -101,7 +102,8 @@ import { FinalOrderComponent } from './final-order/final-order.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

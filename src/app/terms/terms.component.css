@@ -1,0 +1,12 @@
+.outter{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: left;
+  padding: 0px 50px 50px 50px;
+}
+.outter p{
+  font-size: 1.3vw;
+  text-align: justify;
+  line-height: 30px;
+}

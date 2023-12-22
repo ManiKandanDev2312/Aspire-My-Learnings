@@ -1,7 +1,12 @@
-.content{
-  margin: 20px 50px 50px 50px;
-  line-height: 20px;
+.outter{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: left;
+  padding: 0px 50px 50px 50px;
 }
-.content span{
-  font-weight: bold;
+.outter p{
+  font-size: 1.3vw;
+  text-align: justify;
+  line-height: 30px;
 }

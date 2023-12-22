@@ -1,0 +1,42 @@
+.outter{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* align-items: center; */
+  padding: 0px 50px 50px 50px;
+}
+.outter-contents{
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  justify-content: space-between;
+}
+.inner{
+  display: flex;
+  flex-direction: column;
+}
+.inner-text{
+  justify-content: left;
+  width: 100%;
+  gap: 30px;
+}
+.inner h1{
+  text-align: left;
+  font-size: 2.5vw;
+}
+.inner p{
+  text-align: justify;
+  font-size: 1.5vw;
+  line-height: 40px;
+}
+.inner h2{
+  font-size: 2vw;
+}
+.inner img{
+  width: 500px;
+}
+
+.mypic img{
+  width: 350px;
+  height: 400px;
+}

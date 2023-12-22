@@ -93,7 +93,6 @@ export class AppComponent implements OnInit,AfterViewInit{
 
   }
   ngAfterViewInit(): void {
-    console.log("content is fully loaded");
     window.onload=()=>{
       this.Preloader=false;
     }
