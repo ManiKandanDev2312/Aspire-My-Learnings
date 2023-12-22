@@ -226,12 +226,8 @@ const routes: Routes = [
   children:[
     {
       path:'',
-      redirectTo:'adminAnalytics',
+      redirectTo:'adminhotel',
       pathMatch: 'full'
-    },
-    {
-      path:"adminAnalytics",
-      component:AdminAnalyticsComponent
     },
     {
       path:"adminhotel",
@@ -240,6 +236,10 @@ const routes: Routes = [
     {
       path:"admincustomerdetails",
       component:AdminCustomerDetailsComponent
+    },
+    {
+      path:"adminAnalytics",
+      component:AdminAnalyticsComponent
     }
   ]
 },

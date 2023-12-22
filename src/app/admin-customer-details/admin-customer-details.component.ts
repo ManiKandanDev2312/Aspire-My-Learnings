@@ -21,6 +21,9 @@ export class AdminCustomerDetailsComponent {
   showAddressDetail:any=[];
   constructor(private Admin:AdminDatasService){
 
+
+    // this block is used to fetch the customer Details
+
     this.Admin.fetchCustomers().subscribe(customers=>{
       this.customerDetails=customers;
 
@@ -47,6 +50,8 @@ export class AdminCustomerDetailsComponent {
 
   }
 
+  // this block is used to Show the Delivered Order Details
+
   showDeliveredOrders(index:any){
     if(this.isShowDeliveredOrders==false){
       this.isShowDeliveredOrders=true;
@@ -57,6 +62,8 @@ export class AdminCustomerDetailsComponent {
 
   }
 
+  // this block is used to Show the Pending Order Details
+
   showOrderDetails(index:any){
     if(this.isShowOrderDetails==false){
       this.isShowOrderDetails=true;
@@ -65,6 +72,8 @@ export class AdminCustomerDetailsComponent {
       this.isShowOrderDetails=false;
     }
   }
+
+  // this block is used to Show the Pending Order Details
 
   showPendingOrders(index:any){
     if(this.isShowPendingOrders==false){
@@ -75,6 +84,9 @@ export class AdminCustomerDetailsComponent {
     }
 
   }
+
+  // this block is used to Show the Pending Order Details
+
   showPendingOrderDetails(index:any){
     if(this.isShowOrderDetails==false){
       this.isShowOrderDetails=true;
@@ -83,6 +95,9 @@ export class AdminCustomerDetailsComponent {
       this.isShowOrderDetails=false;
     }
   }
+
+
+  // this block is used to Show the Address Details
 
   showAddress(index:any){
     if(this.isShowAddress==false){

@@ -1,3 +1,5 @@
+
+<!-- -------------------------- Show Customer Details ------------------------ -->
 <div class="customer-details">
   <div class="customers" *ngFor="let customers of customerDetails;let ind=index">
     <div class="customer-profiles">
@@ -30,7 +32,7 @@
 </div>
 
 
-
+<!-- ----------------------------------------- Show Delivery Details ----------------------- -->
 <div class="background" *ngIf="isShowDeliveredOrders">
   <i class="fa-solid fa-xmark" (click)="showDeliveredOrders(0)"></i>
   <div class="Orders-List" *ngIf="deliveredOrderDetails.length==0">
@@ -56,6 +58,8 @@
     </div>
   </div>
 </div>
+
+<!-- ------------------------- Show Pending Orders ------------------------  -->
 
 <div class="background" *ngIf="isShowPendingOrders">
   <i class="fa-solid fa-xmark" (click)="showPendingOrders(0)"></i>
@@ -141,7 +145,7 @@
   </div>
 </div>
 
-
+<!-- ------------------------------------- Display Adress Details ------------------------------- -->
 <div class="background" *ngIf="isShowAddress">
   <i class="fa-solid fa-xmark" (click)="showAddress(0)"></i>
   <div class="Orders-List" *ngIf="showAddressDetail.length==0">

@@ -62,6 +62,9 @@ export class AdminHotelDeatilsComponent {
     }
   };
 
+
+  // this block is used Show the Add hotels Form
+
   AddHotels(){
     if(this.showHotelForm==false){
       this.showHotelForm=true;
@@ -71,6 +74,9 @@ export class AdminHotelDeatilsComponent {
       this.showHotelForm=false;
     }
   }
+
+  // this block is used Show the update hotels Form
+
   UpdateHotels(index:any){
     if(this.showUpdate==false){
       this.showUpdate=true;
@@ -90,6 +96,10 @@ export class AdminHotelDeatilsComponent {
       this.showUpdate=false;
     }
   }
+
+  // this block is used Show the Add hotels Form
+
+
   AddHotelDB(data:any){
 
     var hotelData={
@@ -106,9 +116,14 @@ export class AdminHotelDeatilsComponent {
     this.showHotelForm=false;
   }
 
+  // this block is used Show the Delete hotel
+
   DeleteHotel(index:any){
     this.adData.DeleteHotels(index+1);
   }
+
+  // this block is used Show the Update hotels Form
+
   UpdateHotelDetails(hotelDeatils:any){
     var hotelData={
       hotelname:hotelDeatils.hotelname,
@@ -120,6 +135,9 @@ export class AdminHotelDeatilsComponent {
     this.adData.UpdateHotels(hotelData,hotelDeatils.index);
   }
 
+
+  // this block is used Show the Hotel Dishes
+
   hotelList(ind:any){
     if(this.adminDishPage==false){
       this.adminDishPage=true;
@@ -130,6 +148,8 @@ export class AdminHotelDeatilsComponent {
     }
   }
 
+  // this block is used Show the Hotel Dishes
+
   showDish(){
     if(this.showDishForm==false){
       this.showDishForm=true;
@@ -138,6 +158,8 @@ export class AdminHotelDeatilsComponent {
       this.showDishForm=false;
     }
   }
+
+  // this block is used Show the Update Dish Form
 
   updateDish(index:any){
     if(this.showUpdateDish==false){
@@ -155,12 +177,21 @@ export class AdminHotelDeatilsComponent {
     }
   }
 
+  // this block is used Show the Add Dishes
+
   AddDishDetails(dishDetails:any){
     this.adData.AddDish(dishDetails,this.dishList.phonenumber);
   }
+
+  // this block is used Show the Delete Dish
+
   DeleteDishDetails(index:any){
     this.adData.deleteDish(index,this.dishList.phonenumber);
   }
+
+  // this block is used Show the Update Dish
+
+
   UpdateDishDetails(dishDetails:any){
     var UpdateDish={
       dishName:dishDetails.dishName,
