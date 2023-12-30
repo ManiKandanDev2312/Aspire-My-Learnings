@@ -69,6 +69,10 @@ export class AppComponent implements OnInit,AfterViewInit{
           this.Footer=false;
           this.navBar=false;
         }
+        else if(urlValue.url=="/FeedBack"){
+          this.Footer=false;
+          this.navBar=false;
+        }
         else if(!this.wildcard){
           this.Footer=false;
           this.navBar=false;

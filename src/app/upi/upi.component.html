@@ -19,7 +19,7 @@
         <img src="{{upiImages.upiImage}}" alt="bank" (click)="SendPaymentUPI(ind)">
       </div>
     </div>
-    <h1>Total Price : ₹ {{cartTotalPrice}}</h1>
+    <h1>Total Price :  {{cartTotalPrice | currency:"INR"}}</h1>
     <button (click)="SendPaymentCashOnDelivery()">Cash On Delivery</button>
   </div>
 

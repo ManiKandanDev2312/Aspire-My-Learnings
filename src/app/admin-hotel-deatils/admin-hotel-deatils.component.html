@@ -131,7 +131,7 @@
   <div class="dishes" *ngFor="let dish of dishList.dishes;let ind=index">
     <div class="dishes-details">
       <h1>{{dish.dishName}}</h1>
-      <h2>₹ {{dish.dishPrice}}</h2>
+      <h2>{{dish.dishPrice | currency:"INR"}}</h2>
       <h3>{{dish.dishDescription}}</h3>
       <div class="dishbuttons">
         <button (click)="updateDish(ind)">Update</button>

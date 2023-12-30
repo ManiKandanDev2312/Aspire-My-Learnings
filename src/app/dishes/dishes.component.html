@@ -41,7 +41,7 @@
 <div class="dish" *ngIf="frontUi">
   <div class="dishes" *ngFor="let dishes of dishArray;let ind=index">
     <h2>{{dishes.dishName}}</h2>
-    <h4>₹ {{dishes.dishPrice}}</h4>
+    <h4>{{dishes.dishPrice | currency:"INR"}}</h4>
     <h5>{{dishes.dishDescription}}</h5>
     <img src="{{dishes.dishImage}}" alt="juice">
     <button class="add" (click)="cartItems(ind)" #button>ADD</button>
@@ -58,7 +58,7 @@
   <div class="searchdish" *ngIf="!isfound">
     <div class="searchdishes" *ngFor="let dishes of finalDishArray;let ind=index">
       <h2>{{dishes.dishName}}</h2>
-      <h4>₹ {{dishes.dishPrice}}</h4>
+      <h4>{{dishes.dishPrice | currency:"INR"}}</h4>
       <h5>{{dishes.dishDescription}}</h5>
       <img src="{{dishes.dishImage}}" alt="juice">
       <button class="add" (click)="searchcartItems(ind)" #button>ADD</button>

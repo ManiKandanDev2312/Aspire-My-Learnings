@@ -68,7 +68,7 @@
   <!-- ---------------------Payment Details---------------- -->
   <div class="firsts">
     <h1>PAYMENT</h1>
-    <button class="paymentButton" (click)="Payment()">Pay &nbsp;₹ {{totalPrice}}</button>
+    <button class="paymentButton" (click)="Payment()">Pay &nbsp;{{totalPrice | currency:"INR"}}</button>
   </div>
 </div>
 
@@ -94,7 +94,7 @@
             <div class="itemvalidates"><button (click)="plus(ind)">+</button></div>
 
         </div>
-        <div class="names"><h4>₹{{items.dishPrice}}</h4></div>
+        <div class="names"><h4>{{items.dishPrice | currency:"INR"}}</h4></div>
 
       </div>
 
@@ -113,13 +113,13 @@
       <h2>Delivery Partner Fee</h2>
       <h2>offer Price</h2>
 
-      <h2 class="itemfee">&nbsp;₹{{itemTotal}}</h2>
-      <h2 class="deliverfee">&nbsp;₹43</h2>
-      <h2 class="offerfee">-₹{{offerTotal}}</h2>
+      <h2 class="itemfee">&nbsp;{{itemTotal | currency:"INR"}}</h2>
+      <h2 class="deliverfee">&nbsp;{{43 | currency:"INR"}}</h2>
+      <h2 class="offerfee">-{{offerTotal | currency:"INR"}}</h2>
       <hr>
 
       <h3>To Pay</h3>
-      <h2 class="totalfee">&nbsp;₹{{totalPrice}}</h2>
+      <h2 class="totalfee">&nbsp;{{totalPrice | currency:"INR"}}</h2>
     </div>
 
     </div>

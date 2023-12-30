@@ -68,15 +68,15 @@
           <div class="innerDishDetails">
             <div class="innerDivDishDetails" *ngFor="let orderDishes of viewDetailsInfo.orderedItems">
               <div> <p>{{orderDishes.dishName}} x {{orderDishes.dishQuantity}}</p></div>
-              <div> <h2>₹ {{orderDishes.dishPrice}}</h2></div>
+              <div> <h2>{{orderDishes.dishPrice | currency:"INR"}}</h2></div>
             </div>
             <div class="innerDivDishDetails">
               <div> <p>Item Total</p></div>
-              <div> <h2>₹ {{viewDetailsInfo.totalPrice-43}}</h2></div>
+              <div> <h2>{{viewDetailsInfo.totalPrice-43 | currency:"INR"}}</h2></div>
             </div>
             <div class="innerDivDishDetails" style="margin-bottom: 10px;">
               <div> <p>Delivery Fee</p></div>
-              <div> <h2>₹ 43</h2></div>
+              <div> <h2>{{43 | currency:"INR"}}</h2></div>
             </div>
 
           </div>
@@ -92,7 +92,7 @@
             <h2>Bill Total</h2>
           </div>
           <div>
-            <h2>₹ {{viewDetailsInfo.totalPrice}}</h2>
+            <h2>{{viewDetailsInfo.totalPrice | currency:"INR"}}</h2>
           </div>
         </div>
       </div>
