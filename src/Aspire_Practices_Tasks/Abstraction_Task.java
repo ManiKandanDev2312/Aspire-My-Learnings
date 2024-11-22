@@ -31,6 +31,7 @@ public class Abstraction_Task extends Hdfc_Bank{
 	}
 	
 	public static void display(int index) {
+		System.out.println(Bank.mani);
 		Bank.display(listUsers,index);
 	}
 }

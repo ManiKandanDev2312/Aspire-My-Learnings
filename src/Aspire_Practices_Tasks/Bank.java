@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public interface Bank {
+	static int mani=100;
 	public void deposit(int password);
 	public void withdrawal(int password);
 	public void balance(int password);
