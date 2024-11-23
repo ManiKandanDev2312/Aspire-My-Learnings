@@ -1,6 +1,6 @@
 package Aspire_Practices_Tasks;
 
-public class LinkedList<T> {
+public class LinkedList<T>{
 Node Head = null;
 int size =0;
 public void addElementFirst(T data) {
@@ -35,9 +35,15 @@ public void add(T data) {
 public void set(int index, T data) {
 	Node current = Head;
 	int prev=1;
-	while(prev<index) {
-		current= current.next;
-		prev++;
+	try {
+		if(index > size)
+			throw new Exception("invalid index");
+		while(prev<index) {
+			current= current.next;
+			prev++;
+		}
+	}catch(Exception e) {
+		System.out.println(e);
 	}
 	
 	current.data= data;
@@ -48,38 +54,64 @@ public void insertElementAtPosition(int position,T data) {
 	Node current = Head;
 	Node prev=null;
 	int ind=1;
-	while(ind < position) {
-		prev=current;
-		current=current.next;
-		ind++;
+	
+	try {
+		if(position > size)
+			throw new Exception("ArrayIndexOutOfBounds");
+		if(position == 1) {
+			addElementFirst(data);
+			return;
+		}
+			
+		while(ind < position) {
+			prev=current;
+			current=current.next;
+			ind++;
+		}
+		
+		node.next=current;
+		prev.next=node;
+		size++;
+	}catch(Exception e) {
+		System.out.println(e);
 	}
 	
-	node.next=current;
-	prev.next=node;
-	size++;
 	
 }
 public void remove() {
 	Node current = Head;
-	
-	while(current.next.next != null) {
-		current=current.next;
+	try {
+		
+		if(size < 1)
+			throw new Exception("list is empty");
+		while(current.next.next != null) {
+			current=current.next;
+		}
+		current.next=null;
+		size--;
+	}catch(Exception e) {
+		System.out.println(e);
 	}
-	current.next=null;
-	size--;
 }
 
 public void removeAtPosition(int position) {
 	Node current= Head;
 	Node last=null;
 	int prev=1;
-	while(prev < position) {
-		last=current;
-		current = current.next;
-		prev++;
+	try {
+		if(position > size)
+			throw new Exception("indexOutofBounds");
+		while(prev < position) {
+			last=current;
+			current = current.next;
+			prev++;
+		}
+		last.next=current.next;
+		size --;
+	}catch(Exception e) {
+		System.out.println(e);
 	}
-	last.next=current.next;
-	size --;
+
 }
 
 public int searchElement(T element) {
@@ -106,4 +138,5 @@ public void display() {
 		current = current.next;
 	}
 }
+
 }
