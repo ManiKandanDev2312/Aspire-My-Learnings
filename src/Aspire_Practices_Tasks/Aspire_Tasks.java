@@ -36,13 +36,16 @@ public class Aspire_Tasks {
 //		
 //		linkedlist.display();
 //		System.out.println(linkedlist.length());
-		ExceptionExa exceptionExa = new ExceptionExa();
-		try {
-			exceptionExa.fileCreate();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		ExceptionExa exceptionExa = new ExceptionExa();
+//		try {
+//			exceptionExa.fileCreate();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		FileHandling fileHandling = new FileHandling();
+		fileHandling.deleteFile();
 	}
 
 }
