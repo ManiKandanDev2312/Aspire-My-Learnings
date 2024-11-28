@@ -1,8 +1,15 @@
 package Aspire_Practices_Tasks;
 
 import java.util.Scanner;
+/*
+ * Author : Manikandan O
+ * tittle: ATM
+ * created on : 23-11-2024
+ * modified on : 25-11-2024
+ * 
+ * */
 
-public class Customer extends Abstraction_Task {
+public class Customer extends AccountHolder {
 
 
 	Scanner scanner= new Scanner(System.in);

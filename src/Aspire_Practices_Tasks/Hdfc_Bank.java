@@ -5,7 +5,14 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class Hdfc_Bank implements Bank {
+/*
+ * Author : Manikandan O
+ * tittle: ATM
+ * created on : 23-11-2024
+ * modified on : 25-11-2024
+ * 
+ * */
+public class Hdfc_Bank implements IBank {
 	static Scanner scanner = new Scanner(System.in);
 	private long balance;
 	HashMap user;
@@ -46,7 +53,7 @@ public class Hdfc_Bank implements Bank {
 	}
 	
 	public boolean isValid(int pin) {
-		 userList=Abstraction_Task.getUserList();
+		 userList=AccountHolder.getUserList();
 		Iterator iterator = userList.iterator();
 		
 		while(iterator.hasNext()) {
@@ -72,8 +79,8 @@ public class Hdfc_Bank implements Bank {
 		if(isValid(password)) {
 			user.replace("BalanceAmount", balance+amount);
 			userList.set(index,user);
-			Abstraction_Task.setUserList(userList);
-			Abstraction_Task.display(index);
+			AccountHolder.setUserList(userList);
+			AccountHolder.display(index);
 		}else {
 			System.out.println("invalid password");
 		}
@@ -90,8 +97,8 @@ public class Hdfc_Bank implements Bank {
 		else if(isValid(password)) {
 			user.replace("BalanceAmount", balance-amount);
 			userList.set(index,user);
-			Abstraction_Task.setUserList(userList);
-			Abstraction_Task.display(index);
+			AccountHolder.setUserList(userList);
+			AccountHolder.display(index);
 		}else {
 			System.out.println("invalid password");
 		}
@@ -113,8 +120,8 @@ public class Hdfc_Bank implements Bank {
 		if(isValid(oldPin) && accountNumber == Long.parseLong((String) user.get("AccountNumber"))) {
 			user.replace("Accountpin", newPin);
 			userList.set(index,user);
-			Abstraction_Task.setUserList(userList);
-			Abstraction_Task.display(index);
+			AccountHolder.setUserList(userList);
+			AccountHolder.display(index);
 		}else {
 			System.out.println("invalid password");
 		}

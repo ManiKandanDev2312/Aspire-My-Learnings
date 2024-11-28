@@ -3,7 +3,14 @@ package Aspire_Practices_Tasks;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Abstraction_Task extends Hdfc_Bank{
+/*
+ * Author : Manikandan O
+ * tittle: ATM
+ * created on : 23-11-2024
+ * modified on : 25-11-2024
+ * 
+ * */
+public class AccountHolder extends Hdfc_Bank{
 	static ArrayList<HashMap> listUsers=new ArrayList<HashMap>();
 	int iterateCount=0;
 	public void addCustomer(String userName,String pin,String balanceAmount,String accountNumber,int count){
@@ -31,7 +38,6 @@ public class Abstraction_Task extends Hdfc_Bank{
 	}
 	
 	public static void display(int index) {
-		System.out.println(Bank.mani);
-		Bank.display(listUsers,index);
+		IBank.display(listUsers,index);
 	}
 }

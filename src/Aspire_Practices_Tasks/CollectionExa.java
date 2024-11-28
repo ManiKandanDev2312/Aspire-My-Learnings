@@ -7,13 +7,23 @@ public class CollectionExa {
 	
 	public void linkedListExa() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
+		ArrayList<Integer> resultlist = new ArrayList<Integer>();
 		
 		for(int i=1;i<=10;i++)
 			list.add(i);
 		
-		Iterator iterator = list.iterator();
+//		Iterator iterator = list.iterator();
+		int[] intArray= new int[list.size()];
+		for(int i=0;i<list.size();i++)
+			intArray[i]=list.get(i);
+			
+		for(int arrayItem:intArray)
+			resultlist.add(arrayItem);
 		
-		while(iterator.hasNext())
-			System.out.println(iterator.next());
+//		int input1 =20;
+//		
+//		Integer input2 = input1;
+//		
+//		int input3 = (Integer) input2;
 	}
 }
