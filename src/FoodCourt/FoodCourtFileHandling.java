@@ -7,11 +7,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+// this class is for file handling for this entire application
 public class FoodCourtFileHandling {
 	
 	
 	Properties properties = new Properties();
-	// this block is used to create a property file
+	// this block is for create a property file
 	
 	public void createFile() {
 		
@@ -30,6 +31,7 @@ public class FoodCourtFileHandling {
 
 	}
 	
+	// this method is for delete a file
 	public void deleteFile() {
 		File file = new File("C:\\Users\\mani.obulisamy\\eclipse-workspace\\Aspire_Practices\\config.properties");
 		
@@ -37,6 +39,7 @@ public class FoodCourtFileHandling {
 			System.out.println("file deleted");
 	}
 	
+	// this method is for read a file
 	public void readFile() {
 		try {
 			FileInputStream fileInputStream = new FileInputStream("C:\\Users\\mani.obulisamy\\eclipse-workspace\\Aspire_Practices\\config.properties");

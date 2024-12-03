@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+// this class is for database connectivity for this application
 public class FoodCourtDataBase {
 	private String databaseUrl;
 	private String databaseUser;
@@ -15,7 +16,7 @@ public class FoodCourtDataBase {
 	private String databasePort;
 	static Connection connection;
 	static PreparedStatement preparedStatement;
-	// this block is used set the credentials for the database
+	// this block is for set the credentials for the database
 	
 	FoodCourtDataBase(String databaseUrl,String databaseUser,String databasePassword,String databasePort){
 		this.databaseUrl = databaseUrl;
@@ -31,7 +32,7 @@ public class FoodCourtDataBase {
 		}
 	}
 	
-	// this block is used to insert new Customer to the database
+	// this block is for insert new Customer to the database
 	public static boolean insertCustomer(HashMap customerDetails) {
 		String Query = "INSERT INTO CUSTOMER VALUES(?,?,?,?,?)";
 		int resultRowCount=0;
@@ -57,7 +58,7 @@ public class FoodCourtDataBase {
 		return false;
 	}
 	
-	// this block is used to read Customer From the database
+	// this block is for read Customer From the database
 	public static HashMap readCustomer(long customerPhoneNumber) {
 		
 		HashMap customerDetails = new HashMap();
@@ -87,7 +88,7 @@ public class FoodCourtDataBase {
 	}
 	
 	
-	// this block is used to update the customer password
+	// this block is for update the customer password
 	public static boolean updateCustomerPassword(long customerPhoneNumber, String customerPassword) {
 		
 		String Query="UPDATE CUSTOMER SET CUSTOMER_PASSWORD = ? WHERE CUSTOMER_PHONENUMBER= ?";
@@ -112,6 +113,7 @@ public class FoodCourtDataBase {
 		return false;
 	}
 	
+	// this method is for read all the customerDetails
 	public static ArrayList readAllCustomer() {
 		String Query = " SELECT * FROM CUSTOMER";
 		ArrayList customerDetails = new ArrayList();
@@ -139,7 +141,7 @@ public class FoodCourtDataBase {
 		return customerDetails;
 	}
 	
-	// this method is used read the hotels
+	// this method is for read the hotels
 	public static ArrayList readHotel() {
 		String Query = "SELECT * FROM HOTEL";
 		
@@ -161,7 +163,7 @@ public class FoodCourtDataBase {
 		return hotelDetails;
 	}
 	
-	// this method is used read the Dish
+	// this method is for read the Dish
 		public static ArrayList readDishes(int hotelId) {
 			String Query = "SELECT * FROM DISH WHERE HOTEL_ID = ?";
 			
@@ -187,7 +189,7 @@ public class FoodCourtDataBase {
 			return dishDetails;
 		}
 		
-		// this method is used to store the details of order
+		// this method is for store the details of order
 		public static void orderConfirmed(HashMap orderConfirmedDetailsMap) {
 			// TODO Auto-generated method stub
 			

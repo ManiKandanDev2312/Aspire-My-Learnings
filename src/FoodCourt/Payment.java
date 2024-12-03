@@ -5,35 +5,31 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 
-/*
- * Author : Manikandan O
- * tittle: FoodCourt
- * created on : 27-11-2024
- * modified on : 
- * 
- * */
+// this class is for payment options
 public class Payment {
 	
 	Scanner scanner = new Scanner(System.in);
-	// this method is used choose the payment method
+	// this method is for choose the payment method
 	
 	public void paymentMethod(String orderedDishes,String hotelName,int hotelId,int orderCost,String orderAddress,int customerID) {
 		System.out.println(" PAYMENT METHOD");
-		System.out.println("UPI");
-		System.out.println("CASH ON DELIVERY");
-		String paymentMethod=scanner.nextLine().toLowerCase();
+		System.out.println("1.UPI");
+		System.out.println("2.CASH ON DELIVERY");
+		int paymentMethod=scanner.nextInt();
 		switch(paymentMethod) {
-		case "upi":
-			orderConfirmed( orderedDishes, hotelName, hotelId, paymentMethod,orderCost,orderAddress,customerID);
+		case 1:
+			orderConfirmed( orderedDishes, hotelName, hotelId, "UPI",orderCost,orderAddress,customerID);
 			break;
-		case "cash on delivery":
-			orderConfirmed(orderedDishes, hotelName, hotelId, paymentMethod,orderCost,orderAddress,customerID);
+		case 2:
+			orderConfirmed(orderedDishes, hotelName, hotelId, "CASH ON DELIVERY",orderCost,orderAddress,customerID);
 			break;
 		default:
 			System.out.println("ENTER PROPER PAYMENT METHOD");
 			paymentMethod(orderedDishes,hotelName,hotelId,orderCost,orderAddress,customerID);
 		}
 	}
+	
+	// this method is for confirm the order
 	private void orderConfirmed(String orderConfirmedDetails, String hotelName, int hotelId, String paymentMethod, int orderCost,String orderAddress,int customerID) {
 		
 		System.out.println("\t\t\t TOTAL COST : "+ orderCost);

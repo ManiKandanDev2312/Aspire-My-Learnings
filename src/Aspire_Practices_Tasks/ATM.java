@@ -1,6 +1,8 @@
 package Aspire_Practices_Tasks;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Vector;
 
 import Aspire_Practices_Tasks.Outter.Inner;
 
@@ -52,8 +54,13 @@ public class ATM {
 //			e.printStackTrace();
 //		}
 		
-		FileHandling fileHandling = new FileHandling();
-		fileHandling.deleteFile();
+//		FileHandling fileHandling = new FileHandling();
+//		fileHandling.deleteFile();
+		
+		Vector arrayList = new Vector();
+		
+		System.out.println(arrayList.capacity());
+		
 		
 	}
 
