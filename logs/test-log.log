@@ -1,0 +1,1590 @@
+2025-02-17 16:03:38 [TestNG-test=Test-1] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 16:03:38 [TestNG-test=Test-1] INFO  NavigationTest - checking Login form
+2025-02-17 16:03:39 [TestNG-test=Test-1] INFO  NavigationTest - Login form is opened
+2025-02-17 16:03:39 [TestNG-test=Test-2] INFO  NavigationTest - driver is navigate to the search Page
+2025-02-17 16:03:43 [TestNG-test=Test-2] INFO  NavigationTest - search page is opened
+2025-02-17 16:03:43 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Cart Page
+2025-02-17 16:03:47 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 16:03:47 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Home Page
+2025-02-17 16:03:52 [TestNG-test=Test-3] INFO  NavigationTest - Home page is opened
+2025-02-17 16:03:52 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Offers Page
+2025-02-17 16:03:56 [TestNG-test=Test-3] INFO  NavigationTest - Offers page is opened
+2025-02-17 16:03:56 [TestNG-test=Test-3] INFO  NavigationTest - driver is quitted here
+2025-02-17 16:57:11 [TestNG-test=Test-3] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 16:57:11 [TestNG-test=Test-3] INFO  NavigationTest - checking Login form
+2025-02-17 16:57:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 16:57:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 16:57:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - search page is opened
+2025-02-17 16:57:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 16:57:14 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 16:57:14 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 16:57:14 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 16:57:16 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 16:57:16 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 16:57:16 [TestNG-test=Test-3] INFO  NavigationTest - Login form is opened
+2025-02-17 16:57:16 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the search Page
+2025-02-17 16:57:16 [TestNG-test=Test-1] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 16:57:20 [TestNG-test=Test-1] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 16:57:20 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 16:57:20 [TestNG-test=Test-1] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 16:57:21 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 16:57:21 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Cart Page
+2025-02-17 16:57:35 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 16:57:35 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Home Page
+2025-02-17 16:57:38 [TestNG-test=Test-1] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 16:57:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 16:57:45 [TestNG-test=Test-3] INFO  NavigationTest - Home page is opened
+2025-02-17 16:57:45 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Offers Page
+2025-02-17 16:57:50 [TestNG-test=Test-3] INFO  NavigationTest - Offers page is opened
+2025-02-17 16:57:51 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 16:57:51 [TestNG-test=Test-3] INFO  NavigationTest - driver is quitted here
+2025-02-17 16:58:00 [TestNG-test=Test-2] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 16:58:00 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 16:59:06 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 16:59:06 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 16:59:06 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 16:59:07 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 16:59:07 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 16:59:07 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 16:59:10 [TestNG-test=Test-2] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 16:59:10 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 16:59:10 [TestNG-test=Test-3] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 16:59:27 [TestNG-test=Test-3] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 16:59:28 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 16:59:46 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 16:59:46 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 16:59:47 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 16:59:47 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 16:59:47 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 16:59:47 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 16:59:50 [TestNG-test=Test-2] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 16:59:50 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 16:59:50 [TestNG-test=Test-3] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 16:59:59 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 17:01:09 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:01:09 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 17:01:09 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 17:01:10 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 17:01:10 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 17:01:10 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 17:01:13 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 17:01:13 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 17:01:13 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 17:01:17 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 17:06:04 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:06:05 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 17:06:05 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 17:06:05 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 17:06:05 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 17:06:05 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 17:06:10 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 17:06:10 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 17:06:10 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 17:06:19 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-17 17:06:19 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 17:06:51 [TestNG-test=Test-2] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:06:52 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:06:52 [TestNG-test=Test-2] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:06:52 [TestNG-test=Test-2] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:07:01 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:07:01 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 17:07:01 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 17:07:01 [TestNG-test=Test-3] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:07:01 [TestNG-test=Test-3] INFO  NavigationTest - checking Login form
+2025-02-17 17:07:01 [TestNG-test=Test-3] INFO  NavigationTest - Login form is opened
+2025-02-17 17:07:01 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the search Page
+2025-02-17 17:07:02 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 17:07:02 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 17:07:02 [TestNG-test=Test-1] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 17:07:07 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 17:07:07 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Cart Page
+2025-02-17 17:07:19 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 17:07:19 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Home Page
+2025-02-17 17:07:25 [TestNG-test=Test-2] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:07:25 [TestNG-test=Test-3] INFO  NavigationTest - Home page is opened
+2025-02-17 17:07:25 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Offers Page
+2025-02-17 17:07:28 [TestNG-test=Test-1] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 17:07:28 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 17:07:28 [TestNG-test=Test-1] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 17:07:30 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-17 17:07:30 [TestNG-test=Test-3] INFO  NavigationTest - Offers page is opened
+2025-02-17 17:07:30 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 17:07:30 [TestNG-test=Test-3] INFO  NavigationTest - driver is quitted here
+2025-02-17 17:07:42 [TestNG-test=Test-2] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 17:07:42 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:08:14 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:08:14 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:08:14 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:08:14 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:08:22 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:08:39 [TestNG-test=Test-1] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 17:08:39 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:09:26 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:09:26 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:09:26 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:09:26 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:09:51 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:09:54 [TestNG-test=Test-1] ERROR SearchPage - SearchPage: Index 1 out of bounds for length 1
+2025-02-17 17:09:54 [TestNG-test=Test-1] ERROR SearchPage - SearchPage: Index 1 out of bounds for length 1
+2025-02-17 17:09:54 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:10:33 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:10:33 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:10:33 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:10:33 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:10:57 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:10:59 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:11:00 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:11:00 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:11:36 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:11:36 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:14:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:14:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:14:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:14:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:14:43 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:14:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:14:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:14:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:15:21 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:15:21 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:16:06 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:16:06 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:16:07 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:16:07 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:16:31 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:16:33 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:16:33 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:16:33 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:17:09 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:17:09 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:19:28 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:19:28 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:19:28 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:19:28 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:19:51 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:19:54 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:19:54 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:19:54 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:20:46 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:20:46 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:20:47 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:21:52 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:21:52 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:21:52 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:21:52 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:22:15 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:22:18 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:22:18 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:22:18 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:22:37 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:22:37 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:22:37 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:25:15 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:25:15 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:25:15 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:25:15 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:25:38 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:25:41 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:25:41 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:25:42 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:25:44 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 17:26:01 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 17:26:18 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:26:18 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:26:18 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:29:37 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:29:37 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:29:37 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:29:37 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:30:01 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:30:04 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:30:04 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:30:04 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:30:07 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 17:30:23 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 17:30:40 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishLishBox : 0
+2025-02-17 17:30:40 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:30:40 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:30:41 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:32:10 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:32:10 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:32:10 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:32:10 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:32:35 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:32:37 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:32:37 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:32:37 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:32:40 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 17:32:57 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 17:33:13 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 17:33:14 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:33:14 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:33:14 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:35:36 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:35:36 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:35:36 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:35:36 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:36:00 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:36:03 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:36:03 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:36:03 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:36:05 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 17:36:22 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 17:36:38 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 17:36:38 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:36:38 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:36:38 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:40:17 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:40:17 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:40:17 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:40:17 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:40:41 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:40:44 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:40:44 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:40:44 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:40:47 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 17:41:04 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 17:41:20 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 17:41:21 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:41:21 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:44:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:44:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:44:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:44:19 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:44:43 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:44:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:44:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:44:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:44:48 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 17:45:04 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 17:45:21 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 17:45:21 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:45:21 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 17:50:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:50:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:50:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:50:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:50:36 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:50:39 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:50:39 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:50:39 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:50:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 17:50:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 17:50:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 17:50:58 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Cannot invoke "org.openqa.selenium.WebElement.getAttribute(String)" because the return value of "NavigationLinks.LoginLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 17:50:58 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Cannot invoke "org.openqa.selenium.WebElement.getAttribute(String)" because the return value of "NavigationLinks.LoginLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 17:52:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:52:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:52:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:52:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:52:37 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:52:39 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:52:39 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:52:39 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:52:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 17:52:42 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 17:52:42 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 17:52:42 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:52:42 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 17:52:58 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:53:15 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.LoginLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 17:55:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:55:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:55:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:55:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:55:43 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:55:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:55:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:55:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:55:48 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 17:55:49 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 17:55:49 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 80
+2025-02-17 17:55:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:55:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 17:55:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:55:50 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 17:55:50 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 17:55:50 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 17:56:11 [TestNG-test=Test-3] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 17:56:50 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:56:50 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:56:50 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:56:50 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:57:13 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:57:16 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:57:16 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:57:16 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:57:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 17:57:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 17:57:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 17:57:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:57:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 17:57:19 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:57:21 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 17:57:21 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 17:57:21 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 17:57:27 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:58:04 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:58:04 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:58:04 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:58:04 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:58:28 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:58:30 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:58:30 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:58:30 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:58:32 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 17:58:33 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 17:58:33 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 17:58:33 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:58:33 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 17:58:33 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:58:35 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 17:58:35 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 17:58:35 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 17:58:41 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 17:59:12 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 17:59:12 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 17:59:12 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 17:59:12 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 17:59:35 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 17:59:38 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 17:59:38 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 17:59:38 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 17:59:40 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 17:59:40 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 17:59:40 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 17:59:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:59:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 17:59:41 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 17:59:43 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 17:59:43 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 17:59:43 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:00:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:00:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:00:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:00:45 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:01:08 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:01:11 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:01:11 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:01:11 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:01:13 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 18:01:14 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 18:01:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 80
+2025-02-17 18:01:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:01:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:01:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:01:32 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:01:32 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:01:32 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:01:32 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 18:01:58 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:01:58 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:01:58 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:01:58 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:02:22 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:02:24 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:02:24 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:02:24 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:02:26 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 18:02:27 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 18:02:27 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 18:02:27 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:02:27 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:02:27 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:02:29 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:02:29 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:02:29 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:02:29 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 18:03:59 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:03:59 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:03:59 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:03:59 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:04:23 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:04:25 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:04:25 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:04:25 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:04:28 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 18:04:28 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 18:04:28 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 18:04:28 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:04:28 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:04:28 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:04:44 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:04:44 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:04:44 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:04:49 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver increase the quantity of the selected dish
+2025-02-17 18:04:50 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 18:05:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:05:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:05:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:05:20 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:05:44 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:05:46 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:05:46 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:05:46 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:05:49 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 18:05:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 18:05:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 80
+2025-02-17 18:05:51 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:05:51 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:05:51 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:06:07 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:06:07 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:06:07 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:06:28 [TestNG-test=Test-3] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 18:06:28 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 18:06:47 [TestNG-test=Test-1] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:06:47 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:06:47 [TestNG-test=Test-1] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:06:47 [TestNG-test=Test-1] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:07:10 [TestNG-test=Test-1] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:07:12 [TestNG-test=Test-1] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:07:12 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:07:12 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:07:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 18:07:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 18:07:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 18:07:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:07:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:07:15 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:07:31 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:07:31 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:07:31 [TestNG-test=Test-3] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:07:36 [TestNG-test=Test-3] INFO  SmokeTesting2 - driver increase the quantity of the selected dish
+2025-02-17 18:10:18 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:10:18 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:10:18 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:10:20 [TestNG-test=Test-2] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:10:20 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:10:20 [TestNG-test=Test-2] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:10:20 [TestNG-test=Test-2] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:10:21 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:10:21 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:10:21 [TestNG-test=Test-1] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:10:21 [TestNG-test=Test-3] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:10:21 [TestNG-test=Test-3] INFO  NavigationTest - checking Login form
+2025-02-17 18:10:24 [TestNG-test=Test-3] INFO  NavigationTest - Login form is opened
+2025-02-17 18:10:24 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the search Page
+2025-02-17 18:10:24 [TestNG-test=Test-1] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:10:30 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 18:10:31 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Cart Page
+2025-02-17 18:10:40 [TestNG-test=Test-1] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:10:42 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 18:10:42 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Home Page
+2025-02-17 18:10:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:10:48 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:10:48 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:10:48 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:10:50 [TestNG-test=Test-3] INFO  NavigationTest - Home page is opened
+2025-02-17 18:10:50 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Offers Page
+2025-02-17 18:10:53 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 18:10:55 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 18:10:55 [TestNG-test=Test-3] INFO  NavigationTest - Offers page is opened
+2025-02-17 18:10:56 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 80
+2025-02-17 18:10:56 [TestNG-test=Test-1] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:10:56 [TestNG-test=Test-1] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:10:56 [TestNG-test=Test-1] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:10:56 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:10:56 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:10:56 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:10:57 [TestNG-test=Test-3] INFO  NavigationTest - driver is quitted here
+2025-02-17 18:10:57 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:11:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:11:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:11:13 [TestNG-test=Test-2] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:11:34 [TestNG-test=Test-2] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 18:11:34 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 18:11:59 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:11:59 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:11:59 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:12:01 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:12:01 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:12:01 [TestNG-test=Test-1] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:12:04 [TestNG-test=Test-3] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:12:04 [TestNG-test=Test-3] INFO  NavigationTest - checking Login form
+2025-02-17 18:12:07 [TestNG-test=Test-1] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:12:09 [TestNG-test=Test-2] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:12:09 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:12:09 [TestNG-test=Test-2] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:12:09 [TestNG-test=Test-2] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:12:10 [TestNG-test=Test-3] INFO  NavigationTest - Login form is opened
+2025-02-17 18:12:10 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the search Page
+2025-02-17 18:12:17 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 18:12:17 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Cart Page
+2025-02-17 18:12:23 [TestNG-test=Test-1] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:12:40 [TestNG-test=Test-1] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:12:40 [TestNG-test=Test-1] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:12:40 [TestNG-test=Test-1] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:12:41 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 18:12:41 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Home Page
+2025-02-17 18:12:42 [TestNG-test=Test-3] INFO  NavigationTest - Home page is opened
+2025-02-17 18:12:42 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Offers Page
+2025-02-17 18:12:42 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:12:50 [TestNG-test=Test-3] INFO  NavigationTest - Offers page is opened
+2025-02-17 18:12:50 [TestNG-test=Test-3] INFO  NavigationTest - driver is quitted here
+2025-02-17 18:12:52 [TestNG-test=Test-2] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:12:55 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:12:55 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:12:55 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:12:57 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 114
+2025-02-17 18:12:58 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 114
+2025-02-17 18:12:59 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 80
+2025-02-17 18:12:59 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:12:59 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:12:59 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:13:17 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:13:17 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:13:17 [TestNG-test=Test-2] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:13:38 [TestNG-test=Test-2] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-17 18:14:56 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:14:56 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:14:56 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:15:00 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:15:00 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:15:00 [TestNG-test=Test-1] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:15:01 [TestNG-test=Test-3] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:15:01 [TestNG-test=Test-3] INFO  NavigationTest - checking Login form
+2025-02-17 18:15:03 [TestNG-test=Test-3] INFO  NavigationTest - Login form is opened
+2025-02-17 18:15:03 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the search Page
+2025-02-17 18:15:03 [TestNG-test=Test-1] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:15:04 [TestNG-test=Test-2] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:15:04 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-17 18:15:04 [TestNG-test=Test-2] INFO  SmokeTesting2 - search page is opened
+2025-02-17 18:15:04 [TestNG-test=Test-2] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-17 18:15:08 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 18:15:08 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Cart Page
+2025-02-17 18:15:20 [TestNG-test=Test-1] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:15:21 [TestNG-test=Test-3] INFO  NavigationTest - search page is opened
+2025-02-17 18:15:21 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Home Page
+2025-02-17 18:15:29 [TestNG-test=Test-3] INFO  NavigationTest - Home page is opened
+2025-02-17 18:15:29 [TestNG-test=Test-3] INFO  NavigationTest - driver is navigate to the Offers Page
+2025-02-17 18:15:33 [TestNG-test=Test-3] INFO  NavigationTest - Offers page is opened
+2025-02-17 18:15:34 [TestNG-test=Test-3] INFO  NavigationTest - driver is quitted here
+2025-02-17 18:15:36 [TestNG-test=Test-1] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:15:36 [TestNG-test=Test-1] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:15:36 [TestNG-test=Test-1] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:15:37 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:15:45 [TestNG-test=Test-2] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-17 18:15:47 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-17 18:15:47 [TestNG-test=Test-2] INFO  SmokeTesting2 - hotel page is opened
+2025-02-17 18:15:47 [TestNG-test=Test-2] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-17 18:15:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 43
+2025-02-17 18:15:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 43
+2025-02-17 18:15:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 7
+2025-02-17 18:15:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:15:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : isCustomisable: true
+2025-02-17 18:15:50 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: customisableDishBox : sc-bBeLUv dBSXIV
+2025-02-17 18:16:06 [TestNG-test=Test-2] INFO  SmokeTesting2 - selected dish is added to the cart
+2025-02-17 18:16:06 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is navigate to cart Page
+2025-02-17 18:16:06 [TestNG-test=Test-2] INFO  SmokeTesting2 - cart page is opened
+2025-02-17 18:16:12 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver increase the quantity of the selected dish
+2025-02-17 18:16:12 [TestNG-test=Test-2] INFO  SmokeTesting2 - driver is quitted here
+2025-02-17 18:16:42 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:16:42 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:16:42 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:16:43 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:16:43 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:16:43 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:16:45 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:17:02 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:17:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:17:18 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:17:18 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:17:19 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:19:17 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:19:17 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:19:17 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:19:17 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:19:17 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:19:17 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:19:20 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:19:36 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:19:53 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:19:53 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:19:53 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:19:53 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:24:04 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:24:04 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:24:04 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:24:04 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:24:04 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:24:04 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:24:07 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:24:23 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:24:39 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:24:39 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:24:39 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:24:40 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:25:23 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:25:23 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:25:23 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:25:24 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:25:24 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:25:24 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:25:26 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:25:43 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:25:59 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:25:59 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:25:59 [TestNG-test=Test-2] ERROR HotelPage - HotelPage: Index 4 out of bounds for length 0
+2025-02-17 18:26:00 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-17 18:26:44 [TestNG-test=Test-1] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-17 18:26:44 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-17 18:26:44 [TestNG-test=Test-1] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-17 18:26:44 [TestNG-test=Test-1] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-17 18:26:44 [TestNG-test=Test-2] INFO  SmokeTesting1 - hotel page is opened
+2025-02-17 18:26:44 [TestNG-test=Test-2] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-17 18:26:47 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-17 18:27:02 [TestNG-test=Test-2] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-17 18:27:18 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-17 18:27:20 [TestNG-test=Test-2] INFO  HotelPage - HotelPage: dish is Added
+2025-02-17 18:27:20 [TestNG-test=Test-2] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-17 18:27:20 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-17 18:27:20 [TestNG-test=Test-3] INFO  SmokeTesting1 - cart page is opened
+2025-02-17 18:27:23 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-17 18:27:23 [TestNG-test=Test-3] INFO  SmokeTesting1 - driver is quitted here
+2025-02-18 08:28:02 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 08:28:02 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-18 08:28:02 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-18 08:28:02 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-18 08:28:02 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-18 08:28:03 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-18 08:28:21 [main] INFO  HotelPage - HotelPage : dishList size : 0
+2025-02-18 08:28:37 [main] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-18 08:30:38 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 08:30:38 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-18 08:30:38 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-18 08:30:38 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-18 08:30:38 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-18 08:30:42 [main] INFO  HotelPage - HotelPage : dishList size : 136
+2025-02-18 08:30:59 [main] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-18 08:31:15 [main] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-18 08:31:17 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-18 08:31:17 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-18 08:31:17 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-18 08:31:17 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-18 08:31:17 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-18 08:31:20 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-18 08:34:50 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 08:34:50 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-18 08:34:50 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-18 08:34:50 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-18 08:34:50 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-18 08:34:53 [main] INFO  HotelPage - HotelPage : dishList size : 136
+2025-02-18 08:34:54 [main] INFO  HotelPage - HotelPage : dishNameList size : 136
+2025-02-18 08:34:55 [main] INFO  HotelPage - HotelPage: dishListBox : 136
+2025-02-18 08:34:55 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-18 08:34:55 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-18 08:34:57 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-18 08:34:57 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-18 08:34:57 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-18 08:34:57 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-18 08:34:57 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-18 08:35:00 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-18 09:56:40 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 09:56:56 [main] ERROR CartPage - FilterOptions: Index 0 out of bounds for length 0
+2025-02-18 09:57:13 [main] ERROR CartPage - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 10:01:52 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:02:09 [main] ERROR CartPage - FilterOptions: Index 0 out of bounds for length 0
+2025-02-18 10:04:12 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:06:49 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:08:43 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:09:20 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:12:16 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:13:00 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:18:24 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:18:41 [main] ERROR CartPage - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 10:19:44 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:19:44 [main] ERROR CartPage - CartPage: SortBy: text Doesn't Match expected [Sortwe] but found [Sort]
+2025-02-18 10:20:11 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:20:33 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:20:51 [main] ERROR CartPage - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 10:30:41 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:30:42 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:45:48 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:45:48 [main] ERROR CartPage - CartPage: deliveryTime: text Doesn't Match expected [Delivery Time] but found [Sort]
+2025-02-18 10:45:48 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:48:10 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:48:10 [main] ERROR CartPage - FilterOptions: deliveryTime: text Doesn't Match expected [Delivery Time] but found [Sort]
+2025-02-18 10:48:11 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:49:54 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:49:54 [main] ERROR CartPage - FilterOptions: deliveryTime: text Doesn't Match expected [Delivery Time] but found [Sort]
+2025-02-18 10:49:55 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:51:32 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:51:32 [main] ERROR CartPage - FilterOptions: deliveryTime: text Doesn't Match expected [Delivery Time] but found [Sort]
+2025-02-18 10:51:32 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:53:24 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:53:40 [main] ERROR CartPage - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 10:53:41 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:54:18 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:54:18 [main] ERROR CartPage - CartPage: SortBy: text Doesn't Match expected [Sort1] but found [Sort]
+2025-02-18 10:54:19 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 10:55:23 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 10:55:40 [main] ERROR CartPage - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 10:55:40 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 11:00:11 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 11:00:11 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 11:01:57 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 11:02:29 [main] ERROR CartPage - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 11:02:30 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 11:04:49 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 11:04:49 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 13:59:46 [TestNG-test=Test-1] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 13:59:58 [TestNG-test=Test-1] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:04:05 [TestNG-test=Test-1] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:04:15 [TestNG-test=Test-1] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:08:52 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:08:55 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:17:34 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:17:34 [main] INFO  CartPage - sortBy index is : 0
+2025-02-18 14:17:34 [main] INFO  CartPage - sortBy is clicked here
+2025-02-18 14:17:34 [main] INFO  CartPage - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:17:34 [main] INFO  CartPage - Veg/nonVeg index is : -1
+2025-02-18 14:17:35 [main] INFO  CartPage - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:17:35 [main] INFO  CartPage - ratings index is : -1
+2025-02-18 14:17:35 [main] INFO  CartPage - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:17:35 [main] INFO  CartPage - cuisines index is : -1
+2025-02-18 14:17:36 [main] INFO  CartPage - sortByOptions is clicked Option : Cost: Low to High
+2025-02-18 14:17:36 [main] INFO  CartPage - explore index is : -1
+2025-02-18 14:17:36 [main] INFO  CartPage - sortByOptions is clicked Option : Relevance (Default)
+2025-02-18 14:17:37 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:20:57 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:20:57 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 14:20:57 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 14:20:57 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:20:57 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 14:20:58 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 14:20:58 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 14:20:58 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 14:20:58 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 14:20:59 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 14:20:59 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 14:20:59 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 14:21:00 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:24:20 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:24:20 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 14:24:20 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 14:24:21 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:24:21 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 14:24:21 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 14:24:22 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 14:24:22 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 14:24:22 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 14:24:22 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 14:24:23 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 14:24:23 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 14:24:24 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:25:29 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:25:29 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 14:25:29 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 14:25:30 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:25:30 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 14:25:30 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 14:25:30 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 14:25:31 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 14:25:31 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 14:25:31 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 14:25:31 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 14:25:32 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 14:25:32 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 14:26:47 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 14:26:47 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 14:26:47 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 14:26:48 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 14:26:48 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 14:26:48 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 14:26:49 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 14:26:49 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 14:26:49 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 14:26:49 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 14:26:50 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 14:26:50 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 14:26:51 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:45:32 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:45:32 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 17:45:32 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 17:45:32 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:45:33 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:45:33 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:45:33 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:45:33 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:45:34 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:45:34 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:45:34 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:45:34 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:45:35 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:46:40 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:46:40 [main] INFO  FilterOptions - sortBy index is : -1
+2025-02-18 17:46:40 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:46:40 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:46:41 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:46:41 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:46:41 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:46:41 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:46:42 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:46:42 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:46:42 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:46:43 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:48:39 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:48:39 [main] INFO  FilterOptions - sortBy index is : -1
+2025-02-18 17:48:39 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:48:40 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:48:40 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:48:40 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:48:40 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:48:40 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:48:40 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:48:41 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:48:41 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:48:41 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:50:08 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:50:08 [main] INFO  FilterOptions - sortBy index is : -1
+2025-02-18 17:50:08 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:50:08 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:50:09 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:50:09 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:50:09 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:50:09 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:50:09 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:50:10 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:50:10 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:50:10 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:52:39 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:52:40 [main] ERROR FilterOptions - FilterOptions: Index 7 out of bounds for length 7
+2025-02-18 17:52:56 [main] ERROR FilterOptions - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 17:54:23 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:54:23 [main] INFO  FilterOptions - sortBy index is : -1
+2025-02-18 17:54:23 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:54:24 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:54:24 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:54:25 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:54:25 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:54:25 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:54:25 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:54:26 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:54:26 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:54:26 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:55:52 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:55:52 [main] INFO  FilterOptions - sortBy index is : -1
+2025-02-18 17:55:53 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:55:53 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:55:53 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:55:53 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:55:54 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:55:54 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:55:54 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:55:55 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:55:55 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:55:55 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 17:56:44 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 17:56:45 [main] INFO  FilterOptions - sortBy index is : -1
+2025-02-18 17:56:45 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 17:56:46 [main] INFO  FilterOptions - Veg/nonVeg index is : -1
+2025-02-18 17:56:46 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Delivery Time
+2025-02-18 17:56:46 [main] INFO  FilterOptions - ratings index is : -1
+2025-02-18 17:56:46 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Delivery Time
+2025-02-18 17:56:46 [main] INFO  FilterOptions - cuisines index is : -1
+2025-02-18 17:56:47 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Cost: Low to High
+2025-02-18 17:56:47 [main] INFO  FilterOptions - explore index is : -1
+2025-02-18 17:56:47 [main] INFO  FilterOptions - ExploreOptions is clicked Option : Relevance (Default)
+2025-02-18 17:56:47 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 18:02:47 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 18:02:48 [main] INFO  FilterOptions - sortBy index is : 6
+2025-02-18 18:02:48 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 18:02:48 [main] ERROR FilterOptions - FilterOptions: SortBy: text Doesn't Match expected [Sort] but found [Cost for two]
+2025-02-18 18:03:04 [main] ERROR FilterOptions - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 18:05:08 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 18:05:08 [main] INFO  FilterOptions - sortBy index is : 6
+2025-02-18 18:05:08 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 18:05:09 [main] ERROR FilterOptions - FilterOptions: SortBy: text Doesn't Match expected [Sort] but found [Cost for two]
+2025-02-18 18:05:25 [main] ERROR FilterOptions - FilterOptions: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "Components.FilterOptions.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-18 18:07:30 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 18:07:30 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 18:07:31 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 18:07:31 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 18:07:31 [main] INFO  FilterOptions - Veg/nonVeg index is : 6
+2025-02-18 18:07:33 [main] INFO  NavigationTest - driver is quitted here
+2025-02-18 18:08:33 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-18 18:08:34 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-18 18:08:34 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-18 18:08:34 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-18 18:08:34 [main] INFO  FilterOptions - Veg/nonVeg index is : 6
+2025-02-18 18:08:36 [main] INFO  NavigationTest - driver is quitted here
+2025-02-19 09:29:57 [main] INFO  NavigationTest - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:29:57 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-19 09:29:57 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-19 09:29:57 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-19 09:29:58 [main] INFO  NavigationTest - driver is quitted here
+2025-02-19 09:30:45 [main] INFO  FilterTesting - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:30:45 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-19 09:30:45 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-19 09:30:46 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-19 09:30:46 [main] INFO  FilterOptions - Veg/nonVeg index is : 6
+2025-02-19 09:30:47 [main] INFO  FilterTesting - driver is quitted here
+2025-02-19 09:36:54 [main] INFO  FilterTesting - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:36:54 [main] INFO  FilterOptions - Veg/nonVeg index is : 4
+2025-02-19 09:36:54 [main] INFO  FilterOptions - vegNonVeg is clicked here
+2025-02-19 09:36:54 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Non Veg
+2025-02-19 09:36:54 [main] INFO  FilterTesting - driver is quitted here
+2025-02-19 09:37:39 [main] INFO  FilterTesting - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:37:39 [main] INFO  FilterOptions - explore index is : 2
+2025-02-19 09:37:39 [main] INFO  FilterOptions - Explore is clicked here
+2025-02-19 09:37:39 [main] INFO  FilterOptions - ExploreOptions is clicked Option : New on Swiggy
+2025-02-19 09:37:39 [main] INFO  FilterTesting - driver is quitted here
+2025-02-19 09:38:15 [main] INFO  FilterTesting - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:38:16 [main] INFO  FilterOptions - cuisines index is : 1
+2025-02-19 09:38:16 [main] INFO  FilterOptions - cuisines is clicked here
+2025-02-19 09:38:16 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Biryani
+2025-02-19 09:38:17 [main] INFO  FilterOptions - explore index is : 6
+2025-02-19 09:38:18 [main] INFO  FilterOptions - ratings index is : 3
+2025-02-19 09:38:18 [main] INFO  FilterOptions - ratings is clicked here
+2025-02-19 09:38:18 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Ratings 4.0+
+2025-02-19 09:38:18 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-19 09:38:18 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-19 09:38:19 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-19 09:38:19 [main] INFO  FilterOptions - Veg/nonVeg index is : 6
+2025-02-19 09:38:20 [main] INFO  FilterTesting - driver is quitted here
+2025-02-19 09:39:47 [main] INFO  FilterTesting - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:39:47 [main] INFO  FilterOptions - Veg/nonVeg index is : 4
+2025-02-19 09:39:47 [main] INFO  FilterOptions - vegNonVeg is clicked here
+2025-02-19 09:39:48 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Non Veg
+2025-02-19 09:39:48 [main] INFO  FilterOptions - cuisines index is : 6
+2025-02-19 09:39:50 [main] INFO  FilterOptions - explore index is : 2
+2025-02-19 09:39:50 [main] INFO  FilterOptions - Explore is clicked here
+2025-02-19 09:39:50 [main] INFO  FilterOptions - ExploreOptions is clicked Option : New on Swiggy
+2025-02-19 09:39:51 [main] INFO  FilterOptions - ratings index is : 6
+2025-02-19 09:39:53 [main] INFO  FilterOptions - sortBy index is : 0
+2025-02-19 09:39:53 [main] INFO  FilterOptions - sortBy is clicked here
+2025-02-19 09:39:55 [main] INFO  FilterOptions - sortByOptions is clicked Option : Delivery Time
+2025-02-19 09:39:57 [main] INFO  FilterTesting - driver is quitted here
+2025-02-19 09:41:09 [main] INFO  FilterTesting - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 09:41:09 [main] INFO  FilterOptions - Veg/nonVeg index is : 4
+2025-02-19 09:41:09 [main] INFO  FilterOptions - vegNonVeg is clicked here
+2025-02-19 09:41:10 [main] INFO  FilterOptions - Veg/NonVegOptions is clicked Option : Non Veg
+2025-02-19 09:41:10 [main] INFO  FilterOptions - sortBy index is : 6
+2025-02-19 09:41:11 [main] INFO  FilterOptions - ratings index is : 3
+2025-02-19 09:41:11 [main] INFO  FilterOptions - ratings is clicked here
+2025-02-19 09:41:12 [main] INFO  FilterOptions - RatingsOptions is clicked Option : Ratings 4.0+
+2025-02-19 09:41:12 [main] INFO  FilterOptions - cuisines index is : 1
+2025-02-19 09:41:12 [main] INFO  FilterOptions - cuisines is clicked here
+2025-02-19 09:41:12 [main] INFO  FilterOptions - cuisinesOptions is clicked Option : Biryani
+2025-02-19 09:41:13 [main] INFO  FilterOptions - explore index is : 6
+2025-02-19 09:41:15 [main] INFO  FilterTesting - driver is quitted here
+2025-02-19 16:48:10 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 16:48:10 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-19 16:48:11 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-19 16:48:11 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-19 16:48:11 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-19 16:48:12 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-19 16:48:12 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-19 16:48:12 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-19 16:48:13 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-19 16:48:13 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-19 16:48:15 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-19 16:48:15 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-19 16:48:15 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-19 16:48:15 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-19 16:48:15 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-19 16:48:35 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //h1[contains(@class,'gONLwH')]' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-19 16:48:35 [main] ERROR CartPage - CartPage: Cannot invoke "org.openqa.selenium.WebElement.getText()" because the return value of "NavigationLinks.CartLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-19 16:48:35 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-19 16:51:25 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-19 16:51:25 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-19 16:51:27 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-19 16:51:27 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-19 16:51:27 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-19 16:51:30 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-19 16:51:30 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-19 16:51:32 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-19 16:51:35 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-19 16:51:35 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-19 16:51:35 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-19 16:51:35 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-19 16:51:35 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-19 16:51:35 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-19 16:51:35 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-19 16:51:40 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-19 16:51:41 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:00:47 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:00:47 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:00:48 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:00:48 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:00:48 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:00:53 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:00:58 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:01:01 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:01:02 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:01:02 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:01:04 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:01:04 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:01:04 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:01:04 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:01:04 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:01:06 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:01:07 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:02:42 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:02:42 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:02:43 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:02:43 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:02:43 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:02:47 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:02:50 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:02:51 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:02:52 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:02:52 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:02:54 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:02:54 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:02:54 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:02:54 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:02:54 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:02:57 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:02:57 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:05:15 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:05:15 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:05:16 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:05:16 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:05:16 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:05:20 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:05:21 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:05:22 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:05:22 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:05:22 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:05:25 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:05:25 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:05:25 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:05:25 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:05:25 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:05:29 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:05:30 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:13:05 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:13:05 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:13:06 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:13:06 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:13:06 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:13:10 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:13:12 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:13:14 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:13:14 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:13:14 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:13:17 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:13:17 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:13:17 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:13:17 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:13:17 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:13:19 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:13:19 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:18:15 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:18:15 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:18:16 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:18:16 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:18:16 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:18:19 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:18:20 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:18:21 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:18:22 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:18:22 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:18:25 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:18:25 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:18:25 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:18:25 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:18:25 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:18:27 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:18:27 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:18:35 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:18:35 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 10:18:35 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 10:18:39 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 10:18:39 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 10:18:44 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 10:19:00 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 10:19:00 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 10:19:01 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 10:21:29 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:21:29 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:21:30 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:21:30 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:21:30 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:21:34 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:21:35 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:21:36 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:21:37 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:21:37 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:21:39 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:21:39 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:21:39 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:21:39 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:21:39 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:21:43 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:21:43 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:21:50 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:21:50 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 10:21:50 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 10:21:55 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 10:21:55 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 10:22:00 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 10:22:16 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 10:22:16 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 10:22:16 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 10:30:59 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:30:59 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:30:59 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:30:59 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:30:59 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:31:03 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:31:04 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:31:06 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:31:06 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:31:06 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:31:08 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:31:08 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:31:08 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:31:08 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:31:08 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:31:12 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:31:12 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:31:20 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:31:20 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 10:31:20 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 10:31:25 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 10:31:25 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 10:31:29 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 10:31:46 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 10:31:46 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 10:31:46 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 10:33:50 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:33:50 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:33:51 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:33:51 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:33:51 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:33:54 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:33:56 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:34:00 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:34:00 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:34:00 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:34:03 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:34:03 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:34:03 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:34:03 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:34:03 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:34:05 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:34:05 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:34:13 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:34:13 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 10:34:13 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 10:34:18 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 10:34:18 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 10:34:23 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 10:34:39 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 10:34:39 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 10:34:39 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 10:36:17 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:36:17 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 10:36:18 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 10:36:18 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 10:36:18 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 10:36:21 [main] INFO  HotelPage - HotelPage : dishList size : 180
+2025-02-20 10:36:24 [main] INFO  HotelPage - HotelPage : dishNameList size : 177
+2025-02-20 10:36:25 [main] INFO  HotelPage - HotelPage: dishListBox : 177
+2025-02-20 10:36:26 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 10:36:26 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 10:36:28 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 10:36:28 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 10:36:28 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 10:36:28 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 10:36:28 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 10:36:30 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 10:36:31 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 10:36:38 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 10:36:38 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 10:36:38 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 10:36:43 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 10:36:43 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 10:36:47 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 10:37:04 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 10:37:04 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 10:37:04 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 11:02:29 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:05:59 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:05:59 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 11:05:59 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 11:05:59 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 11:05:59 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 11:06:03 [main] INFO  HotelPage - HotelPage : dishList size : 73
+2025-02-20 11:06:03 [main] INFO  HotelPage - HotelPage : dishNameList size : 73
+2025-02-20 11:06:04 [main] INFO  HotelPage - HotelPage: dishListBox : 73
+2025-02-20 11:06:04 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 11:06:04 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 11:06:06 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 11:06:06 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 11:06:06 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 11:06:07 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 11:06:07 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 11:06:11 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 11:06:11 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 11:06:20 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:06:20 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 11:06:20 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 11:06:25 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 11:06:25 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 11:06:29 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 11:06:46 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:06:46 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 11:06:46 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 11:08:25 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:08:25 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 11:08:25 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 11:08:25 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 11:08:25 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 11:08:28 [main] INFO  HotelPage - HotelPage : dishList size : 73
+2025-02-20 11:08:29 [main] INFO  HotelPage - HotelPage : dishNameList size : 73
+2025-02-20 11:08:32 [main] INFO  HotelPage - HotelPage: dishListBox : 73
+2025-02-20 11:08:33 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 11:08:33 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 11:08:35 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 11:08:35 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 11:08:35 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 11:08:35 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 11:08:35 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 11:08:43 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 11:08:43 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 11:08:56 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:08:56 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 11:08:56 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 11:09:01 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 11:09:01 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 11:09:19 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='_1tJLU']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:09:19 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 11:09:35 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:09:35 [main] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-20 11:09:35 [main] INFO  SmokeTesting2 - hotel page is opened
+2025-02-20 11:09:35 [main] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-20 11:09:52 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@id,'browse-menu-btn')]' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:09:52 [main] ERROR HotelPage - HotelPage: javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=133.0.6943.59)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff980ac377ea9bf48bbff09f97c699c4, executeScript {args=[null], script=arguments[0].style.display='none'}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\MANI~1.OBU\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff980ac377ea9bf48bbff09f97c699c4
+2025-02-20 11:09:53 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 11:16:26 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:16:26 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 11:16:26 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 11:16:26 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 11:16:26 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 11:16:27 [main] INFO  HotelPage - HotelPage : dishList size : 73
+2025-02-20 11:16:28 [main] INFO  HotelPage - HotelPage : dishNameList size : 73
+2025-02-20 11:16:28 [main] INFO  HotelPage - HotelPage: dishListBox : 73
+2025-02-20 11:16:29 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 11:16:29 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 11:16:31 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 11:16:31 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 11:16:31 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 11:16:31 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 11:16:31 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 11:16:37 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 11:16:37 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 11:16:45 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 11:16:45 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 11:16:45 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 11:16:50 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 11:16:50 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 11:17:09 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='_1tJLU']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:17:09 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 11:17:25 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:17:25 [main] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-20 11:17:25 [main] INFO  SmokeTesting2 - hotel page is opened
+2025-02-20 11:17:25 [main] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-20 11:17:42 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@id,'browse-menu-btn')]' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 11:17:42 [main] ERROR HotelPage - HotelPage: javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=133.0.6943.59)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff6fcfc87b74feb0e3d4d562569a5533, executeScript {args=[null], script=arguments[0].style.display='none'}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\MANI~1.OBU\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51844/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff6fcfc87b74feb0e3d4d562569a5533
+2025-02-20 11:17:42 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 14:53:37 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 14:53:37 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 14:53:39 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 14:53:39 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 14:53:39 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 14:53:42 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 14:53:43 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 14:53:44 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 14:53:44 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 14:53:44 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 14:53:46 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 14:53:46 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 14:53:46 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 14:53:46 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 14:53:46 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 14:53:49 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 14:53:49 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 14:54:01 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 14:54:01 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 14:54:01 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 14:54:06 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 14:54:06 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 14:54:11 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 14:54:27 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 14:54:27 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 14:54:28 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 15:00:50 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:00:50 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:00:51 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:00:51 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:00:51 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:00:52 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:00:53 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:00:54 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:00:54 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:00:54 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:00:56 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:00:56 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:00:56 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:00:56 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:00:56 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:01:06 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:01:08 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:01:21 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:01:21 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 15:01:21 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 15:01:26 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 15:01:26 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 15:01:31 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 15:01:48 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 15:01:48 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 15:01:48 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 15:03:40 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:03:40 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:03:41 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:03:41 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:03:41 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:03:42 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:03:43 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:03:43 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:03:44 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:03:44 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:03:47 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:03:47 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:03:47 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:03:47 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:03:47 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:03:56 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:03:56 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:04:05 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:04:05 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 15:04:05 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 15:04:10 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 15:04:10 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 15:04:14 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 15:04:30 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[@data-testid='RESTAURANT-nav-tab-pl']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 15:04:30 [main] ERROR SearchPage - SearchPage: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "NavigationLinks.SearchLink.elementIsClickable(org.openqa.selenium.WebElement)" is null
+2025-02-20 15:04:31 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 15:05:21 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:05:21 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:05:22 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:05:22 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:05:22 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:05:25 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:05:25 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:05:26 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:05:26 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:05:26 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:05:29 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:05:29 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:05:29 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:05:29 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:05:29 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:05:32 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:05:33 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:07:30 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:07:30 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:07:31 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:07:31 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:07:31 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:07:34 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:07:34 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:07:35 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:07:35 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:07:35 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:07:40 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:07:40 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:07:40 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:07:40 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:07:40 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:07:47 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:07:48 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:09:06 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:09:06 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:09:07 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:09:07 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:09:07 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:09:08 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:09:09 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:09:09 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:09:10 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:09:10 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:09:13 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:09:13 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:09:13 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:09:13 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:09:13 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:09:18 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:09:19 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:10:34 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:10:34 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:10:34 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:10:34 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:10:34 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:10:38 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:10:39 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:10:39 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:10:40 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:10:40 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:10:44 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:10:44 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:10:44 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:10:44 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:10:44 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:10:49 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:10:49 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:12:22 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:12:22 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:12:22 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:12:22 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:12:22 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:12:24 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:12:24 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:12:25 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:12:25 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:12:25 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:12:28 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:12:28 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:12:28 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:12:28 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:12:28 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:12:34 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:12:36 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 15:12:48 [main] INFO  SmokeTesting2 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:12:48 [main] INFO  SmokeTesting2 - driver is navigate to the search page
+2025-02-20 15:12:48 [main] INFO  SmokeTesting2 - search page is opened
+2025-02-20 15:12:53 [main] INFO  SmokeTesting2 - testNG is sent a data to the searchBar
+2025-02-20 15:12:53 [main] INFO  SmokeTesting2 - hotel is selected by given index
+2025-02-20 15:13:12 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='_1tJLU']' (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 15:13:12 [main] INFO  SmokeTesting2 - searchList is shown depends upon the searchBar data
+2025-02-20 15:13:14 [main] INFO  SmokeTesting2 - driver click the restaurants option in the search page
+2025-02-20 15:13:14 [main] INFO  SmokeTesting2 - hotel page is opened
+2025-02-20 15:13:14 [main] INFO  SmokeTesting2 - dish is selected by given index
+2025-02-20 15:13:17 [main] INFO  HotelPage - HotelPage : dishList size : 121
+2025-02-20 15:13:34 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 15:13:34 [main] INFO  HotelPage - HotelPage : dishNameList size : 0
+2025-02-20 15:13:50 [main] INFO  AbstractComponent - Waits: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 2000 milliseconds interval)
+2025-02-20 15:13:50 [main] INFO  HotelPage - HotelPage: dishListBox : 0
+2025-02-20 15:13:51 [main] ERROR HotelPage - HotelPage: Index 3 out of bounds for length 0
+2025-02-20 15:13:51 [main] ERROR HotelPage - HotelPage: Index 3 out of bounds for length 0
+2025-02-20 15:13:51 [main] INFO  SmokeTesting2 - driver is quitted here
+2025-02-20 15:16:46 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 15:16:46 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 15:16:46 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 15:16:46 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 15:16:46 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 15:16:47 [main] INFO  HotelPage - HotelPage : dishList size : 59
+2025-02-20 15:16:48 [main] INFO  HotelPage - HotelPage : dishNameList size : 58
+2025-02-20 15:16:49 [main] INFO  HotelPage - HotelPage: dishListBox : 58
+2025-02-20 15:16:49 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 15:16:49 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 15:16:51 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 15:16:51 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 15:16:51 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 15:16:52 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 15:16:52 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 15:16:57 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 15:16:58 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 17:40:00 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 17:40:00 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 17:40:02 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 17:40:02 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 17:40:02 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 17:40:05 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-20 17:40:05 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-20 17:40:06 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-20 17:40:06 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 17:40:06 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 17:40:09 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 17:40:09 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 17:40:09 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 17:40:09 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 17:40:09 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 17:40:15 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 17:40:16 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 17:41:33 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 17:41:33 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 17:41:33 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 17:41:33 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 17:41:33 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 17:41:34 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-20 17:41:34 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-20 17:41:35 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-20 17:41:35 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 17:41:35 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 17:41:37 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 17:41:37 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 17:41:37 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 17:41:37 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 17:41:37 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 17:41:43 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 17:41:44 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 17:45:30 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 17:45:30 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 17:45:30 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 17:45:30 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 17:45:30 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 17:45:31 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-20 17:45:32 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-20 17:45:32 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-20 17:45:32 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 17:45:32 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 17:45:34 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 17:45:34 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 17:45:34 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 17:45:34 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 17:45:34 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 17:45:42 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 17:45:43 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 17:55:16 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 17:55:16 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 17:55:16 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 17:55:16 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 17:55:16 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 17:55:19 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-20 17:55:19 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-20 17:55:19 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-20 17:55:20 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 17:55:20 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 17:55:23 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 17:55:23 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 17:55:23 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 17:55:23 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 17:55:23 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 17:55:29 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 17:55:29 [main] INFO  SmokeTesting1 - driver is quitted here
+2025-02-20 18:01:39 [main] INFO  SmokeTesting1 - Selenium Start the Testing :  https://www.swiggy.com/restaurants
+2025-02-20 18:01:39 [main] INFO  SmokeTesting1 - driver is navigated to home page
+2025-02-20 18:01:40 [main] INFO  SmokeTesting1 - hotel is selected by given index
+2025-02-20 18:01:40 [main] INFO  SmokeTesting1 - driver is navigated to hotel page
+2025-02-20 18:01:40 [main] INFO  SmokeTesting1 - hotel page is opened
+2025-02-20 18:01:41 [main] INFO  HotelPage - HotelPage : dishList size : 32
+2025-02-20 18:01:41 [main] INFO  HotelPage - HotelPage : dishNameList size : 32
+2025-02-20 18:01:42 [main] INFO  HotelPage - HotelPage: dishListBox : 32
+2025-02-20 18:01:42 [main] INFO  HotelPage - HotelPage: customisableDishBox : sc-iRqkff dgkWUw
+2025-02-20 18:01:42 [main] INFO  HotelPage - HotelPage : isCustomisable: false
+2025-02-20 18:01:44 [main] INFO  HotelPage - HotelPage: dish is Added
+2025-02-20 18:01:44 [main] INFO  SmokeTesting1 - dish is selected by given index
+2025-02-20 18:01:44 [main] INFO  SmokeTesting1 - selected dish is added to the cart
+2025-02-20 18:01:44 [main] INFO  SmokeTesting1 - driver is navigate to cart Page
+2025-02-20 18:01:44 [main] INFO  SmokeTesting1 - cart page is opened
+2025-02-20 18:01:52 [main] INFO  SmokeTesting1 - driver increase the quantity of the selected dish
+2025-02-20 18:01:52 [main] INFO  SmokeTesting1 - driver is quitted here
