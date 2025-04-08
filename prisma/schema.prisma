@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model hotel {
+  HOTEL_ID   Int    @id
+  HOTEL_NAME String @db.VarChar(200)
+}
+
+model customer {
+  CUSTOMER_NAME        String  @db.VarChar(200)
+  CUSTOMER_PHONENUMBER Decimal @id @db.Decimal(10, 0)
+  CUSTOMER_EMAIL       String  @db.VarChar(200)
+  CUSTOMER_PASSWORD    String  @db.VarChar(200)
+  CUSTOMER_ID          Int
+}
+
+model dish {
+  DISH_ID    Int     @id
+  HOTEL_ID   Int
+  DISH_NAME  String  @db.VarChar(200)
+  DISH_TYPE  String  @db.VarChar(200)
+  DISH_PRICE Decimal @db.Decimal(10, 0)
+}
+
+model orderdetails {
+  ORDER_ID        Int    @id
+  TOTALORDER_COST Int
+  HOTEL_ID        Int
+  CUSTOMER_ID     Int
+  ORDER_ADDRESS   String @db.VarChar(300)
+  ORDERED_DISHSES String @db.VarChar(500)
+}

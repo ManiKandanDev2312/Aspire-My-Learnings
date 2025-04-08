@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ClientFetchSWR from "./components/clientFetchSWR";
+import SessionProviderWrapper from "./components/SessionProviderWrapper";
+import SSRPage from "./ssr-example/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <h2>ROOT</h2>
-        {children}
+       {/* <SessionProviderWrapper>{children}</SessionProviderWrapper> */}
+       {/* {children} */}
+       <SSRPage />
       </body>
     </html>
   );
